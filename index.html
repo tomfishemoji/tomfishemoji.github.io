@@ -24,13 +24,22 @@
   #githublink {
     position: fixed;
     top: 0px;
-    right: 10%;
     background-color: #4183c4;
     color: #fff;
     width: 200px;
     max-width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+  @media screen and (min-width: 500px) {
+    #githublink {
+        right: 10%;
+    }
+  }
+  @media screen and (max-width: 499px) {
+    #githublink {
+        right: 0px;
+    }
   }
   a {
     color: #fff;
