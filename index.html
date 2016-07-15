@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <noscript><link rel="stylesheet" href="noscript.css"></noscript>
   <style>
   * {
     margin: 0;
@@ -28,6 +29,7 @@
     max-width: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    display: none;
   }
   a {
     color: #fff;
@@ -41,18 +43,25 @@
     width: 100%;
     text-align: center;
     top: 5%;
+    display: none;
   }
   </style>
   <title>gh.diamondpigman.co.uk</title>
 </head>
 <body>
-<div id="container" class="animate fadeInUp">
+<script>
+$(document).ready(function(){
+  $("#container").delay(500).fadeIn(500);
+  $("#githublink").delay(1000).fadeIn(500);
+});
+</script>
+<div id="container">
 <h1>{hi there}</h1>
 <h4>GitHub Pages is pretty neat</h4>
 <div style="width: 1px; height: 5px;"></div>
 <p>i don't know what to write here, so, uh, yes.</a>
 <p>thanks for visiting this page i guess.</p>
 </div>
-<div id="githublink" class="animate slideInDown"><h2><a href="https://github.com/mrdnomaid/mrdnomaid.github.io">View code on <span title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></span></a></h2></div>
+<div id="githublink"><h2><a href="https://github.com/mrdnomaid/mrdnomaid.github.io">View code on <span title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></span></a></h2></div>
 </body>
 </html>
