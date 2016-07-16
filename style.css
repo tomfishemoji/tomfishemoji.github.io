@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: #eee;
+  color: #222;
+}
+#githublink {
+  position: fixed;
+  top: 0px;
+  background-color: #4183c4;
+  color: #fff;
+  height: 25px;
+  width: 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media screen and (min-width: 500px) {
+  #githublink {
+      right: 10%;
+  }
+}
+@media screen and (max-width: 499px) {
+  #githublink {
+      right: 0px;
+  }
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #eee;
+}
+#container {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 30px;
+}
+
+#about a {
+  color: #222
+}
+#about a:hover {
+  color: #444
+}
