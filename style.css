@@ -44,11 +44,12 @@ a:hover {
 }
 
 #menu a {
-  color: #222
+  color: #222;
 }
 #menu a:hover {
-  color: #444
+  color: #444;
 }
 a .current {
-  color: #444
+  color: #444;
+  text-decoration: underline;
 }
