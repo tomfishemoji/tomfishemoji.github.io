@@ -43,9 +43,12 @@ a:hover {
   top: 30px;
 }
 
-#about a {
+#menu a {
   color: #222
 }
-#about a:hover {
+#menu a:hover {
+  color: #444
+}
+a .current {
   color: #444
 }
