@@ -49,7 +49,6 @@ a:hover {
 #menu a:hover {
   color: #444;
 }
-a .current {
-  color: #444;
-  text-decoration: underline;
+a.current {
+  font-size: 150%;
 }
