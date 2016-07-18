@@ -4,10 +4,10 @@
 }
 
 body {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Droid Sans Mono', monospace;
   text-align: center;
   text-transform: lowercase;
-  background-color: #eee;
+  background-color: #fafafa;
   color: #222;
 }
 
@@ -18,57 +18,40 @@ body {
   top: 30px;
 }
 
-
-#githublink {
-  position: fixed;
-  top: 0px;
-  background-color: #4183c4;
-  color: #fff;
-  height: 25px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+#title {
+  color: #2baff7;
 }
-
-/*
-github link
-*/
-@media screen and (min-width: 500px) {
-  #githublink {
-      right: 10%;
-  }
-}
-@media screen and (max-width: 499px) {
-  #githublink {
-      right: 0px;
-  }
-}
-
 
 /*
 menu
 */
+#menu {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 #menu a {
   color: #000;
   font-size: 100%;
-  -webkit-transition:  1s, font-size 1s;
-  -moz-transition: color 1s, font-size 1s;
-  -o-transition: color 1s, font-size 1s;
-  transition: color 1s, font-size 1s;
+  -webkit-transition:  0.25s, font-size 0.25s;
+  -moz-transition: color 0.25s, font-size 0.25s;
+  -o-transition: color 0.25s, font-size 0.25s;
+  transition: color 0.25s, font-size 0.25s;
 }
 
 #menu a:hover {
-  font-size: 110%;
+  font-size: 200%;
 
 }
 
-#menu a.yt:hover {
-  color: #cd201f
+#yt:hover {
+  color: #cd201f;
 }
 
-#menu a.tw:hover {
+#tw:hover {
   color: #55acee;
 }
 
-#menu a.gh:hover {
-  color: #333333
+#gh:hover {
+  color: #333333;
 }
