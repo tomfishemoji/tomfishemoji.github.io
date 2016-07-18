@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Share Tech Mono', monospace;
   text-align: center;
@@ -9,16 +10,28 @@ body {
   background-color: #eee;
   color: #222;
 }
+
+#container {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 30px;
+}
+
+
 #githublink {
   position: fixed;
   top: 0px;
   background-color: #4183c4;
   color: #fff;
   height: 25px;
-  width: 30px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+/*
+github link
+*/
 @media screen and (min-width: 500px) {
   #githublink {
       right: 10%;
@@ -29,26 +42,33 @@ body {
       right: 0px;
   }
 }
-a {
-  color: #fff;
-  text-decoration: none;
-}
-a:hover {
-  color: #eee;
-}
-#container {
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  top: 30px;
+
+
+/*
+menu
+*/
+#menu a {
+  color: #000;
+  font-size: 100%;
+  -webkit-transition:  1s, font-size 1s;
+  -moz-transition: color 1s, font-size 1s;
+  -o-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
 }
 
-#menu a {
-  color: #222;
-}
 #menu a:hover {
-  color: #444;
+  font-size: 110%;
+
 }
-a.current {
-  font-size: 150%;
+
+#menu a.yt:hover {
+  color: #cd201f
+}
+
+#menu a.tw:hover {
+  color: #55acee;
+}
+
+#menu a.gh:hover {
+  color: #333333
 }
