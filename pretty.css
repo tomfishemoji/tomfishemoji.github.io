@@ -9,6 +9,10 @@ body {
   text-transform: lowercase;
   background-color: #fafafa;
   color: #222;
+  background-image: url('mountains.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 #container {
