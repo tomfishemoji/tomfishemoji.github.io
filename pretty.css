@@ -22,6 +22,16 @@ body {
   color: #2baff7;
 }
 
+::selection {
+  background-color: #fff;
+  color: #2baff7;
+}
+::-moz-selection {
+  background-color: #fff;
+  color: #2baff7;
+}
+
+
 /*
 menu
 */
@@ -29,7 +39,6 @@ menu
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
 #menu a {
   color: #000;
   font-size: 100%;
@@ -38,28 +47,21 @@ menu
   -o-transition: color 0.25s, font-size 0.25s;
   transition: color 0.25s, font-size 0.25s;
 }
-
 #menu a:hover {
   font-size: 200%;
-
 }
-
 #yt:hover {
   color: #cd201f;
 }
-
 #tw:hover {
   color: #55acee;
 }
-
 #gh:hover {
   color: #333333;
 }
-
 #me:hover {
   color: #02b875;
 }
-
 #em:hover {
   color: #4285f4;
 }
