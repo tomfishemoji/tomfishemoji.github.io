@@ -1,2 +1,2 @@
-# A test site for me to figure out how Github works.
-## Other stuff might go here. Depends if I get around to it.
+# My new site, looks simpler and isn't on WordPress, so it actually loads fast
+## Man GitHub is neat
