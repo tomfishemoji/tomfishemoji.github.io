@@ -11,7 +11,8 @@ body {
   color: #222;
   background-image: url('mountains.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position: bottom;
   background-attachment: fixed;
   overflow: hidden;
 }
