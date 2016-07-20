@@ -71,3 +71,32 @@ menu
 #em:hover {
   color: #4285f4;
 }
+
+
+#githublink {
+  position: fixed;
+  bottom: 0px;
+  background-color: rgba(65, 131, 196, 0.5);
+  color: #fff;
+  width: 250px;
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#githublink a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+  #githublink {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 499px) {
+  #githublink {
+    right: 0px;
+
+  }
+}
