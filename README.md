@@ -1,2 +1,2 @@
-# My new site, looks simpler and isn't on WordPress, so it actually loads fast
-## Man GitHub is neat
+# It's my site.
+![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
