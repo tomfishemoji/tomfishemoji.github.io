@@ -71,7 +71,9 @@ menu
 #em:hover {
   color: #4285f4;
 }
-
+#st:hover {
+  color: #184353;
+}
 
 #githublink {
   position: fixed;
