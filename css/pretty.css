@@ -9,7 +9,7 @@ body {
   text-transform: lowercase;
   background-color: #fafafa;
   color: #222;
-  background-image: url('mountains.png');
+  background-image: url('/img/mountains.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
