@@ -59,6 +59,7 @@ menu
 #menu a {
   color: #000;
   font-size: 100%;
+  font-weight: normal;
   -webkit-transition:  0.25s, font-size 0.25s;
   -moz-transition: color 0.25s, font-size 0.25s;
   -o-transition: color 0.25s, font-size 0.25s;
