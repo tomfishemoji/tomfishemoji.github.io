@@ -31,8 +31,14 @@ body {
 a {
   color: #222;
   text-decoration: none;
+  -webkit-transition:  0.25s;
+  -moz-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
-
+a:hover {
+  color: #3d5a80;
+}
 ::selection {
   background-color: #fff;
   color: #2baff7;
