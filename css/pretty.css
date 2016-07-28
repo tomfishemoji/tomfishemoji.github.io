@@ -28,6 +28,11 @@ body {
   color: #2baff7;
 }
 
+a {
+  color: #222;
+  text-decoration: none;
+}
+
 ::selection {
   background-color: #fff;
   color: #2baff7;
