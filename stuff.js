@@ -1,5 +1,10 @@
 $("#em").click(function() {
-  $("#contact").fadeToggle();
+  $("#contact").show();
+  $("#about").hide();
+});
+$("#ho").click(function() {
+  $("#contact").hide();
+  $("#about").show();
 });
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 console.log('______________________');
