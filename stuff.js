@@ -1,10 +1,8 @@
 $("#em").click(function() {
-  $("#contact").show();
-  $("#about").hide();
+  $("#contact").fadeIn();
 });
 $("#ho").click(function() {
-  $("#contact").hide();
-  $("#about").show();
+  $("#contact").fadeOut();
 });
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 console.log('______________________');

@@ -115,3 +115,7 @@ menu
 
   }
 }
+
+#contact, #about {
+  transition: left .25s ease-out;
+}
