@@ -36,9 +36,7 @@ a {
   -o-transition: color 0.25s;
   transition: color 0.25s;
 }
-a:hover {
-  color: #2baff7;
-}
+
 ::selection {
   background-color: #fff;
   color: #2baff7;
