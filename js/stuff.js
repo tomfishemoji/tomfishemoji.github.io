@@ -4,7 +4,7 @@ $("#em").click(function() {
 });
 $("#ho").click(function() {
   $("#contact").fadeOut(500);
-  $("about").delay(500).fadeIn(500);
+  $("#about").delay(500).fadeIn(500);
 });
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 console.log('______________________');
