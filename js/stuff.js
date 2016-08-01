@@ -1,10 +1,14 @@
 $("#em").click(function() {
   $("#about").fadeOut(500);
+  $("#em").fadeOut(500);
   $("#contact").delay(500).fadeIn(500);
+  $("#ho").delay(500).fadeIn(500);
 });
 $("#ho").click(function() {
   $("#contact").fadeOut(500);
+  $("#ho").fadeOut(500);
   $("#about").delay(500).fadeIn(500);
+  $("#em").delay(500).fadeIn(500);
 });
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 console.log('______________________');
