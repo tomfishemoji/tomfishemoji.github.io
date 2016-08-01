@@ -66,22 +66,22 @@ menu
 #menu a:hover {
   font-size: 200%;
 }
-.yt:hover {
+a.yt:hover {
   color: #cd201f;
 }
-.tw:hover {
+a.tw:hover {
   color: #55acee;
 }
-.gh:hover {
+a.gh:hover {
   color: #333333;
 }
-.me:hover {
+a.me:hover {
   color: #02b875;
 }
-.em:hover {
+a.em:hover {
   color: #4285f4;
 }
-.st:hover {
+a.st:hover {
   color: #184353;
 }
 
