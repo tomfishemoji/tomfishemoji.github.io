@@ -65,7 +65,6 @@ menu
 }
 #menu a:hover {
   font-size: 200%;
-  color: #2baff7;
 }
 #yt:hover {
   color: #cd201f;
@@ -112,8 +111,4 @@ menu
     right: 0px;
 
   }
-}
-
-#contact, #about {
-  transition: left .25s ease-out;
 }
