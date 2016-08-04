@@ -7,12 +7,11 @@ body {
   font-family: 'Droid Sans Mono', monospace;
   text-align: center;
   text-transform: lowercase;
-  background-color: #fafafa;
-  color: #222;
-  background-image: url('/img/mountains.png');
+  background-color: #0a0a0a;
+  color: #fafafa;
+  background-image: url('/img/mountains2.png');
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
 }
@@ -26,11 +25,13 @@ body {
 
 #title {
   color: #2baff7;
+  /* Lowest Webkit stroke is way to thick, so I'm using this text shadow hack */
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   font-size: 2.5em;
 }
 
 a {
-  color: #222;
+  color: #E1E1E1;
   text-decoration: none;
   -webkit-transition:  0.25s;
   -moz-transition: color 0.25s;
