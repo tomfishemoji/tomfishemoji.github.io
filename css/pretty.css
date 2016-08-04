@@ -7,9 +7,9 @@ body {
   font-family: 'Droid Sans Mono', monospace;
   text-align: center;
   text-transform: lowercase;
-  background-color: #0a0a0a;
-  color: #fafafa;
-  background-image: url('/img/mountains2.png');
+  background-color: #fafafa;
+  color: #0a0a0a;
+  background-image: url('https://source.unsplash.com/1920x1080/?mountains,ice');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
