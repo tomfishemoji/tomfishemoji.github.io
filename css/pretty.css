@@ -26,6 +26,7 @@ body {
 
 #title {
   color: #2baff7;
+  font-size: 2.5em;
 }
 
 a {
@@ -50,6 +51,9 @@ p {
   font-size: 1.25em;
 }
 
+.subtitle {
+  font-size: 1.5em;
+}
 /*
 menu
 */
