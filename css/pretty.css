@@ -60,6 +60,7 @@ menu
 #menu {
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 1.5em;
 }
 #menu a {
   color: #000;
@@ -71,7 +72,7 @@ menu
   transition: color 0.25s, font-size 0.25s;
 }
 #menu a:hover {
-  font-size: 200%;
+  font-size: 2em;
 }
 #yt:hover {
   color: #cd201f;
