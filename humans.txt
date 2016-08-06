@@ -25,9 +25,9 @@
                             
 	Last update: See https://github.com/MrDnomaid/mrdnomaid.github.io/
 		-                
-	Standards: HTML5, CSS3
+	Standards: HTML5, CSS3, JS
 		-                           
-	Components: Font Awesome, Animate.css
+	Components: Font Awesome, Animate.css, Jquery
 		-                           
 	Software: Atom, NotePad++, Firebug, Paint.Net, Google Chrome, Firefox, IE, Edge, Github Desktop
 		-

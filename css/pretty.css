@@ -31,7 +31,7 @@ body {
 }
 
 a {
-  color: #E1E1E1;
+  color: #444;
   text-decoration: none;
   -webkit-transition:  0.25s;
   -moz-transition: color 0.25s;
@@ -96,7 +96,7 @@ menu
 
 #githublink {
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   background-color: rgba(65, 131, 196, 0.5);
   color: #fff;
   width: 150px;
@@ -118,6 +118,13 @@ menu
 @media screen and (max-width: 499px) {
   #githublink {
     right: 0px;
-
   }
+}
+
+#disclaimer {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(250, 250, 250, 0.50);
+  border-top-right-radius: 5px;
 }
