@@ -10,6 +10,7 @@ $("#ho").click(function() {
   $("#about").delay(500).fadeIn(500);
   $("#em").delay(500).fadeIn(500);
 });
+$('#disclaimer').show().delay(2500).fadeOut(500);
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 console.log('______________________');
 console.log('| The page has loaded |');
