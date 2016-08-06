@@ -1,3 +1,4 @@
+//Jquery
 $("#em").click(function() {
   $("#about").fadeOut(500);
   $("#em").fadeOut(500);
@@ -11,6 +12,8 @@ $("#ho").click(function() {
   $("#em").delay(500).fadeIn(500);
 });
 $('#disclaimer').show().delay(2500).fadeOut(500);
+
+//Regular JS
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 console.log('______________________');
 console.log('| The page has loaded |');

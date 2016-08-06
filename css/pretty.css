@@ -101,8 +101,8 @@ menu
   color: #fff;
   width: 150px;
   max-width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #githublink a {
