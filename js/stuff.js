@@ -11,7 +11,6 @@ $("#ho").click(function() {
   $("#about").delay(500).fadeIn(500);
   $("#em").delay(500).fadeIn(500);
 });
-$('#disclaimer').hide().fadeIn(500).delay(2500).fadeOut(500);
 
 //Regular JS
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
