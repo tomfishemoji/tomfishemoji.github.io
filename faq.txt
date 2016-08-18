@@ -43,3 +43,4 @@ Tweet me a question and I'll probably answer it and add it here
 
 
 //I probably should've waited until I had more questions to make this, but eh.
+//To see when this page was updated, check here: https://github.com/MrDnomaid/mrdnomaid.github.io/blob/master/faq.txt
