@@ -9,7 +9,7 @@ It's "diamond" backwards
 Q:
 How do I say "dnomaid"?
 A:
-dee-en-oh-maid
+dee-en-oh-maid or just "diamond"
 
 Q:
 What recording software do you use?
@@ -17,9 +17,54 @@ A:
 Bandicam or OBS
 
 Q:
+What do you use to edit videos?
+A:
+Sony Vegas Pro 13 (Occasinally Premiere Pro or After Effects)
+
+Q:
 How do you make  the thumbnails?
 A:
 Adobe Illustrator and Paint.net
+
+Q:
+What are your PC specs?
+A:
+i7-4790k (OC'd to 4.3GHz)
+Zotac GTX 970
+16GB DDR3 RAM (+ 4GB Page File)
+Samsung 850 Evo SSD (500GB)
+WD Black (2TB)
+Z97X G3 Motherboard 
+
+Q:
+Peripherals?
+A:
+Cooler Master Octane KB&M (I wouldn't recommend it much)
+2x AOC i2369vm monitors
+Philips MC118 Micro Speakers
+Ozone Rage ST headphones
+
+Q:
+What OS do you use?
+A:
+Windows 10 and Linux Mint
+
+Q:
+I like that wallpaper you have, where did you get it?
+A:
+Here: https://www.reddit.com/r/multiwall/comments/4ty7bg/5760x1080_macos_inpsired/
+
+Q:
+What is that other PC you have, the one with Windows 98?
+A:
+It's a Gateway 2000 (I think)
+Pentium 2 (350MHz)
+64MB RAM
+ATI 3D Rage Pro
+Quantum Fireball (3GB)
+Sound Blaster AudioPCI 64D
+Gateway EV700 CRT Display
+Windows 98 SE
 
 Q:
 What YouTube MCN are you with?
