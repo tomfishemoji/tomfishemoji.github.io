@@ -1,6 +1,15 @@
-// dnomaid faq
 // dnomaid.co.uk/faq.txt
 
+
+Q:
+What is "dnomaid"?
+A:
+It's "diamond" backwards
+
+Q:
+How do I say "dnomaid"?
+A:
+dee-en-oh-maid
 
 Q:
 What recording software do you use?
@@ -11,6 +20,11 @@ Q:
 How do you make  the thumbnails?
 A:
 Adobe Illustrator and Paint.net
+
+Q:
+What YouTube MCN are you with?
+A:
+SocialBlade/BBTV.
 
 Q:
 How do I be in your videos?
