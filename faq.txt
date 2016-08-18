@@ -65,6 +65,15 @@ Quantum Fireball (3GB)
 Sound Blaster AudioPCI 64D
 Gateway EV700 CRT Display
 Windows 98 SE
+HP C3758A Keyboard
+Logitech M-S34 Mouse
+
+Q:
+Don't you have a 3rd PC too?
+A:
+It had Windows XP on it before I formatted it, so I have no way of getting the specs without opening it :|
+No Linux distros are installing so it might just be used for parts eventually.
+It was made by Dell though, if it helps.
 
 Q:
 What YouTube MCN are you with?
