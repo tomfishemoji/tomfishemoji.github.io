@@ -76,6 +76,11 @@ No Linux distros are installing so it might just be used for parts eventually.
 It was made by Dell though, if it helps.
 
 Q:
+What software do you use to make sites and all that jazz?
+A:
+Atom and Notepad++. For viewing them I just use Chrome, Waterfox or Blisk.
+
+Q:
 What YouTube MCN are you with?
 A:
 SocialBlade/BBTV.
