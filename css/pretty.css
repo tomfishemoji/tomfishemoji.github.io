@@ -27,7 +27,7 @@ body {
   color: #2baff7;
   /* Lowest Webkit stroke is way to thick, so I'm using this text shadow hack */
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  font-size: 2.5em;
+  font-size: 10vw;
 }
 
 a {
@@ -40,12 +40,14 @@ a {
 }
 
 ::selection {
-  background-color: #fff;
-  color: #2baff7;
+  background: none;
+  color: #fff;
+  font-weight: bolder;
 }
 ::-moz-selection {
-  background-color: #fff;
-  color: #2baff7;
+  background: none;
+  color: #fff;
+  font-weight: bolder;
 }
 
 p {
@@ -61,11 +63,10 @@ menu
 #menu {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 1.5em;
 }
 #menu a {
   color: #000;
-  font-size: 100%;
+  font-size: 2.5em;
   font-weight: normal;
   -webkit-transition:  0.25s, font-size 0.25s;
   -moz-transition: color 0.25s, font-size 0.25s;
@@ -73,7 +74,7 @@ menu
   transition: color 0.25s, font-size 0.25s;
 }
 #menu a:hover {
-  font-size: 2em;
+  font-size: 3em;
 }
 #yt:hover {
   color: #CD201F;
@@ -82,7 +83,7 @@ menu
   color: #1DA1F2;
 }
 #gh:hover {
-  color: #181717;
+  color: #6cc644;
 }
 #me:hover {
   color: #00AB6B;
@@ -91,13 +92,13 @@ menu
   color: #4285f4;
 }
 #st:hover {
-  color: #184353;
+  color: #00adee;
 }
 
-#githublink {
+#sayhi {
   position: fixed;
-  top: 0px;
-  background-color: rgba(65, 131, 196, 0.5);
+  bottom: 0px;
+  background-color: rgba(14, 39, 42, 1);
   color: #fff;
   width: 150px;
   max-width: 100%;
@@ -105,18 +106,22 @@ menu
   border-bottom-right-radius: 5px;
 }
 
-#githublink a {
+#sayhi a {
   color: #fff;
   text-decoration: none;
 }
 
+#sayhi img {
+  vertical-align: middle;
+}
+
 @media screen and (min-width: 500px) {
-  #githublink {
+  #sayhi {
     right: 10%;
   }
 }
 @media screen and (max-width: 499px) {
-  #githublink {
+  #sayhi {
     right: 0px;
   }
 }
