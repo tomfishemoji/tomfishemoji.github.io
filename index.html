@@ -10,8 +10,8 @@
   <meta property="og:locale" content="en_GB" />
   <meta property="og:image" content="img/main.png" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="750" />
-  <meta property="og:image:height" content="750" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
   <meta name="msapplication-TileColor" content="#fafafa"/>
   <meta name="msapplication-TileImage" content="img/main.png"/>
   <meta name="application-name" content="dnomaid.co.uk">
@@ -19,14 +19,15 @@
   <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet"/>
   <link href="css/animate.min.css" rel="stylesheet"/>
   <link href="css/pretty.css" rel="stylesheet"/>
+  <noscript><link href="css/nojs.css" rel="stylesheet"/></noscript>
   <link rel="author" href="humans.txt" />
   <link rel="icon" type="image/png" href="img/main.png" />
   <link rel="apple-touch-icon-precomposed" href="img/main.png" />
   <title>dnomaid.co.uk</title>
 </head>
-<body>
+<body  onload="name()">
 <div id="container" class="animated flipInX" >
-  <h1 class="animated fadeInDownBig" id="title">{dnomaid}</h1>
+  <h1 class="animated fadeInDownBig" id="title">{}</h1>
   <h3 class="animated fadeInUpBig" id="menu">
   <a href="https://youtube.com/c/DiamondPigman" id="yt">youtube</a>&nbsp;
   <a href="https://twitter.com/#!/MrDnomaid" id="tw">twitter</a>&nbsp;
@@ -37,5 +38,6 @@
 </div>
 <div id="sayhi" class="animated slideInUp"><h2><a href="mailto:tom@dnomaid.co.uk">say hi</a></h2></div>
 <script src="js/stuff.js"></script>
+<noscript><link href="css/nojs.css" rel="stylesheet"/></noscript>
 </body>
 </html>
