@@ -22,7 +22,7 @@ A:
 Sony Vegas Pro 13 (Occasionally Premiere Pro or After Effects)
 
 Q:
-How do you make  the thumbnails?
+How do you make the thumbnails?
 A:
 Adobe Illustrator and Paint.net
 
@@ -34,7 +34,8 @@ Zotac GTX 970
 16GB DDR3 RAM (+ 4GB Page File)
 Samsung 850 Evo SSD (500GB)
 WD Black (2TB)
-Z97X G3 Motherboard 
+Z97X G3 Motherboard
+PCPartPicker: http://uk.pcpartpicker.com/list/wGRtmG
 
 Q:
 Peripherals?
