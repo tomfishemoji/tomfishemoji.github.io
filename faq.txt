@@ -83,6 +83,7 @@ Intel Celeron N2805 (1.46GHz)
 2GB DDR3 RAM
 Seagate HDD (500GB)
 Windows 10 Home
+Signalex Optical Mouse https://blog.dnomaid.co.uk/poundland-mouse-review-af558233c631
 
 Acer Aspire 5680
 Intel Mobile Core 2 Duo T7200 (2GHz)
@@ -90,6 +91,7 @@ Intel Mobile Core 2 Duo T7200 (2GHz)
 GeForce Go 7200
 Seagate HDD (150GB)
 Windows 7 Ultimate (SP1)
+Signalex Optical Mouse https://blog.dnomaid.co.uk/poundland-mouse-review-af558233c631
 
 Gateway 2000 (I think)
 Pentium 2 (350MHz)
@@ -107,7 +109,7 @@ Intel Pentium 4 (1.7GHz)
 640MB DDR2 RAM
 Maxtor 4D040H2 HDD (40GB)
 Currently has no OS
-
+Signalex Optical Mouse https://blog.dnomaid.co.uk/poundland-mouse-review-af558233c631
 
 
 //To see when this page was updated, check here: https://github.com/MrDnomaid/mrdnomaid.github.io/blob/master/faq.txt
