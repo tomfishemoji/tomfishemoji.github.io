@@ -32,14 +32,6 @@ What are your PC specs?
 A:
 Scroll down a bit
 
-
-Q:
-Don't you have a 3rd PC too?
-A:
-It had Windows XP on it before I formatted it, so I have no way of getting the specs without opening it :|
-No Linux distros are installing so it might just be used for parts eventually.
-It was made by Dell though, if it helps.
-
 Q:
 What software do you use to make sites and all that jazz?
 A:
