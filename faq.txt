@@ -110,12 +110,11 @@ Windows 98 SE
 HP C3758A Keyboard
 Logitech M-S34 Mouse
 
-
 Dell Dimension 4400
 Intel Pentium 4 (1.7GHz)
 640MB DDR2 RAM
 Maxtor 4D040H2 HDD (40GB)
-Currently has no OS, will be moved to "working computers" once it does.
+Currently has no OS
 
 
 
