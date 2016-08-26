@@ -1,3 +1,6 @@
+/*
+These things apply to everything
+*/
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +9,31 @@
   outline: 0 !important;
 }
 
+/*
+body
+*/
 body {
   font-family: 'Droid Sans Mono', monospace;
   text-align: center;
   text-transform: lowercase;
-  background-color: #fafafa;
-  color: #0a0a0a;
-  background-image: url('https://source.unsplash.com/1920x1080/?mountains,ice');
+  color: #fafafa;
+  background: #2c91f5;
+  background: -moz-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #2c91f5), color-stop(50%, #29bbe3), color-stop(100%, #2baff7));
+  background: -webkit-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background: -o-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background: -ms-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background: linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c91f5', endColorstr='#2baff7', GradientType=1 );
   background-repeat: no-repeat;
   background-size: cover !important;
   background-attachment: fixed !important;
   overflow: hidden;
 }
 
+/*
+Main container
+*/
 #container {
   position: fixed;
   width: 100%;
@@ -26,13 +41,19 @@ body {
   top: 30px;
 }
 
+/*
+{dnomaid} title
+*/
 #title {
   color: #fff;
   /* Lowest Webkit stroke is way to thick, so I'm using this text shadow hack */
   text-shadow: -1px -1px 0 #2baff7, 1px -1px 0 #2baff7, -1px 1px 0 #2baff7, 1px 1px 0 #2baff7;
-  font-size: 10vw;
+  font-size: 15vw;
 }
 
+/*
+Links, duh
+*/
 a {
   color: #444;
   text-decoration: none;
@@ -42,50 +63,40 @@ a {
   transition: all 0.25s;
 }
 
+/*
+Text selection
+*/
 ::selection {
   background: none;
-  color: #2baff7;
+  color: #eee;
 }
 ::-moz-selection {
   background: none;
-  color: #2baff7;
+  color: #eee;
 }
 
 /*
 menu
 */
 #menu {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 5%;
 }
 #menu a {
-  font-size: 2.5em;
+  font-size: 3vw;
   color: #fafafa;
-  text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+  /* text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222; */
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
 #menu a:hover {
-  /*font-size: 3em;*/
-}
-#yt:hover {
-  color: #CD201F;
-}
-#tw:hover {
-  color: #1DA1F2;
-}
-#gh:hover {
-  color: #333333;
-}
-#me:hover {
-  color: #00AB6B;
-}
-#st:hover {
-  color: #00adee;
+  color: #f1f1f1;
 }
 
+/*
+Email button
+*/
 #sayhi {
   position: fixed;
   bottom: 0px;
@@ -101,10 +112,9 @@ menu
   text-decoration: none;
 }
 
-#sayhi img {
-  vertical-align: middle;
-}
-
+/*
+Mobiles are important too
+*/
 @media screen and (min-width: 500px) {
   #sayhi {
     right: 10%;

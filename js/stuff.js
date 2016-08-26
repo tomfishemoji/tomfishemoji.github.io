@@ -21,7 +21,11 @@ function rick() {
 }
 
 function name() {
-    window.setTimeout(d,500);
+    window.setTimeout(brackets,500);
+}
+function brackets() {
+    document.getElementById("title").innerHTML="{}";
+    window.setTimeout(d,100);
 }
 function d() {
     document.getElementById("title").innerHTML="{d}";
@@ -48,5 +52,5 @@ function dnomai() {
   window.setTimeout(dnomaid,100);
 }
 function dnomaid() {
-  document.getElementById("title").innerHTML="{<span contenteditable>dnomaid</span>}";
+  document.getElementById("title").innerHTML="{dnomaid}";
 }
