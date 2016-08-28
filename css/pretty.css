@@ -18,12 +18,12 @@ body {
   text-transform: lowercase;
   color: #fafafa;
   background-color: #2baff7;
-  background: -moz-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #2c91f5), color-stop(50%, #29bbe3), color-stop(100%, #2baff7));
-  background: -webkit-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
-  background: -o-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
-  background: -ms-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
-  background: linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background-image: -moz-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background-image: -webkit-gradient(left bottom, right top, color-stop(0%, #2c91f5), color-stop(50%, #29bbe3), color-stop(100%, #2baff7));
+  background-image: -webkit-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background-image: -o-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background-image: -ms-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
+  background-image: linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c91f5', endColorstr='#2baff7', GradientType=1 );
   background-repeat: no-repeat;
   background-size: cover !important;
