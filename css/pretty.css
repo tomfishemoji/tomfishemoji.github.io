@@ -6,7 +6,7 @@ These things apply to everything
   padding: 0;
 }
 *:focus {
-  outline: 0 !important;
+  outline: 1 !important;
 }
 
 /*
@@ -107,9 +107,34 @@ Email button
   border-top-right-radius: 5px;
 }
 
-#sayhi a {
+#faq {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  width: 60px;
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*#music {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  width: 60px;
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}*/
+
+#sayhi a, #faq a/*, #music a*/ {
   color: #2baff7;
   text-decoration: none;
+}
+
+#sayhi, #faq/*, #music*/ {
+  transition: all 2s;
+  cursor: pointer;
 }
 
 /*
@@ -117,8 +142,14 @@ Mobiles are important too
 */
 @media screen and (min-width: 500px) {
   #sayhi {
-    right: 10%;
+    right: 60px;
   }
+  #faq {
+    right: 130px;
+  }
+  /*#music {
+    right: 200px;
+  }*/
 }
 @media screen and (max-width: 550px) {
   #menu a {
@@ -129,6 +160,12 @@ Mobiles are important too
   #sayhi {
     right: 0px;
   }
+  #faq {
+    right: 70px;
+  }
+  /*#music {
+    right: 150px;
+  }*/
   #menu a {
     font-size: 2.5vw;
   }

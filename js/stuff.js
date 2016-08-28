@@ -54,3 +54,7 @@ function dnomai() {
 function dnomaid() {
   document.getElementById("title").innerHTML="{dnomaid}";
 }
+
+if (location.protocol == 'file:') {
+  document.title = '[file] dnomaid.co.uk'
+}
