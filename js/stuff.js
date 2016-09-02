@@ -1,4 +1,4 @@
-if (window.top !== window.self) window.top.location.replace(window.self.location.href);
+//if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 
 console.log('______________________');
 console.log('|  dnomaid DOS v1.0  |');
