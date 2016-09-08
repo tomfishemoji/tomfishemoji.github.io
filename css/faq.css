@@ -36,3 +36,12 @@ span {
 #home:hover {
   opacity: 1;
 }
+::-webkit-scrollbar {
+  background-color: #2baff7;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fafafa;
+  border-radius: 2px;
+  width: 100%;
+}
