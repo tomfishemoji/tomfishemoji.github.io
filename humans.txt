@@ -1,35 +1,35 @@
 /* TEAM */
-	
-	Owner: Thomas Robinson                       
-	Site: diamondpigman.co.uk                        
-	Twitter: @D1amondPigman   
+
+	Owner: Thomas Robinson
+	Site: dnomaid.co.uk
+	Twitter: @MrDnomaid
 	Location: Birmingham, UK
 		-
-	Helper: Mason Torres                
-	Site: pple.us                       
+	Helper: Mason Torres
+	Site: pple.us
 	Twitter: @iitehepicguy
 	Location: Virginia, US
 		-
-	Helper: Haden               
-	Site: thefletch.xyz                    
+	Helper: Haden
+	Site: thefletch.xyz
 	Twitter: @FletchXYZ
 	Location: Kansas, US
 
-	
+
 /* THANKS */
-	
+
 	You
 
-	
+
 /* SITE */
-                            
+
 	Last update: See https://github.com/MrDnomaid/mrdnomaid.github.io/
-		-                
+		-
 	Standards: HTML5, CSS3, JS
-		-                           
-	Components: Font Awesome, Animate.css, Jquery
-		-                           
-	Software: Atom, NotePad++, Firebug, Paint.Net, Google Chrome, Firefox, IE, Edge, Github Desktop
+		-
+	Components: Font Awesome, Animate.css
+		-
+	Software: Atom, NotePad++, Opera
 		-
 	Lang: UK English
 		-
