@@ -17,7 +17,7 @@ body {
   text-align: center;
   text-transform: lowercase;
   color: #fafafa;
-  background-color: #2baff7;
+  /*background-color: #2baff7;
   background-image: -moz-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
   background-image: -webkit-gradient(left bottom, right top, color-stop(0%, #2c91f5), color-stop(50%, #29bbe3), color-stop(100%, #2baff7));
   background-image: -webkit-linear-gradient(45deg, #2c91f5 0%, #29bbe3 50%, #2baff7 100%);
@@ -27,8 +27,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c91f5', endColorstr='#2baff7', GradientType=1 );
   background-repeat: no-repeat;
   background-size: cover !important;
-  background-attachment: fixed !important;
+  background-attachment: fixed !important;*/
   overflow: hidden;
+  animation: backgroundColour 30s infinite linear;
 }
 
 /*
@@ -46,8 +47,6 @@ Main container
 */
 #title {
   color: #fff;
-  /* Lowest Webkit stroke is way to thick, so I'm using this text shadow hack */
-  text-shadow: -1px -1px 0 #2baff7, 1px -1px 0 #2baff7, -1px 1px 0 #2baff7, 1px 1px 0 #2baff7;
   font-size: 15vw;
 }
 
@@ -78,96 +77,38 @@ Text selection
 /*
 menu
 */
-#menu {
+#menu, #submenu {
   margin-top: 5%;
+}
+#submenu {
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
 }
 #menu a {
   font-size: 2.1vw;
   color: #fafafa;
-  /* text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222; */
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-#menu a:hover {
+#submenu a {
+  font-size: 1.5vw;
+  color: #fafafa;
+  transition: all 0.25s;
+}
+#menu a:hover, #submeny a:hover {
   color: #f1f1f1;
 }
 
 /*
-Email button
+mobile things
 */
-#sayhi {
-  position: fixed;
-  bottom: 0px;
-  background-color: #fff;
-  width: 60px;
-  max-width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
 
-#faq {
-  position: fixed;
-  bottom: 0px;
-  background-color: #fff;
-  width: 60px;
-  max-width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-/*#music {
-  position: fixed;
-  bottom: 0px;
-  background-color: #fff;
-  width: 60px;
-  max-width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}*/
-
-#sayhi a, #faq a/*, #music a*/ {
-  color: #2baff7;
-  text-decoration: none;
-}
-
-#sayhi, #faq/*, #music*/ {
-  transition: all 2s;
-  cursor: pointer;
-}
-
-/*
-Mobiles are important too
-*/
-@media screen and (min-width: 500px) {
-  #sayhi {
-    right: 60px;
-  }
-  #faq {
-    right: 130px;
-  }
-  /*#music {
-    right: 200px;
-  }*/
-}
 @media screen and (max-width: 550px) {
   #menu a {
-    font-size: 1em;
+    font-size: 3vw;
   }
-}
-@media screen and (max-width: 499px) {
-  #sayhi {
-    right: 0px;
-  }
-  #faq {
-    right: 70px;
-  }
-  /*#music {
-    right: 150px;
-  }*/
-  #menu a {
-    font-size: 2.5vw;
+  #submenu a {
+    font-size: 0.5em;
   }
 }
 
@@ -180,46 +121,71 @@ Animations
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
-@-webkit-keyframes zoomInDown {
+@-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
-  60% {
+  to {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
-@keyframes zoomInDown {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 
-  60% {
+  to {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
-.zoomInDown {
-  -webkit-animation-name: zoomInDown;
-  animation-name: zoomInDown;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes slideInUp {
@@ -251,4 +217,25 @@ Animations
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
+  animation-delay: 2s;
+}
+
+#submenu {
+  animation-delay: 2.01s;
+}
+
+
+
+@keyframes backgroundColour {
+  0%  { background-color: #2baff7; }
+  10% { background-color: #269dde; }
+  20% { background-color: #228cc5; }
+  30% { background-color: #1e7aac; }
+  40% { background-color: #196994; }
+  50% { background-color: #15577b; }
+  60% { background-color: #196994; }
+  70% { background-color: #1e7aac; }
+  80% { background-color: #228cc5; }
+  90% { background-color: #269dde; }
+  100% { background-color: #2baff7; }
 }
