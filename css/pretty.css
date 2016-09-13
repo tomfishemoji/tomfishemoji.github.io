@@ -28,7 +28,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover !important;
   background-attachment: fixed !important;*/
-  overflow: hidden;
   animation: backgroundColour 30s infinite linear;
 }
 
