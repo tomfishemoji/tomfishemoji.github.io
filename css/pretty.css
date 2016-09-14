@@ -38,7 +38,7 @@ Main container
   position: fixed;
   width: 100%;
   text-align: center;
-  top: 30px;
+  top: 10px;
 }
 
 /*
@@ -66,11 +66,9 @@ Text selection
 */
 ::selection {
   background: none;
-  color: #eee;
 }
 ::-moz-selection {
   background: none;
-  color: #eee;
 }
 
 /*
@@ -108,7 +106,7 @@ menu
   transition: all 0.25s;
 }
 #menu a:hover, #submeny a:hover {
-  color: #f1f1f1;
+  color: #eee;
 }
 
 /*
@@ -127,6 +125,19 @@ mobile things
 /*
 Animations
 */
+#yt {
+  animation-delay: 0.5s;
+}
+#tw {
+  animation-delay: 1s;
+}
+#me {
+  animation-delay: 1.5s;
+}
+#gh {
+  animation-delay: 2s;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -197,7 +208,6 @@ Animations
 .fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig;
-  animation-delay: 1s;
 }
 
 @-webkit-keyframes slideInUp {
@@ -250,4 +260,16 @@ Animations
   80% { background-color: #228cc5; }
   90% { background-color: #269dde; }
   100% { background-color: #2baff7; }
+}
+
+@keyframes rainbow {
+  0% { color: #fafafa; }
+  20% { color: #ff0000; }
+  30% { color: #ff7f00; }
+  40% { color: #ffdd00; }
+  50% { color: #00ff00; }
+  60% { color: #0000ff; }
+  70% { color: #8a2be2; }
+  80% { color: #c77df3; }
+  100% { color: #fafafa; }
 }
