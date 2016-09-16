@@ -99,7 +99,10 @@ menu
 #gh:hover {
   color: #333333;
 }
-#faq:hover, #contact:hover {
+span.subitem:not(:first-of-type) {
+  margin-left: 5px;
+}
+#faq:hover, #contact:hover, #computers:hover {
   color: #222;
 }
 /*
@@ -132,6 +135,9 @@ Animations
 }
 #contact {
   animation-delay: 1.5s;
+}
+#computers {
+  animation-delay: 1.75s;
 }
 
 .animated {
