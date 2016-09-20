@@ -14,10 +14,16 @@ console.log('-_-_-_-_-_-_-_-_-_-_-_');
 console.log('Type "help()" for a list of commands');
 function help() {
   console.log('There is no help for you.');
-  window.setTimeout(rick,2500);
+  window.setTimeout(GiEdHOhgn49HBCIie9UCydACdzMcQ4ViMoHgY4ciZD5ENFZAsIUY,2500);
 }
-function rick() {
-    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+function gummy() {
+    document.write('<title>gummy bears are cool</title>');
+    document.write('<style>* { padding: 0; margin: 0; }</style>');
+    document.write('<iframe src="https://www.youtube.com/embed/astISOttCQ0?autoplay=1&controls=0&loop=1&showinfo=0&iv_load_policy=3&rel=0" frameborder="0" style="position: absoloute; width: 100%; height: 100%;"></iframe>');
+    console.log('Type "back()" to return to the site.');
+}
+function back() {
+  location.reload();
 }
 
 function name() {
