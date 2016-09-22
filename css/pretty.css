@@ -24,26 +24,26 @@ body {
 Main container
 */
 #container {
-  position: fixed;
-  width: 100%;
+  width: 275px;
   text-align: center;
-  top: 10px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 /*
 {dnomaid} title
 */
 #title {
-  color: #fff;
-  font-size: 10vw;
-  transition: all 0.5s;
+  color: #2baff7;
+  font-size: 2.5em;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 /*
 Links, duh
 */
 a {
-  color: #444;
   text-decoration: none;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
@@ -55,12 +55,12 @@ a {
 Text selection
 */
 ::selection {
-  background: none;
-  color: #222;
+  background-color: #2baff7;
+  color: #fafafa;
 }
 ::-moz-selection {
-  background: none;
-  color: #222;
+  background-color: #2baff7;
+  color: #fafafa;
 }
 
 /*
@@ -79,36 +79,42 @@ scrollbar
 /*
 menu
 */
-#menu a {
+#menu a, #submenu a {
   font-size: 2em;
   color: #fafafa;
   transition: all 0.25s;
 }
-#menu a:hover {
-  /*color: #c8c8c8;*/
-  text-shadow: -1px -1px 0 #fafafa, 1px -1px 0 #fafafa, -1px 1px 0 #fafafa, 1px 1px 0 #fafafa;
+#menu a:hover, #submenu a:hover {
+  color: #eee;
 }
-#yt:hover {
-  color: #cd201f;
+.yt {
+  background-color: #cd201f;
 }
-#tw:hover {
-  color: #1da1f2;
+.tw {
+  background-color: #1da1f2;
 }
-#me:hover {
-  color: #00ab6b;
+.me {
+  background-color: #00ab6b;
 }
-#gh:hover {
-  color: #333333;
+.gh {
+  background-color: #333333;
 }
-span.subitem:not(:first-of-type) {
-  margin-left: 5px;
+.faq, .contact, .computers {
+  background-color: #222;
 }
-#faq:hover, #contact:hover, #computers:hover {
-  color: #222;
+.menuitem, .subitem {
+  display: block;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
+.menuitem a, .subitem a {
+  display: block;
+  width: 100%;
+}
+
 /*
 mobile things
-*/
 
 @media only screen and (max-width: 1000px) {
   #title {
@@ -124,29 +130,30 @@ mobile things
     margin-left: 2px;
   }
 }
+*/
 
 /*
 Animations
 */
-#yt {
+.yt {
   animation-delay: 0.25s;
 }
-#tw {
+.tw {
   animation-delay: 0.5s;
 }
-#me {
+.me {
   animation-delay: 0.75s;
 }
-#gh {
+.gh {
   animation-delay: 1s;
 }
-#faq {
+.faq {
   animation-delay: 1.25s;
 }
-#contact {
+.contact {
   animation-delay: 1.5s;
 }
-#computers {
+.computers {
   animation-delay: 1.75s;
 }
 
