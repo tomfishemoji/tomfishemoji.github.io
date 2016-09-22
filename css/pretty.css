@@ -36,6 +36,7 @@ Main container
 #title {
   color: #fff;
   font-size: 10vw;
+  transition: all 0.5s;
 }
 
 /*
@@ -79,7 +80,7 @@ scrollbar
 menu
 */
 #menu a {
-  font-size: 1.5vw;
+  font-size: 2em;
   color: #fafafa;
   transition: all 0.25s;
 }
@@ -109,9 +110,18 @@ span.subitem:not(:first-of-type) {
 mobile things
 */
 
-@media screen and (max-width: 550px) {
+@media only screen and (max-width: 1000px) {
+  #title {
+    font-size: 3em;
+  }
   #menu a {
-    font-size: 2.5vw;
+    font-size: 3vw;
+  }
+  #submenu a {
+    font-size: 1.5em;
+  }
+  span.subitem:not(:first-of-type) {
+    margin-left: 2px;
   }
 }
 
