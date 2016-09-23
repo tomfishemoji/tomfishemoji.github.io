@@ -15,14 +15,20 @@ body {
   cursor: default;
   overflow-x: hidden;
 }
-a {
+a[href] {
   color: #fafafa;
   text-decoration: none;
   cursor: pointer;
-}
-a:hover {
-  color: #eee;
+  display: inline;
+  vertical-align: baseline;
   text-decoration: underline;
+  transition: all .1s ease-out;
+}
+a[href]:hover {
+  color: #eee;
+  background-color: #fff;
+  color: #2baff7;
+  text-decoration: none;
 }
 span {
   font-size: 2em;
