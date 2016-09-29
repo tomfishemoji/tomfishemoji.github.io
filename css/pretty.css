@@ -84,12 +84,12 @@ scrollbar
 /*
 menu
 */
-#menu a, #submenu a {
+#menu a {
   font-size: 2em;
   color: #fafafa;
   transition: all 0.25s;
 }
-#menu a:hover, #submenu a:hover {
+#menu a:hover {
   color: #eee;
 }
 .yt {
