@@ -137,6 +137,12 @@ menu
   filter: opacity(0.5);
 }
 
+#badges {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  text-align: right;
+}
 /*
 mobile things
 
