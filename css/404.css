@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Droid Sans Mono', monospace;
+  text-align: center;
+  text-transform: lowercase;
+  animation: backgroundColour 30s infinite linear;
+  color: #fafafa;
+  margin-top: 50px;
+}
+
+a {
+  color: #fefefe;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #eee;
+}
+
+@keyframes backgroundColour {
+  0%  { background-color: #2baff7; }
+  10% { background-color: #269dde; }
+  20% { background-color: #228cc5; }
+  30% { background-color: #1e7aac; }
+  40% { background-color: #196994; }
+  50% { background-color: #15577b; }
+  60% { background-color: #196994; }
+  70% { background-color: #1e7aac; }
+  80% { background-color: #228cc5; }
+  90% { background-color: #269dde; }
+  100% { background-color: #2baff7; }
+}

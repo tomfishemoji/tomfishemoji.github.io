@@ -27,6 +27,7 @@ Main container
   width: 275px;
   text-align: center;
   background-color: #fafafa;
+  color: #111;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
