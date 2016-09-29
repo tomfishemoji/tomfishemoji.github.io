@@ -138,11 +138,28 @@ menu
   filter: opacity(0.5);
 }
 
-#badges {
-  position: fixed;
+#footer {
+  position: absolute;
   bottom: 0px;
-  right: 0px;
-  text-align: right;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  opacity: 0.3;
+  transition: all 0.5s ease-in;
+  border-top: 2px solid #fafafa;
+  border-left: 2px solid #fafafa;
+  border-right: 2px solid #fafafa;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#footer:hover {
+  opacity: 1;
+  background-color: #111;
+}
+#footer a {
+  color: #eee;
 }
 /*
 mobile things
