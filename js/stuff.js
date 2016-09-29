@@ -14,7 +14,7 @@ console.log('-_-_-_-_-_-_-_-_-_-_-_');
 console.log('Type "help()" for a list of commands');
 function help() {
   console.log('There is no help for you.');
-  window.setTimeout(GiEdHOhgn49HBCIie9UCydACdzMcQ4ViMoHgY4ciZD5ENFZAsIUY,2500);
+  window.setTimeout(gummy,2500);
 }
 function gummy() {
     document.write('<title>gummy bears are cool</title>');

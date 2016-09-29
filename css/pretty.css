@@ -18,7 +18,6 @@ body {
   text-transform: lowercase;
   color: #fafafa;
   animation: backgroundColour 30s infinite linear;
-  filter: drop-shadow(7.5px 7.5px 4px #eee);
 }
 
 /*
@@ -27,12 +26,13 @@ Main container
 #container {
   width: 275px;
   text-align: center;
-  background-color: #fff;
+  background-color: #fafafa;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 25px;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 1px 1px #eee, 2px 2px #eee, 3px 3px #eee, 4px 4px #eee, 5px 5px #eee, 6px 6px #eee, 7px 7px #eee, 8px 8px #eee, 9px 9px #eee, 10px 10px #eee;
 }
 
 /*
@@ -103,20 +103,22 @@ menu
 }
 .gh {
   background-color: #333333;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
 }
+/*.tr {
+  background-color: #35465c;
+}
+.vm {
+  background-color: #FB254F;
+}*/
 .faq, .contact, .computers {
   background-color: #222;
 }
 .faq {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
   margin-top: 5px;
 }
 .computers {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .menuitem, .subitem {
   display: block;
