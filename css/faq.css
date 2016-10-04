@@ -11,7 +11,7 @@ body {
   margin-right: 5px;
   font-family: 'Droid Sans Mono', monospace;
   color: #fafafa;
-  background-color: #2baff7;
+  animation: backgroundColour 30s infinite linear;
   cursor: default;
   overflow-x: hidden;
 }
@@ -57,6 +57,19 @@ span {
 }
 .linked *, .linked {
   animation: flash 500ms 2 linear;
+}
+@keyframes backgroundColour {
+  0%  { background-color: #2baff7; }
+  10% { background-color: #269dde; }
+  20% { background-color: #228cc5; }
+  30% { background-color: #1e7aac; }
+  40% { background-color: #196994; }
+  50% { background-color: #15577b; }
+  60% { background-color: #196994; }
+  70% { background-color: #1e7aac; }
+  80% { background-color: #228cc5; }
+  90% { background-color: #269dde; }
+  100% { background-color: #2baff7; }
 }
 @keyframes flash {
     0% {
