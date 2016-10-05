@@ -28,10 +28,8 @@ Main container
   text-align: center;
   background-color: #fafafa;
   color: #111;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 25px;
+  margin: 0 auto;
+  margin-top: 25px;
   border-radius: 5px;
   box-shadow: 1px 1px #eee, 2px 2px #eee, 3px 3px #eee, 4px 4px #eee, 5px 5px #eee, 6px 6px #eee, 7px 7px #eee, 8px 8px #eee, 9px 9px #eee, 10px 10px #eee;
 }
@@ -73,14 +71,15 @@ Text selection
 scrollbar
 */
 ::-webkit-scrollbar {
-  background-color: #2baff7;
-  width: 10px;
+  /*background-color: #2baff7;
+  width: 5px;*/
+  display: none;
 }
-::-webkit-scrollbar-thumb {
+/*::-webkit-scrollbar-thumb {
   background-color: #fafafa;
   border-radius: 2px;
   width: 100%;
-}
+}*/
 
 /*
 menu
@@ -138,29 +137,6 @@ menu
   filter: opacity(0.5);
 }
 
-#footer {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  text-align: center;
-  opacity: 0.3;
-  transition: all 0.5s ease-in;
-  border-top: 2px solid #fafafa;
-  border-left: 2px solid #fafafa;
-  border-right: 2px solid #fafafa;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-#footer:hover {
-  opacity: 1;
-  background-color: #111;
-}
-#footer a {
-  color: #eee;
-}
 /*
 mobile things
 
@@ -180,34 +156,9 @@ mobile things
 }
 */
 
-/*
-Animations
-*/
-.yt {
-  animation-delay: 0.25s;
-}
-.tw {
-  animation-delay: 0.5s;
-}
-.me {
-  animation-delay: 0.75s;
-}
-.gh {
-  animation-delay: 1s;
-}
-.faq {
-  animation-delay: 1.25s;
-}
-.contact {
-  animation-delay: 1.5s;
-}
-.computers {
-  animation-delay: 1.75s;
-}
-
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -249,6 +200,40 @@ Animations
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
 }
 
 @keyframes rainbow {
