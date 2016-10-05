@@ -15,7 +15,6 @@ body
 body {
   font-family: 'Droid Sans Mono', monospace;
   text-align: center;
-  text-transform: lowercase;
   color: #fafafa;
   animation: backgroundColour 30s infinite linear;
 }
@@ -24,7 +23,7 @@ body {
 Main container
 */
 #container {
-  width: 275px;
+  width: 200px;
   text-align: center;
   background-color: #fafafa;
   color: #111;
@@ -39,9 +38,9 @@ Main container
 */
 #title {
   color: #2baff7;
-  font-size: 2.5em;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*
@@ -88,6 +87,7 @@ menu
   font-size: 2em;
   color: #fafafa;
   transition: all 0.25s;
+  font-family: 'Titillium Web', sans-serif;
 }
 #menu a:hover {
   color: #eee;
@@ -110,32 +110,38 @@ menu
 .vm {
   background-color: #FB254F;
 }*/
-.faq, .contact, .computers {
-  background-color: #222;
-}
 .faq {
-  margin-top: 5px;
-}
-.computers {
+  background-color: #222;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.menuitem, .subitem {
+.menuitem {
   display: block;
   width: 100%;
   padding-top: 2px;
   padding-bottom: 2px;
   font-size: .75em;
+  line-height: .80em;
   transition: filter .1s ease-out;
 }
-.menuitem a, .subitem a {
+.menuitem a {
   display: block;
   width: 100%;
   font-size: 1em;
 }
-.menuitem:hover, .subitem:hover {
+.menuitem:hover {
   filter: opacity(0.5);
 }
+
+/*.tooltip:hover:after{
+    content: attr(title);
+    padding: 5px;
+    display: inline;
+    width: 100%;
+    text-align: center;
+    color: #fafafa;
+    font-size: 0.75em;
+}*/
 
 /*
 mobile things
