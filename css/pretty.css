@@ -133,6 +133,22 @@ menu
   filter: opacity(0.5);
 }
 
+#footer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  text-align: right;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 1.25em;
+}
+#footer a {
+  color: #fafafa;
+  text-decoration: underline;
+}
+#footer a:hover {
+  color: #d6d6d6;
+}
+
 /*.tooltip:hover:after{
     content: attr(title);
     padding: 5px;
