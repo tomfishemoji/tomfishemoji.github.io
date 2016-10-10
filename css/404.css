@@ -1,35 +1,55 @@
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
 }
-
 body {
-  font-family: 'Droid Sans Mono', monospace;
-  text-align: center;
-  text-transform: lowercase;
-  animation: backgroundColour 30s infinite linear;
-  color: #fafafa;
-  margin-top: 50px;
+  background-color: #111;
+  font-family: 'Comfortaa', cursive;
 }
-
-a {
-  color: #fefefe;
+h1 {
+  color: #fafafa;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 60%;
+  font-size: 5em;
+  cursor: default;
+  /* thx stack overflow */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+}
+h3 {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  font-size: 2.5em;
+  cursor: default;
+  /* thx stack overflow */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+}
+.thing {
+  color: #444;
   transition: all 0.5s;
 }
-a:hover {
-  color: #eee;
+.thing:hover {
+  color: #fafafa;
 }
-
-@keyframes backgroundColour {
-  0%  { background-color: #2baff7; }
-  10% { background-color: #269dde; }
-  20% { background-color: #228cc5; }
-  30% { background-color: #1e7aac; }
-  40% { background-color: #196994; }
-  50% { background-color: #15577b; }
-  60% { background-color: #196994; }
-  70% { background-color: #1e7aac; }
-  80% { background-color: #228cc5; }
-  90% { background-color: #269dde; }
-  100% { background-color: #2baff7; }
+a {
+  color: #fafafa;
+  text-decoration: none;
+}
+.code {
+  font-family: 'Share Tech Mono', monospace;
 }
