@@ -16,7 +16,7 @@ h1 {
   color: #fafafa;
   width: 100%;
   font-family: 'Droid Sans Mono', monospace;
-  font-size: 5em;
+  font-size: 4em;
   cursor: default;
   /* thx stack overflow */
   -webkit-touch-callout: none; /* iOS Safari */
