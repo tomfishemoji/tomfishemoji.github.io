@@ -9,36 +9,55 @@ body {
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
-  font-family: 'Droid Sans Mono', monospace;
+  text-align: center;
+  font-family: 'Comfortaa', monospace;
   color: #fafafa;
-  animation: backgroundColour 30s infinite linear;
+  background-color: #111;
   cursor: default;
   overflow-x: hidden;
 }
-a[href] {
-  color: #fafafa;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline;
-  vertical-align: baseline;
-  text-decoration: underline;
-  transition: all .1s ease-out;
+#questions {
+  width: 600px;
+  margin: 0 auto;
 }
-a[href]:hover {
+@media screen and (min-width: 600px) {
+  #home {
+    top: 5px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #questions {
+    width: 100%;
+  }
+  #select  {
+    width: 100%;
+  }
+  #home {
+    bottom: 5px;
+    right: 10px;
+  }
+}
+p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+a {
   color: #eee;
-  background-color: #fff;
-  color: #2baff7;
-  text-decoration: none;
+  text-decoration: underline;
+  transition: all 0.25s;
+}
+a:hover {
+  color: #999;
 }
 span {
   font-size: 2em;
   font-weight: bold;
   font-family: 'Nova Mono', monospace;
+  color: #999;
 }
 #home {
   position: fixed;
-  top: 5px;
-  right: 10px;
   opacity: 0.5;
   transition: all 0.5s;
 }
@@ -47,29 +66,11 @@ span {
 }
 #select  {
   position: fixed;
-  bottom: 0px;
-  left: 0px;
-}
-@media screen and (max-width: 500px) {
-  #select  {
-    width: 100%;
-  }
+  top: 0px;
+  right: 0px;
 }
 .linked *, .linked {
   animation: flash 500ms 2 linear;
-}
-@keyframes backgroundColour {
-  0%  { background-color: #2baff7; }
-  10% { background-color: #269dde; }
-  20% { background-color: #228cc5; }
-  30% { background-color: #1e7aac; }
-  40% { background-color: #196994; }
-  50% { background-color: #15577b; }
-  60% { background-color: #196994; }
-  70% { background-color: #1e7aac; }
-  80% { background-color: #228cc5; }
-  90% { background-color: #269dde; }
-  100% { background-color: #2baff7; }
 }
 @keyframes flash {
     0% {
@@ -83,11 +84,10 @@ span {
      }
 }
 ::-webkit-scrollbar {
-  background-color: #2baff7;
+  background-color: #111;
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #fafafa;
-  border-radius: 2px;
   width: 100%;
 }
