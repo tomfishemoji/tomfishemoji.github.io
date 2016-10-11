@@ -8,13 +8,29 @@ permalink: /404.html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>404</title>
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Share+Tech+Mono" rel="stylesheet">
-<link href="/css/404.css" rel="stylesheet">
+<link href="css/404.css" rel="stylesheet">
 </head>
 <body>
 <h1>
   404
-  <br><span style="font-size: 0.25em;"><span class="code"><script>document.write(window.location.pathname);</script></span> doesn't exist</span>
+  <br><span style="font-size: 0.25em;"><span class="code"><noscript>The page you requested</noscript><script>document.write(window.location.pathname);</script></span> doesn't exist</span>
 </h1>
-<h3><a href="/" class="thing">Go home &raquo;</a></h3>
+<h3 id="countdown"><noscript><a href="/">Go home &raquo;</a></noscript></h3>
+<script>
+var timer = 6,
+    el = document.getElementById('countdown');
+
+(function t_minus() {
+    'use strict';
+    el.innerHTML = '<a href="/" title="Click to skip">Going home in <span class="code">' + timer-- + '</span>s &raquo;</a>';
+    if (timer >= 0) {
+        setTimeout(function () {
+            t_minus();
+        }, 1000);
+    } else {
+       window.location.href = "/";
+    }
+}());
+</script>
 </body>
 </html>

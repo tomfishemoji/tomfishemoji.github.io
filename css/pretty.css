@@ -14,7 +14,6 @@ body {
 }
 h1 {
   color: #fafafa;
-  width: 100%;
   font-family: 'Droid Sans Mono', monospace;
   font-size: 4em;
   cursor: default;
@@ -34,8 +33,11 @@ h3 {
   font-size: 2.5em;
   cursor: default;
 }
-
-h1, h3, p {
+h4 {
+  color: #999;
+  margin-bottom: 10px;
+}
+h1, h3, h4, p {
   /* thx stack overflow */
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -44,6 +46,8 @@ h1, h3, p {
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently
                                 not supported by any browser */
+  width: 100%;
+  text-align: center;
 }
 
 a {
@@ -85,4 +89,10 @@ a {
 }
 #footer a:hover {
   color: #999;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 15vw;
+  }
 }

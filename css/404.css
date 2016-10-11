@@ -39,16 +39,13 @@ h3 {
   user-select: none;           /* Non-prefixed version, currently
                                 not supported by any browser */
 }
-.thing {
+a {
   color: #444;
   transition: all 0.5s;
-}
-.thing:hover {
-  color: #fafafa;
-}
-a {
-  color: #fafafa;
   text-decoration: none;
+}
+a:hover {
+  color: #fafafa;
 }
 .code {
   font-family: 'Share Tech Mono', monospace;
