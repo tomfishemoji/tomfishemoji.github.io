@@ -48,7 +48,7 @@ var textArray = [
     'Makes computer go beep boop',
     'Decent human being',
     'OK at most things',
-    'Doesn\'t get dist- HEY A COOKIE',
+    'Doesn\'t get dist&mdash;HEY A COOKIE',
     'Does things with stuff',
     'Sometimes makes a video',
     'Has a thing for dark themes',
