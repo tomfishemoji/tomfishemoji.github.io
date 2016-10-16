@@ -17,33 +17,19 @@ body {
   overflow-x: hidden;
 }
 #questions {
-  width: 600px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 600px) {
-  #home {
-    top: 5px;
-    left: 10px;
-  }
-}
-@media screen and (max-width: 600px) {
-  #questions {
-    width: 100%;
-  }
-  #select  {
-    width: 100%;
-  }
-  #home {
-    bottom: 5px;
-    right: 10px;
-  }
+  width: 100%;
 }
 p {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #222;
+}
+#home {
+  text-decoration: none;
 }
 a {
-  color: #eee;
+  color: #fdfdfd;
   text-decoration: underline;
   transition: all 0.25s;
 }
@@ -56,33 +42,6 @@ span {
   font-family: 'Nova Mono', monospace;
   color: #999;
 }
-#home {
-  position: fixed;
-  opacity: 0.5;
-  transition: all 0.5s;
-}
-#home:hover {
-  opacity: 1;
-}
-#select  {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-}
-.linked *, .linked {
-  animation: flash 500ms 2 linear;
-}
-@keyframes flash {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.25;
-    }
-    100% {
-       opacity: 1;
-     }
-}
 ::-webkit-scrollbar {
   background-color: #111;
   width: 10px;
@@ -90,4 +49,10 @@ span {
 ::-webkit-scrollbar-thumb {
   background-color: #fafafa;
   width: 100%;
+}
+
+#devices p:first-line {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #eee;
 }
