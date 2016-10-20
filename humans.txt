@@ -5,11 +5,6 @@
 	Twitter: @MrDnomaid
 	Location: Birmingham, UK
 		-
-	Helper: Mason Torres
-	Site: pple.us
-	Twitter: @iitehepicguy
-	Location: Virginia, US
-		-
 	Helper: Haden
 	Site: thefletch.xyz
 	Twitter: @FletchXYZ
@@ -23,13 +18,13 @@
 
 /* SITE */
 
-	Last update: See https://github.com/MrDnomaid/mrdnomaid.github.io/
+	Last update: See https://github.com/mrDnomaid/mrdnomaid.github.io/
 		-
 	Standards: HTML5, CSS3, JS
 		-
-	Components: Font Awesome, Animate.css
+	Components: Font Awesome
 		-
-	Software: Atom, NotePad++, Opera
+	Software: Atom, Notepad++, Opera
 		-
 	Lang: UK English
 		-
