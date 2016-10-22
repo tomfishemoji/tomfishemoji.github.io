@@ -15,7 +15,7 @@ body {
 h1 {
   color: #fafafa;
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 4em;
+  font-size: 3em;
   cursor: default;
   /* thx stack overflow */
   -webkit-touch-callout: none; /* iOS Safari */
@@ -27,7 +27,7 @@ h1 {
                                 not supported by any browser */
 }
 h3 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   cursor: default;
 }
 h4 {
@@ -91,5 +91,8 @@ a {
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 15vw;
+  }
+  #footer {
+    font-size: 3.75vw;
   }
 }
