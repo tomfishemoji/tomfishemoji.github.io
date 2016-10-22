@@ -17,7 +17,30 @@ body {
   overflow-x: hidden;
 }
 #questions {
+  position: absolute;
+  top: 5%;
+  left: 0px;
   width: 100%;
+}
+h1 {
+  color: #fafafa;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 3em;
+  cursor: default;
+  /* thx stack overflow */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+  margin: 0;
+}
+h4 {
+  color: #999;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 p {
   margin-top: 10px;
@@ -36,7 +59,7 @@ a:hover {
 span {
   font-size: 2em;
   font-weight: bold;
-  font-family: 'Nova Mono', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   color: #999;
 }
 ::-webkit-scrollbar {

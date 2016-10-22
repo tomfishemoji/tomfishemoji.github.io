@@ -68,8 +68,11 @@ a {
 .gh {
   color: #4078c0;
 }
-.faq {
+.un {
   color: #999;
+}
+.faq {
+  color: #eee;
 }
 
 #footer {
@@ -81,7 +84,7 @@ a {
 }
 #footer a {
   color: #eee;
-  text-decoration: underline;
+  text-decoration: none;
   transition: all 0.25s;
 }
 #footer a:hover {
