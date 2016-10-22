@@ -147,7 +147,7 @@
   function popup(question) {
     var thisquestion = question.parentNode;
     var hash = thisquestion.getAttribute('id');
-    prompt('Copy the URL below to link directly to this question', window.location.protocol + window.location.host + window.location.pathname + '#' + hash);
+    prompt('Copy the URL below to link directly to this question', window.location.protocol + '//' + window.location.host + window.location.pathname + '#' + hash);
   }
 
   if(window.location.hash != '#sayhi'){
