@@ -17,6 +17,8 @@ var textArray = [
     'Does things with stuff',
     'Sometimes makes a video',
     'Has a thing for dark themes',
+    'Likes raspberries',
+    'Likes raspberry flavoured things'
     'Almost 1K ++s on devRant',
     'More Twitter followers than YouTube subscribers'
 ];
