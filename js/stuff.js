@@ -1,13 +1,5 @@
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 
-console.log('____________________');
-console.log('|  dnomaidOS v0.2  |');
-console.log('‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾');
-console.log("Type 'help()' for a command list");
-function help() {
-  console.log('There is no help for you.');
-}
-
 var textArray = [
     'Tweets too much',
     'Makes computer go beep boop',
@@ -25,7 +17,6 @@ var textArray = [
 var randomNumber = Math.floor(Math.random()*textArray.length);
 
 document.getElementById("subtitle").innerHTML = textArray[randomNumber];
-
 
 if (location.protocol == 'file:') {
   document.title = '[f] dnomaid.co.uk'
