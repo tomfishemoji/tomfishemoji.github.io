@@ -10,7 +10,7 @@ permalink: /404.html
 <link href="https://fonts.googleapis.com/css?family=Rubik|Share+Tech+Mono" rel="stylesheet">
 <link href="css/404.css" rel="stylesheet">
 </head>
-<body>
+<body id="body">
 <h1>
   404
   <br><span style="font-size: 0.25em;"><span class="code"><noscript>The page you requested</noscript><script>document.write(window.location.pathname);</script></span> doesn't exist</span>
@@ -28,9 +28,17 @@ var timer = 6,
             t_minus();
         }, 1000);
     } else {
-      window.location.href = "/";
+      fade();
     }
 }());
+
+function fade() {
+  document.getElementById('body').classList.toggle('fade');
+  window.setTimeout(goHome,550);
+}
+function goHome() {
+  window.location = "/";
+}
 </script>
 </body>
 </html>

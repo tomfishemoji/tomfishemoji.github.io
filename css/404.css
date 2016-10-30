@@ -50,3 +50,10 @@ a:hover {
 .code {
   font-family: 'Share Tech Mono', monospace;
 }
+#body {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+#body.fade {
+  opacity: 0;
+}
