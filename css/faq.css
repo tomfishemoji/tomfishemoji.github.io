@@ -74,6 +74,30 @@ span {
   font-family: 'Ubuntu Mono', monospace;
   color: #999;
 }
+#devices p:first-line {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #eee;
+}
+#footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: 10px;
+  color: #fafafa;
+  opacity: 0.6;
+}
+#footer:hover {
+  opacity: 1;
+}
+#footer a {
+  color: #eee;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+#footer a:hover {
+  color: #999;
+}
 ::-webkit-scrollbar {
   background-color: #111;
   width: 10px;
@@ -81,10 +105,4 @@ span {
 ::-webkit-scrollbar-thumb {
   background-color: #fafafa;
   width: 100%;
-}
-
-#devices p:first-line {
-  font-size: 1.15em;
-  font-weight: bold;
-  color: #eee;
 }
