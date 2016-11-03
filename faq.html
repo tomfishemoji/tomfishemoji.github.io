@@ -68,22 +68,18 @@
 
     <div id="devices"><h2>Devices:</h2>
 
-    <p id="devices-main">Primary PC <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-    <a href="https://uk.pcpartpicker.com/user/mrDnomaid/saved/hrrVnQ">Click here for PCPartPicker</a></p>
+    <p id="devices-main"><a href="https://uk.pcpartpicker.com/user/mrDnomaid/saved/hrrVnQ">Primary PC</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a></p>
 
-    <p id="devices-laptop">Primary laptop <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-    <a href="http://www.amazon.co.uk/dp/B01FE6HST0">ASUS X556UB-XX039T</a></p>
+    <p id="devices-laptop"><a href="http://www.amazon.co.uk/dp/B01FE6HST0">Primary laptop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a></p>
 
-    <p id="devices-lenovo-laptop">Terrible laptop <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-    <a href="http://shop.lenovo.com/gb/en/laptops/lenovo/flex/flex-10/">Lenovo Flex 10</a><br>
+    <p id="devices-lenovo-laptop"><a href="http://shop.lenovo.com/gb/en/laptops/lenovo/flex/flex-10/">Terrible laptop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
     I have the 2GB RAM version</p>
 
-    <p id="devices-acer-laptop">Decent laptop <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-    <a href="http://www.cnet.com/products/acer-aspire-5680-6516-core-2-duo-1-66-ghz-2-gb-ram-120-gb-hdd/specs/">Acer Aspire 5680</a><br>
+    <p id="devices-acer-laptop"><a href="http://www.cnet.com/products/acer-aspire-5680-6516-core-2-duo-1-66-ghz-2-gb-ram-120-gb-hdd/specs/">Decent laptop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
     Currently running Linux Mint CE</p>
 
-    <p id="devices-gateway">Old Desktop <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-    Gateway GP6 350<br>
+    <p id="devices-gateway"><a onclick="toggle(oldpcspecs);">Old Desktop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+    <i id="oldpcspecs" style="display:none;"><br>Gateway GP6 350<br>
     Pentium 2 (350MHz)<br>
     64MB RAM<br>
     ATI 3D Rage Pro<br>
@@ -92,28 +88,28 @@
     Gateway EV700 CRT Display<br>
     Windows 98 SE<br>
     HP C3758A Keyboard<br>
-    Logitech M-S34 Mouse</p>
+    Logitech M-S34 Mouse</i></p>
 
-    <p id="devices-dell">Other old desktop <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-    Dell Dimension 4400<br>
+    <p id="devices-dell"><a onclick="toggle(otheroldpcspecs);">Other old desktop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+    <i id="otheroldpcspecs" style="display:none;"><br>Dell Dimension 4400<br>
     Intel Pentium 4 (1.7GHz)<br>
     640MB DDR2 RAM<br>
     Maxtor 4D040H2 HDD (40GB)<br>
-    Currently has no OS<br>
+    Currently has no OS<br></i>
     </p>
 
-    <p id="devices-phones">Phones <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-      Current: Xperia Z5 Compact<br>
+    <p id="devices-phones"><a onclick="toggle(phonesihaveorhavehad);">Phones</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+      <i id="phonesihaveorhavehad" style="display:none;"><br>Current: Xperia Z5 Compact<br>
       Previous: iPhone 5S<br>
       Older: Orange Sydney<br>
-      Even older: Chinese phone shaped like a car
+      Even older: Chinese phone shaped like a car</i>
     </p>
 
-    <p id="devices-consoles">Consoles <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br><br>
-      Xbox 360<br>
+    <p id="devices-consoles"><a onclick="toggle(consolesihaveorhavehad);">Consoles</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+      <i id="consolesihaveorhavehad" style="display:none;"><br>Xbox 360<br>
       Wii<br>
       PSP<br>
-      PS2
+      PS2</a></i>
     </p>
 
 
@@ -145,6 +141,15 @@
   if(window.location.hash == ''){
     document.title = 'faq / dnomaid.co.uk';
   }
+
+  function toggle(div) {
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'inline';
+    }
+  };
   </script>
   </body>
 </html>

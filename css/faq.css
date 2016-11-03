@@ -74,10 +74,13 @@ span {
   font-family: 'Ubuntu Mono', monospace;
   color: #999;
 }
-#devices p:first-line {
-  font-size: 1.15em;
-  font-weight: bold;
-  color: #eee;
+i {
+  font-style: normal;
+}
+#devices p {
+  border-bottom: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #footer {
   width: 100%;
