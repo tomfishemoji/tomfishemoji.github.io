@@ -11,7 +11,7 @@ var textArray = [
     'Has a thing for dark themes',
     'Likes raspberries',
     'Likes raspberry flavoured things',
-    'Almost 1K ++s on devRant',
+    'Over 1K ++s on devRant',
     'More Twitter followers than YouTube subscribers'
 ];
 var randomNumber = Math.floor(Math.random()*textArray.length);
