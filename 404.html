@@ -11,34 +11,7 @@ permalink: /404.html
 <link href="css/404.css" rel="stylesheet">
 </head>
 <body id="body">
-<h1>
-  404
-  <br><span style="font-size: 0.25em;"><span class="code"><noscript>The page you requested</noscript><script>document.write(window.location.pathname);</script></span> doesn't exist</span>
-</h1>
-<h3 id="countdown"><noscript><a href="/">Go home &raquo;</a></noscript></h3>
-<script>
-var timer = 6,
-    el = document.getElementById('countdown');
-
-(function t_minus() {
-    'use strict';
-    el.innerHTML = '<a href="/" title="Click to skip">Going home in <span class="code">' + timer-- + '</span>s &raquo;</a>';
-    if (timer >= 0) {
-        setTimeout(function () {
-            t_minus();
-        }, 1000);
-    } else {
-      fade();
-    }
-}());
-
-function fade() {
-  document.getElementById('body').classList.toggle('fade');
-  window.setTimeout(goHome,550);
-}
-function goHome() {
-  window.location = "/";
-}
-</script>
+<h1 id="title">404</h1>
+<p id="home"><a href="/">Go home &raquo;</a></p>
 </body>
 </html>

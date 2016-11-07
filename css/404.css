@@ -4,56 +4,74 @@
 }
 body {
   background-color: #111;
+  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
   font-family: 'Rubik', sans-serif;
 }
-h1 {
+#title {
+  position: absolute;
+  bottom: 2.5%;
+  left: 2.5%;
+  text-align: left;
   color: #fafafa;
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: 60%;
-  font-size: 5em;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 3em;
   cursor: default;
-  /* thx stack overflow */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                not supported by any browser */
 }
-h3 {
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: 5px;
-  font-size: 2.5em;
-  cursor: default;
-  /* thx stack overflow */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                not supported by any browser */
+#home {
+  position: absolute;
+  bottom: 2.5%;
+  right: 2.5%;
+  text-align: right;
+  font-size: 1em;
+  color: #fafafa;
 }
-a {
-  color: #444;
-  transition: all 0.5s;
+#home a {
+  color: #eee;
   text-decoration: none;
+  transition: all 0.25s;
+  opacity: 0.6;
 }
-a:hover {
+#home a:hover {
   color: #fafafa;
-}
-.code {
-  font-family: 'Share Tech Mono', monospace;
-}
-#body {
   opacity: 1;
-  transition: opacity 0.5s;
 }
-#body.fade {
-  opacity: 0;
+
+@media screen and (max-width: 2560px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/2560x1440');
+  }
+}
+@media screen and (max-width: 1920px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1920x1080');
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
+  }
+}
+@media screen and (max-width: 175px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/490x276');
+  }
+  #title {
+    position: absolute;
+    bottom: 15%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  #home {
+    position: absolute;
+    bottom: 2.5%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 15vw;
+  }
 }

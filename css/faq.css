@@ -6,20 +6,23 @@ body {
   width: 100%;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
   color: #fafafa;
   background-color: #111;
+  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
   cursor: default;
   overflow-x: hidden;
 }
 #questions {
-  width: 75%;
+  width: 50%;
   position: absolute;
-  top: 5%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -77,25 +80,13 @@ span {
 i {
   font-style: normal;
 }
+#title {
+  text-align: center;
+}
 #devices p {
   border-bottom: none;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-#footer {
-  width: 100%;
-  text-align: center;
-  font-size: 1.1em;
-  padding-top: 10px;
-  color: #fafafa;
-}
-#footer a {
-  color: #eee;
-  text-decoration: none;
-  transition: all 0.25s;
-}
-#footer a:hover {
-  color: #999;
 }
 ::-webkit-scrollbar {
   background-color: #111;
@@ -104,4 +95,49 @@ i {
 ::-webkit-scrollbar-thumb {
   background-color: #fafafa;
   width: 100%;
+}
+#footer {
+  font-size: 1em;
+  color: #fafafa;
+  margin-bottom: 0px;
+}
+#footer a {
+  color: #eee;
+  text-decoration: none;
+  transition: all 0.25s;
+  opacity: 0.6;
+}
+#footer a:hover {
+  color: #fafafa;
+  opacity: 1;
+}
+
+@media screen and (min-width: 1110px) {
+  #footer {
+    position: fixed;
+    bottom: 2.5%;
+    right: 2.5%;
+    text-align: right;
+  }
+  #title {
+    position: fixed;
+    bottom: 2.5%;
+    left: 2.5%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1920px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1920x1080');
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/480x270');
+  }
 }

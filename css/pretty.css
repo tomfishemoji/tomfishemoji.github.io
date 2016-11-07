@@ -4,27 +4,24 @@
 }
 body {
   background-color: #111;
+  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
   font-family: 'Rubik', sans-serif;
 }
 #container {
   position: absolute;
-  top: 5%;
-  width: 100%;
-  text-align: center;
+  bottom: 2.5%;
+  left: 2.5%;
+  text-align: left;
 }
-h1 {
+#title {
   color: #fafafa;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 3em;
   cursor: default;
-  /* thx stack overflow */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                not supported by any browser */
 }
 h3 {
   font-size: 2em;
@@ -39,20 +36,18 @@ h1, h3, h4, p {
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently
                                 not supported by any browser */
-  width: 100%;
-  text-align: center;
 }
-
 a {
   text-decoration: none;
 }
 .menuitem {
   transition: all 0.25s;
   vertical-align: middle;
+  font-size: 0.9em;
 }
 .menuitem:hover {
   opacity: 0.75;
-  font-size: 0.95em;
+  font-size: 0.88em;
 }
 .yt {
   color: #cd201f;
@@ -69,31 +64,55 @@ a {
 
 #footer {
   position: absolute;
-  bottom: 5px;
-  width: 100%;
-  text-align: center;
+  bottom: 2.5%;
+  right: 2.5%;
+  text-align: right;
   font-size: 1em;
-  padding-top: 10px;
   color: #fafafa;
-  opacity: 0.6;
-}
-#footer:hover {
-  opacity: 1;
 }
 #footer a {
   color: #eee;
   text-decoration: none;
   transition: all 0.25s;
+  opacity: 0.6;
 }
 #footer a:hover {
-  color: #999;
+  color: #fafafa;
+  opacity: 1;
 }
 
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 15vw;
+@media screen and (max-width: 2560px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/2560x1440');
+  }
+}
+@media screen and (max-width: 1920px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1920x1080');
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
+  }
+}
+@media screen and (max-width: 490px) {
+  body {
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/490x276');
+  }
+  #container {
+    position: absolute;
+    bottom: 15%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
   }
   #footer {
+    position: absolute;
+    bottom: 2.5%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
     font-size: 4.65vw;
   }
 }
