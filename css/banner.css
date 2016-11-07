@@ -2,13 +2,13 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: #fafafa;
-  color: #2baff7;
+  background-color: #111;
+  color: #fafafa;
   width: 100%;
-  font-family: 'Droid Sans Mono', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   padding-top: 2px;
   padding-bottom: 2px;
 }
 #banner a {
-  color: #2baff7;
+  color: #fafafa;
 }
