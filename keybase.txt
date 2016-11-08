@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/dnomaid
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dnomaid.co.uk
+  * I am dnomaid (https://keybase.io/dnomaid) on keybase.
+  * I have a public key with fingerprint 05AA 61BF 7AF6 7811 7426  AF57 0667 054F 4456 587E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120053ae73ec2377ec269bc47f74facb9d9edfa8d8e3d8b7cb1a0caac9e52203e810a",
+            "fingerprint": "05aa61bf7af678117426af570667054f4456587e",
+            "host": "keybase.io",
+            "key_id": "0667054f4456587e",
+            "kid": "0101a04b8a861bb6d1acc566b23b4b8cd713e3cc365550fa0baeca0e5ff561a6eb930a",
+            "uid": "4d97a18bfdd85201eea8a7d543eae619",
+            "username": "dnomaid"
+        },
+        "service": {
+            "hostname": "dnomaid.co.uk",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1478563661,
+    "expire_in": 157680000,
+    "prev": "177ffc992532820de36ed6bf5fc59fecdc2acccb92b4c0b03e1f66de9bbe4dc2",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMNwAnicZVN7UFVFHOYioEBikAqINHGSQSe8c96P65RhQMUIIoOEcYnZc86eywm4
+53IfPITbTPRgCCIn5xoBDpggKTIxCkwIyaNADaQmIKyxB4GYxVQMI8xESHsp/2ja
+P3Znf/t93+/7/Xb3s80bPPx0PibvQ7Fp6a/oRgbec3ikRwQnlmCiJhdjhhIsB64v
+MFeGNntWjipjBgwnSBxnKAA5CkokxXFoZgVRojmFoxUgiYIsQFkBvMxDSuZFThIJ
+gEsASAJkSBKnIE/gAIvGFNVsglaLVTXb3bIMACwhKhxQWI4nCI4mWaAwHM6yHM7Q
+Ck0zLMNzEBGzNZubgcyJwAb1qoZiaJP1j73/4x/4xpEPWuQBj/KIrEwASWJYViQp
+EUUlmSMoSEkSxTIMgysAFwGUAA4ZRWFYArBQFKh13451OVoWOEDwoiLLPEPiBISA
+B5zM0BQEkCUEN9AGrWaQBxFaNmt5APGc0RgKFqgSdPfVXch/AXpJ0ztyENdi1eya
+pOWio2y73WIzuKn2YosbWwjFrH9VskTVLKM+IkYBtNpUzYwZCISU7KpblqA5nmEp
+liWiMVhkUa0wS3UjGI7lcTTceWABkiQ4TlEkQSAZiuRJXIYUC2VWVBhFYgQFSrJE
+om6huyVFWsJFdImEwrIyFEQR0ugQc9eVb9YwA49sAhOStKkmM7A7rBBzDg4YvTx0
+fh4+3p7u9+Xh5/vwg1d37cKWtfie5Petaymf7LPE/7Cl+OmuCcfdA/Yi1dg4of5Z
+oSeNY767TU/e234mDwzp67oDIqZs1WrNOe5sidlrIflIe3zUlRufJxxuShgZ6lyt
+2Tkf6xzetSlTC7/tn3Ha+Med7+ojE6LnNic2BV5PKczJzF9zNBxsrnrijcnBgOLA
+/mfro1LHb06yR0/DxhrPhcDRhIrMhkN9248326uv336+33gyOW3YeOaqJQoU3Uq6
+mRRVqRUWri6Fn9914sfe7uDdTZ/SESVrjYFzHy3S+aMxq7113mdnYn41tI7t/+WY
+Jafr8n3XBcP+Vd8411fS3PfBavjoz+Xfyh8sbVxOC52MTZ5Yrt0W9vFMYk3ItSrl
+Vcv9zL1bh5gOU7W/Se3M21FX8Nemw3EVG9sea9hTlhvyiLOvaufwQGj/5Zbfyxpc
+kVPdXaVB+wi9daW+5E3ZNu/ym5oPfVf4gp0vPTY9/vVSeFrzCzztOp/B5cecK6j1
+vHXqSMuOlFnDM62pQo8+oDwd99nwUmqlV++jruGyp+pORtZuO2ia1u2daPqm0BmW
+mjBf85D/SNlvHc09dz5sn0mP7Wjb46yuvLRYPej7YtCl5bDp4dK4EyuDs28PtAzd
+u/Fy2XjS4gE/3ePHiyq+LB9rba8Nem425K4u8XUstU9duHjq6k/xbRXo53V792Zs
+7bQevbiS/VrPlbfemf0bRzrBlg==
+=gf8m
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dnomaid
+
+==================================================================
