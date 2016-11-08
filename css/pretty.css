@@ -11,21 +11,12 @@ body {
   background-attachment: fixed;
   font-family: 'Rubik', sans-serif;
 }
-#container {
-  position: absolute;
-  bottom: 2.5%;
-  left: 2.5%;
-  text-align: left;
-}
 #title {
   color: #fafafa;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 3em;
   cursor: default;
-}
-h3 {
-  font-size: 2em;
-  cursor: default;
+  text-align: center;
 }
 h1, h3, h4, p {
   /* thx stack overflow */
@@ -40,46 +31,71 @@ h1, h3, h4, p {
 a {
   text-decoration: none;
 }
-.menuitem {
-  transition: all 0.25s;
-  vertical-align: middle;
-  font-size: 0.9em;
-}
-.menuitem:hover {
-  opacity: 0.75;
-  font-size: 0.88em;
-}
-.yt {
+
+#yt:hover {
   color: #cd201f;
 }
-.tw {
+#tw:hover {
   color: #1da1f2;
 }
-.gh {
+#gh:hover {
   color: #999;
 }
-.bl {
+#bl:hover {
   color: #09a51e;
 }
 
-#footer {
-  position: absolute;
-  bottom: 2.5%;
-  right: 2.5%;
-  text-align: right;
-  font-size: 1em;
-  color: #fafafa;
-}
-#footer a {
+#footer a, #links a {
   color: #eee;
   text-decoration: none;
-  transition: all 0.25s;
+  transition: all 0.5s;
   opacity: 0.6;
+}
+#links a:hover {
+  opacity: 1;
 }
 #footer a:hover {
   color: #fafafa;
   opacity: 1;
 }
+
+@media screen and (min-width: 450px) {
+  #title {
+    position: absolute;
+    bottom: 2.5%;
+    width: 100%;
+  }
+  #links {
+    position: absolute;
+    bottom: 2.5%;
+    left: 2.5%;
+    text-align: left;
+  }
+  #footer {
+    position: absolute;
+    bottom: 2.5%;
+    right: 2.5%;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #footer, #links {
+    text-align: center;
+  }
+  #links {
+    margin-bottom: 15px;
+  }
+  #container {
+    position: absolute;
+    bottom: 2.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.75);
+  }
+}
+
 
 @media screen and (max-width: 2560px) {
   body {
@@ -99,20 +115,5 @@ a {
 @media screen and (max-width: 490px) {
   body {
     background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/490x276');
-  }
-  #container {
-    position: absolute;
-    bottom: 15%;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-  }
-  #footer {
-    position: absolute;
-    bottom: 2.5%;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    font-size: 4.65vw;
   }
 }
