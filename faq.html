@@ -15,8 +15,8 @@
   <body onhashchange="window.location.reload();">
 
   <div id="questions">
-    <h1 id="title">dnomaid/faq</h1>
-    
+    <h1 id="title">faq</h1>
+
     <p id="what-is-dnomaid"><span>Q</span>&nbsp;
     What is "dnomaid"? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
     <span>A</span>&nbsp;
@@ -26,11 +26,6 @@
     How do I say "dnomaid"? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
     <span>A</span>&nbsp;
     dee-en-oh-maid, deen-oh-maid or just "diamond"</p>
-
-    <p id="name-history"><span>Q</span>&nbsp;
-      What is the hisory of your usernames?<br>
-      <span>A</span>&nbsp; Don't know why you care about this but I made <a href="namehistory.html">a page for that</a>.
-    </p>
 
     <p id="rec-software"><span>Q</span>&nbsp;
     What recording software do you use? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
@@ -47,36 +42,43 @@
     <span>A</span>&nbsp;
     Adobe Illustrator and Paint.net</p>
 
+    <p id="site-background"><span>Q</span>&nbsp;
+    Where did you get the backgrounds for this site? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
+    <span>A</span>&nbsp;
+    It picks a random image from the <a href="https://unsplash.com/@mrdnomaid/likes?grid=multi" target="_blank">photos I've liked on Unsplash</a>.</p>
+
     <p id="is-this-you"><span>Q</span>&nbsp;
     Is coolsite.com/@username you!? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
     <span>A</span>&nbsp;
-    Tweet at me and I'll answer (I'm @mrDnomaid).</p>
-
-    <p id="sayhi"><span>Q</span>&nbsp;
-    How do I contact you?  <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-    <span>A</span>&nbsp;
-    Tweet me, or if you prefer:<br>
-    My email is just tom [at] this domain.
-    </p>
+    Send me an email or Tweet at me.</p>
 
     <p id="ask"><span>Q</span>&nbsp;
     How do I ask you a question? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
     <span>A</span>&nbsp;
-    Just Tweet at me (I'm @mrDnomaid)</p>
+    Send me an email or Tweet at me.</p>
 
-    <div id="devices"><h2>Devices:</h2>
+    <p id="sayhi"><span>Q</span>&nbsp;
+    How do I contact you?  <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
+    <span>A</span>&nbsp;
+    I'd prefer you just Tweet at me, but my email is tom [at] this domain.
+    </p>
 
-    <p id="devices-main"><a href="https://uk.pcpartpicker.com/user/mrDnomaid/saved/hrrVnQ">Primary PC</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a></p>
+    <p id="devices"><span>Q</span>&nbsp;
+    What devices do you have? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
+    <span>A</span>&nbsp;
+    There's some links below!</p>
 
-    <p id="devices-laptop"><a href="http://www.amazon.co.uk/dp/B01FE6HST0">Primary laptop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a></p>
+    <p id="devices-main"><a href="https://uk.pcpartpicker.com/user/mrDnomaid/saved/hrrVnQ">Primary PC</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a></p>
 
-    <p id="devices-lenovo-laptop"><a href="http://shop.lenovo.com/gb/en/laptops/lenovo/flex/flex-10/">Terrible laptop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
+    <p id="devices-laptop"><a href="http://www.amazon.co.uk/dp/B01FE6HST0">Primary laptop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a></p>
+
+    <p id="devices-lenovo-laptop"><a href="http://shop.lenovo.com/gb/en/laptops/lenovo/flex/flex-10/">Terrible laptop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a><br>
     I have the 2GB RAM version</p>
 
-    <p id="devices-acer-laptop"><a href="http://www.cnet.com/products/acer-aspire-5680-6516-core-2-duo-1-66-ghz-2-gb-ram-120-gb-hdd/specs/">Decent laptop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
+    <p id="devices-acer-laptop"><a href="http://www.cnet.com/products/acer-aspire-5680-6516-core-2-duo-1-66-ghz-2-gb-ram-120-gb-hdd/specs/">Decent laptop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a><br>
     Currently running Linux Mint CE</p>
 
-    <p id="devices-gateway"><a onclick="toggle(oldpcspecs);">Old Desktop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+    <p id="devices-gateway"><a onclick="toggle(oldpcspecs);">Old Desktop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a>
     <i id="oldpcspecs" style="display:none;"><br>Gateway GP6 350<br>
     Pentium 2 (350MHz)<br>
     64MB RAM<br>
@@ -88,7 +90,7 @@
     HP C3758A Keyboard<br>
     Logitech M-S34 Mouse</i></p>
 
-    <p id="devices-dell"><a onclick="toggle(otheroldpcspecs);">Other old desktop</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+    <p id="devices-dell"><a onclick="toggle(otheroldpcspecs);">Other old desktop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a>
     <i id="otheroldpcspecs" style="display:none;"><br>Dell Dimension 4400<br>
     Intel Pentium 4 (1.7GHz)<br>
     640MB DDR2 RAM<br>
@@ -96,14 +98,14 @@
     Currently has no OS<br></i>
     </p>
 
-    <p id="devices-phones"><a onclick="toggle(phonesihaveorhavehad);">Phones</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+    <p id="devices-phones"><a onclick="toggle(phonesihaveorhavehad);">Phones</a> <a onclick="popup(this);" title="Link to these devices" class="copylink"><i class="fa fa-link"></i></a>
       <i id="phonesihaveorhavehad" style="display:none;"><br>Current: Xperia Z5 Compact<br>
       Previous: iPhone 5S<br>
       Older: Orange Sydney<br>
       Even older: Chinese phone shaped like a car</i>
     </p>
 
-    <p id="devices-consoles"><a onclick="toggle(consolesihaveorhavehad);">Consoles</a> <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a>
+    <p id="devices-consoles"><a onclick="toggle(consolesihaveorhavehad);">Consoles</a> <a onclick="popup(this);" title="Link to these devices" class="copylink"><i class="fa fa-link"></i></a>
       <i id="consolesihaveorhavehad" style="display:none;"><br>Xbox 360<br>
       Wii<br>
       PSP<br>
@@ -114,7 +116,7 @@
     </div>
 
 
-    <p id="footer" style="border-bottom: none;"><a href="/">&laquo; Back home</a> - <a href="#">Top</a> - <a href="https://github.com/MrDnomaid/mrdnomaid.github.io/blob/master/faq.html">Last Update</a></p>
+    <p id="footer" style="border-bottom: none;"><a href="index.html">&laquo; Back home</a> - <a href="#">Top</a> - <a href="https://github.com/MrDnomaid/mrdnomaid.github.io/blob/master/faq.html">Last Update</a></p>
 
   </div>
 

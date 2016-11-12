@@ -5,14 +5,12 @@ body {
   height: 100%;
   width: 100%;
   padding: 0;
-  margin-top: 0;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-align: center;
+  margin: 0;
+  margin-left: 2.5%;
   font-family: 'Rubik', sans-serif;
   color: #fafafa;
   background-color: #111;
-  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -20,33 +18,11 @@ body {
   cursor: default;
   overflow-x: hidden;
 }
-#questions {
-  width: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transition: all 0.5s;
-}
-@media screen and (max-width: 420px) {
-  #questions {
-    width: 100%;
-  }
-}
 h1 {
   color: #fafafa;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 3em;
   cursor: default;
-  /* thx stack overflow */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                not supported by any browser */
-  margin: 0;
 }
 h4 {
   color: #999;
@@ -57,10 +33,9 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #222;
 }
 a {
-  color: #fdfdfd;
+  color: #eee;
   text-decoration: underline;
   transition: all 0.25s;
   cursor: pointer;
@@ -79,9 +54,6 @@ span {
 }
 i {
   font-style: normal;
-}
-#title {
-  text-align: center;
 }
 #devices p {
   border-bottom: none;
@@ -119,25 +91,9 @@ i {
     right: 2.5%;
     text-align: right;
   }
-  #title {
-    position: fixed;
-    bottom: 2.5%;
-    left: 2.5%;
-    text-align: left;
-  }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
   body {
-    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1920x1080');
-  }
-}
-@media screen and (max-width: 1280px) {
-  body {
-    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
-  }
-}
-@media screen and (max-width: 480px) {
-  body {
-    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/480x270');
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
   }
 }

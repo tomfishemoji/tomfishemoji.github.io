@@ -2,6 +2,7 @@
   padding: 0px;
   margin: 0px;
 }
+
 body {
   background-color: #111;
   background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
@@ -11,25 +12,28 @@ body {
   background-attachment: fixed;
   font-family: 'Rubik', sans-serif;
 }
+
+#links {
+  position: absolute;
+  bottom: 2.5%;
+  left: 2.5%;
+}
+
 #title {
   color: #fafafa;
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 3em;
+  font-size: 2em;
   cursor: default;
-  text-align: center;
 }
-h1, h3, h4, p {
-  /* thx stack overflow */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                not supported by any browser */
-}
+
 a {
   text-decoration: none;
+  color: #eee;
+  transition: all 0.5s
+}
+
+a:hover {
+  color: #999;
 }
 
 #yt:hover {
@@ -43,57 +47,6 @@ a {
 }
 #bl:hover {
   color: #09a51e;
-}
-
-#footer a, #links a {
-  color: #eee;
-  text-decoration: none;
-  transition: all 0.5s;
-  opacity: 0.6;
-}
-#links a:hover {
-  opacity: 1;
-}
-#footer a:hover {
-  color: #fafafa;
-  opacity: 1;
-}
-
-@media screen and (min-width: 450px) {
-  #title {
-    position: absolute;
-    bottom: 2.5%;
-    width: 100%;
-  }
-  #links {
-    position: absolute;
-    bottom: 2.5%;
-    left: 2.5%;
-    text-align: left;
-  }
-  #footer {
-    position: absolute;
-    bottom: 2.5%;
-    right: 2.5%;
-    text-align: right;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #footer, #links {
-    text-align: center;
-  }
-  #links {
-    margin-bottom: 15px;
-  }
-  #container {
-    position: absolute;
-    bottom: 2.5%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
-    background-color: rgba(17, 17, 17, 0.75);
-  }
 }
 
 @media screen and (min-width: 1920px) {
