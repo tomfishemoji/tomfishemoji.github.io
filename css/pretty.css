@@ -29,11 +29,12 @@ body {
 a {
   text-decoration: none;
   color: #eee;
-  transition: all 0.5s
 }
 
 a:hover {
   color: #999;
+  position: relative;
+  left: 5%;
 }
 
 #yt:hover {
@@ -43,7 +44,7 @@ a:hover {
   color: #1da1f2;
 }
 #gh:hover {
-  color: #4078c0;
+  color: #9b9a92;
 }
 #bl:hover {
   color: #09a51e;
