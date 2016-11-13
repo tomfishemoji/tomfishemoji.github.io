@@ -53,6 +53,9 @@ a:hover {
 #st:hover {
   color: #00adee;
 }
+#re:hover {
+  color: #ff4500;
+}
 #un:hover {
   color: #777;
 }
@@ -60,13 +63,12 @@ a:hover {
   color: #77c356;
 }
 
-#more, #back {
+#more, #back, #evenmore, #backback {
   cursor: pointer;
   color: #999;
-  font-size: 0.9em;
 }
 
-#more:hover, #back:hover {
+#more:hover, #back:hover, #evenmore:hover, #backback:hover {
   color: #777;
 }
 

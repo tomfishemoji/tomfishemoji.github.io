@@ -1,6 +1,6 @@
-#more, #back {
+#more, #back, #evenmore, #backback {
   display: none;
 }
-#morelinks {
+#morelinks, #evenmorelinks {
   display: block !important;
 }
