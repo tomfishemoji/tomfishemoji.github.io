@@ -1,0 +1,6 @@
+#more, #less {
+  display: none;
+}
+#morelinks {
+  display: block !important;
+}

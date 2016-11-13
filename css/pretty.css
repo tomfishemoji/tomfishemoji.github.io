@@ -50,6 +50,16 @@ a:hover {
   color: #09a51e;
 }
 
+#more, #less {
+  cursor: pointer;
+  color: #999;
+  font-size: 0.9em;
+}
+
+#more:hover, #less:hover {
+  color: #777;
+}
+
 @media screen and (min-width: 1920px) {
   body {
     background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
