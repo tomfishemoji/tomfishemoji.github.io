@@ -50,14 +50,23 @@ a:hover {
 #bl:hover {
   color: #09a51e;
 }
+#st:hover {
+  color: #00adee;
+}
+#un:hover {
+  color: #777;
+}
+#mc:hover {
+  color: #77c356;
+}
 
-#more, #less {
+#more, #back {
   cursor: pointer;
   color: #999;
   font-size: 0.9em;
 }
 
-#more:hover, #less:hover {
+#more:hover, #back:hover {
   color: #777;
 }
 
