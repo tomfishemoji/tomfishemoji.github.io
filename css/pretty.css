@@ -70,6 +70,12 @@ a:hover {
   color: #777;
 }
 
+@media screen and (min-width: 1950px) {
+    #links {
+      font-size: 2.5em;
+    }
+}
+
 @media screen and (min-width: 1920px) {
   body {
     background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
