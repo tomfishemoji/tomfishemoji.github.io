@@ -23,8 +23,16 @@ body {
 #title {
   color: #fafafa;
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 2em;
+  font-size: 1.5em;
   cursor: default;
+}
+
+#blink {
+  animation: blink 1s infinite;
+  position: relative;
+  bottom: 4px;
+  font-size: 0.75em;
+  font-weight: bolder;
 }
 
 a {
@@ -70,6 +78,10 @@ a:hover {
 
 #more:hover, #back:hover, #evenmore:hover, #backback:hover {
   color: #777;
+}
+
+@keyframes blink {
+  50% { opacity: 0 }
 }
 
 @media screen and (min-width: 1950px) {
