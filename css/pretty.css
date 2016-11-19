@@ -23,16 +23,8 @@ body {
 #title {
   color: #fafafa;
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 1.5em;
+  font-size: 2em;
   cursor: default;
-}
-
-#blink {
-  animation: blink 1s infinite;
-  position: relative;
-  bottom: 4px;
-  font-size: 0.75em;
-  font-weight: bolder;
 }
 
 a {
@@ -71,17 +63,13 @@ a:hover {
   color: #77c356;
 }
 
-#more, #back, #evenmore, #backback {
+#more, #back {
   cursor: pointer;
   color: #999;
 }
 
-#more:hover, #back:hover, #evenmore:hover, #backback:hover {
+#more:hover, #back:hover {
   color: #777;
-}
-
-@keyframes blink {
-  50% { opacity: 0 }
 }
 
 @media screen and (min-width: 1950px) {
