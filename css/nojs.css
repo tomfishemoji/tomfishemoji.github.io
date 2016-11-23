@@ -1,6 +1,7 @@
 #more, #back {
-  display: none;
+    display: none;
 }
+
 #morelinks {
-  display: block !important;
+    display: block !important;
 }

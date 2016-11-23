@@ -1,99 +1,114 @@
 * {
     vertical-align: middle;
 }
+
 body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-left: 2.5%;
-  font-family: 'Rubik', sans-serif;
-  color: #fafafa;
-  background-color: #111;
-  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  cursor: default;
-  overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-left: 2.5%;
+    font-family: 'Rubik', sans-serif;
+    color: #fafafa;
+    background-color: #111;
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    cursor: default;
+    overflow-x: hidden;
 }
+
 h1 {
-  color: #fafafa;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 3em;
-  cursor: default;
+    color: #fafafa;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 3em;
+    cursor: default;
 }
+
 h4 {
-  color: #999;
-  margin-top: 0;
-  margin-bottom: 10px;
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
+
 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
+
 a {
-  color: #eee;
-  text-decoration: underline;
-  transition: all 0.25s;
-  cursor: pointer;
+    color: #eee;
+    text-decoration: underline;
+    transition: all 0.25s;
+    cursor: pointer;
 }
+
 a.copylink {
-  font-size: 0.75em;
+    font-size: 0.75em;
 }
+
 a:hover {
-  color: #999;
+    color: #999;
 }
+
 span {
-  font-size: 2em;
-  font-weight: bold;
-  font-family: 'Ubuntu Mono', monospace;
-  color: #999;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    color: #999;
 }
+
 i {
-  font-style: normal;
+    font-style: normal;
 }
+
 #devices p {
-  border-bottom: none;
-  margin-top: 5px;
-  margin-bottom: 5px;
+    border-bottom: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 ::-webkit-scrollbar {
-  background-color: #111;
-  width: 10px;
+    background-color: #111;
+    width: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background-color: #fafafa;
-  width: 100%;
+    background-color: #fafafa;
+    width: 100%;
 }
+
 #footer {
-  font-size: 1em;
-  color: #fafafa;
-  margin-bottom: 0px;
+    font-size: 1em;
+    color: #fafafa;
+    margin-bottom: 0px;
 }
+
 #footer a {
-  color: #eee;
-  text-decoration: none;
-  transition: all 0.25s;
-  opacity: 0.6;
+    color: #fafafa;
+    text-decoration: none;
+    transition: all 0.25s;
 }
+
 #footer a:hover {
-  color: #fafafa;
-  opacity: 1;
+    color: #c6c6c6;
+    opacity: 1;
 }
 
 @media screen and (min-width: 1110px) {
-  #footer {
-    position: fixed;
-    bottom: 2.5%;
-    right: 2.5%;
-    text-align: right;
-  }
+    #footer {
+        position: fixed;
+        bottom: 2.5%;
+        right: 2.5%;
+        text-align: right;
+    }
 }
+
 @media screen and (min-width: 1920px) {
-  body {
-    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
-  }
+    body {
+        background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+    }
 }

@@ -1,85 +1,84 @@
 * {
-  padding: 0px;
-  margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-  background-color: #111;
-  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  font-family: 'Rubik', sans-serif;
+    background-color: #111;
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed */
 }
 
 #links {
-  position: absolute;
-  bottom: 2.5%;
-  left: 2.5%;
-  font-size: 1.5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #111;
+    background-color: rgba(17, 17, 17, 0.6);
+    text-align: center;
+    font-size: 1.5em;
 }
 
 #title {
-  color: #fafafa;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 2em;
-  cursor: default;
+    color: #fafafa;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2.15em;
+    cursor: default;
 }
 
-a {
-  text-decoration: none;
-  color: #eee;
+a, #more, #back {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.25s;
 }
 
-a:hover {
-  color: #999;
-  position: relative;
-  left: 5%;
+a:hover, #more:hover, #back:hover {
+    color: #c6c6c6;
 }
 
 #yt:hover {
-  color: #cd201f;
+    color: #cd201f;
 }
+
 #tw:hover {
-  color: #1da1f2;
+    color: #1da1f2;
 }
+
 #gh:hover {
-  color: #9b9a92;
+    color: #999;
 }
+
 #bl:hover {
-  color: #09a51e;
-}
-#st:hover {
-  color: #00adee;
-}
-#re:hover {
-  color: #ff4500;
-}
-#un:hover {
-  color: #777;
-}
-#mc:hover {
-  color: #77c356;
-}
-
-#more, #back {
-  cursor: pointer;
-  color: #999;
-}
-
-#more:hover, #back:hover {
-  color: #777;
+    color: #09a51e;
 }
 
 @media screen and (min-width: 1950px) {
     #links {
-      font-size: 2.5em;
+        font-size: 2.5em;
     }
 }
 
 @media screen and (min-width: 1920px) {
-  body {
-    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
-  }
+    body {
+        background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+    }
 }

@@ -1,4 +1,4 @@
-var showhide = document.getElementById('more');
+showhide = document.getElementById('more');
 
 document.getElementById('more').onclick = function() {
     document.getElementById('morelinks').style.display = 'block';
@@ -13,5 +13,5 @@ document.getElementById('back').onclick = function() {
 if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 
 if (location.protocol == 'file:') {
-  document.title = '[f] dnomaid.co.uk'
+    document.title = '[f] dnomaid.co.uk'
 }

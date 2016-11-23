@@ -1,37 +1,45 @@
 * {
-  padding: 0px;
-  margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-  background-color: #111;
-  background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  font-family: 'Rubik', sans-serif;
+    background-color: #111;
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    font-family: 'Rubik', sans-serif;
 }
 
 #links {
-  position: absolute;
-  bottom: 2.5%;
-  left: 2.5%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #111;
+    background-color: rgba(17, 17, 17, 0.6);
+    text-align: center;
+    font-size: 1.5em;
 }
 
 #title {
-  color: #fafafa;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 2em;
-  cursor: default;
+    color: #fafafa;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2.15em;
+    cursor: default;
 }
 
 a {
-  text-decoration: none;
-  color: #eee;
-  transition: all 0.5s
+    cursor: pointer;
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.25s;
 }
 
 a:hover {
-  color: #999;
+    color: #c6c6c6;
 }
