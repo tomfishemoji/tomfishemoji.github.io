@@ -13,7 +13,12 @@ body {
     background-color: #111;
     background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    height: 100%;
+    min-height: 100%;
     background-position: bottom;
     background-attachment: fixed;
     cursor: default;
