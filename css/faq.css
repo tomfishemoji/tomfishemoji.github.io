@@ -3,11 +3,6 @@
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-left: 2.5%;
     font-family: 'Rubik', sans-serif;
     color: #fafafa;
     background-color: #111;
@@ -23,25 +18,43 @@ body {
     background-attachment: fixed;
     cursor: default;
     overflow-x: hidden;
+    color: #fafafa;
+}
+
+#questions {
+    padding-left: 2.5%;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.6);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+@media screen and (min-width: 750px) {
+    #questions {
+        width: 50%;
+        border-right: 5px solid #111;
+    }
 }
 
 h1 {
-    color: #fafafa;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 3em;
-    cursor: default;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 
-h4 {
-    color: #999;
+h2 {
+    color: #ccc;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-p {
+hr {
+    border: 2px solid #111;
+    opacity: 0.3;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-bottom: 10px;
 }
 
 a {
@@ -71,9 +84,8 @@ i {
 }
 
 #devices p {
-    border-bottom: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    position: relative;
+    left: 5%;
 }
 
 ::-webkit-scrollbar {
@@ -89,7 +101,6 @@ i {
 #footer {
     font-size: 1em;
     color: #fafafa;
-    margin-bottom: 0px;
 }
 
 #footer a {
@@ -103,14 +114,6 @@ i {
     opacity: 1;
 }
 
-@media screen and (min-width: 1110px) {
-    #footer {
-        position: fixed;
-        bottom: 2.5%;
-        right: 2.5%;
-        text-align: right;
-    }
-}
 
 @media screen and (min-width: 1920px) {
     body {
