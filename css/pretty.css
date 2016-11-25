@@ -34,9 +34,9 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    border: 2px solid #111;
+    border: 3px solid #111;
     background-color: rgba(17, 17, 17, 0.6);
     text-align: center;
     font-size: 1.5em;
