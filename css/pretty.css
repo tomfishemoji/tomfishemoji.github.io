@@ -36,13 +36,13 @@ body {
     transform: translate(-50%, -50%);
     padding: 5px;
     border-radius: 5px;
-    border: 3px solid #111;
-    background-color: rgba(17, 17, 17, 0.6);
+    border: 5px solid #333;
+    background-color: #111;
     text-align: center;
     font-size: 1.5em;
 }
 
-#title {
+h1#title {
     color: #fafafa;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 2.15em;
