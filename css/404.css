@@ -5,17 +5,25 @@
 
 body {
     background-color: #111;
-    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    background-position: bottom;
-    background-attachment: fixed;
-    font-family: 'Rubik', sans-serif;
+    /*-webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;*/
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed */
+    overflow-x: hidden;
 }
 
 #links {
@@ -23,28 +31,51 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
+    padding: 0.1em;
+    background-color: #111;
     border-radius: 5px;
-    border: 2px solid #111;
-    background-color: rgba(17, 17, 17, 0.6);
+    border: 5px solid #222;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
-#title {
+h1#title {
     color: #fafafa;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 2.15em;
+    font-size: 1.69em;
     cursor: default;
+    width: 100%;
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
     color: #fafafa;
-    transition: all 0.25s;
 }
 
 a:hover {
     color: #c6c6c6;
+}
+
+@media screen and (max-width: 525px) {
+    #links {
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        border-top: 5px solid #222;
+        border-bottom: 5px solid #222;
+        font-size: 15vw;
+    }
+}
+
+@media screen and (min-width: 1950px) {
+    #links {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+    }
 }
