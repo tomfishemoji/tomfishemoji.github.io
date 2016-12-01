@@ -15,7 +15,7 @@
     <meta name="msapplication-TileImage" content="img/bin.png">
     <meta name="application-name" content="dnomaid.co.uk">
     <meta name="msapplication-tooltip" content="Site of dnomaid">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono%7CRubik" rel="stylesheet">
     <noscript><link href="css/nojs.css" rel="stylesheet"></noscript>
     <link href="css/pretty.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -30,33 +30,53 @@
     <div id="links">
         <h1 id="title">dnomaid</h1>
 
-        <div id="mainlinks">
-            <a href="https://youtube.com/dnomaid" target="_blank" rel="noopener noreferrer" id="yt" title="YouTube"><i class="fa fa-youtube-play fa-fw"></i></a>
+        <p id="social">
 
-            <a href="https://twitter.com/mrDnomaid" target="_blank" rel="noopener noreferrer" id="tw" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="https://youtube.com/dnomaid" id="yt" title="YouTube" onmouseover="yt();" onmouseout="dno();"><i class="fa fa-youtube-play fa-fw"></i></a>
 
-            <a href="https://github.com/mrDnomaid?tab=repositories" target="_blank" rel="noopener noreferrer" id="gh" title="GitHub"><i class="fa fa-github fa-fw"></i></a>
+            <a href="https://twitter.com/mrDnomaid" id="tw" title="Twitter" onmouseover="tw();" onmouseout="dno();"><i class="fa fa-twitter fa-fw"></i></a>
 
-            <a href="https://blog.dnomaid.co.uk/" target="_blank" rel="noopener noreferrer" id="bl" title="Blog"><i class="fa fa-medium fa-fw"></i></a>
+            <a href="https://github.com/mrDnomaid?tab=repositories" id="gh" title="GitHub" onmouseover="gh();" onmouseout="dno();"><i class="fa fa-github fa-fw"></i></a>
 
-            <span id="more" title="More"><i class="fa fa-arrow-circle-o-down fa-fw"></i></span>
-        </div>
+            <a href="https://blog.dnomaid.co.uk/" id="bl" title="Blog" onmouseover="bl();" onmouseout="dno();"><i class="fa fa-medium fa-fw"></i></a>
 
-
-        <div id="morelinks" style="display: none;">
-            <a href="faq.html" target="_blank" rel="noopener noreferrer" title="Frequently Asked Questions"><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i></a>
-
-            <a href="faq.html#sayhi" target="_blank" rel="noopener noreferrer" title="Contact"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></a>
-
-            <a href="https://1drv.ms/f/s!Avowrxa176eZmEoPENs76QO2VcgW" target="_blank" rel="noopener noreferrer" title="Downloads"><i class="fa fa-cloud-download fa-fw" aria-hidden="true"></i></a>
-
-            <a href="http://status.dnomaid.co.uk/" target="_blank" rel="noopener noreferrer" title="Status"><i class="fa fa-tachometer fa-fw" aria-hidden="true"></i></a>
-
-            <span id="back" title="Back"><i class="fa fa-arrow-circle-o-up fa-fw"></i></span>
-        </div>
+        </p>
     </div>
 
-    <script src="js/stuff.js"></script>
+    <div id="footer">
+        <a href="faq.html"><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> FaQ</a>
+
+        <a href="faq.html#sayhi"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> Contact</a>
+
+        <a href="https://1drv.ms/f/s!Avowrxa176eZmEoPENs76QO2VcgW"><i class="fa fa-cloud-download fa-fw" aria-hidden="true"></i> Downloads</a>
+
+        <a href="http://status.dnomaid.co.uk/"><i class="fa fa-tachometer fa-fw" aria-hidden="true"></i> Status</a>
+    </div>
+
+    <script>
+        function yt() {
+            document.getElementById('title').innerHTML = 'YouTube';
+        }
+        function tw() {
+            document.getElementById('title').innerHTML = 'Twitter';
+        }
+        function gh() {
+            document.getElementById('title').innerHTML = 'GitHub';
+        }
+        function bl() {
+            document.getElementById('title').innerHTML = 'Blog';
+        }
+        function dno() {
+            document.getElementById('title').innerHTML = 'dnomaid';
+        }
+
+        if (window.top !== window.self) window.top.location.replace(window.self.location.href);
+
+        if (location.protocol == 'file:') {
+            document.title = '[f] dnomaid.co.uk';
+        }
+    </script>
+
 </body>
 
 </html>

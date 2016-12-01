@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -14,155 +14,89 @@
     <link rel="shortcut icon" type="image/png" href="img/bin.png" />
 </head>
 
-<body onhashchange="window.location.reload();">
-
-    <div id="questions">
-
-        <h1 id="title">FaQ</h1>
-        <h2>Frequently Asked Questions</h2>
-        <noscript>
-      <h2>Please <a href="http://www.enable-javascript.com/" target="_blank" rel="noopener noreferrer">enable Javascript</a></h2>
-    </noscript>
-
-        <hr>
-
-        <p id="what-is-dnomaid"><span>Q</span>&nbsp; What is "dnomaid"? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; It's "diamond" backwards</p>
-
-        <hr>
-
-        <p id="how-to-say"><span>Q</span>&nbsp; How do I say "dnomaid"? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; dee-en-oh-maid, deen-oh-maid or just "diamond"</p>
-
-        <hr>
-
-        <p id="rec-software"><span>Q</span>&nbsp; What recording software do you use? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; Bandicam or OBS</p>
-
-        <hr>
-
-        <p id="editing"><span>Q</span>&nbsp; What do you use to edit videos? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; Sony Vegas Pro 13 (Occasionally Pr or Ae)</p>
-
-        <hr>
-
-        <p id="thumbnails"><span>Q</span>&nbsp; How do you make the thumbnails? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; Adobe Illustrator and Paint.net</p>
-
-        <hr>
-
-        <p id="site-background"><span>Q</span>&nbsp; Where did you get the backgrounds for this site? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; It picks a random image from the <a href="https://unsplash.com/@mrdnomaid/likes?grid=multi" target="_blank" rel="noopener noreferrer">photos I've liked on Unsplash</a>.</p>
-
-        <hr>
-
-        <p id="is-this-you"><span>Q</span>&nbsp; Is coolsite.com/@username you!? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; Send me an email or Tweet at me.</p>
-
-        <hr>
-
-        <p id="ask"><span>Q</span>&nbsp; How do I ask you a question? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; Send me an email or Tweet at me.</p>
-
-        <hr>
-
-        <p id="sayhi"><span>Q</span>&nbsp; How do I contact you? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; I'd prefer you just Tweet at me, but my email is tom [at] this domain.
-        </p>
-
-        <hr>
-
-        <div id="devices"><span>Q</span>&nbsp; What devices do you have? <a onclick="popup(this);" title="Link to this question" class="copylink"><i class="fa fa-link"></i></a><br>
-            <span>A</span>&nbsp; There's some links below!<br>
-
-            <p id="devices-main"><a href="https://uk.pcpartpicker.com/user/mrDnomaid/saved/hrrVnQ" target="_blank" rel="noopener noreferrer">Primary PC</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a></p>
-
-            <p id="devices-laptop"><a href="http://www.amazon.co.uk/dp/B01FE6HST0" target="_blank" rel="noopener noreferrer">Primary laptop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a></p>
-
-            <p id="devices-lenovo-laptop"><a href="http://shop.lenovo.com/gb/en/laptops/lenovo/flex/flex-10/" target="_blank" rel="noopener noreferrer">Terrible laptop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a><br> I have
-                the 2GB RAM version</p>
-
-            <p id="devices-acer-laptop"><a href="http://www.cnet.com/products/acer-aspire-5680-6516-core-2-duo-1-66-ghz-2-gb-ram-120-gb-hdd/specs/" target="_blank" rel="noopener noreferrer">Decent laptop</a>
-                <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a><br> Currently running Linux Mint CE</p>
-
-            <p id="devices-gateway"><a onclick="toggle(oldpcspecs);">Old Desktop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a>
-                <noscript><br>Viewing this requires Javascript</noscript>
-                <i id="oldpcspecs" style="display:none;"><br>Gateway GP6 350<br>
-                  Pentium 2 (350MHz)<br>
-                  64MB RAM<br>
-                  ATI 3D Rage Pro<br>
-                  Quantum Fireball (3GB)<br>
-                  Sound Blaster AudioPCI 64D<br>
-                  Gateway EV700 CRT Display<br>
-                  Windows 98 SE<br>
-                  HP C3758A Keyboard<br>
-                  Logitech M-S34 Mouse</i></p>
-
-            <p id="devices-dell"><a onclick="toggle(otheroldpcspecs);">Other old desktop</a> <a onclick="popup(this);" title="Link to this device" class="copylink"><i class="fa fa-link"></i></a>
-                <noscript><br>Viewing this requires Javascript</noscript>
-                <i id="otheroldpcspecs" style="display:none;"><br>Dell Dimension 4400<br>
-              Intel Pentium 4 (1.7GHz)<br>
-              640MB DDR2 RAM<br>
-              Maxtor 4D040H2 HDD (40GB)<br>
-              Currently has no OS<br></i>
-            </p>
-
-            <p id="devices-phones"><a onclick="toggle(phonesihaveorhavehad);">Phones</a> <a onclick="popup(this);" title="Link to these devices" class="copylink"><i class="fa fa-link"></i></a>
-                <noscript><br>Viewing this requires Javascript</noscript>
-                <i id="phonesihaveorhavehad" style="display:none;"><br>Current:
-              Xperia Z5 Compact<br>
-              Previous: iPhone 5S<br>
-              Older: Orange Sydney<br>
-              Even older: Chinese phone shaped like a car</i>
-            </p>
-
-            <p id="devices-consoles"><a onclick="toggle(consolesihaveorhavehad);">Consoles</a> <a onclick="popup(this);" title="Link to these devices" class="copylink"><i class="fa fa-link"></i></a>
-                <noscript><br>Viewing this requires Javascript</noscript>
-                <i id="consolesihaveorhavehad" style="display:none;"><br>Xbox 360<br>
-              Wii<br>
-              PSP<br>
-              PS2</i>
-            </p>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Frequently Asked Questions</h1>
+            <h3>My As to your Qs</h3>
         </div>
+        <div id="questions">
+            <div class="question" id="what-is-dnomaid">
+                <p><span class="Q">Q</span> What is "dnomaid"?</p>
+                <p><span class="A">A</span> It's "diamond" backwards</p>
+            </div>
+            <div class="question" id="how-to-say">
+                <p><span class="Q">Q</span> How do I say "dnomaid"?</p>
+                <p><span class="A">A</span> I prefer dee-en-oh-maid, but deen-oh-maid or just diamond are fine.</p>
+            </div>
+            <div class="question" id="rec-software">
+                <p><span class="Q">Q</span> What recording software do you use?</p>
+                <p><span class="A">A</span> Bandicam and OBS</p>
+            </div>
+            <div class="question" id="editing">
+                <p><span class="Q">Q</span> What do you use to edit?</p>
+                <p><span class="A">A</span> Sony Vegas Pro 13. Sometimes I'll use After Effects.</p>
+            </div>
+            <div class="question" id="thumbnails">
+                <p><span class="Q">Q</span> What do you use to make the thumbnails?</p>
+                <p><span class="A">A</span> Illustrator and Paint.net.</p>
+            </div>
+            <div class="question" id="site-background">
+                <p><span class="Q">Q</span> Where did you get the background images for this site?</p>
+                <p><span class="A">A</span> <a href="https://unsplash.com/@mrdnomaid/likes?grid=multi">Unsplash</a>.</p>
+            </div>
+            <div class="question" id="is-this-you">
+                <p><span class="Q">Q</span> Is example.com/@username you?</p>
+                <p><span class="A">A</span> Probably not, but Tweet at me to confirm.</p>
+            </div>
+            <div class="question" id="ask">
+                <p><span class="Q">Q</span> How do I ask you something?</p>
+                <p><span class="A">A</span> Twitter.</p>
+            </div>
+            <div class="question" id="sayhi">
+                <p><span class="Q">Q</span> How do I contact you?</p>
+                <p><span class="A">A</span> My email is just tom [at] this domain.</p>
+            </div>
+            <div class="question" id="devices">
+                <p><span class="Q">Q</span> What devices do you have?</p>
+                <p><span class="A">A</span> There's a handy list below!</p>
+                <div id="handylist">
+                    <p>Laptops/Desktops:</p>
+                    <ul>
+                        <li><a href="https://uk.pcpartpicker.com/user/mrDnomaid/saved/hrrVnQ">Main PC</a></li>
+                        <li><a href="https://www.amazon.co.uk/dp/B01FE6HST0">Laptop</a></li>
+                        <li><a href="https://shop.lenovo.com/gb/en/laptops/lenovo/flex/flex-10/">Old laptop</a> (Mine has 2GB RAM)</li>
+                        <li><a href="http://www.cnet.com/products/acer-aspire-5680-6516-core-2-duo-1-66-ghz-2-gb-ram-120-gb-hdd/specs/">Another laptop</a> (Currently running Linux Mint)</li>
+                        <li><a href="https://archive.fo/zEmzK">First PC</a></li>
+                        <li><a href="https://archive.fo/uzxjU">Second PC</a></li>
+                    </ul>
+                    <p>Phones (and similar gadgets)</p>
+                    <ul>
+                        <li>Sony Xperia Z5 Compact [Current]</li>
+                        <li>iPhone 5S</li>
+                        <li>iPod Touch 5th Generation</li>
+                        <li>Orange Sydney</li>
+                        <li>A Chinese phone shaped like a car</li>
+                    </ul>
+                    <!-- /Handy List -->
+                </div>
+                <!-- /Devices -->
+            </div>
+            <div class="question" id="oldfaq">
+                <p><span class="Q">Q</span> I liked the old FaQ design, can I get it back?</p>
+                <p><span class="A">A</span> Yes, click <a href="oldfaq.html">here</a>.</p>
+            </div>
 
-        <hr>
-
-        <p id="footer" style="border-bottom: none;"><a href="index.html">&laquo; Back home</a> - <a href="#">Top</a> - <a href="https://github.com/MrDnomaid/mrdnomaid.github.io/blob/master/faq.html">Last Update</a></p>
-
+            <!-- /Questions -->
+        </div>
+        <!-- /Container -->
     </div>
 
+    <div id="footer">
+        <a href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i> Back Home</a>
+        <a href="#"><i class="fa fa-arrow-up fa-fw" aria-hidden="true"></i> Top</a>
+    </div>
 
-
-
-    <script>
-        function popup(question) {
-            var thisquestion = question.parentNode;
-            var hash = thisquestion.getAttribute('id');
-            prompt('Copy the URL below to link directly to this question', window.location.protocol + '//' + window.location.host + window.location.pathname + '#' + hash);
-        }
-
-        if (window.location.hash != '#sayhi') {
-            var requestedquestion = window.location.hash;
-            nohash = requestedquestion.replace('#', '');
-            nodevices = nohash.replace(/devices-/g, '');
-            title = nodevices.replace(/-/g, ' ');
-            document.title = title + ' / faq / dnomaid.co.uk';
-        } else {
-            document.title = 'contact / dnomaid.co.uk';
-        }
-
-        if (window.location.hash == '') {
-            document.title = 'faq / dnomaid.co.uk';
-        }
-
-        function toggle(div) {
-            if (div.style.display !== 'none') {
-                div.style.display = 'none';
-            } else {
-                div.style.display = 'inline';
-            }
-        };
-    </script>
 </body>
 
 </html>
