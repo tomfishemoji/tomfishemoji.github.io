@@ -7,10 +7,10 @@ body {
     background-color: #111;
     background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
     background-repeat: no-repeat;
-    -webkit-background-size: cover !important;
+    /*-webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
-    background-size: cover !important;
+    background-size: cover !important;*/
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;
@@ -23,6 +23,7 @@ body {
     /* Internet Explorer/Edge */
     user-select: none;
     /* Non-prefixed */
+    overflow-x: hidden;
 }
 
 #top {
