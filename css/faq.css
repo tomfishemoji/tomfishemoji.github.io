@@ -6,6 +6,8 @@
 body {
     height: 100%;
     width: 100%;
+    color: #fafafa;
+    font-family: 'Rubik', sans-serif;
     background-color: #111;
     background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
     background-repeat: no-repeat;
