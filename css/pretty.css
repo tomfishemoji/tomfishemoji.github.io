@@ -26,6 +26,7 @@ body {
     /* Internet Explorer/Edge */
     user-select: none;
     /* Non-prefixed */
+    font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
 }
 
@@ -93,30 +94,30 @@ a:hover {
     border-radius: 5px;
     border: 2.5px solid #222;
     padding: 0.1em;
-    font-family: 'Rubik', sans-serif;
 }
 
 #footer a:not(:last-of-type)::after {
     content: ' / ';
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 400px) {
     #links {
         width: 100%;
         border-radius: 0px;
         border: none;
         border-top: 5px solid #222;
         border-bottom: 5px solid #222;
-        font-size: 15vw;
+        font-size: 10vw;
     }
     #footer {
-        position: absolute;
-        bottom: 0px;
+        position: fixed;
+        bottom: 2.5%;
         left: 0px;
         width: 100%;
         border-radius: 0px;
         border: none;
         border-top: 2.5px solid #222;
+        border-bottom: 2.5px solid #222;
         font-size: 4.25vw;
         text-align: center;
     }

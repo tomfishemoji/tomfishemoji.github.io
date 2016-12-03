@@ -32,13 +32,13 @@
 
         <p id="social">
 
-            <a href="https://youtube.com/dnomaid" id="yt" title="YouTube" onmouseover="yt();" onmouseout="dno();"><i class="fa fa-youtube-play fa-fw"></i></a>
+            <a href="https://youtube.com/dnomaid" id="yt" title="YouTube"><i class="fa fa-youtube-play fa-fw"></i> YouTube</a><br>
 
-            <a href="https://twitter.com/mrDnomaid" id="tw" title="Twitter" onmouseover="tw();" onmouseout="dno();"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="https://twitter.com/mrDnomaid" id="tw" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a><br>
 
-            <a href="https://github.com/mrDnomaid?tab=repositories" id="gh" title="GitHub" onmouseover="gh();" onmouseout="dno();"><i class="fa fa-github fa-fw"></i></a>
+            <a href="https://github.com/mrDnomaid?tab=repositories" id="gh" title="GitHub"><i class="fa fa-github fa-fw"></i> GitHub</a><br>
 
-            <a href="https://blog.dnomaid.co.uk/" id="bl" title="Blog" onmouseover="bl();" onmouseout="dno();"><i class="fa fa-medium fa-fw"></i></a>
+            <a href="https://blog.dnomaid.co.uk/" id="bl" title="Blog"><i class="fa fa-pencil fa-fw"></i> Blog</a>
 
         </p>
     </div>
@@ -54,22 +54,6 @@
     </div>
 
     <script>
-        function yt() {
-            document.getElementById('title').innerHTML = 'YouTube';
-        }
-        function tw() {
-            document.getElementById('title').innerHTML = 'Twitter';
-        }
-        function gh() {
-            document.getElementById('title').innerHTML = 'GitHub';
-        }
-        function bl() {
-            document.getElementById('title').innerHTML = 'Blog';
-        }
-        function dno() {
-            document.getElementById('title').innerHTML = 'dnomaid';
-        }
-
         if (window.top !== window.self) window.top.location.replace(window.self.location.href);
 
         if (location.protocol == 'file:') {
