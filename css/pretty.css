@@ -43,7 +43,7 @@ h1#title {
 
 h3 {
     margin-top: 20px;
-    color: #444;
+    color: #999;
     font-size: 0.95em;
 }
 
@@ -54,7 +54,7 @@ a {
 }
 
 a:hover {
-    color: #82c4ff;
+    color: #0670B1;
 }
 
 #yt:hover {
@@ -79,8 +79,6 @@ a:hover {
 
 @media screen and (max-width: 400px) {
     #links {
-        width: 100%;
-        border: none;
         background-color: rgba(17, 17, 17, 0.85);
         font-size: 9vw;
     }
