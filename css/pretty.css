@@ -79,6 +79,7 @@ a:hover {
 
 @media screen and (max-width: 400px) {
     #links {
+        max-width: 100%;
         background-color: rgba(17, 17, 17, 0.85);
         font-size: 9vw;
     }
