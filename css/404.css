@@ -11,34 +11,31 @@ html, body {
 body {
     height: 100%;
     width: 100%;
-    background-color: #111;
-    background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/1280x720');
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background: #0670b1;
+    /* Old Browsers */
+    background: -webkit-linear-gradient(right, #0670b1, #173753);
+    /*Safari 5.1-6*/
+    background: -o-linear-gradient(right, #0670b1, #173753);
+    /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right, #0670b1, #173753);
+    /*Fx 3.6-15*/
+    background: linear-gradient(to left, #0670b1, #173753);
+    /*Standard*/
     font-family: 'Rubik', sans-serif;
-}
-
-#links {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 2.5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-right: 15px solid #222;
+    text-align: center;
     font-size: 2em;
-    min-height: 100%;
-    background-color: #111;
-    overflow: visible;
+    margin-top: 2.5em;
 }
 
 h1#title {
     color: #fafafa;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.9em;
-    cursor: default;
-    width: 100%;
+    font-size: 1.75em;
+}
+
+h3 {
+    color: #999;
+    font-size: 0.95em;
 }
 
 a {
@@ -48,32 +45,5 @@ a {
 }
 
 a:hover {
-    color: #0670B1;
-}
-
-@media screen and (max-width: 400px) {
-    #links {
-        width: 100%;
-        border: none;
-        background-color: rgba(17, 17, 17, 0.85);
-        font-size: 9vw;
-    }
-}
-
-@media screen and (max-height: 555px) {
-  #links {
-      font-size: 5.5vh;
-  }
-}
-
-@media screen and (min-width: 1950px) {
-    #links {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    body {
-        background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
-    }
+    color: #999;
 }
