@@ -11,16 +11,7 @@ html, body {
 body {
     height: 100%;
     width: 100%;
-    background: #0670b1;
-    /* Old Browsers */
-    background: -webkit-linear-gradient(right, #0670b1, #173753);
-    /*Safari 5.1-6*/
-    background: -o-linear-gradient(right, #0670b1, #173753);
-    /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right, #0670b1, #173753);
-    /*Fx 3.6-15*/
-    background: linear-gradient(to left, #0670b1, #173753);
-    /*Standard*/
+    background: #111;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -28,14 +19,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 2.5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border-right: 5px solid #173753;
-    font-size: 1.75em;
-    min-height: 100%;
+    padding: 2.5%;
+    font-size: 1.25em;
     background-color: #111;
-    overflow: visible;
 }
 
 h1#title {
@@ -44,7 +30,7 @@ h1#title {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.75em;
+    font-size: 2.5em;
     cursor: default;
     width: 100%;
 }
