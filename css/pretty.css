@@ -16,7 +16,7 @@ body {
 }
 
 #links {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 2.5%;
@@ -41,6 +41,12 @@ h3 {
     font-size: 0.95em;
 }
 
+p {
+  color: #fafafa;
+  font-size: 0.75em;
+  width: 400px;
+}
+
 a {
     cursor: pointer;
     text-decoration: none;
@@ -63,12 +69,12 @@ a:hover {
     color: #999;
 }
 
-#bl:hover {
-    color: #09a51e;
-}
-
 #re:hover {
     color: #ff4500;
+}
+
+#bl:hover {
+    color: #09a51e;
 }
 
 @media screen and (max-width: 400px) {
