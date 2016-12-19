@@ -22,13 +22,16 @@ body {
     padding: 2.5%;
     font-size: 1.25em;
     background-color: #111;
+    z-index: 1;
 }
 
 h1#title {
     color: #0670b1;
-    background-image: -webkit-linear-gradient(right, #173753, #0670b1);
+    background: linear-gradient(240deg, #0670b1, #173753);
+    background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: glow 10s infinite;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 2.5em;
     cursor: default;
@@ -42,9 +45,9 @@ h3 {
 }
 
 p {
-  color: #fafafa;
-  font-size: 0.75em;
-  width: 400px;
+    color: #fafafa;
+    font-size: 0.75em;
+    width: 400px;
 }
 
 a {
@@ -77,6 +80,38 @@ a:hover {
     color: #09a51e;
 }
 
+#bin {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    letter-spacing: 3px;
+    font-size: 0.75em;
+    line-height: 12px;
+    z-index: 0;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 950px) {
+    #bin {
+        font-size: 5px;
+        line-height: 7px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #bin {
+        font-size: 2px;
+        line-height: 6px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    #bin {
+        opacity: 0;
+        font-size: 0em;
+    }
+}
+
 @media screen and (max-width: 400px) {
     #links {
         max-width: 100%;
@@ -94,5 +129,17 @@ a:hover {
 @media screen and (min-width: 1950px) {
     #links {
         font-size: 1.5em;
+    }
+}
+
+@keyframes glow {
+    0% {
+        background-position: 99% 0%
+    }
+    50% {
+        background-position: 1% 100%
+    }
+    100% {
+        background-position: 99% 0%
     }
 }
