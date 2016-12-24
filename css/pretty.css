@@ -21,8 +21,8 @@ body {
     top: 0;
     left: 0;
     padding: 2.5%;
+    width: 100%;
     font-size: 1.25em;
-    z-index: 1;
 }
 
 h1#title {
@@ -33,21 +33,20 @@ h1#title {
     -webkit-text-fill-color: transparent;
     animation: glow 10s infinite;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 2.5em;
+    font-size: 3.5em;
     cursor: default;
-    width: 100%;
 }
 
 h3 {
-    margin-top: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
     color: #999;
-    font-size: 0.95em;
+    font-size: 1.15em;
 }
 
 p {
     color: #fafafa;
-    font-size: 0.75em;
-    width: 400px;
+    margin-bottom: 0.25em;
 }
 
 a {
@@ -57,27 +56,27 @@ a {
 }
 
 a:hover {
-    color: #0670B1;
+    border-bottom: 0.15em solid #0670B1;
 }
 
 #yt:hover {
-    color: #cd201f;
+    border-bottom: 0.15em solid #cd201f;
 }
 
 #tw:hover {
-    color: #1da1f2;
+    border-bottom: 0.15em solid #1da1f2;
 }
 
 #gh:hover {
-    color: #999;
+    border-bottom: 0.15em solid #999;
 }
 
 #re:hover {
-    color: #ff4500;
+    border-bottom: 0.15em solid #ff4500;
 }
 
 #bl:hover {
-    color: #09a51e;
+    border-bottom: 0.15em solid #09a51e;
 }
 
 @media screen and (max-width: 400px) {
