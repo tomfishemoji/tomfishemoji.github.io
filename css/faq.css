@@ -8,44 +8,43 @@ body {
     width: 100%;
     color: #fafafa;
     font-family: 'Rubik', sans-serif;
-    background: #0670b1; /* Old Browsers */
-    background: -webkit-radial-gradient(top,#0670b1,#173753); /*Safari 5.1-6*/
-    background: -o-radial-gradient(top,#0670b1,#173753); /*Opera 11.1-12*/
-    background: -moz-radial-gradient(top,#0670b1,#173753); /*Fx 3.6-15*/
-    background: radial-gradient(to bottom, #0670b1, #173753); /*Standard*/
+    background: #111;
+    overflow-x: hidden;
 }
 
 #container {
-    background-color: #111;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 450px;
-    border-radius: 5px;
-    border: 5px solid #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2.5%;
+  font-size: 1.25em;
+  z-index: 1;
 }
 
-#questions {
-  padding: 5px;
+#header h1, #header h4 {
+      color: #0670b1;
+      background: linear-gradient(240deg, #0670b1, #173753);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 10s infinite;
+      font-family: 'Ubuntu Mono', monospace;
+      cursor: default;
 }
 
-#header {
-    text-align: center;
-    background-color: #222;
+#header h1 {
+  font-size: 3.5em;
 }
 
-#header h1, #header h3 {
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-#header h3 {
+#header h4 {
   font-weight: normal;
-  padding-bottom: 2px;
+  margin-bottom: 1em;
 }
 
 #questions .question {
     margin-top: 10px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    font-size: 0.9em;
 }
 
 #questions .question .Q, #questions .question .A {
@@ -60,11 +59,13 @@ body {
 }
 
 a {
-    color: #fafafa;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ddd;
 }
 
 a:hover {
-    color: #999;
+    border-bottom: 0.1em solid #0670B1;
 }
 
 #footer {
@@ -73,45 +74,28 @@ a:hover {
     right: 2.5%;
     background-color: #111;
     border-radius: 5px;
-    border: 2.5px solid #222;
+    border: 2.5px solid #0670B1;
     padding: 0.1em;
+    z-index: 2;
 }
 
 #footer a {
   text-decoration: none;
 }
 
-#footer a:not(:last-of-type)::after {
-    content: ' / ';
+#footer a:hover {
+  border-bottom: none;
+  color: #999;
 }
 
-@media screen and (max-width: 525px) {
-    #container {
-        width: 100%;
-        border-radius: 0px;
-        border: none;
-        border-top: 5px solid #222;
-        border-bottom: 5px solid #222;
-        background-color: rgba(17, 17, 17, 0.9);
+@keyframes glow {
+    0% {
+        background-position: 99% 0%
     }
-    #header {
-      background-color: rgba(34, 34, 34, 0.9);
+    50% {
+        background-position: 1% 100%
     }
-    #footer {
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        border-radius: 0px;
-        border: none;
-        border-top: 2.5px solid #222;
-        font-size: 4.25vw;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    body {
-        background-image: url('https://source.unsplash.com/user/mrdnomaid/likes/3840x2160');
+    100% {
+        background-position: 99% 0%
     }
 }
