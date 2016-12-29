@@ -41,7 +41,8 @@ h3 {
     margin-top: 0.5em;
     margin-bottom: 0.25em;
     color: #999;
-    font-size: 1.15em;
+    font-size: 1.05em;
+    font-weight: normal;
 }
 
 p {
@@ -56,27 +57,33 @@ a {
 }
 
 a:hover {
-    border-bottom: 0.15em solid #0670B1;
+    border-left: 0.25em solid #0670B1;
+    padding-left: 0.25em;
 }
 
 #yt:hover {
-    border-bottom: 0.15em solid #cd201f;
+    border-left: 0.25em solid #cd201f;
+    padding-left: 0.25em;
 }
 
 #tw:hover {
-    border-bottom: 0.15em solid #1da1f2;
+    border-left: 0.25em solid #1da1f2;
+    padding-left: 0.25em;
 }
 
 #gh:hover {
-    border-bottom: 0.15em solid #999;
+    border-left: 0.25em solid #333;
+    padding-left: 0.25em;
 }
 
 #re:hover {
-    border-bottom: 0.15em solid #ff4500;
+    border-left: 0.25em solid #ff4500;
+    padding-left: 0.25em;
 }
 
 #bl:hover {
-    border-bottom: 0.15em solid #09a51e;
+    border-left: 0.25em solid #09a51e;
+    padding-left: 0.25em;
 }
 
 @media screen and (max-width: 400px) {

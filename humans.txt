@@ -32,7 +32,7 @@ Site: fontawesome.io
 
 Google Web Fonts
 Ubuntu Mono: https://fonts.google.com/specimen/Ubuntu+Mono
-Comfortaa: https://fonts.google.com/specimen/Comfortaa
+Rubik: https://fonts.google.com/specimen/Rubik
 
 Google Analytics
 Site: analytics.google.com
