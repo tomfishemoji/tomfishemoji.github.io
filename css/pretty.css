@@ -16,25 +16,32 @@ body {
     overflow-x: hidden;
 }
 
-#links {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 2.5%;
-    width: 100%;
-    font-size: 1.25em;
-}
-
 h1#title {
     color: #0670b1;
-    background: linear-gradient(240deg, #0670b1, #173753);
+    background: linear-gradient(240deg, #0670b1, #173753, #111);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: glow 10s infinite;
+    animation: glow 15s infinite;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 3.5em;
+    font-size: 7.5em;
     cursor: default;
+}
+
+div#links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    text-align: left;
+}
+
+div#stuff {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    text-align: right;
 }
 
 h3 {
@@ -54,11 +61,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: #dedede;
-}
-
-a:hover {
-    border-left: 0.25em solid #0670B1;
-    padding-left: 0.25em;
+    font-size: 2.5em;
 }
 
 #yt:hover {
@@ -86,17 +89,64 @@ a:hover {
     padding-left: 0.25em;
 }
 
-@media screen and (max-width: 400px) {
-    #links {
-        max-width: 100%;
-        background-color: rgba(17, 17, 17, 0.85);
-        font-size: 8vw;
-    }
+#stuff a:hover {
+    border-right: 0.25em solid #0670B1;
+    padding-right: 0.25em;
 }
 
-@media screen and (max-height: 555px) {
-    #links {
-        font-size: 5.5vh;
+@media screen and (min-width: 486px) {
+  div#titlecontainer {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  div#titlecontainer {
+      position: absolute;
+      left: 0;
+      top: 2.5%;
+      width: 100%;
+      text-align: center;
+  }
+  h1#title {
+    font-size: 28.5vw;
+  }
+}
+
+@media screen and (min-width: 300px) {
+    #yt:hover:after {
+        content: ' YouTube';
+    }
+    #tw:hover:after {
+        content: ' Twitter';
+    }
+    #gh:hover:after {
+        content: ' GitHub';
+    }
+    #re:hover:after {
+        content: ' Reddit';
+    }
+    #bl:hover:after {
+        content: ' Blog';
+    }
+    #faq:hover:before {
+        content: 'FaQ ';
+    }
+    #con:hover:before {
+        content: 'Contact ';
+    }
+    #dev:hover:before {
+        content: 'Devices ';
+    }
+    #dwn:hover:before {
+        content: 'Files ';
+    }
+    #sta:hover:before {
+        content: 'Status ';
     }
 }
 
