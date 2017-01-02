@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+div#titlecontainer {
+  text-align: center;
+}
+
 h1#title {
     color: #0670b1;
     background: linear-gradient(240deg, #0670b1, #173753, #111);
@@ -24,6 +28,17 @@ h1#title {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 7.5em;
     cursor: default;
+}
+
+h3#subtitle {
+  color: #0670b1;
+  background: linear-gradient(240deg, #0670b1, #173753, #111);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 15s infinite;
+  font-size: 1.5em;
+  cursor: default;
 }
 
 div#links {
@@ -112,6 +127,12 @@ a {
   }
   h1#title {
     font-size: 28.5vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h3#subtitle {
+    font-size: 5.75vw;
   }
 }
 
