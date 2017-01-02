@@ -15,7 +15,7 @@ body {
 }
 
 div#titlecontainer {
-  text-align: center;
+    text-align: center;
 }
 
 h1#title {
@@ -31,28 +31,24 @@ h1#title {
 }
 
 h3#subtitle {
-  color: #0670b1;
-  background: linear-gradient(240deg, #0670b1, #173753, #111);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: glow 15s infinite;
-  font-size: 1.5em;
-  cursor: default;
+    color: #0670b1;
+    background: linear-gradient(240deg, #0670b1, #173753, #111);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 15s infinite;
+    font-size: 1.5em;
+    cursor: default;
 }
 
 div#links {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     left: 0;
     text-align: left;
 }
 
 div#stuff {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     right: 0;
     text-align: right;
 }
@@ -108,32 +104,46 @@ a {
 }
 
 @media screen and (min-width: 486px) {
-  div#titlecontainer {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  }
+    div#titlecontainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    div#links {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    div#stuff {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 @media screen and (max-width: 485px) {
-  div#titlecontainer {
-      position: absolute;
-      left: 0;
-      top: 2.5%;
-      width: 100%;
-      text-align: center;
-  }
-  h1#title {
-    font-size: 28.5vw;
-  }
+    div#titlecontainer {
+        position: absolute;
+        left: 0;
+        top: 2.5%;
+        width: 100%;
+        text-align: center;
+    }
+    h1#title {
+        font-size: 28.5vw;
+    }
+    div#links {
+        bottom: 2.5%;
+    }
+    div#stuff {
+        bottom: 2.5%;
+    }
 }
 
 @media screen and (max-width: 375px) {
-  h3#subtitle {
-    font-size: 5.75vw;
-  }
+    h3#subtitle {
+        font-size: 5.75vw;
+    }
 }
 
 @media screen and (min-width: 300px) {
