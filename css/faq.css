@@ -23,7 +23,7 @@ body {
 
 #header h1, #header h4 {
       color: #0670b1;
-      background: linear-gradient(240deg, #0670b1, #173753);
+      background: linear-gradient(240deg, #0670b1, #173753, #42033d, #111);
       background-size: 400% 400%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -60,12 +60,13 @@ body {
 
 a {
     cursor: pointer;
+    color: #dedede;
     text-decoration: none;
-    color: #ddd;
 }
 
 a:hover {
-    border-bottom: 0.1em solid #0670B1;
+    color: #0670B1;
+    text-decoration: underline;
 }
 
 #footer {
