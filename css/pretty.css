@@ -20,7 +20,7 @@ div#titlecontainer {
 
 h1#title {
     color: #0670b1;
-    background: linear-gradient(240deg, #0670b1, #173753, #42033d, #111);
+    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -32,7 +32,7 @@ h1#title {
 
 h3#subtitle {
     color: #0670b1;
-    background: linear-gradient(240deg, #0670b1, #173753, #42033d, #111);
+    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -61,16 +61,16 @@ h3 {
     font-weight: normal;
 }
 
-p {
-    color: #fafafa;
-    margin-bottom: 0.25em;
-}
-
 a {
     cursor: pointer;
     text-decoration: none;
     color: #dedede;
+}
+
+div#links a, div#stuff a {
+    display: block;
     font-size: 2.5em;
+    height: 1.5em;
 }
 
 #yt:hover {
@@ -101,6 +101,26 @@ a {
 #stuff a:hover {
     border-right: 0.25em solid #0670B1;
     padding-right: 0.25em;
+}
+
+div#footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    color: #282828;
+    background-color: #111;
+}
+
+div#footer a {
+    text-decoration: underline;
+    color: #282828;
+    transition: all 0.25s;
+}
+
+div#footer a:hover {
+    color: #383838;
 }
 
 @media screen and (min-width: 486px) {

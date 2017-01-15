@@ -13,32 +13,32 @@ body {
 }
 
 #container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2.5%;
-  font-size: 1.25em;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2.5%;
+    font-size: 1.25em;
+    z-index: 1;
 }
 
 #header h1, #header h4 {
-      color: #0670b1;
-      background: linear-gradient(240deg, #0670b1, #173753, #42033d, #111);
-      background-size: 400% 400%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: glow 10s infinite;
-      font-family: 'Ubuntu Mono', monospace;
-      cursor: default;
+    color: #0670b1;
+    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 25s infinite;
+    cursor: default;
 }
 
 #header h1 {
-  font-size: 3.5em;
+    font-size: 3.5em;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 #header h4 {
-  font-weight: normal;
-  margin-bottom: 1em;
+    font-weight: normal;
+    margin-bottom: 1em;
 }
 
 #questions .question {
@@ -69,24 +69,36 @@ a:hover {
     text-decoration: underline;
 }
 
-#footer {
+div#footer {
     position: fixed;
-    bottom: 2.5%;
-    right: 2.5%;
+    bottom: 0px;
+    right: 1.5%;
+    text-align: right;
+    color: #282828;
     background-color: #111;
-    border-radius: 5px;
-    border: 2.5px solid #0670B1;
-    padding: 0.1em;
-    z-index: 2;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    z-index: 500;
 }
 
-#footer a {
+div#footer a {
+    text-decoration: underline;
+    color: #282828;
+    transition: all 0.25s;
+}
+
+div#footer a:hover {
+    color: #383838;
+}
+
+#footer a.main {
+  color: #dedede;
   text-decoration: none;
 }
 
-#footer a:hover {
-  border-bottom: none;
-  color: #999;
+div#footer a.main:hover {
+    color: #0670b1;
 }
 
 @keyframes glow {

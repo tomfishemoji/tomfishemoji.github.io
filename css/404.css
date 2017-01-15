@@ -15,11 +15,11 @@ body {
 
 h1#title {
     color: #0670b1;
-    background: linear-gradient(240deg, #0670b1, #173753, #42033d, #111);
+    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: glow 15s infinite;
+    animation: glow 25s infinite;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 7.5em;
     cursor: default;
@@ -34,11 +34,10 @@ div#titlecontainer {
 }
 
 @media screen and (max-width: 485px) {
-  h1#title {
-    font-size: 40vw;
-  }
+    h1#title {
+        font-size: 40vw;
+    }
 }
-
 
 @keyframes glow {
     0% {

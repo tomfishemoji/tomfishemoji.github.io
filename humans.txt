@@ -32,7 +32,7 @@ Site: fontawesome.io
 
 Google Web Fonts
 Ubuntu Mono: https://fonts.google.com/specimen/Ubuntu+Mono
-Rubik: https://fonts.google.com/specimen/Rubik
+Catamaran: https://fonts.google.com/specimen/Catamaran
 
 Google Analytics
 Site: analytics.google.com
