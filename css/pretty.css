@@ -88,11 +88,6 @@ div#links a, div#stuff a {
     padding-left: 0.25em;
 }
 
-#re:hover {
-    border-left: 0.25em solid #ff4500;
-    padding-left: 0.25em;
-}
-
 #bl:hover {
     border-left: 0.25em solid #09a51e;
     padding-left: 0.25em;
@@ -176,9 +171,7 @@ div#footer a:hover {
     #gh:hover:after {
         content: ' GitHub';
     }
-    #re:hover:after {
-        content: ' Reddit';
-    }
+
     #bl:hover:after {
         content: ' Blog';
     }
@@ -187,9 +180,6 @@ div#footer a:hover {
     }
     #con:hover:before {
         content: 'Contact ';
-    }
-    #dev:hover:before {
-        content: 'Devices ';
     }
     #dwn:hover:before {
         content: 'Files ';
