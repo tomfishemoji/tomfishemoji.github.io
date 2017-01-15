@@ -10,7 +10,7 @@ html, body {
 
 body {
     background: #111;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
 }
 
@@ -26,7 +26,7 @@ h1#title {
     -webkit-text-fill-color: transparent;
     animation: glow 25s infinite;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 7.5em;
+    font-size: 7em;
     cursor: default;
 }
 

@@ -6,8 +6,11 @@
  \__,_|_| |_|\___/|_| |_| |_|\__,_|_|\__,_(_)___\___(_)__,_|_|\_\
 
 
-Cool people who made/helped make this site
--------------------------------------
+-
+
+
+Cool people who have some relation to this site:
+
 Tom
 Alias: dnomaid
 Twitter: @mrDnomaid
@@ -24,20 +27,26 @@ Twitter: @EGNLunar
 Site: lunarzechangeling.github.io
 
 
+-
 
-Things the site uses
---------------------
+
+Things the site uses:
+
 FontAwesome
 Site: fontawesome.io
 
 Google Web Fonts
 Ubuntu Mono: https://fonts.google.com/specimen/Ubuntu+Mono
-Catamaran: https://fonts.google.com/specimen/Catamaran
+Titillium Web: https://fonts.google.com/specimen/Titillium+Web
 
 Google Analytics
 Site: analytics.google.com
 
 
+-
+
+
+Contact:
 
 Need to contact me for whatever reason?
 My email can be found on this page: https://dnomaid.co.uk/faq.html#sayhi
