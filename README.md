@@ -1,4 +1,4 @@
-![dnomaid.co.uk](http://i.imgur.com/ggc4A4Q.png)
+![dnomaid.co.uk](https://u.nya.is/wvdrge.png)
 # It's a website
 ## There are many like it
 ### But this one is mine
