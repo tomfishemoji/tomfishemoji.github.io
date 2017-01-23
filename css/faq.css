@@ -47,11 +47,14 @@ body {
     font-size: 0.9em;
 }
 
-#questions .question .Q, #questions .question .A {
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.5em;
+#questions .question .question-heading {
+    font-size: 1.3em;
     font-weight: bold;
-    color: #999;
+}
+
+#questions .question .question-subheading {
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 #questions #devices #handylist, #questions #devices li {
