@@ -19,6 +19,7 @@ div#sidebar {
     top: 50px;
     left: 50px;
     text-align: right;
+    font-size: 1.25em;
 }
 
 div.sidebar_group:not(:nth-last-child(1)) {
@@ -33,7 +34,7 @@ h1#title {
     -webkit-text-fill-color: transparent;
     animation: glow 25s infinite;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 2em;
+    font-size: 2.5em;
     cursor: default;
 }
 
