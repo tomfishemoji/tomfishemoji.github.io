@@ -16,29 +16,70 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 2.5%;
-    font-size: 1.25em;
-    z-index: 1;
+    padding: 1em;
 }
 
-#header h1, #header h4 {
+h1#title {
     color: #0670b1;
     background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: glow 25s infinite;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 4em;
     cursor: default;
 }
 
-#header h1 {
-    font-size: 3.5em;
-    font-family: 'Ubuntu Mono', monospace;
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #dedede;
 }
 
-#header h4 {
-    font-weight: normal;
-    margin-bottom: 1em;
+a:hover {
+    color: #0670B1;
+}
+
+#yt:hover {
+    color: #cd201f;
+}
+
+#tw:hover {
+    color: #1da1f2;
+}
+
+#gh:hover {
+    color: #333;
+}
+
+#bl:hover {
+    color: #09a51e;
+    ``
+}
+
+div#footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: #282828;
+    background-color: #111;
+    font-size: 1.1em;
+}
+
+div#footer a {
+    text-decoration: underline;
+    color: #282828;
+    transition: all 0.25s;
+}
+
+div#footer a:hover {
+    color: #383838;
+}
+
+div#footer a.main {
+    text-decoration: none;
+    color: #333;
 }
 
 #questions .question {
@@ -59,49 +100,6 @@ body {
 
 #questions #devices #handylist, #questions #devices li {
     margin-left: 2em;
-}
-
-a {
-    cursor: pointer;
-    color: #dedede;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0670B1;
-    text-decoration: underline;
-}
-
-div#footer {
-    position: fixed;
-    bottom: 0px;
-    right: 1.5%;
-    text-align: right;
-    color: #282828;
-    background-color: #111;
-    padding-top: 5px;
-    padding-left: 5px;
-    border-top-left-radius: 5px;
-    z-index: 500;
-}
-
-div#footer a {
-    text-decoration: underline;
-    color: #282828;
-    transition: all 0.25s;
-}
-
-div#footer a:hover {
-    color: #383838;
-}
-
-#footer a.main {
-  color: #dedede;
-  text-decoration: none;
-}
-
-div#footer a.main:hover {
-    color: #0670b1;
 }
 
 @keyframes glow {

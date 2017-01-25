@@ -11,11 +11,18 @@ html, body {
 body {
     background: #111;
     font-family: 'Titillium Web', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-div#titlecontainer {
-    text-align: center;
+div#sidebar {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    text-align: right;
+}
+
+div.sidebar_group:not(:nth-last-child(1)) {
+    border-bottom: 2px solid #151515;
 }
 
 h1#title {
@@ -26,39 +33,8 @@ h1#title {
     -webkit-text-fill-color: transparent;
     animation: glow 25s infinite;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 7em;
+    font-size: 2em;
     cursor: default;
-}
-
-h3#subtitle {
-    color: #0670b1;
-    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glow 25s infinite;
-    font-size: 1.5em;
-    cursor: default;
-}
-
-div#links {
-    position: absolute;
-    left: 0;
-    text-align: left;
-}
-
-div#stuff {
-    position: absolute;
-    right: 0;
-    text-align: right;
-}
-
-h3 {
-    margin-top: 0.5em;
-    margin-bottom: 0.25em;
-    color: #999;
-    font-size: 1.05em;
-    font-weight: normal;
 }
 
 a {
@@ -67,43 +43,31 @@ a {
     color: #dedede;
 }
 
-div#links a, div#stuff a {
-    display: block;
-    font-size: 2.5em;
-    height: 1.5em;
+a:hover {
+    color: #0670B1;
 }
 
 #yt:hover {
-    border-left: 0.25em solid #cd201f;
-    padding-left: 0.25em;
+    color: #cd201f;
 }
 
 #tw:hover {
-    border-left: 0.25em solid #1da1f2;
-    padding-left: 0.25em;
+    color: #1da1f2;
 }
 
 #gh:hover {
-    border-left: 0.25em solid #333;
-    padding-left: 0.25em;
+    color: #333;
 }
 
 #bl:hover {
-    border-left: 0.25em solid #09a51e;
-    padding-left: 0.25em;
-}
-
-#stuff a:hover {
-    border-right: 0.25em solid #0670B1;
-    padding-right: 0.25em;
+    color: #09a51e;
+    ``
 }
 
 div#footer {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 100%;
-    text-align: center;
     color: #282828;
     background-color: #111;
 }
@@ -118,80 +82,9 @@ div#footer a:hover {
     color: #383838;
 }
 
-@media screen and (min-width: 486px) {
-    div#titlecontainer {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-    div#links {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    div#stuff {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
-@media screen and (max-width: 485px) {
-    div#titlecontainer {
-        position: absolute;
-        left: 0;
-        top: 2.5%;
-        width: 100%;
-        text-align: center;
-    }
-    h1#title {
-        font-size: 28.5vw;
-    }
-    div#links {
-        bottom: 2.5%;
-    }
-    div#stuff {
-        bottom: 2.5%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    h3#subtitle {
-        font-size: 5.75vw;
-    }
-}
-
-@media screen and (min-width: 300px) {
-    #yt:hover:after {
-        content: ' YouTube';
-    }
-    #tw:hover:after {
-        content: ' Twitter';
-    }
-    #gh:hover:after {
-        content: ' GitHub';
-    }
-
-    #bl:hover:after {
-        content: ' Blog';
-    }
-    #faq:hover:before {
-        content: 'FaQ ';
-    }
-    #con:hover:before {
-        content: 'Contact ';
-    }
-    #dwn:hover:before {
-        content: 'Files ';
-    }
-    #sta:hover:before {
-        content: 'Status ';
-    }
-}
-
-@media screen and (min-width: 1950px) {
-    #links {
-        font-size: 1.5em;
+@media screen and (max-width: 350px) {
+    div#sidebar {
+        font-size: 9vw;
     }
 }
 
