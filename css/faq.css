@@ -17,6 +17,7 @@ body {
     top: 0;
     left: 0;
     padding: 1em;
+    margin-bottom: 2em;
 }
 
 h1#title {
@@ -39,23 +40,6 @@ a {
 
 a:hover {
     color: #0670B1;
-}
-
-#yt:hover {
-    color: #cd201f;
-}
-
-#tw:hover {
-    color: #1da1f2;
-}
-
-#gh:hover {
-    color: #333;
-}
-
-#bl:hover {
-    color: #09a51e;
-    ``
 }
 
 div#footer {
@@ -100,6 +84,14 @@ div#footer a.main {
 
 #questions #devices #handylist, #questions #devices li {
     margin-left: 2em;
+}
+
+@media screen and (max-width: 400px) {
+    div#footer {
+      width: 100%;
+      text-align: center;
+      font-size: 4.5vw;
+    }
 }
 
 @keyframes glow {

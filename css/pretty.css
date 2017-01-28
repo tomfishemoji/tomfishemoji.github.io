@@ -23,7 +23,11 @@ div#sidebar {
 }
 
 div.sidebar_group:not(:nth-last-child(1)) {
-    border-bottom: 2px solid #151515;
+    border-bottom: 2px solid #222;
+}
+
+div.sidebar_group:not(:nth-first-child(0)) {
+  margin-top: 10px;
 }
 
 h1#title {
@@ -87,6 +91,19 @@ div#footer a:hover {
     div#sidebar {
         font-size: 9vw;
     }
+    div#footer {
+      width: 100%;
+      text-align: center;
+      font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-height: 400px) {
+  div#sidebar {
+      top: 0px;
+      left: 15px;
+      font-size: 6vh;
+  }
 }
 
 @keyframes glow {
