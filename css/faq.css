@@ -6,9 +6,9 @@
 body {
     height: 100%;
     width: 100%;
-    color: #fafafa;
+    color: #66ffd1;
     font-family: 'Titillium Web', sans-serif;
-    background: #111;
+    background: #110110;
     overflow-x: hidden;
 }
 
@@ -21,12 +21,6 @@ body {
 }
 
 h1#title {
-    color: #0670b1;
-    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glow 25s infinite;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 4em;
     cursor: default;
@@ -35,11 +29,11 @@ h1#title {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: #dedede;
+    color: #66e0ff;
 }
 
 a:hover {
-    color: #0670B1;
+    color: #00c9fc;
 }
 
 div#footer {
@@ -91,17 +85,5 @@ div#footer a.main {
       width: 100%;
       text-align: center;
       font-size: 4.5vw;
-    }
-}
-
-@keyframes glow {
-    0% {
-        background-position: 99% 0%
-    }
-    50% {
-        background-position: 1% 100%
-    }
-    100% {
-        background-position: 99% 0%
     }
 }

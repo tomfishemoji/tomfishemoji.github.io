@@ -9,101 +9,72 @@ html, body {
 }
 
 body {
-    background: #111;
+    background: #110110;
     font-family: 'Titillium Web', sans-serif;
     overflow: hidden;
 }
 
-div#sidebar {
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    text-align: right;
+div#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
     font-size: 1.25em;
 }
 
-div.sidebar_group:not(:nth-last-child(1)) {
-    border-bottom: 2px solid #222;
+div.group:not(:nth-last-child(1)) {
+    border-bottom: 2px solid #42033d;
 }
 
-div.sidebar_group:not(:nth-first-child(0)) {
-  margin-top: 10px;
+div.group:not(:nth-first-child(0)) {
+    margin-top: 10px;
 }
 
 h1#title {
-    color: #0670b1;
-    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glow 25s infinite;
+    color: #66ffd1;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 2.5em;
+    font-size: 2.7em;
     cursor: default;
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
-    color: #dedede;
+    color: #66e0ff;
+}
+
+a.link {
+    font-size: 1.75em;
 }
 
 a:hover {
-    color: #0670B1;
-}
-
-#yt:hover {
-    color: #cd201f;
-}
-
-#tw:hover {
-    color: #1da1f2;
-}
-
-#gh:hover {
-    color: #333;
-}
-
-#bl:hover {
-    color: #09a51e;
-    ``
+    color: #00c9fc;
 }
 
 div#footer {
     position: absolute;
     bottom: 0px;
-    left: 0px;
-    color: #282828;
-    background-color: #111;
-}
-
-div#footer a {
-    text-decoration: underline;
-    color: #282828;
-    transition: all 0.25s;
-}
-
-div#footer a:hover {
-    color: #383838;
+    width: 100%;
+    color: #66ffd1;
+    text-align: center;
 }
 
 @media screen and (max-width: 350px) {
-    div#sidebar {
+    div#content {
         font-size: 9vw;
     }
     div#footer {
-      width: 100%;
-      text-align: center;
-      font-size: 4.5vw;
+        font-size: 4.5vw;
     }
 }
 
 @media screen and (max-height: 400px) {
-  div#sidebar {
-      top: 0px;
-      left: 15px;
-      font-size: 6vh;
-  }
+    div#content {
+        font-size: 6vh;
+    }
 }
 
 @keyframes glow {
