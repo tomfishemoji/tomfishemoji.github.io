@@ -9,44 +9,24 @@ html, body {
 }
 
 body {
-    background: #111;
+    background: #110110;
     overflow-x: hidden;
 }
 
 h1#title {
-    color: #0670b1;
-    background: linear-gradient(240deg, #42033d, #173753, #0670b1, #111);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glow 25s infinite;
+    color: #66ffd1;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 7.5em;
+    font-size: 2.7em;
     cursor: default;
 }
 
-div#titlecontainer {
+div#content {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width: 485px) {
-    h1#title {
-        font-size: 40vw;
-    }
-}
-
-@keyframes glow {
-    0% {
-        background-position: 99% 0%
-    }
-    50% {
-        background-position: 1% 100%
-    }
-    100% {
-        background-position: 99% 0%
-    }
+    text-align: center;
+    font-size: 1.25em;
 }
