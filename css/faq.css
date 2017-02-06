@@ -17,13 +17,17 @@ body {
     top: 0;
     left: 0;
     padding: 1em;
-    margin-bottom: 2em;
+}
+
+div#header {
+    margin-bottom: 15px;
 }
 
 h1#title {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 4em;
     cursor: default;
+    border-bottom: 2px solid #42033d;
 }
 
 a {
@@ -37,38 +41,15 @@ a:hover {
 }
 
 div#footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    color: #282828;
-    background-color: #111;
-    font-size: 1.1em;
-}
-
-div#footer a {
-    text-decoration: underline;
-    color: #282828;
-    transition: all 0.25s;
-}
-
-div#footer a:hover {
-    color: #383838;
-}
-
-div#footer a.main {
-    text-decoration: none;
-    color: #333;
+    border-top: 1px solid #42033d;
+    margin-top: 15px;
+    color: #66ffd1;
 }
 
 #questions .question {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 0.9em;
-}
-
-#questions .question .question-heading {
-    font-size: 1.3em;
-    font-weight: bold;
 }
 
 #questions .question .question-subheading {
@@ -80,10 +61,9 @@ div#footer a.main {
     margin-left: 2em;
 }
 
-@media screen and (max-width: 400px) {
-    div#footer {
-      width: 100%;
-      text-align: center;
-      font-size: 4.5vw;
-    }
+
+/* devices page */
+
+a.link-to-device {
+    float: right;
 }
