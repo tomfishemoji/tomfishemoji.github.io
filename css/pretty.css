@@ -62,12 +62,15 @@ div#footer {
     text-align: center;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
     div#content {
-        font-size: 9vw;
+        font-size: 7vw;
+    }
+    div#content a.link {
+      font-size: 1.5em;
     }
     div#footer {
-        font-size: 4.5vw;
+        font-size: 3.9vw;
     }
 }
 
