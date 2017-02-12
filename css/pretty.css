@@ -23,6 +23,7 @@ div#content {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 1.25em;
+    animation: fadeUp 1s ease;
 }
 
 div.group:not(:nth-last-child(1)) {
@@ -60,6 +61,7 @@ div#footer {
     width: 100%;
     color: #66ffd1;
     text-align: center;
+    animation: fadeUpNoTL 1.25s linear;
 }
 
 @media screen and (max-width: 450px) {
@@ -67,7 +69,7 @@ div#footer {
         font-size: 7vw;
     }
     div#content a.link {
-      font-size: 1.5em;
+        font-size: 1.5em;
     }
     div#footer {
         font-size: 3.9vw;
@@ -89,5 +91,31 @@ div#footer {
     }
     100% {
         background-position: 99% 0%
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-50%, 100%, 0);
+        transform: translate3d(-50%, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeUpNoTL {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
 }
