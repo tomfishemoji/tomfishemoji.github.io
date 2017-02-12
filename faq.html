@@ -75,7 +75,7 @@
 
             <div class="question" id="sayhi">
                 <h2 class="question-heading"> How do I contact you?</h2>
-                <p>My email is just tom [at] this domain.</p>
+                <p>Check out <a href="contact.html">this page</a>.</p>
             </div>
 
             <div class="question" id="devices">
@@ -89,6 +89,15 @@
         <div id="footer"><p><a href="index.html"><i class="fa fa-home fa-fw"></i> Back Home</a> / <a href="#"><i class="fa fa-arrow-up fa-fw"></i> Top of page</a></p></div>
         <!-- /Container -->
     </div>
+
+    <script>
+    if (window.location.hash == '#devices') {
+      document.location = 'devices.html';
+    }
+    if (window.location.hash == '#sayhi') {
+      document.location = 'contact.html';
+    }
+    </script>
 </body>
 
 </html>

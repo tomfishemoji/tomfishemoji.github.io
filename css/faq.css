@@ -40,10 +40,9 @@ a:hover {
     color: #00c9fc;
 }
 
-div#footer {
-    border-top: 1px solid #42033d;
-    margin-top: 15px;
-    color: #66ffd1;
+li {
+  position: relative;
+  left: 25px;
 }
 
 #questions .question {
@@ -61,6 +60,11 @@ div#footer {
     margin-left: 2em;
 }
 
+div#footer {
+    border-top: 1px solid #42033d;
+    margin-top: 15px;
+    color: #66ffd1;
+}
 
 /* devices page */
 
