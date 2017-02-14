@@ -36,7 +36,7 @@ div.group:not(:nth-first-child(0)) {
 
 h1#title {
     color: #66ffd1;
-    font-family: 'Comfortaa Light', monospace;
+    font-family: 'Comfortaa', monospace;
     font-size: 3em;
     cursor: default;
 }

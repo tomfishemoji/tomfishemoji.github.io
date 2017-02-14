@@ -24,7 +24,7 @@ div#header {
 }
 
 h1#title {
-    font-family: 'Comfortaa Light', monospace;
+    font-family: 'Comfortaa', monospace;
     font-size: 4em;
     cursor: default;
     border-bottom: 2px solid #42033d;
