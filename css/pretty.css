@@ -23,11 +23,15 @@ div#content {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 1.25em;
-    animation: fadeUp 1s ease;
 }
 
-div.group:not(:nth-last-child(1)) {
-    border-bottom: 2px solid #42033d;
+hr {
+    border: 0;
+    background-color: #42033d;
+    height: 3px;
+    width: 100%;
+    margin: 0 auto;
+    animation: line 1s;
 }
 
 div.group:not(:nth-first-child(0)) {
@@ -61,7 +65,6 @@ div#footer {
     width: 100%;
     color: #66ffd1;
     text-align: center;
-    animation: fadeUpNoTL 1.25s linear;
 }
 
 @media screen and (max-width: 450px) {
@@ -79,32 +82,65 @@ div#footer {
     }
 }
 
-@keyframes glow {
+@keyframes line {
     0% {
-        background-position: 99% 0%
-    }
-    50% {
-        background-position: 1% 100%
+        width: 0%;
+        opacity: 0;
     }
     100% {
-        background-position: 99% 0%
+        width: 100%;
+        opacity: 1;
     }
 }
 
-@keyframes fadeUp {
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
     from {
         opacity: 0;
-        -webkit-transform: translate3d(-50%, 100%, 0);
-        transform: translate3d(-50%, 100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
     }
     to {
         opacity: 1;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: none;
+        transform: none;
     }
 }
 
-@keyframes fadeUpNoTL {
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
@@ -115,4 +151,22 @@ div#footer {
         -webkit-transform: none;
         transform: none;
     }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
