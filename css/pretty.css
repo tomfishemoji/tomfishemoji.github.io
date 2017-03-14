@@ -11,7 +11,7 @@ html, body {
 body {
     background: #110110;
     font-family: 'Titillium Web', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 div#content {
@@ -58,19 +58,45 @@ a.link:hover {
 }
 
 a.link:active {
-    transform: scale(0.85);
+    transform: scale(0.95);
 }
 
 a:hover {
     color: #00c9fc;
 }
 
-div#footer {
+div#bottom {
     position: absolute;
     bottom: 0px;
     width: 100%;
     color: #66ffd1;
     text-align: center;
+    /*font-size: 2em;*/
+}
+
+div#extra {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    background-color: #0c000b;
+    color: #66ffd1;
+    text-align: center;
+}
+
+div#extra .fa {
+    transition: all 0.25s;
+}
+
+div#extra a:hover .fa {
+    transform: scale(1.25);
+}
+
+div#extra a:active .fa {
+    transform: scale(0.95);
 }
 
 @media screen and (max-width: 450px) {

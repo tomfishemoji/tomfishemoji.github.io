@@ -17,9 +17,9 @@ Twitter: @mrDnomaid
 Site: dnomaid.co.uk
 
 Haden
-Alias: FletchZYZ
-Twitter: @FletchXYZ
-Site: thefletch.xyz
+Alias: theHaden
+Twitter: @the_Haden
+Site: theHaden.co
 
 Matt
 Alias: EGNLunar/Lunar/LunarZeChangeling
