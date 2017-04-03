@@ -87,6 +87,12 @@ div#extra {
     text-align: center;
 }
 
+#key {
+  width: 1em;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
 div#extra .fa {
     transition: all 0.25s;
 }
