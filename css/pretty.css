@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background: #110110;
+    background: #000;
     font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ div#content {
 
 hr {
     border: 0;
-    background-color: #42033d;
+    background-color: #aaa;
     height: 3px;
     width: 100%;
     margin: 0 auto;
@@ -35,7 +35,7 @@ hr {
 }
 
 h1#title {
-    color: #66ffd1;
+    color: #fff;
     font-family: 'Comfortaa', monospace;
     font-size: 3em;
     cursor: default;
@@ -44,11 +44,12 @@ h1#title {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: #66e0ff;
     transition: all 0.25s;
+    color: #000;
 }
 
 a.link {
+    color: #fff;
     font-size: 2.4em;
     display: inline-block;
 }
@@ -62,7 +63,23 @@ a.link:active {
 }
 
 a:hover {
-    color: #00c9fc;
+    color: #333;
+}
+
+#youtube:hover {
+  color: #cd201f;
+}
+
+#twitter:hover {
+  color: #1da1f2;
+}
+
+#github:hover {
+  color: #0366d6;
+}
+
+#medium:hover {
+  color: #00ab6c;
 }
 
 div#bottom {
@@ -82,8 +99,8 @@ div#extra {
     padding-top: 1em;
     padding-bottom: 1em;
     width: 100%;
-    background-color: #0c000b;
-    color: #66ffd1;
+    background-color: #fff;
+    color: #000;
     text-align: center;
 }
 

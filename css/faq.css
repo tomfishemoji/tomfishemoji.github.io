@@ -6,9 +6,9 @@
 body {
     height: 100%;
     width: 100%;
-    color: #66ffd1;
+    color: #fff;
     font-family: 'Titillium Web', sans-serif;
-    background: #110110;
+    background-color: #000;
     overflow-x: hidden;
 }
 
@@ -27,17 +27,17 @@ h1#title {
     font-family: 'Comfortaa', monospace;
     font-size: 3em;
     cursor: default;
-    border-bottom: 3px solid #42033d;
+    border-bottom: 3px solid #aaa;
 }
 
 a {
     cursor: pointer;
-    text-decoration: none;
-    color: #66e0ff;
+    text-decoration: underline;
+    color: #fff;
 }
 
 a:hover {
-    color: #00c9fc;
+    color: #aaa;
 }
 
 li {
@@ -61,7 +61,7 @@ li {
 }
 
 div#footer {
-    border-top: 3px solid #42033d;
+    border-top: 3px solid #aaa;
     padding-top: 1em;
     margin-top: 15px;
     color: #66ffd1;
