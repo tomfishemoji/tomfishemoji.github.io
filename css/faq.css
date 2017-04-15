@@ -71,4 +71,9 @@ div#footer {
 
 a.link-to-device {
     float: right;
+    margin-left: 0.5em;
+}
+
+.column {
+  max-width: 50em;
 }
