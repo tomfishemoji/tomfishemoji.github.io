@@ -50,7 +50,8 @@
     </div>
 
     <div id="bottom" class="animated fadeInUp">
-        <p><a href="#extra" class="link"><i class="fa fa-caret-down"></i></a></p>
+        <p id="cu"><a href="#extra" class="link" onclick="openextra();"><i class="fa fa-caret-up"></i></a></p>
+        <p id="cd" style="display: none;"><a href="#" class="link" onclick="closeextra();"><i class="fa fa-caret-down"></i></a></p>
     </div>
 
     <div id="extra">
@@ -82,6 +83,20 @@
     <script>
         if (window.top !== window.self) {
             window.top.location.replace(window.self.location.href);
+        }
+
+        if (window.location.hash == '#extra') {
+            openextra();
+        }
+
+        function openextra() {
+            document.getElementById('cd').style.display = 'block';
+            document.getElementById('cu').style.display = 'none';
+        }
+
+        function closeextra() {
+            document.getElementById('cd').style.display = 'none';
+            document.getElementById('cu').style.display = 'block';
         }
     </script>
 </body>
