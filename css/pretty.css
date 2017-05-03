@@ -125,7 +125,7 @@ div#extra a:active .fa {
 
 @media screen and (max-width: 450px) {
     div#content {
-        font-size: 7vw;
+        font-size: 6vw;
     }
     div#footer {
         font-size: 3.9vw;
