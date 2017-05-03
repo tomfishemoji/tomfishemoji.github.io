@@ -41,8 +41,8 @@ a:hover {
 }
 
 li {
-  position: relative;
-  left: 25px;
+    position: relative;
+    left: 25px;
 }
 
 #questions .question {
@@ -61,11 +61,36 @@ li {
 }
 
 div#footer {
-    border-top: 3px solid #aaa;
-    padding-top: 1em;
-    margin-top: 15px;
-    color: #fff;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 3px;
 }
+
+div#footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+div#footer a:hover {
+    color: #333;
+}
+
+div#footer .fa {
+    transition: all 0.25s;
+}
+
+div#footer a:hover .fa {
+    transform: scale(1.25);
+}
+
+div#footer a:active .fa {
+    transform: scale(0.95);
+}
+
 
 /* devices page */
 
@@ -75,5 +100,5 @@ a.link-to-device {
 }
 
 .column {
-  max-width: 50em;
+    max-width: 50em;
 }

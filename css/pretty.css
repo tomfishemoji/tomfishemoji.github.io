@@ -67,19 +67,19 @@ a:hover {
 }
 
 #youtube:hover {
-  color: #cd201f;
+    color: #cd201f;
 }
 
 #twitter:hover {
-  color: #1da1f2;
+    color: #1da1f2;
 }
 
 #github:hover {
-  color: #0366d6;
+    color: #0366d6;
 }
 
 #medium:hover {
-  color: #00ab6c;
+    color: #00ab6c;
 }
 
 div#bottom {
@@ -106,9 +106,16 @@ div#extra {
 }
 
 #key {
-  width: 1em;
-  margin: 0 auto;
-  font-size: 1.5em;
+    width: 1em;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+#copyr {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    color: #999;
 }
 
 div#extra .fa {

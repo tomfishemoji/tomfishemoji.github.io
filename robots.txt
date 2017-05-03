@@ -1,6 +1,2 @@
-#Hello, fellow curious dev! Welcome to robots.txt!
-#Other Files you may like: humans.txt, hackers.txt
-
-
 User-agent: *
 Disallow: /cdn-cgi/
