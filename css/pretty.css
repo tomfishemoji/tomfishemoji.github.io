@@ -82,59 +82,66 @@ a:hover {
     color: #00ab6c;
 }
 
-div#bottom {
-    position: absolute;
-    bottom: 0px;
-    padding-bottom: 1em;
+p#scroll-arrow {
+    position: fixed;
+    bottom: 0.75em;
+    left: 0;
     width: 100%;
-    color: #66ffd1;
-    background-color: #000;
     text-align: center;
-    /*font-size: 2em;*/
+    z-index: 1;
+    font-size: 2em;
+}
+
+p#scroll-arrow a {
+    color: #fff;
 }
 
 div#extra {
     position: absolute;
     top: 100%;
     left: 0px;
-    padding-top: 1em;
+    padding-top: 0.25em;
     padding-bottom: 1em;
     width: 100%;
     background-color: #fff;
     color: #000;
     text-align: center;
+    z-index: 10;
 }
 
-#key {
-    width: 1em;
-    margin: 0 auto;
+a.extra-link {
     font-size: 1.5em;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+a.extra-link:hover {
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+a.extra-link:active {
+    transform: scale(0.95);
 }
 
 #copyr {
     width: 100%;
     text-align: center;
     font-size: 0.9em;
-    color: #999;
+    color: #555;
 }
 
-div#extra .fa {
-    transition: all 0.25s;
-}
-
-div#extra a:hover .fa {
-    transform: scale(1.25);
-}
-
-div#extra a:active .fa {
-    transform: scale(0.95);
+#copyr a {
+    text-decoration: underline;
+    color: #555;
 }
 
 @media screen and (max-width: 450px) {
     div#content {
         font-size: 6vw;
     }
-    div#footer {
+    div#extra {
         font-size: 3.9vw;
     }
 }
