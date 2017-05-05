@@ -87,6 +87,15 @@ li {
 a.link-to-device {
     float: right;
     margin-left: 0.5em;
+    transition: all 0.25s;
+}
+
+a.link-to-device:hover {
+    transform: scale(1.25);
+}
+
+a.link-to-device:active {
+    transform: scale(0.95);
 }
 
 .column {
