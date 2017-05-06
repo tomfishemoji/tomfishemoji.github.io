@@ -15,6 +15,7 @@ body {
 div#container {
     max-width: 50em;
     margin: 0 auto;
+    min-height: 100%;
 }
 
 div#header {
@@ -59,6 +60,10 @@ a {
 
 a:hover {
     color: #aaa;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 li {
