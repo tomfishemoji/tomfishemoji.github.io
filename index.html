@@ -1,81 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#000000">
     <meta name="viewport" content="initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Amateur Web Developer and Tech Dude.">
+    <meta name="description" content="I do computers and stuff">
     <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website, site, social, media, links">
     <!-- Open Graph  -->
-    <meta property="og:description" content="Amateur Web Developer &amp; Tech Dude." />
+    <meta property="og:description" content="I do computers and stuff" />
     <meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@mrDnomaid" />
-    <meta name="twitter:title" content="dnomaid's home on the web" />
-    <meta name="twitter:description" content="Amateur Web Developer &amp; Tech Dude." />
+    <meta name="twitter:site" content="@mrdnomaid" />
+    <meta name="twitter:title" content="dnomaid's website" />
+    <meta name="twitter:description" content="I do computers and stuff" />
     <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />
     <!-- CSS & icons -->
+    <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300%7CNunito" rel="stylesheet">
-    <link href="css/frameworks/bulma.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="img/fish_large.png">
     <title>dnomaid.co.uk</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
-
-    <div id="content">
-        <div class="animated fadeInDown">
-            <h1 id="title" ondblclick="this.className += ' rotate';">dnomaid</h1>
-        </div>
-
-        <hr>
-
-        <div class="animated fadeInUp">
-            <p>
-                <a href="https://youtube.com/dnomaid" class="link" id="youtube" title="Videos - YouTube"><i class="fa fa-youtube-play fa-fw"></i></a>
-                <a href="https://twitter.com/mrDnomaid" class="link" id="twitter" title="Tweets - Twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                <a href="https://github.com/mrDnomaid?tab=repositories" id="github" class="link" title="Code - GitHub"><i class="fa fa-github fa-fw"></i></a>
-                <a href="https://blog.dnomaid.co.uk/" class="link" id="medium" title="Words - Blog"><i class="fa fa-pencil fa-fw"></i></a>
-            </p>
-        </div>
-        <!-- /content -->
+    <div class="animated fadeInRight">
+        <h1 id="title">dnomaid</h1>
+        <h2>Home</h2>
+        <p class="home-lnk">&nbsp;</p>
     </div>
 
-    <p id="scroll-arrow"><a href="#extra"><i class="fa fa-angle-down"></i></a></p>
-
-    <div id="extra">
-        <div class="columns">
-
-            <div class="column">
-                <p><a href="faq.html" class="extra-link" title="Frequently Asked Questions"><i class="fa fa-question-circle fa-fw"></i> FaQs</a></p>
-            </div>
-
-            <div class="column">
-                <p><a href="devices.html" class="extra-link" title="Devices, gadgets and gizmos that I own"><i class="fa fa-laptop fa-fw"></i> Devices</a></p>
-            </div>
-
-            <div class="column">
-                <p><a href="#extra" class="extra-link" title="Contact me" onclick="alert('My email is simply tom [at] dnomaid [dot] co [dot] uk. If you are a YouTube MCN, web design company, con-artist or anything similar, there\'s no point emailing me; I\'m not interested.');"><i class="fa fa-envelope fa-fw"></i> Contact</a></p>
-            </div>
-
-            <div class="column">
-                <p><a href="about.html" class="extra-link" title="Who even is dnomaid anyway?"><i class="fa fa-user fa-fw"></i> About</a></p>
-            </div>
-
-        </div>
-
-        <p id="copyr"><span style="font-family: 'Arial;'" title="Copyright">©</span> dnomaid - some rights reserved (<a href="https://github.com/mrDnomaid/mrdnomaid.github.io/blob/master/LICENSE.md">license</a>) - <a href="https://status.dnomaid.co.uk">status &amp; uptime</a></p>
+    <div class="animated fadeInLeft">
+        <p><a href="https://YouTube.com/dnomaid" class="social-lnk yt"><i class="fa fa-youtube-play fa-fw youtube"></i> YouTube</a></p>
+        <p><a href="https://Twitter.com/mrdnomaid" class="social-lnk tw"><i class="fa fa-twitter fa-fw twitter"></i> Twitter</a></p>
+        <p><a href="https://GitHub.com/mrdnomaid" class="social-lnk gh"><i class="fa fa-github fa-fw github"></i> GitHub</a></p>
+        <p><a href="https://Blog.dnomaid.co.uk" class="social-lnk me"><i class="fa fa-pencil fa-fw medium"></i> Blog</a></p>
     </div>
 
-    <script>
-        if (window.top !== window.self) window.top.location.replace(window.self.location.href);
-    </script>
+    <div class="animated fadeInRight">
+        <p><a href="faq.html" class="page-lnk faq"><i class="fa fa-info-circle fa-fw"></i> FaQ</a></p>
+        <p><a href="devices.html" class="page-lnk dev"><i class="fa fa-laptop fa-fw"></i> Devices</a></p>
+        <p><a href="about.html" class="page-lnk abo"><i class="fa fa-user fa-fw"></i> About</a></p>
+        <p><a onclick="alert('My email is simply tom [at] dnomaid [dot] co [dot] uk. If you are a YouTube MCN, web design company, con-artist or anything similar, there\'s no point emailing me; I\'m not interested.');" href="#" class="page-lnk con"><i class="fa fa-envelope fa-fw"></i> Contact</a></p>
+    </div>
 
 </body>
 
