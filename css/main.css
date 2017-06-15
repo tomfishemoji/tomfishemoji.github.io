@@ -110,7 +110,7 @@ div p {
 
 @media screen and (max-width: 50em) {
     body {
-        text-align: center;
+
         font-size: 1.15em;
         overflow-x: hidden;
         max-width: 20em;
