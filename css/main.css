@@ -149,6 +149,12 @@ div p {
     .con:hover::after {
         content: 'Send me an email';
     }
+    .rpi:hover::after {
+        content: 'Random things that  don\'t fit on my GitHub';
+    }
+    .sta:hover::after {
+            content: 'See how unreliable some of my sites are';
+        }
 }
 
 ::selection {
