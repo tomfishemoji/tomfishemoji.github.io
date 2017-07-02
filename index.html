@@ -1,34 +1,10 @@
-<html>
+---
+layout: default
+title: Home
+keywords:
+description: I do computers and stuff
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#000000">
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="I do computers and stuff">
-    <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website, site, social, media, links">
-    <!-- Open Graph  -->
-    <meta property="og:description" content="I do computers and stuff" />
-    <meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@mrdnomaid" />
-    <meta name="twitter:title" content="dnomaid's website" />
-    <meta name="twitter:description" content="I do computers and stuff" />
-    <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />
-    <!-- CSS & icons -->
-    <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="img/fish_large.png">
-    <title>dnomaid.co.uk</title>
-    <style>
-
-    </style>
-</head>
-
-<body>
     <div>
         <h1 id="title">dnomaid</h1>
         <h2>Home</h2>
@@ -36,21 +12,17 @@
     </div>
 
     <div>
-        <p><a href="https://YouTube.com/dnomaid" class="social-lnk yt"><i class="fa fa-youtube-play fa-fw youtube"></i> YouTube</a></p>
-        <p><a href="https://Twitter.com/mrdnomaid" class="social-lnk tw"><i class="fa fa-twitter fa-fw twitter"></i> Twitter</a></p>
-        <p><a href="https://GitHub.com/mrdnomaid" class="social-lnk gh"><i class="fa fa-github fa-fw github"></i> GitHub</a></p>
-        <p><a href="https://Blog.dnomaid.co.uk" class="social-lnk me"><i class="fa fa-pencil fa-fw medium"></i> Blog</a></p>
+        <p><a href="{{ site.youtube }}" class="social-lnk yt"><i class="fa fa-youtube-play fa-fw youtube"></i> YouTube</a></p>
+        <p><a href="{{ site.twitter }}" class="social-lnk tw"><i class="fa fa-twitter fa-fw twitter"></i> Twitter</a></p>
+        <p><a href="{{ site.github }}" class="social-lnk gh"><i class="fa fa-github fa-fw github"></i> GitHub</a></p>
+        <p><a href="https://blog.{{ site.urlnp }}" class="social-lnk me"><i class="fa fa-medium fa-fw medium"></i> Blog</a></p>
     </div>
 
     <div>
         <p><a href="faq.html" class="page-lnk faq"><i class="fa fa-info-circle fa-fw"></i> FaQ</a></p>
         <p><a href="devices.html" class="page-lnk dev"><i class="fa fa-laptop fa-fw"></i> Devices</a></p>
         <p><a href="about.html" class="page-lnk abo"><i class="fa fa-user fa-fw"></i> About</a></p>
-        <p><a onclick="alert('My email is simply tom [at] dnomaid [dot] co [dot] uk. If you are a YouTube MCN, web design company, con-artist or anything similar, there\'s no point emailing me; I\'m not interested.');" href="#" class="page-lnk con"><i class="fa fa-envelope fa-fw"></i> Contact</a></p>
-        <p><a href="https://pi.dnomaid.co.uk" class="page-lnk rpi"><i class="fa fa-terminal fa-fw"></i> RPi</a></p>
-        <p><a href="https://status.dnomaid.co.uk" class="page-lnk sta"><i class="fa fa-tachometer fa-fw"></i> Status</a></p>
+        <p><a onclick="alert('My email is simply {{ site.email }}. If you are a YouTube MCN, web design company, con-artist or anything similar, there\'s no point emailing me; I\'m not interested.');" href="#" class="page-lnk con"><i class="fa fa-envelope fa-fw"></i> Contact</a></p>
+        <p><a href="https://pi.{{ site.urlnp }}" class="page-lnk rpi"><i class="fa fa-terminal fa-fw"></i> RPi</a></p>
+        <p><a href="https://status.{{ site.urlnp }}" class="page-lnk sta"><i class="fa fa-tachometer fa-fw"></i> Status</a></p>
     </div>
-
-</body>
-
-</html>

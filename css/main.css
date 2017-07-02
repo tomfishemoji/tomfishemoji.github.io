@@ -101,6 +101,10 @@ div {
     margin-top: 2em;
 }
 
+div:last-of-type {
+    margin-bottom: 2em;
+}
+
 div p {
     display: block;
     margin: 0;
@@ -110,7 +114,6 @@ div p {
 
 @media screen and (max-width: 50em) {
     body {
-
         font-size: 1.15em;
         overflow-x: hidden;
         max-width: 20em;
@@ -153,8 +156,8 @@ div p {
         content: 'Random things that  don\'t fit on my GitHub';
     }
     .sta:hover::after {
-            content: 'See how unreliable some of my sites are';
-        }
+        content: 'See how unreliable some of my sites are';
+    }
 }
 
 ::selection {

@@ -1,0 +1,28 @@
+<head>
+    <!-- Boring Meta Stuff -->
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- Search Engine Meta -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="{{ page.description | escape }}">
+    <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website, site, social, media, links, {{ page.keywords | escape }}">
+    <!-- Open Graph  -->
+    <meta property="og:description" content="{{ page.description | escape }}" />
+    <meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@mrdnomaid" />
+    <meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
+    <meta name="twitter:description" content="{{ page.description | escape }}" />
+    <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />
+    <!-- CSS & Icons -->
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    {{ page.extrahead }}
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/img/fish_large.png">
+    <!-- Page Title -->
+    <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+</head>

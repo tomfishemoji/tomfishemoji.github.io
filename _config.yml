@@ -1,0 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: dnomaid.co.uk
+email: tom [at] dnomaid [dot] co [dot] uk
+description: I do computers and stuff
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://dnomaid.co.uk # the base hostname & protocol for your site
+urlnp: dnomaid.co.uk
+youtube: https://youtube.com/dnomaid
+twitter: https://twitter.com/mrdnomaid
+github: https://github.com/mrdnomaid
+githubu: dnomaid
+
+# Build settings
+markdown: kramdown
