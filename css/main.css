@@ -81,11 +81,20 @@ div a:hover {
     transition: all 0.25s;
 }*/
 
-div a:hover .fa {
+.fa {
+    display: inline-block;
+}
+
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+a:hover .fa {
     transform: scale(1.25);
 }
 
-div a:active .fa {
+a:active .fa {
     transform: scale(0.95);
 }
 
