@@ -195,12 +195,12 @@ Link - http://fontello.com/
 
 @font-face {
   font-family: 'dno-fa';
-  src: url('../font/dno-fa.eot?63317946');
-  src: url('../font/dno-fa.eot?63317946#iefix') format('embedded-opentype'),
-       url('../font/dno-fa.woff2?63317946') format('woff2'),
-       url('../font/dno-fa.woff?63317946') format('woff'),
-       url('../font/dno-fa.ttf?63317946') format('truetype'),
-       url('../font/dno-fa.svg?63317946#dno-fa') format('svg');
+  src: url('../font/dno-fa.eot');
+  src: url('../font/dno-fa.eot#iefix') format('embedded-opentype'),
+       url('../font/dno-fa.woff2') format('woff2'),
+       url('../font/dno-fa.woff') format('woff'),
+       url('../font/dno-fa.ttf') format('truetype'),
+       url('../font/dno-fa.svg?#dno-fa') format('svg');
   font-weight: normal;
   font-style: normal;
 }
