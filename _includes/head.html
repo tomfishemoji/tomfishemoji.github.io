@@ -11,7 +11,7 @@
     <!-- Open Graph  -->
     <meta property="og:description" content="{{ page.description | escape }}" />
     {% if page.image %}
-    <meta property="og:image" content="https://dnomaid.co.uk/img/post/{{ page.title }}/{{ page.image }}">
+    <meta property="og:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}">
     {% else %}
     <meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">
     {% endif %}
@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
     <meta name="twitter:description" content="{{ page.description | escape }}" />
     {% if page.image %}
-    <meta name="twitter:image" content="https://dnomaid.co.uk/img/post/{{ page.title }}/{{ page.image }}" />
+    <meta name="twitter:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}" />
     {% else %}
     <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />
     {% endif %}
