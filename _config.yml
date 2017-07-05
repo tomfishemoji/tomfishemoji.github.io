@@ -16,6 +16,7 @@ youtube: https://youtube.com/dnomaid
 twitter: https://twitter.com/mrdnomaid
 github: https://github.com/mrdnomaid
 githubu: mrdnomaid
+permalink: /:year/:title.html
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Post Archive
+permalink: /archive.html
+description: All the posts I've ever posted
+extrahead: <link href="css/archive.css" rel="stylesheet">
+---
+
+<div>
+<!-- <p>I've previously used both <a href="https://dp.dnomaid.co.uk">WordPress.com</a> and <a href="https://blog.dnomaid.co.uk">Medium</a>, so you can view even more of my words there.</p> -->
+
+{% for category in site.categories %}
+    <div id="{{ category | first | remove:' ' }}">
+        <h3 class="chead">{{ category | first }}</h3>
+
+        <ul>
+           {% for posts in category %}
+             {% for post in posts %}
+               {% if post.url %}
+               <li><a href="{{ post.url }}">{{ post.title }}</a><br>{{ post.date | date_to_string }}</li>
+               {% endif %}
+             {% endfor %}
+           {% endfor %}
+        </ul>
+    </div>
+
+{% endfor %}
+</div>

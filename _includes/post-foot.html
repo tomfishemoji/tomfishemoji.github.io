@@ -1,0 +1,12 @@
+<!-- <div>
+    <p>Also in <b>{{ page.category }}</b>:</p>
+    <ul class="posts">
+      {% for post in site.related_posts limit:2 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a><br>{{ post.date | date_to_string }}</li>
+      {% endfor %}
+    </ul>
+</div> -->
+<div>
+  <p style="font-size: 0.9em;">Liked the post? Share it on <a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a>, <a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank">Reddit</a>, <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" style="color: #3b5998;">Facebook</a> or via <a style="color: #fff" href="" target="_blank">Email</a>.</p>
+  <p style="font-size: 0.9em;">Got a comment? Feel free to hit me up on Twitter or via email! Links at the top of the page.</p>
+</div>
