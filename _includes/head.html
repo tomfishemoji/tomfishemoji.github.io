@@ -6,7 +6,7 @@
     <!-- Search Engine Meta -->
     <meta name="robots" content="index, follow">
     <meta name="author" content="dnomaid" />
-    <meta name="description" content="{{ page.description | escape }}">
+    <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
     <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website, site, social, media, links, {{ page.keywords | escape }}">
     <!-- Open Graph  -->
     <meta property="og:description" content="{{ page.description | escape }}" />
@@ -18,14 +18,17 @@
     <!-- Twitter -->
     {% if page.image %}
 	<meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}" />
-    {% else %}
-	<meta name="twitter:card" content="summary" />
-    <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />
-    {% endif %}
 	<meta name="twitter:site" content="@mrdnomaid" />
     <meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
-    <meta name="twitter:description" content="{{ page.description | escape }}" />
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
+	<meta name="twitter:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}" />
+    {% else %}
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@mrdnomaid" />
+    <meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}" />
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
+    <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />
+    {% endif %}
     <!-- CSS & Icons -->
     <link href="/css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
