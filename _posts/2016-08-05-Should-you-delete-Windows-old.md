@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Should you delete Windows.old?
-category: windows
+category: tech
 medium: https://blog.dnomaid.co.uk/should-you-delete-windows-old-a51bd3999deb
 ---
 
