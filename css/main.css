@@ -10,68 +10,6 @@ body {
     text-align: center;
 }
 
-#post-content {
-    text-align: left;
-    font-size: 1.03em;
-}
-
-#featured-img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    /*border: 1px solid #ccf3ff;*/
-}
-
-#post-content img {
-    width: 90%;
-    margin-top: 1.5em;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-#post-content span.image-caption {
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    position: relative;
-    top: -10px;
-    width: 90%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-#post-content span.image-caption a {
-    color: #333;
-}
-
-#post-content h1, #post-content h2, #post-content h3 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-family: 'News Gothic MT', 'Trebuchet MS', 'Franklin Gothic', sans-serif;
-    font-size: 1.6em;
-}
-
-#post-content iframe {
-   width: 100%;
-   border: none;
-   margin-top: 1em;
-   margin-bottom: 1em;
-}
-
-hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    border: 0;
-    border-bottom: 3px dotted #ccf3ff;
-    background: none;
-}
-
-#header a {
-    color: #bbb;
-}
-
 h1, h2, h3 {
     font-weight: bold;
     margin: 0;
@@ -146,6 +84,68 @@ li a {
     color: #00ab6c;
 }
 
+
+#post-content {
+    text-align: left;
+    font-size: 1.03em;
+}
+
+#featured-img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /*border: 1px solid #ccf3ff;*/
+}
+
+#post-content img {
+    width: 90%;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+#post-content span.image-caption {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    top: -10px;
+    width: 90%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#post-content span.image-caption a {
+    color: #333;
+}
+
+#post-content h1, #post-content h2, #post-content h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'News Gothic MT', 'Trebuchet MS', 'Franklin Gothic', sans-serif;
+    font-size: 1.6em;
+}
+
+#post-content iframe {
+   width: 100%;
+   border: none;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 0;
+    border-bottom: 3px dotted #ccf3ff;
+    background: none;
+}
+
+#header a {
+    color: #bbb;
+}
 
 /*div .fa {
     transition: all 0.25s;
