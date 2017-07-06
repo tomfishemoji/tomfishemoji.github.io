@@ -39,8 +39,11 @@ div a:hover {
 }
 
 ul {
+    /*display: block;*/
     list-style: none;
     padding: 0;
+    /*margin: 0 auto;
+    text-align: left;*/
 }
 
 li {
@@ -49,11 +52,23 @@ li {
     /* text-transform: capitalize; */
 }
 
-li a {
+li a.title {
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
+
+/*.gsc-control-wrapper-cse {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 35em;
+}
+
+input.gsc-input {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}*/
 
 .fa {
     font-size: 1.5em !important;

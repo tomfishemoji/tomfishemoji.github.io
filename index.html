@@ -9,7 +9,7 @@ description: I do computers and stuff
     <h3>Recent blog posts:</h3>
     <ul>
       {% for post in site.posts limit:10 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a><br>{{ post.date | date_to_string }} in <a href="/archive.html#{{ post.category }}">{{ post.category }}</a></li>
+        <li><a href="{{ post.url }}" class="title">{{ post.title }}</a><br>{{ post.date | date_to_string }} in <a href="/archive.html#{{ post.category }}">{{ post.category }}</a></li>
       {% endfor %}
     </ul>
     <p>Subscribe via <a href="/feed.xml">RSS</a> or view more on the <a href="/archive.html"> archive page</a></p>
