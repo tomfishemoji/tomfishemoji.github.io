@@ -3,7 +3,7 @@ body {
     color: #eee;
     margin: 0 auto;
     margin-top: 1em;
-    max-width: 45em;
+    max-width: 40em;
     font-family: 'Helvetica', 'Tahoma', 'Verdana', 'Arial', sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -50,13 +50,15 @@ li {
     padding: 0;
     margin-bottom: 20px;
     /* text-transform: capitalize; */
+    font-size: 1.2em;
 }
 
 li a.title {
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
+
 
 /*.gsc-control-wrapper-cse {
     display: inline-block;
@@ -98,7 +100,6 @@ input.gsc-input {
 .medium {
     color: #00ab6c;
 }
-
 
 #post-content {
     text-align: left;
@@ -144,10 +145,10 @@ input.gsc-input {
 }
 
 #post-content iframe {
-   width: 100%;
-   border: none;
-   margin-top: 1em;
-   margin-bottom: 1em;
+    width: 100%;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 hr {
@@ -161,6 +162,26 @@ hr {
 #header a {
     color: #bbb;
 }
+
+#header p, #header h1 {
+    display: inline;
+}
+
+#header h1 {
+    font-size: 5em;
+}
+
+#social-mnu {
+    float: right;
+    position: absolute;
+    top: 30px;
+}
+
+.chead {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
 
 /*div .fa {
     transition: all 0.25s;
@@ -208,18 +229,31 @@ div p {
 
 @media screen and (max-width: 45em) {
     body {
-        font-size: 1.15em;
+        /*font-size: 1.15em;*/
         overflow-x: hidden;
         max-width: 20em;
         padding-bottom: 1em;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
-    h1 {
+    /*h1 {
         font-size: 3em;
     }
     h2 {
         font-size: 1.5em;
+    }*/
+    #header h1 {
+        font-size: 3em;
+    }
+    #header p, #header h1 {
+        display: block;
+    }
+    #header #social-mnu {
+        position: relative;
+        float: none;
+    }
+    #header #menu-mnu {
+        margin-top: 3em;
     }
     #header a {
         display: inline-block;
@@ -230,6 +264,9 @@ div p {
     }
     li a {
         overflow-wrap: break-word;
+    }
+    #post-content {
+        font-size: 1.15em;
     }
 }
 

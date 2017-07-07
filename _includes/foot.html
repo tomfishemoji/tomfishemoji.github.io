@@ -1,3 +1,6 @@
 <div>
+    {% unless page.title == 'Home' %}
+      <p style="font-size: 0.8em;"><a href="{{ site.youtube }}"><i class="fa fa-youtube fa-fw youtube"></i></a> <a href="{{ site.twitter }}"><i class="fa fa-twitter fa-fw twitter"></i></a> <a href="{{ site.github }}"><i class="fa fa-github fa-fw github"></i></a></p>
+    {% endunless %}
     <p style="font-size: 0.8em;">&copy; dnomaid / <a href="{{ site.github }}/{{ site.githubu }}.github.io/blob/master/LICENSE.md">CC BY-SA</a></p>
 </div>
