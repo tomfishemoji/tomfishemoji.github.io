@@ -59,6 +59,14 @@ li a.title {
     font-size: 1.3em;
 }
 
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
 
 /*.gsc-control-wrapper-cse {
     display: inline-block;
