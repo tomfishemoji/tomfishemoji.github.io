@@ -232,6 +232,7 @@ div p {
         /*font-size: 1.15em;*/
         overflow-x: hidden;
         max-width: 20em;
+        padding: 0.75em;
         padding-bottom: 1em;
         word-wrap: break-word;
         overflow-wrap: break-word;
