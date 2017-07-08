@@ -176,13 +176,19 @@ hr {
 }
 
 #header h1 {
-    font-size: 5em;
+    font-size: 4.9em;
+    text-align: left;
 }
 
 #social-mnu {
     float: right;
     position: absolute;
     top: 30px;
+    text-align: right;
+}
+
+#menu-mnu {
+    text-align: right;
 }
 
 .chead {
@@ -253,6 +259,7 @@ div p {
     }*/
     #header h1 {
         font-size: 3em;
+        text-align: center;
     }
     #header p, #header h1 {
         display: block;
@@ -263,6 +270,9 @@ div p {
     }
     #header #menu-mnu {
         margin-top: 3em;
+    }
+    #header #social-mnu, #header #menu-mnu {
+        text-align: center;
     }
     #header a {
         display: inline-block;
