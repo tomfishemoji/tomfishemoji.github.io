@@ -80,10 +80,6 @@ input.gsc-input {
   top: -5px;
 }*/
 
-.fa {
-    font-size: 1.5em !important;
-}
-
 .youtube, .twitter, .github, .medium, .social-lnk {
     font-size: 1.2em;
     text-decoration: none;
@@ -203,6 +199,7 @@ hr {
 
 .fa {
     display: inline-block;
+    font-size: 1.5em;
 }
 
 .fa-fw {
