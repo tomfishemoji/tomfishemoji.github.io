@@ -1,12 +1,19 @@
 <div style="margin-bottom: 2em;">
-  {% if page.medium %}<div style="padding: 15px; background-color: #00284f; color: #eee; border-radius: 2px;"><p style="margin-top: 0;">This post was originally published on Medium.<br>View the original post, along with its hearts and comments, <a href="{{ page.medium }}">here</a>.</p></div>{% endif %}
+    {% if page.medium %}
+      <div style="padding: 15px; background-color: #00284f; color: #eee; border-radius: 2px;">
+          <p style="margin-top: 0;">This post was originally published on Medium.<br>View the original post, along with its hearts and comments, <a href="{{ page.medium }}">here</a>.</p>
+      </div>
+    {% endif %}
 
-  {% if page.image %}<img src="/img/posts/{{ page.title }}/{{ page.image }}" alt="{{ page.image }}" id="featured-img" style="-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))">
-  <h2 style="position: relative;top: -2em;font-size:2em;">{{ page.title }}</h2>
-  {% else %}
-  <h2 style="font-size:2em;">{{ page.title }}</h2>
-  {% endif %}
+    {% if page.image %}
+      <img src="/img/posts/{{ page.title }}/{{ page.image }}" alt="{{ page.image }}" id="featured-img" style="-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))">
+      <h2 style="position: relative;top: -2em;font-size:2em;">{{ page.title }}</h2> {% else %}
+      <h2 style="font-size:2em;">{{ page.title }}</h2>
+    {% endif %}
 
-  <p>Posted on <b>{{ page.date | date: '%B %d, %Y' }}</b> in <b><a href="/archive.html#{{ page.category }}">{{ page.category }}</a></b></p>
-  {% if page.author %}<p>Guest post by <b>{{ page.author }}</b></p>{% endif %}
+    <p>Posted on <b>{{ page.date | date: '%B %d, %Y' }}</b> in <b><a href="/archive.html#{{ page.category }}">{{ page.category }}</a></b></p>
+
+    {% if page.author %}
+      <p>Guest post by <b>{% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}</b></p>
+    {% endif %}
 </div>

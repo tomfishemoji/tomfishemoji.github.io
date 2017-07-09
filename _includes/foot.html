@@ -1,3 +1,43 @@
 <div>
+    {% unless page.title == 'Home' %}
+      <p style="font-size: 0.8em;"><a href="{{ site.youtube }}"><i class="fa fa-youtube fa-fw youtube"></i></a> <a href="{{ site.twitter }}"><i class="fa fa-twitter fa-fw twitter"></i></a> <a href="{{ site.github }}"><i class="fa fa-github fa-fw github"></i></a></p>
+    {% endunless %}
     <p style="font-size: 0.8em;">&copy; dnomaid / <a href="{{ site.github }}/{{ site.githubu }}.github.io/blob/master/LICENSE.md">CC BY-SA</a></p>
 </div>
+
+<script type="text/javascript">
+  var _bftn_options = {
+    /*
+     * Choose from 'money', 'stop', and 'slow'. Omit this property to get the
+     * default theme.
+     */
+    theme: 'stop',
+
+    /*
+     * Choose from 'fp' for Free Press, 'dp' for Demand Progress or
+     * 'fftf' for Fight for the Future. Omit this property to randomly split
+     * form submissions between all organizations in the Battle for the Net
+     * coalition.
+     */
+    org: 'fftf',
+
+    /*
+     * Specify a delay (in milliseconds) before showing the widget. Defaults to one
+     * second.
+     */
+    delay: 250,
+
+    /*
+     * Specify a date on which to display the widget. Defaults to July 12th, 2017 if
+     * omitted. ISO-8601 dates are UTC time, three-argument dates (with a zero-based
+     * month) are local time.
+     */
+    date: new Date(2017, 6, 12),
+
+    /*
+     * Always show the widget. Useful for testing.
+     */
+    always_show_widget: false
+  };
+</script>
+<script src="https://widget.battleforthenet.com/widget.js" async></script>

@@ -11,11 +11,6 @@ layout: null
       {% unless post.draft %}
         <item>
           <title>{{ post.title | xml_escape }}</title>
-          <!-- {% if page.subtitle %}
-          <description>{{ post.subtitle xml_escape | truncatewords:30 }}</description>
-          {% else %}
-          <description>{{ post.content xml_escape | truncatewords:30 }}</description>
-          {% endif %} -->
           <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
           <link>{{ post.url | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>

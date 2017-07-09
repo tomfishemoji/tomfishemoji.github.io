@@ -3,73 +3,11 @@ body {
     color: #eee;
     margin: 0 auto;
     margin-top: 1em;
-    max-width: 45em;
+    max-width: 40em;
     font-family: 'Helvetica', 'Tahoma', 'Verdana', 'Arial', sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
     text-align: center;
-}
-
-#post-content {
-    text-align: left;
-    font-size: 1.03em;
-}
-
-#featured-img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    /*border: 1px solid #ccf3ff;*/
-}
-
-#post-content img {
-    width: 90%;
-    margin-top: 1.5em;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-#post-content span.image-caption {
-    display: inline-block;
-    background-color: #fff;
-    color: #000;
-    position: relative;
-    top: -10px;
-    width: 90%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-#post-content span.image-caption a {
-    color: #333;
-}
-
-#post-content h1, #post-content h2, #post-content h3 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-family: 'News Gothic MT', 'Trebuchet MS', 'Franklin Gothic', sans-serif;
-    font-size: 1.6em;
-}
-
-#post-content iframe {
-   width: 100%;
-   border: none;
-   margin-top: 1em;
-   margin-bottom: 1em;
-}
-
-hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    border: 0;
-    border-bottom: 3px dotted #ccf3ff;
-    background: none;
-}
-
-#header a {
-    color: #bbb;
 }
 
 h1, h2, h3 {
@@ -101,25 +39,46 @@ div a:hover {
 }
 
 ul {
+    /*display: block;*/
     list-style: none;
     padding: 0;
+    /*margin: 0 auto;
+    text-align: left;*/
 }
 
 li {
     padding: 0;
     margin-bottom: 20px;
     /* text-transform: capitalize; */
+    font-size: 1.2em;
+}
+
+li a.title {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1.3em;
 }
 
 li a {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 1.1em;
+    text-decoration: none;
 }
 
-.fa {
-    font-size: 1.5em !important;
+li a:hover {
+    text-decoration: underline;
 }
+
+
+/*.gsc-control-wrapper-cse {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 35em;
+}
+
+input.gsc-input {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}*/
 
 .youtube, .twitter, .github, .medium, .social-lnk {
     font-size: 1.2em;
@@ -146,6 +105,93 @@ li a {
     color: #00ab6c;
 }
 
+#post-content {
+    text-align: left;
+    font-size: 1.03em;
+}
+
+#featured-img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /*border: 1px solid #ccf3ff;*/
+}
+
+#post-content img {
+    width: 90%;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+#post-content span.image-caption {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    top: -10px;
+    width: 90%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#post-content span.image-caption a {
+    color: #333;
+}
+
+#post-content h1, #post-content h2, #post-content h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'News Gothic MT', 'Trebuchet MS', 'Franklin Gothic', sans-serif;
+    font-size: 1.6em;
+}
+
+#post-content iframe {
+    width: 100%;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: 0;
+    border-bottom: 3px dotted #ccf3ff;
+    background: none;
+}
+
+#header a {
+    color: #bbb;
+}
+
+#header p, #header h1 {
+    display: inline;
+}
+
+#header h1 {
+    font-size: 4.9em;
+    text-align: left;
+}
+
+#social-mnu {
+    float: right;
+    position: absolute;
+    top: 30px;
+    text-align: right;
+}
+
+#menu-mnu {
+    text-align: right;
+}
+
+.chead {
+    font-size: 2em;
+    margin-top: 2em;
+}
+
 
 /*div .fa {
     transition: all 0.25s;
@@ -153,6 +199,7 @@ li a {
 
 .fa {
     display: inline-block;
+    font-size: 1.5em;
 }
 
 .fa-fw {
@@ -193,18 +240,36 @@ div p {
 
 @media screen and (max-width: 45em) {
     body {
-        font-size: 1.15em;
+        /*font-size: 1.15em;*/
         overflow-x: hidden;
         max-width: 20em;
+        padding: 0.75em;
         padding-bottom: 1em;
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
-    h1 {
+    /*h1 {
         font-size: 3em;
     }
     h2 {
         font-size: 1.5em;
+    }*/
+    #header h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+    #header p, #header h1 {
+        display: block;
+    }
+    #header #social-mnu {
+        position: relative;
+        float: none;
+    }
+    #header #menu-mnu {
+        margin-top: 3em;
+    }
+    #header #social-mnu, #header #menu-mnu {
+        text-align: center;
     }
     #header a {
         display: inline-block;
@@ -215,6 +280,9 @@ div p {
     }
     li a {
         overflow-wrap: break-word;
+    }
+    #post-content {
+        font-size: 1.15em;
     }
 }
 
