@@ -48,9 +48,11 @@ ul {
 
 li {
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     /* text-transform: capitalize; */
-    font-size: 1.2em;
+    font-size: 1.25em;
+    /*background-color: #000b16;*/
+    border-radius: 3px;
 }
 
 li a.title {
