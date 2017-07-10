@@ -11,9 +11,11 @@
       <h2 style="font-size:2em;">{{ page.title }}</h2>
     {% endif %}
 
-    <p>Posted on <b>{{ page.date | date: '%B %d, %Y' }}</b> in <b><a href="/archive.html#{{ page.category }}">{{ page.category }}</a></b></p>
-
     {% if page.author %}
-      <p>Guest post by <b>{% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}</b></p>
+      <p><b>{{ page.date | date: '%B %d, %Y' }}</b> - Guest post by <b>{% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}</b></p>
+
+      {% else %}
+
+      <p>Posted on <b>{{ page.date | date: '%B %d, %Y' }}</b> in <b><a href="/archive.html#{{ page.category }}">{{ page.category }}</a></b></p>
     {% endif %}
 </div>
