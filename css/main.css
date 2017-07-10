@@ -61,12 +61,14 @@ li a.title {
 
 li a {
     text-decoration: none;
+    /*transition: all 0.25s linear;*/
 }
 
 li a:hover {
     text-decoration: underline;
+    /*box-shadow: 0 0 0 1000px #000d19;
+    transform: scale(1.5);*/
 }
-
 
 /*.gsc-control-wrapper-cse {
     display: inline-block;
