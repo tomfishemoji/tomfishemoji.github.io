@@ -19,7 +19,11 @@ extrahead: <link href="css/archive.css" rel="stylesheet">
            {% for posts in category %}
              {% for post in posts %}
                {% if post.url %}
-               <li><a href="{{ post.url }}" class="title">{{ post.title }}</a><br>{{ post.date | date_to_string }}</li>
+                {% if post.showinarchive != false %}
+                  <li><a href="{{ post.url }}" class="title">{{ post.title }}</a><br>{{ post.date | date_to_string }}</li>
+                  {% else %}
+                  <li>There's nothing here<br><span style="font-size: 0.8em">Or is there >_></span></li>
+                {% endif %}
                {% endif %}
              {% endfor %}
            {% endfor %}
