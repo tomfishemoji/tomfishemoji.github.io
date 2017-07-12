@@ -1,12 +1,19 @@
-<!-- <div>
-    <p>Also in <b>{{ page.category }}</b>:</p>
-    <ul class="posts">
-      {% for post in site.related_posts limit:2 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a><br>{{ post.date | date_to_string }}</li>
-      {% endfor %}
-    </ul>
-</div> -->
-<div>
-  <p style="font-size: 0.9em;">Liked the post? Share it on <a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a>, <a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank">Reddit</a>, <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" style="color: #3b5998;">Facebook</a> or via <a style="color: #fff" href="" target="_blank">Email</a>.</p>
-  <p style="font-size: 0.9em;">Got a comment? Feel free to hit me up on Twitter or via email! Links at the top of the page.</p>
+<div class="row">
+    {% if page.previous.url %}
+      <div class="col" style="text-align: left;">
+        <p>&laquo; Previous Post</p><p><a href="{{page.previous.url}}">{{page.previous.title}}</a></p>
+      </div>
+    {% endif %}
+
+    <div class="col">
+      <p onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer; font-size: 2em;" title="Share"><i class="fa fa-share fa-fw"></i></p>
+      <p style="display: none; font-size: 1.14em;" id="sharelnks"><a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a><br><a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}"
+              target="_blank">Reddit</a><br><a href="mailto:?subject={{ site.url }}{{ page.url }}" style="color: #eee;">Email</a></p>
+    </div>
+
+    {% if page.next.url %}
+      <div class="col" style="text-align: right;">
+        <p>Next Post &raquo;</p><p><a href="{{page.next.url}}">{{page.next.title}}</a></p>
+      </div>
+    {% endif %}
 </div>

@@ -368,86 +368,16 @@ Link - http://fontello.com/
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.fa-info:before {
-    content: '\e800';
-}
-
-
-/* '' */
-
-.fa-person:before {
-    content: '\e801';
-}
-
-
-/* '' */
-
-.fa-mail:before {
-    content: '\e802';
-}
-
-
-/* '' */
-
-.fa-home:before {
-    content: '\e803';
-}
-
-
-/* '' */
-
-.fa-twitter:before {
-    content: '\f099';
-}
-
-
-/* '' */
-
-.fa-gauge:before {
-    content: '\f0e4';
-}
-
-
-/* '' */
-
-.fa-laptop:before {
-    content: '\f109';
-}
-
-
-/* '' */
-
-.fa-github:before {
-    content: '\f113';
-}
-
-
-/* '' */
-
-.fa-folder-open-empty:before {
-    content: '\f115';
-}
-
-
-/* '' */
-
-.fa-youtube:before {
-    content: '\f16a';
-}
-
-
-/* '' */
-
-.fa-code:before {
-    content: '\f1c9';
-}
-
-
-/* '' */
-
-.fa-medium:before {
-    content: '\f23a';
-}
-
-
-/* '' */
+.fa-info:before { content: '\e800'; } /* '' */
+.fa-person:before { content: '\e801'; } /* '' */
+.fa-mail:before { content: '\e802'; } /* '' */
+.fa-home:before { content: '\e803'; } /* '' */
+.fa-twitter:before { content: '\f099'; } /* '' */
+.fa-gauge:before { content: '\f0e4'; } /* '' */
+.fa-laptop:before { content: '\f109'; } /* '' */
+.fa-github:before { content: '\f113'; } /* '' */
+.fa-folder-open-empty:before { content: '\f115'; } /* '' */
+.fa-youtube:before { content: '\f16a'; } /* '' */
+.fa-code:before { content: '\f1c9'; } /* '' */
+.fa-share:before { content: '\f1e0'; } /* '' */
+.fa-medium:before { content: '\f23a'; } /* '' */

@@ -32,6 +32,7 @@
     <!-- CSS & Icons -->
     <link href="/css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    {% if page.layout == 'post' %}<link href="/css/frameworks/wing-col.css" rel="stylesheet">{% endif %}
     {% if page.extrahead %}{{ page.extrahead }}{% endif %}
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/img/fish_large.png">
