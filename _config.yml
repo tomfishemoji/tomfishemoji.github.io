@@ -24,3 +24,6 @@ kramdown:
   input: GFM
 
 highlighter: rouge
+
+sass:
+    sass_dir: css
