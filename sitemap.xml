@@ -1,0 +1,34 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Cheers to https://twitter.com/RandomMelonYT for letting me nick his sitemap code -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>{{ site.url }}</loc>
+    <image:image>
+      <image:loc>{{ site.url }}/img/fish_large.png</image:loc>
+      <image:caption>{{ site.description }}</image:caption>
+    </image:image>
+  </url>
+
+  {% for page in site.pages %}
+    <url>
+      <loc>{{ site.url }}{{ page.url }}</loc>
+    </url>
+  {% endfor %}
+
+  {% for post in site.posts %}
+    {% unless post.draft %}
+      <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.image %}
+          <image:image>
+            <image:loc>{{ site.url }}/img/posts/{{ post.title }}/{{ post.image }}</image:loc>
+            <image:caption>{{ post.desc }}</image:caption>
+          </image:image>
+        {% endif %}
+      </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>
