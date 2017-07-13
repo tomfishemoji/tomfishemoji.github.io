@@ -9,7 +9,11 @@ If you want your page title to change if you are visiting via the file URI schem
 
 If you want this to apply to all pages you visit as files, put the code into a user script management extension like [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey) or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 
-<iframe src="https://hastebin.com/bejusajoco.coffeescript">Your browser is too old to display iFrames, but you can still view the code <a href="https://hastebin.com/bejusajoco.coffeescript">here</a></iframe>
+```javascript
+if (location.protocol == 'file:') {
+  document.title = 'your title';
+}
+```
 
 Pretty simple, right?
 
