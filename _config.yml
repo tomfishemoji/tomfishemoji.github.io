@@ -27,3 +27,6 @@ highlighter: rouge
 
 sass:
     sass_dir: css
+
+plugins:
+  - jekyll-sitemap
