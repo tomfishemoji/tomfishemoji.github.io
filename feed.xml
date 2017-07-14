@@ -12,6 +12,7 @@ layout: null
         <item>
           <title>{{ post.title | xml_escape }}</title>
           {% if post.description %}<description>{{ post.description}}</description>{% endif %}
+		  {% if post.image %}<image>{{ site.url }}/img/posts/{{ post.title }}/{{ post.image }}</image>{% endif %}
           <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
           <link>{{ post.url | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
