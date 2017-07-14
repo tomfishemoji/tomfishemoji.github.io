@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to plug something into an extension cord
+description: It's really simple!
 category: memes
 image: cord.png
 medium: https://blog.dnomaid.co.uk/how-to-plug-something-into-an-extension-cord-de2487cbde7d

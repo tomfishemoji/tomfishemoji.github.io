@@ -1,13 +1,10 @@
 ---
 layout: post
 title: ASUS X556UB follow up review after a month
+description: About a month ago, I gave my first impressions on the ASUS X556UB-XX039T laptop. Here’s the follow-up I promised.
 category: tech
 image: keyboard.jpeg
 medium: https://blog.dnomaid.co.uk/asus-laptop-review-1month-48513b605c34
----
-
-About a month ago, I gave my first impressions on the ASUS X556UB-XX039T laptop. Here’s the follow-up I promised.
-
 ---
 
 The device still runs pretty fast, despite having hundreds of programs and games installed. The Seagate Samsung Spinpoint M8 hard drive really slows down loading in the majority of programs, but it isn't as slow as I originally expected. It also appears to have a shockingly high failure rate, so I would replace it with an SSD or a different HDD as I am going to.

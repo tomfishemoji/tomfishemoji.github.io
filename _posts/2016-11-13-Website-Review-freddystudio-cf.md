@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Website Review - freddystudio.cf
+description: I review FreddyStudio’s website.
 category: site-review
 image: home.png
 medium: https://blog.dnomaid.co.uk/freddystudio-website-review-7460cf19d885
@@ -16,7 +17,7 @@ For this first review, I thought I’d review a friend’s site as it is particu
 
 I am not a designer, but I like things that look pretty. This site does not look pretty. It is anything but pretty.
 
-# OH MY GOD, IT’S SO BAD
+> OH MY GOD, IT’S SO BAD
 — Haden (FletchXYZ)
 
 

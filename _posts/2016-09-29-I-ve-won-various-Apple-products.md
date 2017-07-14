@@ -1,6 +1,7 @@
 ---
 layout: post
 title: I've won various Apple products!
+description: Actually, I haven’t.
 category: tech
 medium: https://blog.dnomaid.co.uk/fake-free-stuff-a15a0f92f76b
 ---

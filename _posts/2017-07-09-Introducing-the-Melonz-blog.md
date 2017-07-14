@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing the new Melonz blog
+description: TRM Promotes his "new" blog
 category: guest-posts
 image: blog.png
 author: TheRandomMelon
@@ -8,7 +9,7 @@ authorlnk: https://twitter.com/RandomMelonYT
 ---
 
 # What's a TheRandomMelon or a Melonz?
-TheRandomMelon — Hi! I'm Michael, but I go by TheRandomMelon. I make [terrible YouTube videos](https://www.youtube.com/TheRandomMelon) and I'm friends with dnomaid. 
+TheRandomMelon — Hi! I'm Michael, but I go by TheRandomMelon. I make [terrible YouTube videos](https://www.youtube.com/TheRandomMelon) and I'm friends with dnomaid.
 
 
 Melonz — "Our goal's to be a recognizable brand of games and computer software, with games like The Matrix Glitch and software like MelonzClient." - [The Twitter page](https://twitter.com/melonzinc)

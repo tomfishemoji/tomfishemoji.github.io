@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ASUS Routers and plaintext passwords
+description: Oh hey, that's my password!
 category: security
 image: decent.png
 ---

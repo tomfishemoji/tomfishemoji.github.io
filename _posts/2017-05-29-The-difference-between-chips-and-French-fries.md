@@ -2,7 +2,8 @@
 layout: post
 title: The difference between chips and French fries
 category: memes
-medium: https://blog.dnomaid.co.uk/the-difference-between-chips-and-french-fries-93f653642d5f;
+medium: https://blog.dnomaid.co.uk/the-difference-between-chips-and-french-fries-93f653642d5f
+description: Something I get weirdly annoyed about
 ---
 
 ### These are chips:

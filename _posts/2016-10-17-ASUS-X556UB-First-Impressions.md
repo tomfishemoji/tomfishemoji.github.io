@@ -1,12 +1,11 @@
 ---
 layout: post
 title: ASUS X556UB First Impressions
+description: My ‘review’ of the ASUS X556UB-XX039T laptop after a day of use.
 category: tech
 image: profile.jpeg
 medium: https://blog.dnomaid.co.uk/asus-laptop-review-cb64f208481b
 ---
-
-My ‘review’ of the ASUS X556UB-XX039T laptop after a day of use.
 
 # The Box
 What better place to start than the box? It’s pretty neat and is shaped like a briefcase with a handle. It contains the laptop itself in a protective paper thing and it’s charger.

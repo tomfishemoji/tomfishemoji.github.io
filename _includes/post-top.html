@@ -7,8 +7,15 @@
 
     {% if page.image %}
       <img src="/img/posts/{{ page.title }}/{{ page.image }}" alt="{{ page.image }}" id="featured-img" style="-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))">
-      <h2 style="position: relative;top: -2em;font-size:2em;">{{ page.title }}</h2> {% else %}
+      <h2 style="position: relative;top: -2em;font-size:2em;">{{ page.title }}</h2>
+      {% if page.description %}
+        <p id="subtitle-underimg">{{ page.description }}</p>
+      {% endif %}
+      {% else %}
       <h2 style="font-size:2em;">{{ page.title }}</h2>
+      {% if page.description %}
+        <p id="subtitle">{{ page.description }}</p>
+      {% endif %}
     {% endif %}
 
     {% if page.author %}

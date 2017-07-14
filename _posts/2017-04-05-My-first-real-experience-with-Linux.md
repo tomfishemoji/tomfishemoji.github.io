@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My first real experience with Linux
-subtitle: I’ve finally taken the plunge and actually installed it on a primary system.
+description: I’ve finally taken the plunge and actually installed it on a primary system.
 category: tech
 image: screenshot.png
 medium: https://blog.dnomaid.co.uk/my-first-real-experience-with-linux-1be8ffcb782b
