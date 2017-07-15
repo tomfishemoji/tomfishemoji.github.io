@@ -30,7 +30,7 @@
 }
 
 #header a {
-  color: #bbb;
+  color: $tx-light;
 }
 
 #header h1,
@@ -43,6 +43,11 @@
   text-align: left;
   font-family: 'Comfortaa', $fn-head;
   font-weight: bold;
+}
+
+#header h1 a {
+  text-decoration: none;
+  color: $tx-light;
 }
 
 #social-mnu {
