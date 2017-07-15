@@ -1,0 +1,58 @@
+@import '_vars';
+
+.github,
+.medium,
+.social-lnk,
+.twitter,
+.youtube {
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.page-lnk {
+  text-decoration: none;
+}
+
+.youtube {
+  color: #cd201f;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.github {
+  color: #c9510c;
+}
+
+.medium {
+  color: #00ab6c;
+}
+
+#header a {
+  color: #bbb;
+}
+
+#header h1,
+#header p {
+  display: inline;
+}
+
+#header h1 {
+  font-size: 4.9em;
+  text-align: left;
+  font-family: 'Comfortaa', $fn-head;
+  font-weight: bold;
+}
+
+#social-mnu {
+  float: right;
+  position: absolute;
+  top: 20px;
+  text-align: right;
+}
+
+#menu-mnu {
+  text-align: right;
+  font-size: 0.999em;
+}

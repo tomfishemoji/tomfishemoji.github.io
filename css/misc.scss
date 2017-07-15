@@ -1,0 +1,22 @@
+@import '_vars';
+
+.chead {
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.linkdesc {
+  font-size: 0.9em;
+  opacity: 0.9;
+  /*display: none;*/
+}
+
+::selection {
+  background-color: darkblue;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: darkblue;
+  color: white;
+}

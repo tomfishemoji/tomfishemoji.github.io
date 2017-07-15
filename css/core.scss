@@ -1,0 +1,103 @@
+@import '_vars';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg;
+  color: #eee;
+  margin: 1em auto 0;
+  max-width: 40em;
+  font-family: $fn-cont;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin: 0;
+  font-family: $fn-head;
+  font-size: 5em;
+  color: $tx-light;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+div a {
+  color: $ln-light;
+}
+
+div a:hover {
+  filter: contrast(1.5);
+  /*text-decoration: none;*/
+}
+
+div {
+  font-size: 0.9em;
+  color: $tx-light;
+  margin-top: 2em;
+}
+
+div:last-of-type {
+  margin-bottom: 2em;
+}
+
+div p {
+  display: block;
+  margin: 0.5em 0 0;
+  padding: 0;
+  line-height: 1.35em;
+  font-size: 1.05em;
+}
+
+ul {
+  /*display: block;*/
+  list-style: none;
+  padding: 0;
+  /*margin: 0 auto;
+    text-align: left;*/
+}
+
+li {
+  padding: 0;
+  margin-bottom: 40px;
+  /* text-transform: capitalize; */
+  font-size: 1.25em;
+  /*background-color: #000b16;*/
+  border-radius: 3px;
+}
+
+li a.title {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+li a {
+  text-decoration: none;
+  /*transition: all 0.25s linear;*/
+}
+
+li a:hover {
+  text-decoration: underline;
+  /*box-shadow: 0 0 0 1000px #000d19;
+    transform: scale(1.5);*/
+}
+
+li p {
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
