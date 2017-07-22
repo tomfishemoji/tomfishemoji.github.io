@@ -40,7 +40,6 @@
 
 #header h1 {
   font-size: 4.9em;
-  text-align: left;
   font-family: 'Comfortaa', $fn-head;
   font-weight: bold;
 }
@@ -53,7 +52,7 @@
 #social-mnu {
   float: right;
   position: absolute;
-  top: 20px;
+  // top: 20px;
   text-align: right;
 }
 

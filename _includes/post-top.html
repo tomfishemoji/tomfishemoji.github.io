@@ -1,7 +1,19 @@
 <div style="margin-bottom: 2em;">
     {% if page.medium %}
-      <div style="padding: 15px; background-color: #00284f; color: #eee; border-radius: 2px;">
+      <div class="post-notice info">
           <p style="margin-top: 0;">This post was originally published on Medium.<br>View the original post, along with its hearts and comments, <a href="{{ page.medium }}">here</a>.</p>
+      </div>
+    {% endif %}
+
+    {% if page.outdated %}
+      <div class="post-notice warn">
+          <p style="margin-top: 0;">This post has been flagged as outdated.<br>Please note that the content may no longer be accurate.</p>
+      </div>
+    {% endif %}
+
+    {% if page.author %}
+      <div class="post-notice guest">
+          <p style="margin-top: 0;">This is a guest post by <b>{% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}</b><br>Their opinions will probably differ from mine.</p>
       </div>
     {% endif %}
 
