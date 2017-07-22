@@ -6,45 +6,46 @@ I hereby claim:
 
   * I am an admin of https://dnomaid.co.uk
   * I am dnomaid (https://keybase.io/dnomaid) on keybase.
-  * I have a public key ASCsdhJEfeReQL5z10bdaEO7lusM-LUQPFBB97fmLD-9Owo
+  * I have a public key ASB4zajq4vyCEoDcVBEJoRHc5T1xrYmpFdDaBdOwWOuk5Ao
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0120ac7612447de45e40be73d746dd6843bb96eb0cf8b5103c5041f7b7e62c3fbd3b0a",
-            "host": "keybase.io",
-            "kid": "0120ac7612447de45e40be73d746dd6843bb96eb0cf8b5103c5041f7b7e62c3fbd3b0a",
-            "uid": "4d97a18bfdd85201eea8a7d543eae619",
-            "username": "dnomaid"
+    &quot;body&quot;: {
+        &quot;key&quot;: {
+            &quot;eldest_kid&quot;: &quot;0120ac7612447de45e40be73d746dd6843bb96eb0cf8b5103c5041f7b7e62c3fbd3b0a&quot;,
+            &quot;host&quot;: &quot;keybase.io&quot;,
+            &quot;kid&quot;: &quot;012078cda8eae2fc821280dc541109a111dce53d71ad89a915d0da05d3b058eba4e40a&quot;,
+            &quot;uid&quot;: &quot;4d97a18bfdd85201eea8a7d543eae619&quot;,
+            &quot;username&quot;: &quot;dnomaid&quot;
         },
-        "service": {
-            "hostname": "dnomaid.co.uk",
-            "protocol": "https:"
+        &quot;merkle_root&quot;: {
+            &quot;ctime&quot;: 1500742047,
+            &quot;hash&quot;: &quot;c7c11e7628bddb8185f23eb50b0d8638473a3ef6580dee02eab03b8004081fe202fbea3e1292e96e45722db2ef8ccb424e463f6d8f9e97e9f44259e47cd5fdc3&quot;,
+            &quot;hash_meta&quot;: &quot;a63860737801339caa1e2484e90aaac8a3ee3d3e7d7454bb15520afe9da43de8&quot;,
+            &quot;seqno&quot;: 1271984
         },
-        "type": "web_service_binding",
-        "version": 1
+        &quot;service&quot;: {
+            &quot;hostname&quot;: &quot;dnomaid.co.uk&quot;,
+            &quot;protocol&quot;: &quot;https:&quot;
+        },
+        &quot;type&quot;: &quot;web_service_binding&quot;,
+        &quot;version&quot;: 1
     },
-    "client": {
-        "name": "keybase.io go client",
-        "version": "1.0.20"
+    &quot;client&quot;: {
+        &quot;name&quot;: &quot;keybase.io go client&quot;,
+        &quot;version&quot;: &quot;1.0.25&quot;
     },
-    "ctime": 1490627445,
-    "expire_in": 504576000,
-    "merkle_root": {
-        "ctime": 1490627397,
-        "hash": "4f53b691e27fc8c9ed77ab82d93084d383b21556726ff3ea3a1c0470efb175fe017da15e800b8e95b814adf6936859ca0a48ee3c128cca743c27995aa471b1d9",
-        "seqno": 980406
-    },
-    "prev": "c93d6dbb35931e6c52b911d888e73b90fcab87165df65ded365362138f1f10f5",
-    "seqno": 16,
-    "tag": "signature"
+    &quot;ctime&quot;: 1500742059,
+    &quot;expire_in&quot;: 504576000,
+    &quot;prev&quot;: &quot;f2f1f48259f2ea0e05fabc8257805fa8e2a4676153319fadbdbd23a28ca3270f&quot;,
+    &quot;seqno&quot;: 37,
+    &quot;tag&quot;: &quot;signature&quot;
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgrHYSRH3kXkC+c9dG3WhDu5brDPi1EDxQQfe35iw/vTsKp3BheWxvYWTFAvV7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYWM3NjEyNDQ3ZGU0NWU0MGJlNzNkNzQ2ZGQ2ODQzYmI5NmViMGNmOGI1MTAzYzUwNDFmN2I3ZTYyYzNmYmQzYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYWM3NjEyNDQ3ZGU0NWU0MGJlNzNkNzQ2ZGQ2ODQzYmI5NmViMGNmOGI1MTAzYzUwNDFmN2I3ZTYyYzNmYmQzYjBhIiwidWlkIjoiNGQ5N2ExOGJmZGQ4NTIwMWVlYThhN2Q1NDNlYWU2MTkiLCJ1c2VybmFtZSI6ImRub21haWQifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImRub21haWQuY28udWsiLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yMCJ9LCJjdGltZSI6MTQ5MDYyNzQ0NSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDkwNjI3Mzk3LCJoYXNoIjoiNGY1M2I2OTFlMjdmYzhjOWVkNzdhYjgyZDkzMDg0ZDM4M2IyMTU1NjcyNmZmM2VhM2ExYzA0NzBlZmIxNzVmZTAxN2RhMTVlODAwYjhlOTViODE0YWRmNjkzNjg1OWNhMGE0OGVlM2MxMjhjY2E3NDNjMjc5OTVhYTQ3MWIxZDkiLCJzZXFubyI6OTgwNDA2fSwicHJldiI6ImM5M2Q2ZGJiMzU5MzFlNmM1MmI5MTFkODg4ZTczYjkwZmNhYjg3MTY1ZGY2NWRlZDM2NTM2MjEzOGYxZjEwZjUiLCJzZXFubyI6MTYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAfO5835M11ZLUsGt0S7/RG3+HZ1Zx/r7Gaq3N277eLynkaOC1N1NDEuymsgPiqGjtu1OgqxcKuUlt2uI9/EkMC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPJ3gkVwVGe61Ip0o/lnYF/aNGQtf2aEMrjLFIJThQ+Wo3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgeM2o6uL8ghKA3FQRCaER3OU9ca2JqRXQ2gXTsFjrpOQKp3BheWxvYWTFA0V7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYWM3NjEyNDQ3ZGU0NWU0MGJlNzNkNzQ2ZGQ2ODQzYmI5NmViMGNmOGI1MTAzYzUwNDFmN2I3ZTYyYzNmYmQzYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNzhjZGE4ZWFlMmZjODIxMjgwZGM1NDExMDlhMTExZGNlNTNkNzFhZDg5YTkxNWQwZGEwNWQzYjA1OGViYTRlNDBhIiwidWlkIjoiNGQ5N2ExOGJmZGQ4NTIwMWVlYThhN2Q1NDNlYWU2MTkiLCJ1c2VybmFtZSI6ImRub21haWQifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDA3NDIwNDcsImhhc2giOiJjN2MxMWU3NjI4YmRkYjgxODVmMjNlYjUwYjBkODYzODQ3M2EzZWY2NTgwZGVlMDJlYWIwM2I4MDA0MDgxZmUyMDJmYmVhM2UxMjkyZTk2ZTQ1NzIyZGIyZWY4Y2NiNDI0ZTQ2M2Y2ZDhmOWU5N2U5ZjQ0MjU5ZTQ3Y2Q1ZmRjMyIsImhhc2hfbWV0YSI6ImE2Mzg2MDczNzgwMTMzOWNhYTFlMjQ4NGU5MGFhYWM4YTNlZTNkM2U3ZDc0NTRiYjE1NTIwYWZlOWRhNDNkZTgiLCJzZXFubyI6MTI3MTk4NH0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJkbm9tYWlkLmNvLnVrIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjUifSwiY3RpbWUiOjE1MDA3NDIwNTksImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiZjJmMWY0ODI1OWYyZWEwZTA1ZmFiYzgyNTc4MDVmYThlMmE0Njc2MTUzMzE5ZmFkYmRiZDIzYTI4Y2EzMjcwZiIsInNlcW5vIjozNywidGFnIjoic2lnbmF0dXJlIn2jc2lnxECUavLu1xq9wPrXVF6PtcgeEmIB221P1/MLGssYEqm5w3OtgbUXSIIwy3aEQnAobXfw277g9RzPFlzOSlpavAQIqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgc69ol8VW8RWPnZx/pwwEwMQ4M7yD6ofcXKIt7FPFl+GjdGFnzQICp3ZlcnNpb24B
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
