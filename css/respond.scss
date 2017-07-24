@@ -9,20 +9,18 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
-  /*h1 {
-        font-size: 3em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }*/
-  #header h1 {
-    font-size: 3em;
+
+  #header {
     text-align: center;
   }
 
-  #header h1,
-  #header p {
-    display: block;
+  #header h1 {
+    font-size: 3em;
+  }
+
+  #header a {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
   }
 
   #header #social-mnu {
@@ -50,9 +48,5 @@
 
   li a {
     overflow-wrap: break-word;
-  }
-
-  #post-content {
-    font-size: 1.15em;
   }
 }
