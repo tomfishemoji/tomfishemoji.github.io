@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: $bg;
-  color: #eee;
+  color: $tx-light;
   margin: 1em auto 0;
   max-width: 40em;
   font-family: $fn-cont;
@@ -46,7 +46,6 @@ div a:hover {
 
 div {
   font-size: 0.9em;
-  color: $tx-light;
   margin-top: 2em;
 }
 
