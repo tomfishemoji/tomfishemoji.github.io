@@ -1,19 +1,15 @@
 <div class="row">
-    {% if page.previous.url %}
       <div class="col" style="text-align: left;">
-        <p>&laquo; Previous Post</p><p><a href="{{page.previous.url}}">{{page.previous.title}}</a></p>
+        <p>&laquo; Previous Post</p><p>{% if page.previous.url %}<a href="{{page.previous.url}}">{{page.previous.title}}</a>{% else %}This is the first post!{% endif %}</p>
       </div>
-    {% endif %}
 
-    <div class="col">
+    <div class="col" style="text-align: center;">
       <p onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer; font-size: 2em;" title="Share"><i class="fa fa-share fa-fw"></i></p>
       <p style="display: none; font-size: 1.14em;" id="sharelnks"><a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a><br><a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}"
               target="_blank">Reddit</a><br><a href="mailto:?subject={{ site.url }}{{ page.url }}" style="color: #eee;">Email</a></p>
     </div>
 
-    {% if page.next.url %}
       <div class="col" style="text-align: right;">
-        <p>Next Post &raquo;</p><p><a href="{{page.next.url}}">{{page.next.title}}</a></p>
+        <p>Next Post &raquo;</p><p>{% if page.next.url %}<a href="{{page.next.url}}">{{page.next.title}}</a>{% else %}This is the latest post!{% endif %}</p>
       </div>
-    {% endif %}
 </div>

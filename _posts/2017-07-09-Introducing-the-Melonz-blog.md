@@ -2,7 +2,7 @@
 layout: post
 title: Introducing the new Melonz blog
 description: TRM Promotes his "new" blog
-category: guest-posts
+category: guest posts
 image: blog.png
 author: TheRandomMelon
 authorlnk: https://twitter.com/RandomMelonYT

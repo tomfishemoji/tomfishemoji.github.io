@@ -28,6 +28,11 @@
   color: $bg-dark;
 }
 
+#post-content span.spacer {
+  display: inline-block;
+  margin: 1em;
+}
+
 #post-content h1,
 #post-content h2,
 #post-content h3 {

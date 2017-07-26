@@ -2,7 +2,7 @@
 layout: post
 title: Website Review - freddystudio.cf
 description: I review FreddyStudio’s website.
-category: site-review
+category: site review
 image: home.png
 medium: https://blog.dnomaid.co.uk/freddystudio-website-review-7460cf19d885
 ---
