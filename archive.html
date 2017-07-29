@@ -40,7 +40,7 @@ description: All the posts I've ever posted
   {% for post in site.posts %}
   {% if post.showinarchive != false %}
     <li>
-      <p>{{ post.date | date_to_string }}  in <a href="/archive.html#{{ post.category }}">{{ post.category }}</a>{% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}</p>
+      <p>{{ post.date | date_to_string }}  in <a href="/archive#{{ post.category }}">{{ post.category }}</a>{% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}</p>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     </li>
   {% endif %}
