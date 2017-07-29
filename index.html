@@ -5,15 +5,12 @@ keywords: home, homepage
 description: I do computers and stuff
 ---
 
-    <div>
-    <h3>Recent blog posts:</h3>
     <ul>
       {% for post in site.posts limit:5 %}
         <li>
-          <p><a href="{{ post.url }}" class="title">{{ post.title }}</a><br>
-          {{ post.date | date_to_string }} in <a href="/archive.html#{{ post.category }}">{{ post.category }}</a>{% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}</p>
+          <p>{{ post.date | date_to_string }} {% unless post.author %}in <a href="/archive.html#{{ post.category }}">{{ post.category }}</a>{% endunless %}{% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}</p>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         </li>
       {% endfor %}
     </ul>
-    <p>View <a href="archive.html">all of the posts</a> or subscribe with <a href="feed.xml">RSS</a></p>
-    </div>
+    <p><a href="archive.html"><i class="fa fa-folder fa-fw"></i> Previous Posts</a> <a href="feed.xml" style="margin-left: 1em;"><i class="fa fa-rss fa-fw"></i> RSS</a></p>

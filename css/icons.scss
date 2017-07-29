@@ -33,67 +33,67 @@ Link - http://fontello.com/
 */
 
 @font-face {
-    font-family: 'dno-fa';
-    src: url('../font/dno-fa.eot');
-    src: url('../font/dno-fa.eot#iefix') format('embedded-opentype'), url('../font/dno-fa.woff2') format('woff2'), url('../font/dno-fa.woff') format('woff'), url('../font/dno-fa.ttf') format('truetype'), url('../font/dno-fa.svg#dno-fa') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'dnofa';
+  src: url('../font/dnofa.eot');
+  src: url('../font/dnofa.eot#iefix') format('embedded-opentype'),
+       url('../font/dnofa.woff2') format('woff2'),
+       url('../font/dnofa.woff') format('woff'),
+       url('../font/dnofa.ttf') format('truetype'),
+       url('../font/dnofa.svg#dnofa') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-
-
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-
-
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'dno-fa';
-    src: url('../font/dno-fa.svg?8827202#dno-fa') format('svg');
+    font-family: 'dnofa';
+    src: url('../font/dnofa.svg?78583770#dnofa') format('svg');
   }
 }
 */
 
-[class^="fa-"]:before, [class*=" fa-"]:before {
-    font-family: "dno-fa";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-    /* opacity: .8; */
-    /* For safety - reset parent styles, that can break glyph codes*/
-    font-variant: normal;
-    text-transform: none;
-    /* fix buttons height, for twitter bootstrap */
-    line-height: 1em;
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    margin-left: .2em;
-    /* you can be more comfortable with increased icons size */
-    /* font-size: 120%; */
-    /* Font smoothing. That was taken from TWBS */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* Uncomment for 3D effect */
-    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+ [class^="fa-"]:before, [class*=" fa-"]:before {
+  font-family: "dnofa";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .fa-info:before { content: '\e800'; } /* '' */
 .fa-person:before { content: '\e801'; } /* '' */
-.fa-mail:before { content: '\e802'; } /* '' */
-.fa-home:before { content: '\e803'; } /* '' */
 .fa-twitter:before { content: '\f099'; } /* '' */
-.fa-gauge:before { content: '\f0e4'; } /* '' */
-.fa-laptop:before { content: '\f109'; } /* '' */
 .fa-github:before { content: '\f113'; } /* '' */
-.fa-folder-open-empty:before { content: '\f115'; } /* '' */
 .fa-youtube:before { content: '\f16a'; } /* '' */
-.fa-code:before { content: '\f1c9'; } /* '' */
 .fa-share:before { content: '\f1e0'; } /* '' */
-.fa-medium:before { content: '\f23a'; } /* '' */
+.fa-rss:before { content: '\f09e'; } /* '' */
+.fa-folder:before { content: '\e802'; } /* '' */

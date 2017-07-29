@@ -1,73 +1,104 @@
 @import '_vars';
 
 * {
-  padding: 0;
   margin: 0;
-}
-
-body,
-html {
-  min-height: 100%;
-  max-width: 100%;
+  padding: 0;
 }
 
 body {
-  max-width: 40em;
   margin: 0 auto;
-  background-color: $bg;
-  color: $tx-light;
+  padding: 1em;
+  max-width: 45em;
   font-family: $fn-cont;
-  font-size: 1.2em;
+  color: $tx;
+  background-color: $bg;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: $fn-head;
-  font-weight: normal;
 }
 
 a {
-  color: $ln-light;
+  color: $ln;
   text-decoration: none;
 }
 
 a:hover {
-  filter: contrast(1.5);
-  text-decoration: underline;
-}
-
-div {
-  font-size: 0.9em;
-  margin-top: 2em;
-}
-
-div:last-of-type {
-  margin-bottom: 2em;
-}
-
-p {
-  display: block;
-  margin: 0.5em 0 0;
-  padding: 0;
-  line-height: 1.35em;
-  // font-size: 1.05em;
+  background-color: $ln;
+  color: $bg;
 }
 
 ul {
   list-style: none;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 li {
-  margin-bottom: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-li p {
-  line-height: 1.5em;
+li p a {
+  color: $tx;
 }
 
-li a.title {
-  font-size: 1.5em;
+li h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+div#header {
+  margin-bottom: 1.9em;
+}
+
+div#header h1 {
+  font-family: 'Comfortaa', $fn-head;
+  font-size: 3em;
+}
+
+.youtube {
+  color: #cd201f;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.github {
+  color: #6cc644;
+}
+
+.medium {
+  color: #00ab6c;
+}
+
+div#footer {
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+.question {
+  margin-top: 1em;
+}
+
+.chead {
+  text-transform: capitalize;
+  margin-top: 3em;
+}
+
+@media screen and (max-width: 35em) {
+  div#header {
+    font-size: 1.5em;
+  }
+
+  div#header a {
+    display: inline-block;
+    width: 100%;
+  }
 }

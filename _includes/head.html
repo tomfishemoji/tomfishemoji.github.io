@@ -31,7 +31,7 @@
     {% endif %}
     <!-- CSS & Icons -->
     <link href="/css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Comfortaa" rel="stylesheet">
     {% if page.layout == 'post' %}<link href="/css/frameworks/wing-col.css" rel="stylesheet">{% endif %}
     {% if page.extrahead %}{{ page.extrahead }}{% endif %}
     <link rel="shortcut icon" href="/favicon.ico">
@@ -42,13 +42,10 @@
 
 <body>
   <div id="header">
-    <h1><a href="/">dnomaid</a></h1>
-    <p id="menu">
-    <a href="{{ site.twitter }}" class="social-lnk twitter" title="Twitter"><i class="fa fa-twitter fa-fw twitter"></i> Twitter</a>
-    <a href="{{ site.youtube }}" class="social-lnk youtube" title="YouTube"><i class="fa fa-youtube fa-fw youtube"></i> YouTube</a>
-    <a href="{{ site.github }}" class="social-lnk github" title="GitHub"><i class="fa fa-github fa-fw github"></i> GitHub</a><br>
-		<span><a href="/" class="page-lnk hme" title="Home"><i class="fa fa-home fa-fw"></i> Home</a>
-		<a href="/faq.html" class="page-lnk faq" title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a>
-		<a href="/about.html" class="page-lnk abo" title="About"><i class="fa fa-person fa-fw"></i> About</a></span>
-  </p>
+    <h1><a href="/" title="Home">dnomaid</a></h1>
+    <p>
+      <a href="{{ site.twitter }}" class="social-lnk twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+      <a href="{{ site.youtube }}" class="social-lnk youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a>
+      <a href="{{ site.github }}" class="social-lnk github" title="GitHub"><i class="fa fa-github fa-fw"></i> GitHub</a>
+    </p>
   </div>

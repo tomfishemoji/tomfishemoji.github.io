@@ -10,7 +10,7 @@ pre {
 }
 
 /*.highlight .hll { background-color: #111; padding: 20px; }*/
-.highlight  { background: $bg-dark; color: #eee }
+.highlight  { background: $bg-dark; color: $tx-light; }
 .highlight .c { color: #999999; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .esc { color: #eee } /* Escape */
