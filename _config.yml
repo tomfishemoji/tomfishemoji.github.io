@@ -17,7 +17,7 @@ twitter: https://twitter.com/mrdnomaid
 github: https://github.com/mrdnomaid
 githubu: mrdnomaid
 permalink: /:year/:title.html
-permalink: /:year/:title
+permalink: /:year/:title/
 
 # Build settings
 markdown: kramdown
