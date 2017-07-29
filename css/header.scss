@@ -9,7 +9,7 @@
 // }
 
 #header h1 {
-  font-size: 3em;
+  font-size: 3.2em;
   font-family: 'Comfortaa', $fn-head;
   font-weight: bold;
 }
@@ -21,6 +21,11 @@
 
 #header a:hover {
   text-decoration: none;
+}
+
+#header span {
+  display: inline-block;
+  margin-top: 5px;
 }
 
 .youtube {
