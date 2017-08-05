@@ -1,23 +1,20 @@
 @import '_vars';
 
-#featured-img {
-  width: 100%;
-  border-radius: 5px;
-  margin: 0 auto 10px;
-}
-
-p#subtitle {
-  font-size: 1.3em;
-  font-family: $fn-head;
-  font-style: italic;
-  margin: 0.2em 0 1em 0;
+div#featured-img {
+  box-shadow: 0 0 2em 1em $bg inset;
+  img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+    position: relative;
+    z-index: -1;
+  }
 }
 
 #post {
   p {
-    font-size: 1.05em;
-    line-height: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
   }
 
   img {
@@ -41,9 +38,8 @@ p#subtitle {
   h1,
   h2,
   h3 {
-    margin-top: 1em;
+    font-size: 2em;
     margin-bottom: 1em;
-    font-size: 1.3em;
   }
 
   iframe {
@@ -80,6 +76,7 @@ p#subtitle {
   top: 0;
   z-index: 10;
   margin-bottom: 2em;
+  text-align: center;
 }
 
 .post-notice.info {

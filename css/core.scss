@@ -8,8 +8,10 @@
 body {
   margin: 0 auto;
   padding: 1em;
-  max-width: 45em;
+  max-width: 60em;
   font-family: $fn-cont;
+  font-size: 1.05em;
+  margin-bottom: 0.5em;
   color: $tx;
   background-color: $bg;
   overflow-x: hidden;
@@ -21,6 +23,30 @@ body {
 
 h1, h2, h3 {
   font-family: $fn-head;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.05em;
+}
+
+h2 {
+  font-size: 2.1em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -45,22 +71,18 @@ ul, li {
 li {
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 0.8em;
 }
 
 li p a {
   color: $tx;
 }
 
-li h3 {
-  font-size: 1.4em;
-  font-weight: normal;
-}
-
-div#header {
+div#gubbins {
   margin-bottom: 1.9em;
 }
 
-div#header h1 {
+div#gubbins h1 {
   font-family: 'Comfortaa', $fn-head;
   font-size: 3em;
 }
@@ -81,27 +103,37 @@ div#header h1 {
   color: #00ab6c;
 }
 
-div#footer {
-  margin-top: 2em;
-  font-size: 0.9em;
-}
-
 .question {
   margin-top: 1em;
 }
 
 .chead {
   text-transform: capitalize;
-  margin-top: 3em;
 }
 
-@media screen and (max-width: 35em) {
-  div#header {
-    font-size: 1.5em;
+@media screen and (max-width: 65em) {
+  div#gubbins {
+    font-size: 1.2em;
+    text-align: center;
   }
 
-  div#header a {
+  div#gubbins a {
     display: inline-block;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 65em) {
+  #content {
+    float: right;
+    width: 45em;
+  }
+
+  #gubbins {
+    float: left;
+    width: 14em;
+    position: fixed;
+    text-align: right;
+    padding-right: 1em;
   }
 }

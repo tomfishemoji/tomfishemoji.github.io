@@ -1,30 +1,23 @@
-<div style="margin-bottom: 2em; text-align: center;">
+<div style="margin-bottom: 2em;">
   {% if page.medium %}
   <div class="post-notice info">
     <p style="margin-top: 0;">This post was originally published on Medium.<br>View the original post, along with its hearts and comments, <a href="{{ page.medium }}">here</a>.</p>
   </div>
-  {% endif %}
-  {% if page.outdated %}
+  {% endif %} {% if page.outdated %}
   <div class="post-notice warn">
     <p style="margin-top: 0;">This post has been flagged as outdated.<br>Please note that the content may no longer be accurate.</p>
   </div>
   {% endif %}
-  {% if page.author %}
-  <div class="post-notice guest">
-    <p style="margin-top: 0;">This is a guest post by <b>{% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}</b><br>Their opinions will probably differ from mine.</p>
-  </div>
-  {% endif %}
-  {% if page.image %}
-  <img src="/img/posts/{{ page.title }}/{{ page.image }}" alt="{{ page.image }}" id="featured-img" style="-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))">
+
+  <h4>{{ page.date | date: '%B %d, %Y' }} in <a href="/archive/#{{ page.category }}">{{ page.category }}</a>{% if page.author %} by {% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% endif %}</h4>
+  <h2>{{ page.title }}</h2>
+  {% if page.description %}
+    <h4>{{ page.description }}</h4>
+    {% else %}
+    <h4>&nbsp;</h4>
   {% endif %}
 
-    <h1>{{ page.title }}</h1>
-    {% if page.description %}
-    <p id="subtitle">{{ page.description }}</p>
-    {% endif %}
-    {% if page.author %}
-    <p><b>{{ page.date | date: '%B %d, %Y' }}</b> - Guest post by <b>{% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}</b></p>
-    {% else %}
-    <p>Posted on <b>{{ page.date | date: '%B %d, %Y' }}</b> in <b><a href="/archive.html#{{ page.category }}">{{ page.category }}</a></b></p>
-    {% endif %}
+  {% if page.image %}
+    <div id="featured-img"><img src="/img/posts/{{ page.title }}/{{ page.image }}" alt="{{ page.image }}"></div>
+  {% endif %}
 </div>

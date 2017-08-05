@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 {% include head.html %}
+<div id="content">
 {% unless page.title == 'Home' %}
-  <div>
-    <h2>{{ page.title }}</h2>
-  </div>
+<h1 style="margin-bottom: 0.5em;">{{ page.title }}</h1>
 {% endunless %}
 {{ content }}
-{% include foot.html %}
+</div>
 </body>
 </html>

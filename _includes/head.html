@@ -41,11 +41,31 @@
 </head>
 
 <body>
-  <div id="header">
+  <div id="gubbins">
     <h1><a href="/" title="Home">dnomaid</a></h1>
     <p>
-      <a href="{{ site.twitter }}" class="social-lnk twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
-      <a href="{{ site.youtube }}" class="social-lnk youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a>
-      <a href="{{ site.github }}" class="social-lnk github" title="GitHub"><i class="fa fa-github fa-fw"></i> GitHub</a>
+      <a href="{{ site.youtube }}" class="social-lnk youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a><br>
+      <a href="{{ site.twitter }}" class="social-lnk twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a><br>
+      <a href="{{ site.github }}" class="social-lnk github" title="GitHub"><i class="fa fa-github fa-fw"></i> GitHub</a><br>
+      <a href="/faq/" class="page-lnk faq" title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
+      <a href="/about/" class="page-lnk abo" title="About"><i class="fa fa-person fa-fw"></i> About</a>
     </p>
+
+    {% if page.title == 'Home' %}
+    <p>
+      <a href="/feed.xml"><i class="fa fa-rss fa-fw"></i> RSS</a><br>
+      <a href="/archive/"><i class="fa fa-folder fa-fw"></i> Archive</a>
+    </p>
+    {% endif %}
+
+    {% if page.layout == 'post' %}
+    <p>
+    {% if page.next.url %}<a href="{{page.next.url}}">Next Post &raquo;</a>{% endif %}
+    {% if page.next.url and page.previous.url %}<br>{% endif %}
+    {% if page.previous.url %}<a href="{{page.previous.url}}">&laquo; Last Post</a>{% endif %}
+    </p>
+
+    <p><a onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer;" title="Share" href="javascript:void(0)"><i class="fa fa-share fa-fw"></i> Share</a></p>
+    <p style="display: none;" id="sharelnks"><a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a><br><a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank">Reddit</a><br><a href="mailto:?subject={{ site.url }}{{ page.url }}">Email</a></p>
+    {% endif %}
   </div>
