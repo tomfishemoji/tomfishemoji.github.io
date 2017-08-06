@@ -21,7 +21,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: $fn-head;
 }
 
@@ -54,7 +54,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
   background-color: $ln;
   color: $bg;
 }
@@ -85,6 +85,20 @@ div#gubbins {
 div#gubbins h1 {
   font-family: 'Comfortaa', $fn-head;
   font-size: 3em;
+}
+
+div#gubbins h1 a {
+  display: inline-block;
+  background-image: url('/img/wm.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80%;
+  height: 1em;
+}
+
+div#gubbins h1 a:hover, div#gubbins h1 a:focus {
+  background-image: url('/img/wm-a.png');
 }
 
 .youtube {
@@ -121,15 +135,19 @@ div#gubbins h1 {
     display: inline-block;
     width: 100%;
   }
+
+  div#gubbins h1 a {
+    width: 50vw;
+  }
 }
 
 @media screen and (min-width: 65em) {
-  #content {
+  div#content {
     float: right;
     width: 45em;
   }
 
-  #gubbins {
+  div#gubbins {
     float: left;
     width: 14em;
     position: fixed;

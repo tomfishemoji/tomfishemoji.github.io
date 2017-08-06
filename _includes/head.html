@@ -31,8 +31,6 @@
     {% endif %}
     <!-- CSS & Icons -->
     <link href="/css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    {% if page.layout == 'post' %}<link href="/css/frameworks/wing-col.css" rel="stylesheet">{% endif %}
     {% if page.extrahead %}{{ page.extrahead }}{% endif %}
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/img/fish_large.png">
@@ -42,7 +40,7 @@
 
 <body>
   <div id="gubbins">
-    <h1><a href="/" title="Home">dnomaid</a></h1>
+    <h1><a href="/" title="Home"></a></h1>
     <p>
       <a href="{{ site.youtube }}" class="social-lnk youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a><br>
       <a href="{{ site.twitter }}" class="social-lnk twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a><br>
@@ -62,7 +60,7 @@
     <p>
     {% if page.next.url %}<a href="{{page.next.url}}">Next Post &raquo;</a>{% endif %}
     {% if page.next.url and page.previous.url %}<br>{% endif %}
-    {% if page.previous.url %}<a href="{{page.previous.url}}">&laquo; Last Post</a>{% endif %}
+    {% if page.previous.url %}<a href="{{page.previous.url}}">&laquo; Previous Post</a>{% endif %}
     </p>
 
     <p><a onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer;" title="Share" href="javascript:void(0)"><i class="fa fa-share fa-fw"></i> Share</a></p>
