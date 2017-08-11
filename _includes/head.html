@@ -39,7 +39,7 @@
 </head>
 
 <body>
-  <div id="gubbins">
+  <header>
     <h1><a href="/" title="Home"></a></h1>
     <p>
       <a href="{{ site.youtube }}" class="social-lnk youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a><br>
@@ -66,4 +66,4 @@
     <p><a onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer;" title="Share" href="javascript:void(0)"><i class="fa fa-share fa-fw"></i> Share</a></p>
     <p style="display: none;" id="sharelnks"><a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a><br><a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank">Reddit</a><br><a href="mailto:?subject={{ site.url }}{{ page.url }}">Email</a></p>
     {% endif %}
-  </div>
+  </header>

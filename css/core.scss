@@ -21,7 +21,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: $fn-head;
 }
 
@@ -54,7 +57,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:focus,
+a:hover {
   background-color: $ln;
   color: $bg;
 }
@@ -63,7 +67,8 @@ ul {
   list-style: none;
 }
 
-ul, li {
+li,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -78,16 +83,16 @@ li p a {
   color: $tx;
 }
 
-div#gubbins {
+header {
   margin-bottom: 1.9em;
 }
 
-div#gubbins h1 {
+header h1 {
   font-family: 'Comfortaa', $fn-head;
   font-size: 3em;
 }
 
-div#gubbins h1 a {
+header h1 a {
   display: inline-block;
   background-image: url('/img/wm.png');
   background-repeat: no-repeat;
@@ -97,7 +102,8 @@ div#gubbins h1 a {
   height: 1em;
 }
 
-div#gubbins h1 a:hover, div#gubbins h1 a:focus {
+header h1 a:focus,
+header h1 a:hover {
   background-image: url('/img/wm-a.png');
 }
 
@@ -123,31 +129,32 @@ div#gubbins h1 a:hover, div#gubbins h1 a:focus {
 
 .chead {
   text-transform: capitalize;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 65em) {
-  div#gubbins {
+  header {
     font-size: 1.2em;
     text-align: center;
   }
 
-  div#gubbins a {
+  header a {
     display: inline-block;
     width: 100%;
   }
 
-  div#gubbins h1 a {
+  header h1 a {
     width: 50vw;
   }
 }
 
 @media screen and (min-width: 65em) {
-  div#content {
+  main {
     float: right;
     width: 45em;
   }
 
-  div#gubbins {
+  header {
     float: left;
     width: 14em;
     position: fixed;

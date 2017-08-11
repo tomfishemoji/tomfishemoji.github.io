@@ -8,7 +8,11 @@ description: I do computers and stuff
     <ul>
       {% for page in site.posts limit:5 %}
         <li>
-          <h4>{{ page.date | date: '%B %d, %Y' }} in <a href="/archive/#{{ page.category }}">{{ page.category }}</a>{% if page.author %} by {% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% endif %}</h4>
+          <h4>
+            {{ page.date | date: '%B %d, %Y' }}
+            {% if page.category %}in <a href="/archive/c/#{{ page.category | remove:' ' }}">{{ page.category }}</a>{% endif %}
+            {% if page.author %} by {% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% endif %}
+          </h4>
           <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
         </li>
       {% endfor %}

@@ -1,0 +1,40 @@
+---
+layout: default
+title: Post Archive (by category)
+permalink: /archive/c/
+description: All the posts I've ever posted, but sorted into categories
+---
+
+<p>Search with CTRL+F</p>
+
+{% for category in site.categories %}
+    <div id="{{ category | first | remove:' ' }}" style="border-radius: 2px;">
+        <h1 class="chead">{{ category | first }}</h1>
+
+        <ul>
+           {% for posts in category %}
+             {% for post in posts %}
+               {% if post.url %}
+                {% if post.showinarchive != false %}
+                <li>
+                  <h4>
+                    {{ post.date | date: '%B %d, %Y' }}
+                    {% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}
+                  </h4>
+                  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                </li>
+                {% else %}
+                <li>There's nothing here<br><span style="font-size: 0.8em">Or is there >_></span></li>
+                {% endif %}
+               {% endif %}
+             {% endfor %}
+           {% endfor %}
+        </ul>
+    </div>
+{% endfor %}
+
+<script>
+if(window.location.hash) {
+ document.getElementById(window.location.hash.replace('#', '')).style.background = '#002e59';
+}
+</script>

@@ -11,7 +11,11 @@ description: All the posts I've ever posted
   {% for post in site.posts %}
     {% if post.showinarchive != false %}
       <li>
-        <h4>{{ post.date | date: '%B %d, %Y' }} in <a href="/archive/#{{ post.category }}">{{ post.category }}</a>{% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}</h4>
+        <h4>
+          {{ post.date | date: '%B %d, %Y' }}
+          {% if post.category %}in <a href="/archive/c/#{{ post.category | remove:' ' }}">{{ post.category }}</a>{% endif %}
+          {% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}
+        </h4>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       </li>
     {% endif %}
@@ -21,6 +25,6 @@ description: All the posts I've ever posted
 
 <script>
 if(window.location.hash) {
- document.getElementById('cats').style.display = 'block'; document.getElementById('all').style.display = 'none';
+ document.location = '/archive/c/' + window.location.hash;
 }
 </script>
