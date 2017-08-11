@@ -1,43 +1,36 @@
-<!--
+<i style="display: none;">
   #############
   # dnomaid.co.uk
   # Code licensed under CC-BY-SA, see https://github.com/mrdnomaid/mrdnomaid.github.io/blob/master/LICENSE.md for more info.
   #############
--->
+</i>
 <head>
-    <!-- Boring Meta Stuff -->
+    <!-- Boring -->
     <meta charset="UTF-8">
     <meta name="theme-color" content="#000d19">
     <meta name="viewport" content="initial-scale=1.0">
-    <!-- Search Engine Meta -->
+    <!-- Search Engines -->
     <meta name="robots" content="index, follow">
     {% if page.author %}<meta name="author" content="{{ page.author }}">{% else %}<meta name="author" content="dnomaid">{% endif %}
     {% if page.description %}<meta name="description" content="{{ page.description}}">{% endif %}
     <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website, site, social, media, links, {{ page.keywords | escape }}">
     <!-- Open Graph  -->
     {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
-    {% if page.image %}
-    <meta property="og:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}">
-    {% else %}
-    <meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">
-    {% endif %}
-    <!-- Twitter -->
-    {% if page.image %}
+    {% if page.image %}<meta property="og:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}">
+    {% else %}<meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">{% endif %}
+    <!-- Twitter -->{% if page.image %}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mrdnomaid" />
     <meta name="twitter:title" content="{{ page.title | escape }}" />
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
-    <meta name="twitter:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}" />
-    {% else %}
+    <meta name="twitter:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}" />{% else %}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@mrdnomaid" />
     <meta name="twitter:title" content="{{ page.title | escape }}" />
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
-    <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />
-    {% endif %}
+    <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />{% endif %}
     <!-- CSS & Icons -->
-    <link href="/css/main.css" rel="stylesheet">
-    {% if page.extrahead %}{{ page.extrahead }}{% endif %}
+    <link href="/css/main.css" rel="stylesheet">{% if page.extrahead %}{{ page.extrahead }}{% endif %}
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/img/fish_large.png">
     <!-- Page Title -->
@@ -64,9 +57,12 @@
 
     {% if page.layout == 'post' %}
     <p>
-    {% if page.next.url %}<a href="{{page.next.url}}">Next Post &raquo;</a>{% endif %}
-    {% if page.next.url and page.previous.url %}<br>{% endif %}
-    {% if page.previous.url %}<a href="{{page.previous.url}}">&laquo; Previous Post</a>{% endif %}
+      {% if page.next.url %}
+        <a href="{{page.next.url}}">Next Post &raquo;</a>{% endif %}
+      {% if page.next.url and page.previous.url %}<br>{% endif %}
+      {% if page.previous.url %}
+        <a href="{{page.previous.url}}">&laquo; Previous Post</a>
+      {% endif %}
     </p>
 
     <p><a onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer;" title="Share" href="javascript:void(0)"><i class="fa fa-share fa-fw"></i> Share</a></p>
