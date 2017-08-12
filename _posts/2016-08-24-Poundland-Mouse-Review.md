@@ -2,7 +2,10 @@
 layout: post
 title: Poundland Mouse Review
 description: A short “review” of Signalex’s £1 mouse.
-category: review
+category:
+  - tech
+  - review
+multiplecats: true
 medium: https://blog.dnomaid.co.uk/poundland-mouse-review-af558233c631
 image: mouse.jpeg
 ---

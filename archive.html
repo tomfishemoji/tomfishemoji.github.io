@@ -13,7 +13,7 @@ description: All the posts I've ever posted
       <li>
         <h4>
           {{ post.date | date: '%B %d, %Y' }}
-          {% if post.category %}in <a href="/archive/c/#{{ post.category | remove:' ' }}">{{ post.category }}</a>{% endif %}
+          {% if post.multiplecats == true %}in <a href="/archive/c/#{{ post.category | first | remove:' ' }}">{{ post.category | first }}</a>, <a href="/archive/c/#{{ post.category | last | remove:' ' }}">{{ post.category | last }}</a>{% else %}in <a href="/archive/c/#{{ post.category | remove:' ' }}">{{ post.category }}</a>{% endif %}
           {% if post.author %} by {% if post.authorlnk %}<a href="{{ post.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ post.author }}{% if post.authorlnk %}</a>{% endif %}{% endif %}
         </h4>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

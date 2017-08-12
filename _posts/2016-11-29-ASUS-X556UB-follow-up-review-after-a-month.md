@@ -2,7 +2,10 @@
 layout: post
 title: ASUS X556UB follow up review after a month
 description: About a month ago, I gave my first impressions on the ASUS X556UB-XX039T laptop. Here’s the follow-up I promised.
-category: tech
+category:
+  - tech
+  - review
+multiplecats: true
 image: keyboard.jpeg
 medium: https://blog.dnomaid.co.uk/asus-laptop-review-1month-48513b605c34
 ---

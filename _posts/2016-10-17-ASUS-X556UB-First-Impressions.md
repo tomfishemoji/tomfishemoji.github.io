@@ -2,7 +2,10 @@
 layout: post
 title: ASUS X556UB First Impressions
 description: My ‘review’ of the ASUS X556UB-XX039T laptop after a day of use.
-category: tech
+category:
+  - tech
+  - review
+multiplecats: true
 image: profile.jpeg
 medium: https://blog.dnomaid.co.uk/asus-laptop-review-cb64f208481b
 ---

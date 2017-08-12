@@ -2,7 +2,10 @@
 layout: post
 title: Poundland USB SD Card Reader Review
 description: A brief review of the one pound Signalex SD card reader
-category: review
+category:
+  - tech
+  - review
+multiplecats: true
 medium: https://blog.dnomaid.co.uk/poundland-usb-sd-card-reader-review-5786596b28e8
 image: reader.jpeg
 ---

@@ -2,7 +2,10 @@
 layout: post
 title: Tsohost Review
 description: After using them since January, this is my review of Tsohost.
-category: review
+category:
+  - tech
+  - review
+multiplecats: true
 medium: https://blog.dnomaid.co.uk/tsohost-review-f7584dd7df84
 image: tso.png
 ---
