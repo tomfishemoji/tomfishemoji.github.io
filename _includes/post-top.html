@@ -11,7 +11,7 @@
 
   <h4>
     {{ page.date | date: '%B %d, %Y' }}
-    {% if post.multiplecats == true %}in <a href="/archive/c/#{{ post.category | first | remove:' ' }}">{{ post.category | first }}</a>, <a href="/archive/c/#{{ post.category | last | remove:' ' }}">{{ post.category | last }}</a>{% else %}in <a href="/archive/c/#{{ post.category | remove:' ' }}">{{ post.category }}</a>{% endif %}
+    {% if page.multiplecats == true %}in <a href="/archive/c/#{{ page.category | first | remove:' ' }}">{{ page.category | first }}</a>{% if page.category | last %}, <a href="/archive/c/#{{ page.category | last | remove:' ' }}">{{ page.category | last }}</a>{% endif %}{% else %}in <a href="/archive/c/#{{ page.category | remove:' ' }}">{{ page.category }}</a>{% endif %}
     {% if page.author %} by {% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% endif %}
   </h4>
   <h2>{{ page.title }}</h2>
