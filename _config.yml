@@ -9,6 +9,7 @@
 title: dnomaid.co.uk
 email: tom [at] dnomaid [dot] co [dot] uk
 description: I do computers and stuff
+future: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://dnomaid.co.uk # the base hostname & protocol for your site
 urlnp: dnomaid.co.uk
