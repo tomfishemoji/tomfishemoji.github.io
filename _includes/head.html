@@ -26,10 +26,11 @@
     <meta name="twitter:title" content="{{ page.title | escape }}" />
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}" />
     <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png" />{% endif %}
-    <!-- CSS & Icons -->
+    <!-- CSS, Icons & Everything Else -->
     <link href="/css/main.css" rel="stylesheet">{% if page.extrahead %}{{ page.extrahead }}{% endif %}
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/img/fish_large.png">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
     <!-- Page Title -->
     <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
 </head>
@@ -52,7 +53,7 @@
 
     {% if page.title == 'Home' %}
     <p>
-      <a href="/feed.xml"><i class="fa fa-rss fa-fw"></i> RSS</a><br>
+      <a href="/feed.xml" rel="alternate" type="application/rss+xml"><i class="fa fa-rss fa-fw"></i> RSS</a><br>
       <a href="/archive/"><i class="fa fa-folder fa-fw"></i> Archive</a>
     </p>
     {% endif %}
