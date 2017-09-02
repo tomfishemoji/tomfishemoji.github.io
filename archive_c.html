@@ -5,7 +5,7 @@ permalink: /archive/c/
 description: All the posts I've ever posted, but sorted into categories
 ---
 
-<p>Search with CTRL+F</p>
+{% include ddg.html%}
 
 {% for category in site.categories %}
     <div id="{{ category | first | remove:' ' }}" style="border-radius: 2px;">
