@@ -83,6 +83,39 @@ li p a {
   color: $tx;
 }
 
+blockquote {
+  display: inline-block;
+  width: 100%;
+  border-left: $ln 5px solid;
+  padding-left: 1em;
+  padding-top: 5px;
+  margin-top: 1em;
+  margin-bottom: 0;
+  border-top-left-radius: 10px;
+}
+
+blockquote[short] {
+  font-size: 1.5em;
+}
+
+author {
+  display: inline-block;
+  width: 100%;
+  border-left: $ln 5px solid;
+  padding-left: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 10px;
+}
+
+author::before {
+  content: '\2014';
+  padding-right: 5px;
+}
+
 header {
   margin-bottom: 1.9em;
 }

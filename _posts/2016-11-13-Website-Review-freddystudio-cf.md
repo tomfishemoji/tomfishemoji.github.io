@@ -17,8 +17,8 @@ For this first review, I thought I’d review a friend’s site as it is particu
 
 I am not a designer, but I like things that look pretty. This site does not look pretty. It is anything but pretty.
 
-> OH MY GOD, IT’S SO BAD
-— Haden (FletchXYZ)
+<blockquote short>OH MY GOD, IT’S SO BAD</blockquote>
+<author>Haden (FletchXYZ)</author>
 
 
 
