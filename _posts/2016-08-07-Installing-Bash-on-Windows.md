@@ -19,14 +19,14 @@ First thing — if you don’t know what Bash is, you probably don’t want 
 
 First, open Control Panel and navigate to Programs and Features.
 
-![](/img/posts/Installing Bash on Windows 10/sidebar.png)
-<span class="image-caption">Programs and Features sidebar</span>
+{% include image.html path="/img/posts/Installing Bash on Windows 10/sidebar.png" caption="Programs and Features sidebar" %}
 
 Once you have that open, click “Turn Windows features on or off” in the left sidebar.
 
 After the dialog appears, scroll down to “Windows Subsystem for Linux (Beta)” and make sure the box to its left is checked.
 
-![](/img/posts/Installing Bash on Windows 10/features.png)
+{% include image.html path="/img/posts/Installing Bash on Windows 10/features.png" %}
+
 
 When Windows finishes downloading the required files, you’ll have to restart your PC to finish installing the Ubuntu subsystem, and once you’re logged back in, you should notice a new item in your Start Menu called “Bash on Ubuntu on Windows”. Open that up, it’ll perform first-time setup, and you’re done!
 

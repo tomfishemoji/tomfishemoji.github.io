@@ -83,6 +83,30 @@ li p a {
   color: $tx;
 }
 
+header {
+  margin-bottom: 1.9em;
+}
+
+header h1 {
+  font-family: 'Comfortaa', $fn-head;
+  font-size: 3em;
+}
+
+header h1 a {
+  display: inline-block;
+  background-image: url('/img/wm.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 80%;
+  height: 1em;
+}
+
+header h1 a:focus,
+header h1 a:hover {
+  background-image: url('/img/wm-a.png');
+}
+
 blockquote {
   display: inline-block;
   width: 100%;
@@ -116,29 +140,22 @@ author::before {
   padding-right: 5px;
 }
 
-header {
-  margin-bottom: 1.9em;
+figure {
+  padding: 1em;
 }
 
-header h1 {
-  font-family: 'Comfortaa', $fn-head;
-  font-size: 3em;
+figure img {
+  border-radius: 2px;
 }
 
-header h1 a {
-  display: inline-block;
-  background-image: url('/img/wm.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 80%;
-  height: 1em;
+figure figcaption {
+  position: relative;
+  top: -3px;
+  opacity: 0.8;
+  font-style: italic;
+  margin-bottom: 1em;
 }
 
-header h1 a:focus,
-header h1 a:hover {
-  background-image: url('/img/wm-a.png');
-}
 
 .youtube {
   color: #cd201f;
@@ -203,5 +220,11 @@ iframe#ddg {
     position: fixed;
     text-align: right;
     padding-right: 1em;
+  }
+
+
+  figure img.float {
+    float: left;
+    width: 45%;
   }
 }

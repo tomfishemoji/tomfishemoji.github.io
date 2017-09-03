@@ -5,7 +5,7 @@ category: tech
 medium: https://blog.dnomaid.co.uk/should-you-delete-windows-old-a51bd3999deb
 ---
 
-![](/img/posts/Should you delete Windows.old/properties.png)
+{% include image.html path="/img/posts/Should you delete Windows.old/properties.png" %}
 
 If you didn’t know, Windows.old is a folder created in the root of your system drive (usually C:) that contains files from older versions of Windows.
 
@@ -22,4 +22,4 @@ If you have a large hard drive or plan on possibly rolling back within the 30-da
 
 # How do I delete it?
 Well it’s pretty easy. Just search for “Disk Cleanup” and select your main system drive (again, usually C:) and click OK. Next, you’ll need to select “Clean up system files”. Once it calculates, remember to select “Previous Windows installation(s)” from the list. Once you click OK, Disk Cleanup will start cleaning the files from your drive, and once it’s done, you’ll have your space back.
-![](/img/posts/Should you delete Windows.old/cleanup.png)
+{% include image.html path="/img/posts/Should you delete Windows.old/cleanup.png" %}

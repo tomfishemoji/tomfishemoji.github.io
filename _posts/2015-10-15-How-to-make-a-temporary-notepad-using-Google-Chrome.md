@@ -18,5 +18,6 @@ Copy and paste the URL below to open the notepad:
 # Step 3
 The notepad will reset when you refresh the page! I’d recommend bookmarking it!
 
-![](/img/posts/How to make a temporary notepad using Google Chrome/np.gif)
+{% include image.html path="/img/posts/How to make a temporary notepad using Google Chrome/np.gif" %}
+
 <span class="image-caption">Source: <a href="http://imgur.com/gallery/NCfvl">Imgur</a></span>
