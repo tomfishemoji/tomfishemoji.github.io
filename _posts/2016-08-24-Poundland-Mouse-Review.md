@@ -12,8 +12,7 @@ image: mouse.jpeg
 
 The Signalex one pound mouse is surprisingly impressive, at least for a single pound. It is an optical mouse, so it does glow red when it’s powered, however this isn’t really an issue as long as you aren’t using it in the dark or something.
 
-![](/img/posts/Poundland Mouse Review/powered.jpeg)
-<span class="image-caption">The mouse when it’s powered</span>
+{% include image.html path="/img/posts/Poundland Mouse Review/powered.jpeg" caption="The mouse when it’s powered" %}
 
 Getting it working is easy, just plug it into your computer and it does it’s thing.
 

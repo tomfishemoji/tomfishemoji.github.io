@@ -10,12 +10,14 @@ image: plug.jpg
 
 **Step 2**: Find the plug for by our device; it will look something like this:
 
-![](/img/posts/How to plug something into an outlet/prongs.jpeg)
+{% include image.html path="/img/posts/How to plug something into an outlet/prongs.jpeg" %}
 
 **Step 3**: Carefully, insert the plug into the outlet.
 
 **Step 4**: Flick the switch to the on position. Once you’ve done that, it should look a little like this:
-![](/img/posts/How to plug something into an outlet/plugon.jpg)
+
+{% include image.html path="/img/posts/How to plug something into an outlet/plugon.jpg" %}
+
 
 **And your done! You’ve plugged a device into an outlet and turned it on!**
 

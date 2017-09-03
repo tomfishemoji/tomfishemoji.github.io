@@ -43,8 +43,8 @@ The machine comes with Windows 10 Home and lots of bloatware, including McAfee a
 # Conclusion
 For the price of £499.99, the laptop is really great and I would thoroughly recommend it if you need a new one. To buy one from Amazon, [click here](https://www.amazon.co.uk/dp/B01FE6HST0/), or to get it from somewhere where is doesn't cost over a grand, just [Google the full model number: X556UB-XX039T](https://duckduckgo.com/?q=X556UB-XX039T).
 
-![](/img/posts/ASUS X556UB First Impressions/profile.jpeg)
-![](/img/posts/ASUS X556UB First Impressions/back.jpeg)
+{% include image.html path="/img/posts/ASUS X556UB First Impressions/back.jpeg" %}
+{% include image.html path="/img/posts/ASUS X556UB First Impressions/profile.jpeg" %}
 
 ---
 

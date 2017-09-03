@@ -16,5 +16,4 @@ All this requires is one line of code between <head> and </head>.
 
 Just replace `2baff7` with your chosen [hex code](http://www.color-hex.com/)!
 
-![](/img/posts/How to change the colour of the address bar in Chrome Android/site.png)
-<span class="image-caption">My site with its neat coloured address bar</span>
+{% include image.html path="/img/posts/How to change the colour of the address bar in Chrome Android/site.png" caption="My site with its neat coloured address bar" %}
