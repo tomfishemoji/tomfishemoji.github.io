@@ -17,6 +17,4 @@ if (location.protocol == 'file:') {
 
 Pretty simple, right?
 
-![](/img/posts/Change page title if visiting via file/screenshot.png)
-<span class="image-caption">The script in action. Notice how the local site has [f] in its title.
-</span>
+{% include image.html path="/img/posts/Change page title if visiting via file/screenshot.png" caption="The script in action. Notice how the local site has [f] in its title." %}

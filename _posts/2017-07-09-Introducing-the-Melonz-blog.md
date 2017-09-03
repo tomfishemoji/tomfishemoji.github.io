@@ -22,17 +22,12 @@ Oh, that. I've spent pretty much the entire day creating a [Jekyll](https://jeky
 
 But, thanks to some help from dnomaid himself, [Bootstrap 4](https://v4-alpha.getbootstrap.com), and [Bootswatch's Darkly theme](https://bootswatch.com/4-alpha/darkly/), I finally got my team a nice blog.
 
-
-![](/img/posts/Introducing the new Melonz blog/blog.png)
-<span class="image-caption">The blog's homepage.</span>
+{% include image.html path="/img/posts/Introducing the new Melonz blog/blog.png" caption="The blog's homepage." credit="Melonz Team" %}
 
 # Cool! How'd you do it?
 The source code is available to the public on [GitHub](https://github.com/Melonz/melonz.github.io). The site is licensed under the CC-BY-SA license.
 
-
-![](/img/posts/Introducing the new Melonz blog/license.png)
-<span class="image-caption">GitHub's human-readable summary of the license.</span>
-
+{% include image.html path="/img/posts/Introducing the new Melonz blog/license.png" caption="GitHub's human-readable summary of the license." %}
 
 Also, the Melonz blog is based on dnomaid's blog, since we both use GitHub Pages and Jekyll.
 

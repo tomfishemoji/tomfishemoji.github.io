@@ -12,8 +12,7 @@ medium: https://blog.dnomaid.co.uk/asus-laptop-review-1month-48513b605c34
 
 The device still runs pretty fast, despite having hundreds of programs and games installed. The Seagate Samsung Spinpoint M8 hard drive really slows down loading in the majority of programs, but it isn't as slow as I originally expected. It also appears to have a shockingly high failure rate, so I would replace it with an SSD or a different HDD as I am going to.
 
-![CrystalDisk Info speed test results](/img/posts/ASUS X556UB follow up review after a month/crystal.png)
-<span class="image-caption">Disk speed-testing results.</span>
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/crystal.png" caption="CrystalDisk Info speed test results" %}
 
 ---
 
@@ -45,47 +44,41 @@ Almost all of the games I’ve thrown at it have run surprisingly well, and at d
 
 **The Simpsons Hit And Run (Using PCSX2):** 30FPS (framerate varies massively, almost unplayable)
 
-![Steam game library](/img/posts/ASUS X556UB follow up review after a month/games.png)
-<span class="image-caption">The few games I have installed.</span>
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/games.png" caption="The few games I have installed" %}
 
 ---
 
 Internet browsing is OK, but the WiFi adapter only supports 2.4GHz signals and seems to max out at 50Mbps, even on a 150Mbps network. Luckily this is only evident when trying to watch 1080p YouTube videos, and isn’t too noticeable doing anything else. Programming is rather fast too. Atom takes a while to open, but once it’s ready, it runs well.
 
-![Speedtest results](/img/posts/ASUS X556UB follow up review after a month/wifi.png)
-<span class="image-caption">The unimpressive WiFi speeds.</span>
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/wifi.png" caption="The unimpressive WiFi speeds." %}
 
 ---
 
 Using Sony Vegas 13 to edit 720p and 1080p video is also surprisingly snappy although rendering is slow and will make other programs unusable until it’s finished. I haven’t tested Adobe’s Premiere or After Effects, but I wouldn't expect them to run too well either.
 
-![Rendering in Sony Vegas.](/img/posts/ASUS X556UB follow up review after a month/render.png)
-<span class="image-caption">Rendering in Sony Vegas.</span>
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/render.png" caption="Rendering in Sony Vegas" %}
 
 Recording videos using OBS also works well, but does require some tinkering with the NVIDIA control panel if you want to switch between monitor and game capture.
 
-![Recording using OBS Classic.](/img/posts/ASUS X556UB follow up review after a month/obs.png)
-<span class="image-caption">Recording using OBS Classic.</span>
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/obs.png" caption="/img/posts/ASUS X556UB follow up review after a month/obs.png" %}
 
 ---
 
 Illustrator and Photoshop run well enough to use, as does Paint.net.
 
-![The Adobe suite takes a long while to load.](/img/posts/ASUS X556UB follow up review after a month/splash.png)
-<span class="image-caption">The Adobe suite takes a long while to load.</span>
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/splash.png" caption="The Adobe suite takes a long while to load." %}
 
 ---
 
 Battery life so far has been about 4 hours with moderate usage, Windows’ “eco mode” turned on and lowest brightness, so not too great, but definitely usable. Playing games and doing intensive work will obviously reduce it further.
 
-![](/img/posts/ASUS X556UB follow up review after a month/flyout.png)
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/flyout.png" %}
 
 ---
 
 The keyboard and trackpad of the laptop are nice to use, but get dirty very quickly. The trackpad survived me spilling tea on it, so it is fairly durable.
 
-![The laptop’s keyboard.](/img/posts/ASUS X556UB follow up review after a month/keyboard.png)
-<span class="image-caption">The laptop’s keyboard.</span>
+{% include image.html path="/img/posts/ASUS X556UB follow up review after a month/keyboard.jpeg" caption="The laptop's keyboard" %}
 
 ---
 
