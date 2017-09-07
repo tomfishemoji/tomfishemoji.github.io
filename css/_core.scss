@@ -110,7 +110,7 @@ header h1 a:hover {
 blockquote {
   display: inline-block;
   width: 100%;
-  border-left: $ln 5px solid;
+  border-left: $bg-light 5px solid;
   padding-left: 1em;
   padding-top: 5px;
   margin-top: 1em;
@@ -125,7 +125,7 @@ blockquote[short] {
 author {
   display: inline-block;
   width: 100%;
-  border-left: $ln 5px solid;
+  border-left: $bg-light  5px solid;
   padding-left: 1em;
   font-size: 1.2em;
   font-weight: bold;
@@ -156,6 +156,9 @@ figure figcaption {
   margin-bottom: 1em;
 }
 
+code {
+	font-family: $fn-mono;
+}
 
 .youtube {
   color: #cd201f;
@@ -193,6 +196,7 @@ iframe#ddg {
   opacity: 0.8;
   border: none;
 }
+
 @media screen and (max-width: 65em) {
   header {
     font-size: 1.2em;
