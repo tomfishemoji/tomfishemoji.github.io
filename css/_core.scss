@@ -140,15 +140,15 @@ author::before {
   padding-right: 5px;
 }
 
-figure {
+figure.image {
   padding: 1em;
 }
 
-figure img {
+figure.image img {
   border-radius: 2px;
 }
 
-figure figcaption {
+figure.image figcaption {
   position: relative;
   top: -3px;
   opacity: 0.8;
@@ -227,7 +227,7 @@ iframe#ddg {
   }
 
 
-  figure img.float {
+  figure.image img.float {
     float: left;
     width: 45%;
   }
