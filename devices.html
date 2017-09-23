@@ -7,134 +7,163 @@ description: devices, gadgets and gizmos that dnomaid owns
 extrahead: <link href="/css/frameworks/wing-col.css" rel="stylesheet">
 ---
 
-  <div class="row">
-            <div class="col">
-                <h3>Workstation</h3>
-                <p>CPU: Intel i7-4790K</p>
-                <p>GPU: Nvidia GTX 970 (Zotac)</p>
-                <p>RAM: 16GB HyperX Beast</p>
-                <p>SSD: Samsung 850 Evo 500GB</p>
-                <p>HDD: Western Digital Black 2TB</p>
-                <p><a onclick="toggle('main-pc-extra');" style="cursor: pointer;">Toggle extra specs</a></p>
-                <div id="main-pc-extra" style="display: none;">
-                    <p>CPU Cooler: CM Hyper 212Evo</p>
-                    <p>Mobo: Gigabyte GA-Z97X G3</p>
-                    <p>PSU: Corsair CSM 650W</p>
-                    <p>Case: NZXT Phantom 410</p>
-                    <p>Optical Drive: LG Gh34NSC0</p>
-                    <p>Main Monitors: 2x AOC I2369VM</p>
-                    <p>Third Monitor: Dell E151FPb</p>
-                    <p>KB/M: CM Octane</p>
-                    <p>Headphones: Sennheiser HD 206</p>
-                    <p>Speakers: Philips MC​118/22</p>
-                    <p>OS: Windows 10 Pro</p>
-                </div>
-            </div>
-            <div class="col">
-                <h3>Laptop</h3>
-                <p>Model: ASUS X556UB-XX039T</p>
-                <p>CPU: Intel i5-6200U</p>
-                <p>GPU: Nvidia GeForce 940M</p>
-                <p>RAM: 8GB Hyundai</p>
-                <p>SSD: Sandisk 480GB <span style="font-size: 0.56em;">Originally Seagate Spinpoint 1TB</span></p>
-                <p><a onclick="toggle('main-laptop-extra');" style="cursor: pointer;">Toggle extra specs</a></p>
-                <div id="main-laptop-extra" style="display: none;">
-                    <p>"Headset": Sony MDREX110LPB.AE</p>
-                    <p>OS: Ubuntu Budgie &amp; Windows 10</p>
-                </div>
-            </div>
-        </div>
+<style media="screen">
+  .col img {
+    width: 90%;
+    border-radius: 3px;
+    margin-top: 1em;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  }
+  .col img.half {
+    margin-top: 0;
+    width: 49%;
+    display: inline-block;
+  }
+  .col p {
+    line-height: 1.2em !important;
+  }
+</style>
 
-        <div class="row">
-            <div class="col">
-                <h3>Lenovo Flex 10</h3>
-                <p>CPU: Intel Celeron N2806</p>
-                <p>GPU: Intel HD Graphics</p>
-                <p>RAM: 2GB</p>
-                <p>HDD: Seagate Momentus Thin 500GB</p>
-                <p>OS: Windows 10 Home <span style="font-size: 0.6em;">Originally Windows 8</span></p>
-            </div>
-            <div class="col">
-                <h3>Acer Aspire 5680</h3>
-                <p>CPU: Intel Core 2 Duo Mobile T7200</p>
-                <p>GPU: Nvidia GeForce Go 7600</p>
-                <p>RAM: 2GB (DDR2)</p>
-                <p>HDD: Seagate Momentus 150GB</p>
-                <p>OS: Linux Mint <span style="font-size: 0.56em;">Originally Windows XP</span></p>
-            </div>
-        </div>
+<div class="row">
+  <div class="col">
+    <img src="/img/devices/workstation.png" draggable="false">
+    <h3>Workstation</h3>
+    <p><b>CPU:</b> Intel i7-4790K</p>
+    <p><b>GPU:</b> Nvidia GTX 970 (Zotac)</p>
+    <p><b>RAM:</b> 16GB HyperX Beast</p>
+    <p><b>SSD:</b> Samsung 850 Evo 500GB</p>
+    <p><b>HDD:</b> Western Digital Black 2TB</p>
+    <p><a onclick="toggle('main-pc-extra');" style="cursor: pointer;">Toggle extra specs</a></p>
+    <div id="main-pc-extra" style="display: none;">
+      <p><b>CPU Cooler:</b> CM Hyper 212Evo</p>
+      <p><b>Mobo:</b> Gigabyte GA-Z97X G3</p>
+      <p><b>PSU:</b> Corsair CSM 650W</p>
+      <p><b>Case:</b> NZXT Phantom 410</p>
+      <p><b>Optical Drive:</b> LG Gh34NSC0</p>
+      <p><b>Monitors:</b> 2x AOC I2369VM</p>
+      <p><b>KB/M:</b> CM Octane</p>
+      <p><b>Headphones:</b> Sennheiser HD 206</p>
+      <p><b>Speakers:</b> Philips MC​118/22</p>
+      <p><b>OS:</b> Windows 10 Pro</p>
+    </div>
+  </div>
+  <div class="col">
+    <img src="/img/devices/asus.png" draggable="false">
+    <h3>Laptop</h3>
+    <p><b>Model:</b> ASUS X556UB-XX039T</p>
+    <p><b>CPU:</b> Intel i5-6200U</p>
+    <p><b>GPU:</b> Nvidia GeForce 940M</p>
+    <p><b>RAM:</b> 8GB Hyundai</p>
+    <p><b>SSD:</b> Sandisk 480GB <span style="font-size: 0.56em;">Originally Seagate Spinpoint 1TB</span></p>
+    <p><a onclick="toggle('main-laptop-extra');" style="cursor: pointer;">Toggle extra specs</a></p>
+    <div id="main-laptop-extra" style="display: none;">
+      <p><b>Earbuds:</b> Sony MDREX110LPB.AE</p>
+      <p><b>OS:</b> Ubuntu Budgie &amp; Windows 10</p>
+    </div>
+  </div>
+</div>
 
-        <div class="row">
-            <div class="col">
-                <h3>Gateway GP6-350</h3>
-                <p style="color: '#590000';">Broken</p>
-                <p>CPU: Intel Pentium II (350MHz)</p>
-                <p>GPU: ATI Rage 3D Pro</p>
-                <p>RAM: 64MB</p>
-                <p>HDD: Quantum Fireball 3GB</p>
-                <p>OS: Windows 98 SE</p>
-                <!-- <p>Monitor: Gateway EV700</p> -->
-            </div>
+<div class="row">
+  <div class="col">
+    <img src="/img/devices/lenovo.png" draggable="false">
+    <h3>Lenovo Flex 10</h3>
+    <p><b>CPU:</b> Intel Celeron N2806</p>
+    <p><b>GPU:</b> Intel HD Graphics</p>
+    <p><b>RAM:</b> 2GB</p>
+    <p><b>HDD:</b> Seagate Momentus Thin 500GB</p>
+    <p><b>OS:</b> Windows 10 Home <span style="font-size: 0.6em;">Originally Windows 8</span></p>
+  </div>
+  <div class="col">
+    <img src="/img/devices/acer.png" draggable="false">
+    <h3>Acer Aspire 5680</h3>
+    <p><b>CPU:</b> Intel Core 2 Duo Mobile T7200</p>
+    <p><b>GPU:</b> Nvidia GeForce Go 7600</p>
+    <p><b>RAM:</b> 2GB (DDR2)</p>
+    <p><b>HDD:</b> Seagate Momentus 150GB</p>
+    <p><b>OS:</b> Linux Mint <span style="font-size: 0.56em;">Originally Windows XP</span></p>
+  </div>
+</div>
 
-            <div class="col">
-                <h3>Dell Dimension 4400</h3>
-                <p>CPU: Intel Pentium 4 (1.7GHz)</p>
-                <p>GPU: ATI Rage 128 Pro</p>
-                <p>RAM: 640MB (DDR2)</p>
-                <p>HDD: Maxtor DiamondMax 40GB</p>
-                <p>OS: Windows XP &amp; LUbuntu</p>
-                <p>Monitor: Gateway EV700</p>
-            </div>
-        </div>
+<div class="row">
+  <div class="col">
+    <img src="/img/devices/gateway.png" draggable="false">
+    <h3>Gateway GP6-350</h3>
+    <p style="color:pink;">Broken</p>
+    <p><b>CPU:</b> Intel Pentium II (350MHz)</p>
+    <p><b>GPU:</b> ATI Rage 3D Pro</p>
+    <p><b>RAM:</b> 64MB</p>
+    <p><b>HDD:</b> Quantum Fireball 3GB</p>
+    <p><b>OS:</b> Windows 98 SE</p>
+    <!-- <p>Monitor: Gateway EV700</p> -->
+  </div>
 
-        <div class="row">
-            <div class="col">
-                <h3>Consoles</h3>
-                <p>Xbox 360E (4GB)</p>
-                <p>DSi (Light Blue)</p>
-                <p>Wii (Original) (White)</p>
-                <p>PlayStation Portable (1003) (Pink)</p>
-                <p>PlayStation 2 (Fat) (Black)</p>
-            </div>
-            <div class="col">
-                <h3>Phones</h3>
-                <p><b>Current:</b></p>
-                <p>Sony Xperia Z5 Compact</p>
-                <p><b>Older Phones:</b></p>
-                <p><a href="javascript:void(0);" onclick="toggle('older-phones')" style="cursor: pointer;">Toggle this section</a></p>
-                <div id="older-phones" style="display: none;">
-                  <p>Samsung Galaxy Fame</p>
-                  <p>Unknown "W8+"</p>
-                  <p>ZTE N295 (Orange Sydney)</p>
-                  <p>LG KP170</p>
-                  <p>Vodaphone 527 (Mfg by Sagem)</p>
-                  <p>Vodafone 340 (Mfg by Foxlink)</p>
-                  <p>2x Sagem My X3</p>
-                </div>
-            </div>
+  <div class="col">
+    <img src="/img/devices/dell.png" draggable="false">
+    <h3>Dell Dimension 4400</h3>
+    <p><b>CPU:</b> Intel Pentium 4 (1.7GHz)</p>
+    <p><b>GPU:</b> ATI Rage 128 Pro</p>
+    <p><b>RAM:</b> 640MB (DDR2)</p>
+    <p><b>HDD:</b> Maxtor DiamondMax 40GB</p>
+    <p><b>OS:</b> Windows XP &amp; LUbuntu</p>
+    <p><b>Monitor:</b> Gateway EV700</p>
+  </div>
+</div>
 
-        </div>
+<div class="row">
+  <div class="col">
+    <img src="/img/devices/consoles.png" draggable="false">
+    <h3>Consoles</h3>
+    <p>Xbox 360E (4GB)</p>
+    <p>DSi (Light Blue)</p>
+    <p>Wii (White)</p>
+    <p>PlayStation Portable (1003) (Pink)</p>
+    <p>PlayStation 2 (Fat) (Black)</p>
+  </div>
+  <div class="col">
+    <img src="/img/devices/phones.png" draggable="false">
+    <h3>Phones</h3>
+    <p><b>Current:</b></p>
+    <p>Sony Xperia Z5 Compact</p>
+    <p><b>Older Phones:</b></p>
+    <p><a href="javascript:void(0);" onclick="toggle('older-phones')" style="cursor: pointer;">Toggle this section</a></p>
+    <div id="older-phones" style="display: none;">
+      <p>Samsung Galaxy Fame</p>
+      <p>Unknown "W8+"</p>
+      <p>ZTE N295 (Orange Sydney)</p>
+      <p>LG KP170</p>
+      <p>Vodaphone 527 (Mfg by Sagem)</p>
+      <p>Vodafone 340 (Mfg by Foxlink)</p>
+      <p>2x Sagem My X3</p>
+    </div>
+  </div>
 
-        <div class="row">
-            <div class="col">
-                <h3>Networking</h3>
-                <p>ASUS RT-AC1200G+ Router</p>
-                <p>Netgear VMDG485 Modem</p>
-                <p>Netgear GS208 Switch</p>
-            </div>
+</div>
 
-            <div class="col">
-                <h3>Raspberry Pis</h3>
-                <p>Pi 3B: NAS/Webserver</p>
-            </div>
-        </div>
+<div class="row">
+  <div class="col">
+    <img src="/img/devices/router.png" class="half">
+    <img src="/img/devices/virgin.png" class="half">
+    <h3>Networking</h3>
+    <p><b>Router:</b> ASUS RT-AC1200G+</p>
+    <p><b>Modem:</b> Netgear VMDG485</p>
+    <p><b>Switch:</b> Netgear GS208</p>
+  </div>
 
-        <script type="text/javascript">
-            function toggle(div) {
-                var divtotoggle = document.getElementById(div);
-                if (divtotoggle.style.display === 'inline' || divtotoggle.style.display === '')
-                    divtotoggle.style.display = 'none';
-                else
-                    divtotoggle.style.display = 'inline';
-            }
-        </script>
+  <div class="col">
+    <img src="/img/devices/pi3.png" class="half">
+    <img src="/img/devices/pi0.png" class="half">
+    <h3>Raspberry Pis</h3>
+    <p><b>Pi 3B:</b> NAS/Webserver</p>
+    <p><b>Pi 0:</b> Pi-Hole</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function toggle(div) {
+    var divtotoggle = document.getElementById(div);
+    if (divtotoggle.style.display === 'inline' || divtotoggle.style.display === '')
+      divtotoggle.style.display = 'none';
+    else
+      divtotoggle.style.display = 'inline';
+  }
+</script>
