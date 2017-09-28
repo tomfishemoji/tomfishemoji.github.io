@@ -5,7 +5,7 @@ div#featured-img {
   img {
     width: 100%;
     border-radius: 5px;
-    margin: 0 auto 10px;
+    margin: 0 auto 16px;
     position: relative;
     z-index: -1;
   }
@@ -14,37 +14,37 @@ div#featured-img {
 article {
   p {
     font-size: 1.1em;
-    margin-bottom: 1.5em;
+    margin-bottom: 24px;
   }
 
   img {
     width: 100%;
-    margin-top: 1em;
+    margin-top: 16px;
     border-radius: 5px;
   }
 
   span.spacer {
     display: inline-block;
-    margin: 1em;
+    margin: 16px;
   }
 
   h1,
   h2,
   h3 {
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
   }
 
   iframe {
     width: 100%;
     border: none;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 32px;
+    margin-bottom: 32px;
     border: 0;
     border: 2px dashed $ln;
     background: none;
@@ -52,7 +52,7 @@ article {
 }
 
 .post-notice {
-  padding: 15px;
+  padding: 16px;
   background-repeat: no-repeat;
   background-position: left;
   background-origin: content-box;
@@ -68,7 +68,7 @@ article {
   position: sticky;
   top: 0;
   z-index: 10;
-  margin-bottom: 2em;
+  margin-bottom: 32px;
   text-align: center;
 }
 
