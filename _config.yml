@@ -28,7 +28,9 @@ kramdown:
 highlighter: rouge
 
 sass:
-    sass_dir: css
+  sass_dir: css
 
-#plugins:
-#    - jekyll-admin
+compress_html:
+  clippings: all
+  comments: all
+  blanklines: false
