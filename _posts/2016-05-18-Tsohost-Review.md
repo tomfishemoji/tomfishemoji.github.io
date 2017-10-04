@@ -8,6 +8,7 @@ category:
 multiplecats: true
 medium: https://blog.dnomaid.co.uk/tsohost-review-f7584dd7df84
 image: tso.png
+outdated: true
 ---
 
 *This review didn’t come out as well as I had hoped, but it’s here. I also know I’ve only been with them for a couple of months, so I can’t really make too many concrete statements; I’ll make a follow-up review towards the end of the year if I deem it necessary. Anyway, the review is below.*

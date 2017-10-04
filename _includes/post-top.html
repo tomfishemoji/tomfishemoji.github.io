@@ -1,13 +1,14 @@
 <div style="margin-bottom: 2em;">
   {% if page.medium %}
   <div class="post-notice info">
-    <p style="margin-top: 0;">This post was originally published on Medium.<br>View the original post, along with its hearts and comments, <a href="{{ page.medium }}">here</a>.</p>
+    <p style="margin-top: 0;">This post was originally published on Medium.<br>View the original post, along with its claps and comments, <a href="{{ page.medium }}">here</a>.</p>
   </div>
   {% endif %} {% if page.outdated %}
   <div class="post-notice warn">
     <p style="margin-top: 0;">This post has been flagged as outdated.<br>Please note that the content may no longer be accurate.</p>
   </div>
   {% endif %}
+
 
   <h4>
     {{ page.date | date: '%B %d, %Y' }}
