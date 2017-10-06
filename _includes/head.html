@@ -1,57 +1,86 @@
 <head>
   <!-- Boring -->
+
   <meta charset="UTF-8">
   <meta name="theme-color" content="#000d19">
   <meta name="viewport" content="initial-scale=1.0">
   <meta name="generator" content="Jekyll {{ jekyll.version }}">
   <meta name="generated-at" content="{{ site.time | date: '%R %m/%d/%Y' }}">
-  <!-- Search Engines -->
-  <meta name="robots" content="index, follow"> {% if page.author %}
-  <meta name="author" content="{{ page.author }}">
-  <meta name="article:author" content="{{ page.author }}">{% else %}
-  <meta name="author" content="dnomaid">
-  <meta name="article:author" content="dnomaid">{% endif %} {% if page.description %}
-  <meta name="description" content="{{ page.description}}">{% endif %}
-  <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website, site, social, media, links, {{ page.keywords | escape }}">
+
+
+  <!-- Generic Meta -->
+
+  <meta name="robots" content="index, follow">
+  {% if page.author %}
+    <meta name="author" content="{{ page.author }}">
+    <meta name="article:author" content="{{ page.author }}">
+  {% else %}
+    <meta name="author" content="dnomaid">
+    <meta name="article:author" content="dnomaid">
+  {% endif %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
+  <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website, {{ page.keywords | escape }}">
+
+
   <!-- Open Graph  -->
+
   <meta property="og:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
   {% if page.image %}
-  <meta property="og:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}"> {% else %}
-  <meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">
-  {% endif %}
-  <!-- Twitter -->
-  {% if page.image %}
-  <meta name="twitter:card" content="summary_large_image">
-  {% if page.authortwitter %}
-  <meta name="twitter:site" content="@{{ authortwitter }}">{% else %}
-  <meta name="twitter:site" content="@mrdnomaid">
-  {% endif %}
-  <meta name="twitter:title" content="{{ page.title | escape }}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
-  <meta name="twitter:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}">
+    <meta property="og:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}">
   {% else %}
-  <meta name="twitter:card" content="summary">
-  {% if page.authortwitter %}
-  <meta name="twitter:site" content="@{{ authortwitter }}">{% else %}
-  <meta name="twitter:site" content="@mrdnomaid">
-  {% endif %}  <meta name="twitter:title" content="{{ page.title | escape }}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
-  <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png">{% endif %}
-  <meta name="twitter:dnt" content="on">
+    <meta property="og:image" content="https://dnomaid.co.uk/img/fish_large.png">
+  {% endif %}
+
+
+  <!-- Twitter -->
+
+  {% if page.image %}
+    <meta name="twitter:card" content="summary_large_image">
+    {% if page.authortwitter %}
+      <meta name="twitter:site" content="@{{ authortwitter }}">
+    {% else %}
+      <meta name="twitter:site" content="@mrdnomaid">
+    {% endif %}
+    <meta name="twitter:title" content="{{ page.title | escape }}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+    <meta name="twitter:image" content="https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}">
+  {% else %}
+    <meta name="twitter:card" content="summary">
+    {% if page.authortwitter %}
+      <meta name="twitter:site" content="@{{ authortwitter }}">{% else %}
+      <meta name="twitter:site" content="@mrdnomaid">
+    {% endif %}
+    <meta name="twitter:title" content="{{ page.title | escape }}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+    <meta name="twitter:image" content="https://dnomaid.co.uk/img/fish_large.png">
+  {% endif %}
+    <meta name="twitter:dnt" content="on">
+
+
   <!-- CSS, Icons & Everything Else -->
-  {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}<link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"><link href="/css/syntax.css" rel="stylesheet">{% endif %}
+
+  {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"><link href="/css/syntax.css" rel="stylesheet">
+  {% endif %}
+
   <link href="/css/combined.css" rel="stylesheet">
-  {% if page.extrahead %}{{ page.extrahead }}{% endif %}
+  {% if page.extrahead %}
+    {{ page.extrahead }}
+  {% endif %}
+
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="/img/fish_large.png">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
   <!-- Page Title -->
   <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
 </head>
 
 <body>
   {% if page.title == 'Error 404'%}
-  <img src="/img/bean.gif" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%) scale(8); z-index: -1; opacity: 0.3;" draggable="false">
+    <img src="/img/bean.gif" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%) scale(8); z-index: -1; opacity: 0.3;" draggable="false">
   {% endif %}
 
   <header>
@@ -75,11 +104,11 @@
     {% if page.layout == 'post' %}
     <p>
       {% if page.next.url %}
-      <a href="{{page.next.url}}">Next Post &raquo;</a>
+        <a href="{{page.next.url}}">Next Post &raquo;</a>
       {% endif %}
       {% if page.next.url and page.previous.url %}<br>{% endif %}
       {% if page.previous.url %}
-      <a href="{{page.previous.url}}">&laquo; Previous Post</a>
+        <a href="{{page.previous.url}}">&laquo; Previous Post</a>
       {% endif %}
     </p>
 

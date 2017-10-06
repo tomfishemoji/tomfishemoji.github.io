@@ -21,6 +21,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+main {
+  margin-top: 6px;
+}
+
 h1,
 h2,
 h3,
@@ -61,6 +65,10 @@ a:focus,
 a:hover {
   background-color: $ln;
   color: $bg;
+}
+
+sup {
+  font-size: 0.8em;
 }
 
 ul {
@@ -158,6 +166,10 @@ figure.image figcaption {
 
 code {
   font-family: $fn-mono;
+}
+
+#subtitle::first-letter, #smalltitle::first-letter {
+  text-transform: capitalize;
 }
 
 .youtube {
