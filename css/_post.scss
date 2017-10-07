@@ -95,6 +95,7 @@ article {
 
 .post-notice.info p::before {
   content: '[i]';
+  letter-spacing: -0.2em;
 }
 
 .post-notice.medium p::before {
@@ -107,4 +108,5 @@ article {
 
 .post-notice.warn p::before {
   content: '/!\\';
+  letter-spacing: -0.2em;
 }
