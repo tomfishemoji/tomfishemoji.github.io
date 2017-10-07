@@ -97,6 +97,10 @@ article {
   content: '[i]';
 }
 
+.post-notice.medium p::before {
+  content: 'M';
+}
+
 .post-notice.warn {
   color: $bg-bright-red;
 }
