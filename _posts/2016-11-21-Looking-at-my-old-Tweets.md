@@ -4,7 +4,7 @@ title: Looking at my old Tweets
 category: twitter
 image: tomcar670fast-profile.png
 medium: https://blog.dnomaid.co.uk/old-tweets-38899bb368f4
-showinarchive: false
+hidden: true
 ---
 
 I made my first Twitter account in August of 2013 with the handle “tomcar670fast”, which was also my email address. Due to my stupidity, I created a lot of weird Tweets. Let’s look at some of them.

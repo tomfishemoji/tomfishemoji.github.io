@@ -16,7 +16,7 @@ smalltitle: usedesc
            {% for posts in category %}
              {% for post in posts %}
                {% if post.url %}
-                {% if post.showinarchive != false %}
+                {% unless post.hidden %}
                 <li>
                   <h4>
                     {{ post.date | date: '%B %d, %Y' }}
@@ -25,8 +25,8 @@ smalltitle: usedesc
                   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 </li>
                 {% else %}
-                <li><h4>January 01, 1970</h4><h2>This post has been hidden from the archives</h2></li>
-                {% endif %}
+                <li><h4>January 01, 1970</h4><h2><a href="#{{ post.category }}">This post has been hidden from the archives</a></h2></li>
+                {% endunless %}
                {% endif %}
              {% endfor %}
            {% endfor %}

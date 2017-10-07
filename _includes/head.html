@@ -10,7 +10,12 @@
 
   <!-- Generic Meta -->
 
-  <meta name="robots" content="index, follow">
+  {% if page.hidden %}
+    <meta name="robots" content="noindex, follow">
+  {% else %}
+    <meta name="robots" content="index, follow">
+  {% endif %}
+
   {% if page.author %}
     <meta name="author" content="{{ page.author }}">
     <meta name="article:author" content="{{ page.author }}">

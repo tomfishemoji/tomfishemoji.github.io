@@ -11,7 +11,7 @@ smalltitle: usedesc
 
 <ul>
   {% for post in site.posts %}
-    {% if post.showinarchive != false %}
+    {% unless post.hidden %}
       <li>
         <h4>
           {{ post.date | date: '%B %d, %Y' }}
@@ -20,7 +20,7 @@ smalltitle: usedesc
         </h4>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       </li>
-    {% endif %}
+    {% endunless %}
   {% endfor %}
 </ul>
 

@@ -1,5 +1,6 @@
 ---
 layout: null
+hidden: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Cheers to https://twitter.com/RandomMelonYT for letting me nick his sitemap code -->
@@ -13,14 +14,20 @@ layout: null
   </url>
 
   {% for page in site.pages %}
-    <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
-    </url>
+    {% unless page.hidden %}
+      <url>
+        <title>{{ page.title }}</title>
+        {% if page.description %}<description>{{ page.description }}</description>{% endif %}
+        <loc>{{ site.url }}{{ page.url }}</loc>
+      </url>
+    {% endunless %}
   {% endfor %}
 
   {% for post in site.posts %}
-    {% unless post.draft %}
+    {% unless post.hidden or post.draft %}
       <url>
+        <title>{{ post.title }}</title>
+        {% if post.description %}<description>{{ post.description }}</description>{% endif %}
         <loc>{{ site.url }}{{ post.url }}</loc>
         {% if post.image %}
           <image:image>
