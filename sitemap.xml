@@ -14,28 +14,32 @@ hidden: true
   </url>
 
   {% for page in site.pages %}
-    {% unless page.hidden %}
-      <url>
-        <title>{{ page.title }}</title>
-        {% if page.description %}<description>{{ page.description }}</description>{% endif %}
-        <loc>{{ site.url }}{{ page.url }}</loc>
-      </url>
-    {% endunless %}
+    {% if page.layout %}
+      {% unless page.hidden %}
+        <url>
+          <title>{{ page.title }}</title>
+          {% if page.description %}<description>{{ page.description }}</description>{% endif %}
+          <loc>{{ site.url }}{{ page.url }}</loc>
+        </url>
+      {% endunless %}
+    {% endif %}
   {% endfor %}
 
   {% for post in site.posts %}
-    {% unless post.hidden or post.draft %}
-      <url>
-        <title>{{ post.title }}</title>
-        {% if post.description %}<description>{{ post.description }}</description>{% endif %}
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.image %}
-          <image:image>
-            <image:loc>{{ site.url }}/img/posts/{{ post.title }}/{{ post.image }}</image:loc>
-            <image:caption>{{ post.desc }}</image:caption>
-          </image:image>
-        {% endif %}
-      </url>
-    {% endunless %}
+    {% if post.layout %}
+      {% unless post.hidden %}
+        <url>
+          <title>{{ post.title }}</title>
+          {% if post.description %}<description>{{ post.description }}</description>{% endif %}
+          <loc>{{ site.url }}{{ post.url }}</loc>
+          {% if post.image %}
+            <image:image>
+              <image:loc>{{ site.url }}/img/posts/{{ post.title }}/{{ post.image }}</image:loc>
+              <image:caption>{{ post.desc }}</image:caption>
+            </image:image>
+          {% endif %}
+        </url>
+      {% endunless %}
+    {% endif %}
   {% endfor %}
 </urlset>
