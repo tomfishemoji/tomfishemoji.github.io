@@ -1,5 +1,17 @@
 <figure class="image">
-  <img src="{{ include.path }}" alt="{{ include.caption | escape }}" {% if include.float %}class="float"{% endif %}>
+  <img src="
+
+  {% if page.layout == 'post' %}
+    {% if include.path contains '/' %}
+      {{ include.path | replace: ' ', '%20' }}
+    {% else %}
+      /img/posts/{{ page.title | replace: ' ', '%20' }}/{{ include.path | replace: ' ', '%20' }}
+    {% endif %}
+  {% else %}
+    {{ include.path | replace: ' ', '%20' }}
+  {% endif %}
+
+" alt="{{ include.caption | escape }}" {% if include.float %}class="float"{% endif %}>
   <figcaption>{{ include.caption }}</figcaption>
   {% if include.credit %} <figcaption>Image Source: {{ include.credit }}</figcaption>{% endif %}
 </figure>
