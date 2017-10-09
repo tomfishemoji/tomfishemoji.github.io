@@ -6,6 +6,7 @@ category: guest posts
 image: blog.png
 author: TheRandomMelon
 authorlnk: https://twitter.com/RandomMelonYT
+authortwitter: RandomMelonYT
 ---
 
 # What's a TheRandomMelon or a Melonz?
