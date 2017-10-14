@@ -45,7 +45,7 @@
   <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
   <!-- Page Title -->
-  <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+  <title>{% if page.showas %}{{ page.showas }}{% else %}{{ page.title }}{% endif %} - {{ site.title | escape }}</title>
 </head>
 
 <body>
