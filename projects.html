@@ -1,0 +1,29 @@
+---
+layout: default
+title: Projects
+keywords: code, projects, websites
+permalink: /projects/
+description: Things I've made
+smalltitle: usedesc
+---
+
+    <p>This page will have more on it eventually.</p>
+    <p>While you wait, there's some more useless things over <a href="https://pi.dnomaid.co.uk">here</a>.</p>
+
+    <hr>
+
+    <ul>
+      {% for item in site.projects limit:5 %}
+        <li>
+          <h4>
+            {% if item.description %}{{ item.description }} - {% endif %}{{ item.lang }} -
+            <a href="{{ item.github }}">Source</a>
+          </h4>
+          <h2><a href="{{ item.address }}">{{ item.title }}</a></h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <hr>
+
+    <p><a href="https://github.com/mrdnomaid?tab=repositories"><i class="fa fa-github fa-fw"></i> More Projects</a></p>

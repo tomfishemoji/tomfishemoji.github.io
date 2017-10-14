@@ -67,7 +67,8 @@ a:hover {
   color: $bg;
 }
 
-sup, sub {
+sub,
+sup {
   font-size: 0.8em;
 }
 
@@ -89,6 +90,14 @@ li {
 
 li p a {
   color: $tx;
+}
+
+hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border: 0;
+  border: 2px dashed $ln;
+  background: none;
 }
 
 header {
@@ -168,7 +177,8 @@ code {
   font-family: $fn-mono;
 }
 
-#subtitle::first-letter, #smalltitle::first-letter {
+#smalltitle::first-letter,
+#subtitle::first-letter {
   text-transform: capitalize;
 }
 
