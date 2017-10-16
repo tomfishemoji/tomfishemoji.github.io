@@ -7,26 +7,20 @@
   <meta name="robots" content="{% if page.hidden %}noindex, follow{% else %}index, follow{% endif %}">
 
   <!-- Generic Meta -->
-  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}dnomaid{% endif %}">
-  {% if page.description %}
-    <meta name="description" content="{{ page.description | escape }}">
-  {% endif %}
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}dnomaid{% endif %}"> {% if page.description %}
+  <meta name="description" content="{{ page.description | escape }}"> {% endif %}
   <meta name="keywords" content="dnomaid, mrdnomaid, diamond, pigman, website{% if page.keywords %}, {{ page.keywords | escape }}{% endif %}">
 
   <!-- Open Graph Cards  -->
-  <meta property="og:title" content="{{ page.title }}">
-  {% if page.description %}
-    <meta property="og:description" content="{{ page.description | escape }}">
-  {% endif %}
+  <meta property="og:title" content="{{ page.title }}"> {% if page.description %}
+  <meta property="og:description" content="{{ page.description | escape }}"> {% endif %}
   <meta property="og:image" content="{% if page.image %}https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}{% else %}https://dnomaid.co.uk/img/fish_large.png{% endif %}">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:site" content="{% if page.authortwitter %}@{{ page.authortwitter }}{% else %}@{{ site.twitterhandle }}{% endif %}">
-  <meta name="twitter:title" content="{{ page.title }}">
-  {% if page.description %}
-    <meta name="twitter:description" content="{{ page.description | escape }}">
-  {% endif %}
+  <meta name="twitter:title" content="{{ page.title }}"> {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description | escape }}"> {% endif %}
   <meta name="twitter:image" content="{% if page.image %}https://dnomaid.co.uk/img/posts/{{ page.title }}/{{ page.image }}{% else %}https://dnomaid.co.uk/img/fish_large.png{% endif %}">
   <meta name="twitter:dnt" content="on">
 
@@ -35,7 +29,9 @@
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}
     <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet"><link href="/css/syntax.css" rel="stylesheet">
   {% endif %}
+
   <link href="/css/combined.css" rel="stylesheet">
+
   {% if page.extrahead %}
     {{ page.extrahead }}
   {% endif %}
@@ -59,8 +55,10 @@
       <a href="{{ site.youtube }}" class="youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a><br>
       <a href="{{ site.twitter }}" class="twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a><br>
       <a href="{{ site.github }}" class="github" title="GitHub"><i class="fa fa-github fa-fw"></i> GitHub</a><br>
-      <a href="{{ site.flickr }}" class="flickr" title="Flickr"><i class="fa fa-flickr fa-fw"></i> Flickr</a><br><br>
-      <a href="/projects/" class="projects" title="Things I've made'"><i class="fa fa-code fa-fw"></i> Projects</a><br>
+      <a href="{{ site.flickr }}" class="flickr" title="Flickr"><i class="fa fa-flickr fa-fw"></i> Flickr</a>
+    </p>
+
+    <p>
       <a href="/faq/" class="faq" title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
       <a href="/about/" class="abo" title="About"><i class="fa fa-person fa-fw"></i> About</a>
     </p>
@@ -84,11 +82,7 @@
     </p>
 
     <p><a onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer;" title="Share" href="javascript:void(0)"><i class="fa fa-share fa-fw"></i> Share</a></p>
-    <p style="display: none;" id="sharelnks"><a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a><br><a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank">Reddit</a><br>
-      <a
-        href="mailto:?subject={{ site.url }}{{ page.url }}">Email</a>
+    <p style="display: none;" id="sharelnks"><a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a><br><a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank">Reddit</a><br><a href="mailto:?subject={{ site.url }}{{ page.url }}">Email</a>
     </p>
     {% endif %}
-
-    <!-- <p style="opacity: 0.8;"><sub>c] 2014&ndash;{{ 'now' | date: "%Y" }}</sub></p> -->
   </header>

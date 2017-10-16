@@ -11,7 +11,6 @@
     {{ include.path | replace: ' ', '%20' }}
   {% endif %}
 
-" alt="{{ include.caption | escape }}" {% if include.float %}class="float"{% endif %}>
-  <figcaption>{{ include.caption }}</figcaption>
-  {% if include.credit %} <figcaption>Image Source: {{ include.credit }}</figcaption>{% endif %}
+" alt="{{ include.caption | escape }}" class="{% if include.float %}float{% endif %} {% if include.caption %}has-caption{% endif %}">
+  {% if include.caption or include.credit %}<figcaption>{% if include.caption %}{{ include.caption }}{% endif %}{% if include.credit %}<br>Source: {{ include.credit }}{% endif %}</figcaption>{% endif %}
 </figure>
