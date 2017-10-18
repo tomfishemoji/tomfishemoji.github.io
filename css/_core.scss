@@ -8,7 +8,7 @@
 body {
   margin: 0 auto;
   padding: 16px;
-  max-width: 60em;
+  max-width: $width-total;
   font-family: $fn-cont;
   font-size: 1.05em;
   margin-bottom: 4px;
@@ -59,6 +59,13 @@ p {
 a {
   color: $ln;
   text-decoration: none;
+  transition: all 0.2s;
+}
+
+article a {
+  color: $tx;
+  font-weight: bold;
+  border-bottom: 3px solid $ln;
 }
 
 a:focus,
@@ -122,6 +129,10 @@ header h1 a {
 header h1 a:focus,
 header h1 a:hover {
   background-image: url('/img/wm-a.png');
+}
+
+aside h3, h4 {
+  font-style: italic;
 }
 
 blockquote {
@@ -269,7 +280,8 @@ iframe#ddg {
   opacity: 0.8;
   border: none;
 }
-@media screen and (max-width: 65em) {
+
+@media screen and (max-width: $width-total) {
   header {
     font-size: 1.2em;
     text-align: center;
@@ -283,19 +295,26 @@ iframe#ddg {
   header h1 a {
     width: 50vw;
   }
+
+  div#featured-img {
+    img {
+      width: 90% !important;
+    }
+  }
 }
-@media screen and (min-width: 65em) {
+
+@media screen and (min-width: $width-total) {
   main {
     float: right;
-    width: 45em;
+    width: $width-content;
   }
 
   header {
     float: left;
-    width: 14em;
+    width: $width-header;
     position: fixed;
     text-align: right;
-    padding-right: 16px;
+    padding-right: 24px;
   }
 
   figure.image img.float {

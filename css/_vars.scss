@@ -1,3 +1,7 @@
+$width-total: 70em;
+$width-header: 19em;
+$width-content: 50em;
+
 $bg: #000d19;
 $bg-dark: #000a14;
 $bg-light: #002e59;
@@ -10,10 +14,10 @@ $bg-blue: #000059;
 $bg-bright-blue: #00cc00;
 
 $tx-light: #fff;
-$tx: #eee;
-$tx-dark: #000;
-$ln: #b9c5cc;
+$tx: #c8d6e3;
+$tx-dark: #111;
+$ln: #a2c4e4;
 
-$fn-head: 'Trebuchet MS', 'Franklin Gothic', sans-serif;
-$fn-cont: 'Lucida Grande', 'Tahoma', 'Helvetica Neue', 'Helvetica', sans-serif;
+$fn-cont: 'Open Sans', 'Lucida Grande', 'Tahoma', 'Helvetica Neue', 'Helvetica', sans-serif;
+$fn-head: 'Source Sans Pro', $fn-cont;
 $fn-mono: 'Oxygen Mono', 'Lucida Sans Typewriter', 'Courier', 'Courier New', monospace;

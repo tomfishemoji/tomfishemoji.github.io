@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A surprising number of support accounts think my Twitter bot is real
+title: Support accounts think my Twitter bot is real
 category: twitter
 image: profile.png
 ---

@@ -6,7 +6,7 @@ hidden: true
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts from {{ site.title }}</title>
-    <description>Read some terrible words by a terrible person</description>
+    <description>Infrequently updated ramblings (mostly about tech)</description>
     <link>{{ site.url }}</link>
     {% for post in site.posts %}
       {% unless post.draft %}
