@@ -3,12 +3,14 @@ layout: null
 ---
 [
   {% for post in site.posts %}
+  {% unless post.hidden %}
     {
-      "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.category | join: ', ' }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "title"    : "{{ post.title }}",
+      "category" : "{% for c in post.category %}<a href=\"/archive/c/#{{ c | replace: ' ','-'}}\">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}",
+      "url"      : "{{ post.url }}",
+      "author"   : "{% if post.author %} by {{ post.author }}{% else %} {% endif %}",
       "date"     : "{{ post.date | date: '%B %d, %Y' }}"
     } {% unless forloop.last %},{% endunless %}
+    {% endunless %}
   {% endfor %}
 ]

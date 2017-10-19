@@ -13,7 +13,7 @@ smalltitle: Infrequently updated ramblings <sup>(mostly about tech)</sup>
         <li>
           <h4>
             {{ page.date | date: '%B %d, %Y' }}
-            {% if page.multiplecats == true %}in <a href="/archive/c/#{{ page.category | first | remove:' ' }}">{{ page.category | first }}</a>{% if page.category | last %}, <a href="/archive/c/#{{ page.category | last | remove:' ' }}">{{ page.category | last }}</a>{% endif %}{% else %}in <a href="/archive/c/#{{ page.category | remove:' ' }}">{{ page.category }}</a>{% endif %}
+            in {% for c in page.category %}<a href="/archive/c/#{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
             {% if page.author %} by {% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% endif %}
           </h4>
           <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
