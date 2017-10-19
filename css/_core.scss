@@ -200,6 +200,21 @@ code {
   font-family: $fn-mono;
 }
 
+input[type='text'] {
+  width: 80%;
+  padding: 4px;
+  font-size: 1.2em;
+  color: $tx;
+  background-color: $bg-dark;
+  border: 1px solid $bg-light;
+  border-radius: 4px;
+}
+
+input[type='text']:focus {
+  border: 1px solid $tx;
+  outline: none;
+}
+
 #smalltitle::first-letter,
 #subtitle::first-letter {
   text-transform: capitalize;
@@ -238,7 +253,8 @@ img.icon {
 
 .chead {
   text-transform: capitalize;
-  margin-top: 16px;
+  text-decoration: overline;
+  margin-top: 32px;
 }
 
 .col {

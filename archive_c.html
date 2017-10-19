@@ -6,7 +6,7 @@ description: All the posts I've ever posted, sorted into categories
 smalltitle: usedesc
 ---
 
-{% include ddg.html %}
+{% include search.html %}
 
 {% for category in site.categories %}
     <div id="{{ category | first | remove:' ' }}" style="border-radius: 2px;">
@@ -34,8 +34,8 @@ smalltitle: usedesc
     </div>
 {% endfor %}
 
-<script>
+<!-- <script>
 if(window.location.hash) {
  document.getElementById(window.location.hash.replace('#', '')).style.background = '#002e59';
 }
-</script>
+</script> -->

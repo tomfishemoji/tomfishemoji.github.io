@@ -1,0 +1,19 @@
+<input type="text" id="search-input" placeholder="Search For Posts">
+<ul id="search-results" style="padding-bottom: 16px;"></ul>
+
+<script src="/search/sjs.js"></script>
+<script>
+  if (window.location.hash) {
+    document.getElementById('search-input').value = window.location.hash.replace('#', '');
+  }
+
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/search/posts.json',
+    searchResultTemplate: '<li><h2><a href="{url}">{title}</a></h2></li>',
+    noResultsText: '<h4 style="padding-bottom: 16px;">No results</h4>',
+    limit: 5,
+    fuzzy: false
+  })
+</script>
