@@ -1,23 +1,37 @@
+// sizes
 $width-total: 70em;
 $width-header: 19em;
 $width-content: 50em;
 
+
+// main backgrounds
 $bg: #000d19;
 $bg-dark: #000a14;
 $bg-light: #002e59;
 
+
+// secondary backgrounds
 $bg-red: #590000;
 $bg-bright-red: #cc0000;
+
 $bg-green: #005900;
 $bg-bright-green: #00cc00;
+
 $bg-blue: #000059;
 $bg-bright-blue: #00cc00;
 
+
+// text
 $tx-light: #fff;
 $tx: #c8d6e3;
 $tx-dark: #111;
-$ln: #a2c4e4;
 
+// links
+$ln: #a2c4e4;
+$ln-v: #a2e4dd;
+
+
+// fonts 
 $fn-cont: 'Open Sans', 'Lucida Grande', 'Tahoma', 'Helvetica Neue', 'Helvetica', sans-serif;
 $fn-head: 'Muli', $fn-cont;
 $fn-mono: 'Oxygen Mono', 'Lucida Sans Typewriter', 'Courier', 'Courier New', monospace;

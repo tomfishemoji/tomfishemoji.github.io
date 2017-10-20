@@ -38,9 +38,9 @@
   {% if page.image %}
     <div id="featured-img"><img src="
       {% if page.image contains '/' %}
-        {{ page.image | replace: ' ', '%20' }}
+        {{ page.image | uri_escape }}
       {% else %}
-        /img/posts/{{ page.title | replace: ' ', '%20' }}/{{ page.image | replace: ' ', '%20' }}
+        /img/posts/{{ page.title | uri_escape }}/{{ page.image | uri_escape }}
       {% endif %}
       " alt="{{ page.image }}"></div>
   {% endif %}

@@ -3,14 +3,14 @@
 
   {% if page.layout == 'post' %}
     {% if include.path contains '/' %}
-      {{ include.path | replace: ' ', '%20' }}
+      {{ include.path | uri_escape }}
     {% else %}
-      /img/posts/{{ page.title | replace: ' ', '%20' }}/{{ include.path | replace: ' ', '%20' }}
+      /img/posts/{{ page.title | replace: ' ', '%20' }}/{{ include.path | uri_escape }}
     {% endif %}
   {% else %}
-    {{ include.path | replace: ' ', '%20' }}
+    {{ include.path | uri_escape }}
   {% endif %}
 
-" alt="{{ include.caption | escape }}" class="{% if include.float %}float{% endif %} {% if include.caption %}has-caption{% endif %}">
+" alt="{% if include.caption %}{{ include.caption | escape }}{% else %}{{ include.path }}{% endif %}" {% if include.width or include.height %}style="{% if include.width %}width: {{ include.width }};{% endif %}{% if include.height %}{{ include.height }};{% endif %}"{% endif %} class="{% if include.float %}float{% endif %} {% if include.caption %}has-caption{% endif %}">
   {% if include.caption or include.credit %}<figcaption>{% if include.caption %}{{ include.caption }}{% endif %}{% if include.credit %}<br>Source: {{ include.credit }}{% endif %}</figcaption>{% endif %}
 </figure>

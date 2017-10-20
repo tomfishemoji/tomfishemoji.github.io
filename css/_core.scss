@@ -62,10 +62,16 @@ a {
   transition: all 0.2s;
 }
 
-article a {
-  color: $tx;
-  font-weight: bold;
-  border-bottom: 3px solid $ln;
+article {
+  a {
+    color: $tx;
+    font-weight: bold;
+    border-bottom: 3px solid $ln;
+  }
+
+  a:visited {
+    border-bottom: 3px solid $ln-v;
+  }
 }
 
 a:focus,
@@ -107,8 +113,12 @@ hr {
   margin-top: 32px;
   margin-bottom: 32px;
   border: 0;
-  border: 2px dashed $ln;
-  background: none;
+  height: 20px;
+  width: 100%;
+  background-image: url('/img/hr-code.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 header {
@@ -139,7 +149,8 @@ header h1 a:hover {
   background-image: url('/img/wm-a.png');
 }
 
-aside h3, h4 {
+aside h3,
+h4 {
   font-style: italic;
 }
 
@@ -186,8 +197,8 @@ figure.image img {
 }
 
 figure.image img.has-caption {
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 figure.image figcaption {
@@ -246,7 +257,7 @@ input[type='text']:focus {
 
 img.icon {
   margin-top: 0 !important;
-  margin-right: 8px !important;
+  margin-right: 8px;
   margin-left: 2px !important;
   height: 0.9em !important;
   width: 0.9em !important;
@@ -292,7 +303,6 @@ img.icon {
 .col p {
   line-height: 1.2em !important;
 }
-
 @media screen and (max-width: $width-total) {
   header {
     font-size: 1.2em;
@@ -314,7 +324,6 @@ img.icon {
     }
   }
 }
-
 @media screen and (min-width: $width-total) {
   main {
     float: right;
