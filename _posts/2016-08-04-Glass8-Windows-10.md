@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Glass8 is not the biggest fan of the Windows 10 Anniversary update
-category: tech
+category:
+- tech
+- windows
 medium: https://blog.dnomaid.co.uk/glass8-isnt-the-biggest-fan-of-the-windows-10-anniversary-update-92a00350fbc2
 image: window.jpeg
 ---

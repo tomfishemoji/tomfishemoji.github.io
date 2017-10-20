@@ -1,7 +1,10 @@
 ---
 layout: post
 title: How to change the colour of the address bar in Chrome Android
-category: code
+category:
+- code
+- tutorial
+- google chrome
 medium: https://blog.dnomaid.co.uk/how-to-change-the-colour-of-the-address-bar-multitasking-in-chrome-android-386217a150e0
 image: top.png
 ---

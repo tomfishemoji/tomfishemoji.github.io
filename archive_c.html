@@ -8,8 +8,11 @@ smalltitle: usedesc
 
 {% include search.html %}
 
-{% for category in site.categories %}
-    <div id="{{ category | first | remove:' ' }}" style="border-radius: 2px;">
+{% assign scats = site.categories | sort %}
+
+{% for category in scats %}
+    <div id="{{ category | first | replace:' ','-' }}" style="border-radius: 2px;">
+
         <h1 class="chead">{{ category | first }}</h1>
 
         <ul>

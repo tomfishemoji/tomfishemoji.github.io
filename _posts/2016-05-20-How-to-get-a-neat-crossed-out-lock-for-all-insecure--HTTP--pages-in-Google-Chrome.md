@@ -1,7 +1,9 @@
 ---
 layout: post
 title: How to get a neat crossed out lock for all unsecure (HTTP) pages in Google Chrome
-category: tutorial
+category:
+- tutorial
+- google chrome
 medium: https://blog.dnomaid.co.uk/how-to-get-a-neat-crossed-out-lock-for-all-insecure-http-pages-in-google-chrome-a7b59f26addc
 outdated: true
 ---

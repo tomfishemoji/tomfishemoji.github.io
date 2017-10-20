@@ -1,14 +1,19 @@
 @import '_vars';
 
 div#featured-img {
+  width: 100%;
   margin-top: 16px;
   img {
-    width: 40vw;
+    width: 100%;
     border-radius: 8px;
-    margin: 0 auto;
-    position: relative;
     z-index: -1;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   }
+}
+
+.post-meta-text-up {
+  position: relative;
+  top: -32px;
 }
 
 article {
@@ -31,9 +36,10 @@ article {
   h1,
   h2,
   h3 {
-    opacity: 0.8;
+    // opacity: 0.8;
     font-size: 1.7em;
     margin-bottom: 16px;
+    color: #eee;
   }
 
   iframe {
@@ -49,7 +55,8 @@ article {
   background-repeat: no-repeat;
   background-position: left;
   background-origin: content-box;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   position: sticky;
   top: 0;
   z-index: 10;
