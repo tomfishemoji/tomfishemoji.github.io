@@ -74,6 +74,10 @@ a:hover {
   color: $bg;
 }
 
+a:focus {
+  filter: invert(1);
+}
+
 sub,
 sup {
   font-size: 0.8em;
@@ -287,18 +291,6 @@ img.icon {
 
 .col p {
   line-height: 1.2em !important;
-}
-
-iframe#ddg {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 40px;
-  position: sticky;
-  top: 1.3em;
-  opacity: 0.8;
-  border: none;
 }
 
 @media screen and (max-width: $width-total) {
