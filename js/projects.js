@@ -11,7 +11,7 @@ exclude = [93560944];
 
 $(document).ready(function() {
   $.getJSON(apiurl, function(response) {
-    console.log(response);
+    // console.log(response);
     document.getElementById('loading').style.display = 'none';
     for (i in response) {
       if (!exclude.includes(response[i].id)) {
