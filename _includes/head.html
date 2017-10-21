@@ -28,11 +28,16 @@
   <!-- CSS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CMuli
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}%7COxygen+Mono{% endif %}
+  " rel="preload" as ="style">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CMuli
+  {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}%7COxygen+Mono{% endif %}
   " rel="stylesheet">
 
+  <link href="/css/combined.css" rel="preload" as="style">
   <link href="/css/combined.css" rel="stylesheet">
 
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}
+    <link href="/css/syntax.css" rel="preload" as="style">
     <link href="/css/syntax.css" rel="stylesheet">
   {% endif %}
 
