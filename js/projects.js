@@ -9,7 +9,10 @@ function addZero(what) {
 apiurl = 'https://api.github.com/users/mrdnomaid/repos?per_page=100';
 exclude = [
   93560944,
-  64045777
+  64045777,
+  88171176,
+  64804610,
+  64443395
   ];
 
 $(document).ready(function() {
