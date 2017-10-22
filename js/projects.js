@@ -38,7 +38,7 @@ $(document).ready(function() {
             langd = response[i].language;
           }
 
-          dateo = new Date(response[i].updated_at);
+          dateo = new Date(response[i].pushed_at);
           date = dateo.getFullYear() + '-' + addZero(dateo.getMonth()) + '-' + addZero(dateo.getDate());
 
           document.getElementById('github-results').innerHTML += '<h2 class="invert" id="' + response[i].id + '">' + response[i].name + '</h2>';
