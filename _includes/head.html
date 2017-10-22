@@ -45,6 +45,13 @@
     {{ page.extrahead }}
   {% endif %}
 
+  {% if page.head %}
+    {% for item in page.head %}
+      {{ item }}
+    {% endfor %}
+  {% endif %}
+
+
   <!-- Icons -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml">
