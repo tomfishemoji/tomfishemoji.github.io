@@ -13,5 +13,11 @@ scripts: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.
 <p>If it's stuck loading, I went over the rate limit or you have JavaScript disabled.</p>
 
 <div id="github-results" style="margin-bottom: 16px;">
-  <h1 id="loading">Loading From GitHub API</h1>
+  <div>
+    {% for i in (1..50) %}
+      <h2 class="invert">loading</h2>
+      <h4 style="font-size: 1em;">Shouldn't be long now</h4>
+      <h4 style="font-size: 1em;"><span class="button">Wait</span>  <span class="button">Wait</span>  <span class="button">Wait</span>   2008-02-08</h4>
+    {% endfor %}
+  </div>
 </div>
