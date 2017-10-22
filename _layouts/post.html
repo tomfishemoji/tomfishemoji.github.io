@@ -5,12 +5,20 @@ layout: compress
 <html lang="en-GB">
 {% include head.html %}
 <main>
-  <aside>
+  <aside id="meta">
     {% include post-meta.html %}
   </aside>
   <article>
     {{ content }}
   </article>
+  {% if page.notes %}
+    <aside id="notes">
+      <h4>Notes:</h4>
+      {% for note in page.notes %}
+        <p>{{ note }}</p>
+      {% endfor %}
+    </aside>
+  {% endif %}
 </main>
 {% include scripts.html %}
 </body>

@@ -50,6 +50,14 @@ article {
   }
 }
 
+aside#notes {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border-color: $bg-dark;
+  padding: 4px;
+}
+
 .post-notice {
   padding: 16px;
   background-repeat: no-repeat;

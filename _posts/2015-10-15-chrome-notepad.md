@@ -6,6 +6,8 @@ category:
 - google chrome
 medium: https://blog.dnomaid.co.uk/how-to-make-a-temporary-notepad-using-google-chrome-b7faeb367b42
 image: writing.jpeg
+notes:
+  - 'Source: <a href="http://imgur.com/gallery/NCfvl">Imgur</a>'
 ---
 
 It’s as simple as pasting a URL!
@@ -21,5 +23,3 @@ Copy and paste the URL below to open the notepad:
 The notepad will reset when you refresh the page! I’d recommend bookmarking it!
 
 {% include image.html path="/img/posts/How to make a temporary notepad using Google Chrome/np.gif" %}
-
-<span class="image-caption">Source: <a href="http://imgur.com/gallery/NCfvl">Imgur</a></span>
