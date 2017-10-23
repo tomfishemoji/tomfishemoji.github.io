@@ -11,7 +11,18 @@ hidden: true
       "url"      : "{{ post.url }}",
       "author"   : "{% if page.author %} by {% if page.authorlnk %}<a href=\"{{ page.authorlnk }}\" target=\"_blank\" rel=\"noopener noreferrer\">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% else %} {% endif %}",
       "date"     : "{{ post.date | date: '%B %d, %Y' }}"
-    }{% unless forloop.last %},{% endunless %}
+    },
   {% endunless %}
+  {% endfor %}
+
+  {% for page in site.pages %}
+    {
+      "title"    : "{% if page.showas %}{{ page.showas }}{% else %}{% if page.title %}{{ page.title }}{% else %}Unknown{% endif %}{% endif %}",
+      "category" : "N/A",
+      "url"      : "{{ page.url }}",
+      "author"   : " ",
+      "date": "N/A"
+    }
+    {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
