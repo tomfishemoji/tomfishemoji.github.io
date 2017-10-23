@@ -75,9 +75,9 @@
     </p>
 
     <p>
-      <a href="/projects/" class="projects" title="Things I've made"><i class="fa fa-code fa-fw"></i> Projects</a><br>
-      <a href="/faq/" class="faq" title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
-      <a href="/about/" class="abo" title="About"><i class="fa fa-person fa-fw"></i> About</a>
+      <a href="/projects/" {% if page.url == '/projects/' %}class="c"{% endif %} title="Things I've made"><i class="fa fa-code fa-fw"></i> Projects</a><br>
+      <a href="/faq/" {% if page.url == '/faq/' or page.url == '/faq/devices/' %}class="c"{% endif %} title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
+      <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fa fa-person fa-fw"></i> About</a>
     </p>
 
     {% if page.title == 'Home' %}
@@ -96,10 +96,6 @@
       {% if page.previous.url %}
         <a href="{{page.previous.url}}">&laquo; Previous Post</a>
       {% endif %}
-    </p>
-
-    <p><a onclick="document.getElementById('sharelnks').style.display = 'block'; document.getElementById('sharebtn').style.display = 'none';" id="sharebtn" style="cursor: pointer;" title="Share" href="javascript:void(0)"><i class="fa fa-share fa-fw"></i> Share</a></p>
-    <p style="display: none;" id="sharelnks"><a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank">Twitter</a><br><a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank">Reddit</a><br><a href="mailto:?subject={{ site.url }}{{ page.url }}">Email</a>
     </p>
     {% endif %}
   </header>

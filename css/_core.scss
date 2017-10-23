@@ -79,6 +79,7 @@ article {
   }
 }
 
+a.c,
 a:focus,
 a:hover {
   background-color: $ln;
@@ -89,12 +90,19 @@ a:focus {
   filter: invert(1);
 }
 
+a.c::after {
+  content: ' <';
+  background-color: $bg;
+  color: $ln;
+}
+
 sub,
 sup {
   font-size: 0.8em;
 }
 
-ul, * {
+*,
+ul {
   list-style: none;
 }
 
@@ -321,7 +329,6 @@ a.button {
 .col p {
   line-height: 1.2em !important;
 }
-
 @media screen and (max-width: $width-total) {
   header {
     font-size: 1.2em;

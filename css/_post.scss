@@ -50,12 +50,27 @@ article {
   }
 }
 
-aside#notes {
+aside#notes, aside#share {
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 4px;
   border-color: $bg-dark;
   padding: 4px;
+}
+
+aside#share {
+  text-align: right;
+  margin-right: 4px;
+}
+
+aside#share a {
+  font-size: 2em;
+}
+
+aside#share a:hover {
+  color: inherit;
+  background-color: $bg;
+  filter: contrast(1);
 }
 
 .post-notice {

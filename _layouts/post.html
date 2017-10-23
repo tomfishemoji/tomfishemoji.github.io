@@ -5,12 +5,15 @@ layout: compress
 <html lang="en-GB">
 {% include head.html %}
 <main>
+
   <aside id="meta">
     {% include post-meta.html %}
   </aside>
+
   <article>
     {{ content }}
   </article>
+
   {% if page.notes %}
     <aside id="notes">
       <h4>Notes:</h4>
@@ -19,6 +22,14 @@ layout: compress
       {% endfor %}
     </aside>
   {% endif %}
+
+  <aside id="share">
+    <h4>Share this post:&nbsp;</h4>
+    <a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank"><i class="fa fa-reddit"></i></a>
+    <a href="mailto:?subject={{ site.url }}{{ page.url }}"><i class="fa fa-mail"></i></a>
+  </aside>
+
 </main>
 {% include scripts.html %}
 </body>
