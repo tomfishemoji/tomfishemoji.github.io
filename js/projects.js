@@ -13,7 +13,7 @@ exclude = [
   88171176,
   64804610,
   64443395
-  ];
+];
 
 $(document).ready(function() {
   try {
@@ -48,7 +48,7 @@ $(document).ready(function() {
             dateo = new Date(response[i].pushed_at);
             date = dateo.getFullYear() + '-' + addZero(dateo.getMonth()) + '-' + addZero(dateo.getDate());
 
-            document.getElementById('github-results').innerHTML += '<h2 class="invert" id="' + response[i].id + '">' + response[i].name + '</h2>';
+            document.getElementById('github-results').innerHTML += '<h2 class="invert" id="' + response[i].id + '" title="' + response[i].id + '">' + response[i].name + '</h2>';
             document.getElementById('github-results').innerHTML += '<h4 style="font-size: 1em;">' + description + '</h4>';
             document.getElementById('github-results').innerHTML += '<h4 style="font-size: 1em;">' + buttons + ' <span class="button lang ' + lang + '" title="Most used language, according to GitHub">' + langd + '</span> <span title="Last Updated">' + date + '</span></h4>';
           }
