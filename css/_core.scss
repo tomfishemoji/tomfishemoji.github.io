@@ -147,18 +147,18 @@ header h1 {
   font-size: 3em;
 }
 
-header h1 a {
+header p#dnomaid a {
   display: inline-block;
   background-image: url('/img/wm.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 80%;
-  height: 1em;
+  height: 3em;
 }
 
-header h1 a:focus,
-header h1 a:hover {
+header p#dnomaid a:focus,
+header p#dnomaid a:hover {
   background-image: url('/img/wm-a.png');
 }
 
