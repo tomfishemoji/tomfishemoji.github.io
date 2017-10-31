@@ -80,8 +80,7 @@ Yes.
 
 {% include image.html path="/img/posts/Looking at my old Tweets/tweet11.png" %}
 
-"LOL rage is fun :)"
-~ Me, February 1st, 2015
+{% include quote.html quote="LOL rage is fun :)" author="Me, February 1st, 2015" %}
 
 ---
 
