@@ -90,11 +90,11 @@
     {% if page.layout == 'post' %}
     <p>
       {% if page.next.url %}
-        <a href="{{page.next.url}}">Next Post &raquo;</a>
+        <a href="{{page.next.url}}" title="{{page.next.title}}">Next Post &raquo;</a>
       {% endif %}
       {% if page.next.url and page.previous.url %}<br>{% endif %}
       {% if page.previous.url %}
-        <a href="{{page.previous.url}}">&laquo; Previous Post</a>
+        <a href="{{page.previous.url}}" title="{{page.previous.title}}">&laquo; Previous Post</a>
       {% endif %}
     </p>
     {% endif %}
