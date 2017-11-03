@@ -3,6 +3,7 @@
 div#featured-img {
   width: 100%;
   margin-top: 16px;
+
   img {
     width: 100%;
     border-radius: 8px;
@@ -48,9 +49,19 @@ article {
     margin-top: 16px;
     margin-bottom: 16px;
   }
+
+  ul {
+    list-style: square;
+  }
+
+  li {
+    position: relative;
+    left: 20px;
+  }
 }
 
-aside#notes, aside#share {
+aside#notes,
+aside#share {
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 4px;
@@ -110,7 +121,6 @@ aside#share a:hover {
   top: 10px;
   float: left;
 }
-
 
 .post-notice.info {
   color: $bg-bright-green;
