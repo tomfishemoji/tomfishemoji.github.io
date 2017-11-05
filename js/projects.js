@@ -59,7 +59,7 @@ $(document).ready(function() {
               document.getElementById('github-results').innerHTML += '<h4 style="font-size: 1em;">' + description + '</h4>';
               document.getElementById('github-results').innerHTML += '<h4 style="font-size: 1em;">' + buttons + ' <span class="button lang ' + lang + '" title="Most used language, according to GitHub">' + langd + '</span> <span title="Last Updated">' + date + '</span></h4>';
             } else {
-              e += '<h2 class="invert" id="' + response[i].id + '" title="' + response[i].id + '">' + response[i].full_name + '</h2> <h4 style="font-size: 1em;">' + description + '</h4><h4 style="font-size: 1em;">' + buttons + ' <span class="button lang ' + lang + '" title="Most used language, according to GitHub">' + langd + '</span> <span title="Last Updated">' + date + '</span></h4>';
+              e += '<h2 class="invert" id="' + response[i].id + '" title="' + response[i].id + '">' + response[i].full_name + '</h2> <h4 style="font-size: 1em; margin-bottom: 4px;">' + description + '</h4><h4 style="font-size: 1em;">' + buttons + ' <span class="button lang ' + lang + '" title="Most used language, according to GitHub">' + langd + '</span> <span title="Last Updated">' + date + '</span></h4>';
               e = e.replace('undefined', '');
             }
           }

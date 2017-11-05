@@ -69,9 +69,14 @@ a {
 
 article {
   a {
-    color: $tx;
-    font-weight: bold;
+    // color: $tx;
+    // font-weight: bold;
+  }
+
+  a:hover {
+    color: $ln;
     border-bottom: 2px solid $ln;
+    background-color: $bg;
   }
 
   a:visited {
@@ -79,7 +84,6 @@ article {
   }
 }
 
-a.c,
 a:focus,
 a:hover {
   background-color: $ln;
@@ -87,7 +91,7 @@ a:hover {
 }
 
 a:focus {
-  filter: invert(1);
+  filter: contrast(2);
 }
 
 sub,
@@ -130,30 +134,34 @@ hr {
 
 header {
   margin-bottom: 32px;
-}
 
-header a {
-  color: #c0cbd2;
-}
+  a {
+    color: #c0cbd2;
+  }
 
-header h1 {
-  font-family: 'Comfortaa', $fn-head;
-  font-size: 3em;
-}
+  a.c {
+    color: $ln;
+  }
 
-header p#dnomaid a {
-  display: inline-block;
-  background-image: url('/img/wm.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 80%;
-  height: 3em;
-}
+  h1 {
+    font-family: 'Comfortaa', $fn-head;
+    font-size: 3em;
+  }
 
-header p#dnomaid a:focus,
-header p#dnomaid a:hover {
-  background-image: url('/img/wm-a.png');
+  p#dnomaid a {
+    display: inline-block;
+    background-image: url('/img/wm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 3em;
+  }
+
+  p#dnomaid a:focus,
+  p#dnomaid a:hover {
+    background-image: url('/img/wm-a.png');
+  }
 }
 
 aside h3,
@@ -163,7 +171,7 @@ h4 {
 
 blockquote {
   background: $bg-dark;
-  padding: 16px 16px 2px 16px;
+  padding: 16px 16px 2px;
   border-top-left-radius: 4px;
   width: 90%;
   font-size: 1.1em;
@@ -179,7 +187,7 @@ blockquote[short] {
 author {
   display: inline-block;
   background: $bg-dark;
-  padding: 2px 16px 16px 16px;
+  padding: 2px 16px 16px;
   border-bottom-left-radius: 4px;
   width: 90%;
   font-size: 1.1em;
@@ -195,7 +203,8 @@ author::before {
 }
 
 figure.image {
-  padding: 16px;
+  margin: 16px;
+  background-color: $bg-dark;
 }
 
 figure.image img {
@@ -211,13 +220,10 @@ figure.image img.has-caption {
 figure.image figcaption {
   position: relative;
   top: -8px;
-  opacity: 0.8;
   margin-bottom: 16px;
-  background-color: $bg-dark;
-  font-weight: bold;
-  padding-top: 8px;
-  padding-left: 4px;
-  padding-right: 4px;
+  font-style: italic;
+  text-align: center;
+  padding: 8px 8px 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -285,8 +291,10 @@ img.icon {
 
 .button {
   padding: 2px;
+  margin: 2px;
   border-bottom: none;
   background-color: $bg-light;
+  color: $tx-light;
   border-radius: 4px;
   font-style: normal;
   cursor: default;
@@ -364,7 +372,6 @@ a.button {
   }
 
   a.c::after {
-    content: ' <';
     background-color: $bg;
     color: $ln;
   }
