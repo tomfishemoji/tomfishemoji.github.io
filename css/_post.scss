@@ -1,5 +1,9 @@
 @import '_vars';
 
+aside#meta {
+  text-align: center;
+}
+
 div#featured-img {
   width: 100%;
   margin-top: 16px;
@@ -14,7 +18,7 @@ div#featured-img {
 
 .post-meta-text-up {
   position: relative;
-  top: -32px;
+  top: -44px;
 }
 
 article {
