@@ -119,9 +119,10 @@ hr {
   margin-top: 32px;
   margin-bottom: 32px;
   border: 0;
-  height: 20px;
+  height: 22px;
   width: 100%;
-  background-image: url('/img/hr-code.png');
+  opacity: 0.8;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAA21BMVEUAAACixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSixOSoLB1yAAAASHRSTlMAAQIEBggJCw0PERITFRcZHh8iJSYoKy8wNjc4PD5DSktPVFddYWRnaXF+gIiLjpSapq+wsrS3wcXIys7V3N7g5O/x8/X5+/1l7H4gAAAA2ElEQVQYGXXBh0KCUACG0Q8pNdrDtD1s2Y6WtpPI//2fKDC8l3kOGa0dh2pt6ZJqvjRyqTKtyBZVjhUZUKE2VGyZcocae6SUG+jfKmV6Srw6FM3K2KfoWUbYIK+rlHtyvJHS9shw+sr4bZJ2oByflNpQeStYGyq4wbrS2KmsEOtNsQHXshoYP4q18GTNYXwocgucyWhiPCiyAEzJcDGOFKkDjiZesOYV2QaWNNEl5U5SsFlf+1QicEmZCZW1S0ZbGefkdEJZPQo8X4n3DmUWT56+vvsX6w7WH+fJZKiKFKDwAAAAAElFTkSuQmCC');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -161,14 +162,14 @@ h4 {
 }
 
 blockquote {
-  display: inline-block;
-  width: 100%;
-  border-left: $bg-light 5px solid;
-  padding-left: 16px;
-  padding-top: 8px;
-  margin-top: 16px;
+  background: $bg-dark;
+  padding: 16px 16px 2px 16px;
+  border-top-left-radius: 4px;
+  width: 90%;
+  font-size: 1.1em;
   margin-bottom: 0;
-  border-top-left-radius: 10px;
+  margin-left: 3%;
+  border-left: 5px solid $bg-light;
 }
 
 blockquote[short] {
@@ -177,15 +178,15 @@ blockquote[short] {
 
 author {
   display: inline-block;
-  width: 100%;
-  border-left: $bg-light 5px solid;
-  padding-left: 16px;
-  font-size: 1.2em;
-  font-weight: bold;
-  font-style: italic;
+  background: $bg-dark;
+  padding: 2px 16px 16px 16px;
+  border-bottom-left-radius: 4px;
+  width: 90%;
+  font-size: 1.1em;
   margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom-left-radius: 10px;
+  margin-left: 3%;
+  border-left: 5px solid $bg-light;
+  font-style: italic;
 }
 
 author::before {
