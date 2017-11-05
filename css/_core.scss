@@ -71,11 +71,11 @@ article {
   a {
     color: $tx;
     font-weight: bold;
-    border-bottom: 3px solid $ln;
+    border-bottom: 2px solid $ln;
   }
 
   a:visited {
-    border-bottom: 3px solid $ln-v;
+    border-bottom: 2px dotted $ln;
   }
 }
 
@@ -322,7 +322,6 @@ a.button {
 .col p {
   line-height: 1.2em !important;
 }
-
 @media screen and (max-width: $width-total) {
   header {
     font-size: 1.2em;
