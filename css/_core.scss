@@ -233,6 +233,10 @@ figure.image figcaption {
   border-bottom-right-radius: 4px;
 }
 
+figure.image figcaption p, figure.note p {
+  	margin-bottom: 0px;
+}
+
 code {
   font-family: $fn-mono;
 }

@@ -1,0 +1,11 @@
+<figure class="note
+{% if include.class %}
+  {{ include.class }}
+{% endif %}
+">
+
+<p{% if include.align %}
+  style="text-align: {{ include.align }}"
+{% endif %}>{{ include.content }} {% if include.linktext %}<a href="{{ include.link }}">{{ include.linktext }}</a>{% endif %}</p>
+
+</figure>

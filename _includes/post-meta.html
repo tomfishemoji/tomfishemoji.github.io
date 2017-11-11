@@ -1,19 +1,15 @@
-{% if page.medium %}
-    <div class="post-notice info medium">
-      <p style="margin-top: 0;">This post was originally published on Medium.<br>View the original post, along with its claps and comments, <a href="{{ page.medium }}">here</a>.</p>
-    </div>
+  {% if page.medium %}
+    {% assign mlink = {{ page.medium }} %}
+    {% include note.html class="medium" content="This post was originally published on Medium.<br>View the original post, along with its claps and comments, " link=mlink linktext="here." %}
   {% endif %}
 
   {% if page.info %}
-    <div class="post-notice info">
-      <p style="margin-top: 0;">{{ page.info }}</p>
-    </div>
+    {% assign pinfo = {{ page.info }} %}
+    {% include note.html class="info" content=info %}
   {% endif %}
 
   {% if page.outdated %}
-    <div class="post-notice warn">
-      <p style="margin-top: 0;">This post has been <a href="https://github.com/mrdnomaid/mrdnomaid.github.io/commits/master/{{ page.path }}">manually flagged</a> as outdated;<br>The content is no longer accurate.</p>
-    </div>
+    {% include note.html class="warn" content="This post has been manually flagged as outdated;<br>The content is no longer accurate." %}
   {% endif %}
 
 
@@ -28,9 +24,7 @@
   {% if unix | minus: postedat >= 31104000 %}
     {% if page.category contains 'tutorial' or page.category contains 'review' %}
       {% unless page.outdated %}
-        <div class="post-notice warn">
-          <p style="margin-top: 0;">This post is over a year old;<br>The content <span title="This has been flagged automatically">may</span> no longer be accurate.</p>
-        </div>
+        {% include note.html class="warn" content="This post is over a year old;<br>The content may no longer be accurate." %}
       {% endunless %}
     {% endif %}
   {% endif %}

@@ -16,9 +16,9 @@ layout: compress
 
   {% if page.notes %}
     <aside id="notes">
-      <h4>Notes:</h4>
       {% for note in page.notes %}
-        <p>{{ note }}</p>
+        {% assign notetxt = note %}
+        {% include note.html class="info" align="left" content=notetxt %}
       {% endfor %}
     </aside>
   {% endif %}
