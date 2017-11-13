@@ -1,4 +1,5 @@
 ---
+# Lists all the posts and pages in a JSON format, for the search and whatever else I may need a list for.
 layout: null
 hidden: true
 ---

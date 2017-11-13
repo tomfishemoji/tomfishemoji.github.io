@@ -1,13 +1,28 @@
+  <!--
+    In front-matter, you can use
+    medium: https://medium.com/foo/bar
+    to make this thing appear
+  -->
   {% if page.medium %}
     {% assign mlink = {{ page.medium }} %}
     {% include note.html class="medium" content="This post was originally published on Medium.<br>View the original post, along with its claps and comments, " link=mlink linktext="here." %}
   {% endif %}
 
+  <!--
+  I think you can do this in the FM:
+  info:
+    - abc
+    - def
+  but I haven't tested that.
+  -->
   {% if page.info %}
     {% assign pinfo = {{ page.info }} %}
     {% include note.html class="info" content=info %}
   {% endif %}
 
+  <!--
+    This shows up if you set "outdated" to anything in the front matter. Doesn't need to be "true"
+  -->
   {% if page.outdated %}
     {% include note.html class="warn" content="This post has been manually flagged as outdated;<br>The content is no longer accurate." %}
   {% endif %}
@@ -21,6 +36,7 @@
   <h1>{{ postedat }}</h1>
   <h1>{{ unix | minus: postedat }}</h1> -->
 
+  <!-- 31104000 seconds is 1 year-ish, good enough for the warning -->
   {% if unix | minus: postedat >= 31104000 %}
     {% if page.category contains 'tutorial' or page.category contains 'review' %}
       {% unless page.outdated %}
@@ -49,4 +65,6 @@
     {% if page.description %}
       <h4>{{ page.description }}</h4>
     {% endif %}
+
+    <!-- TODO: Shoehorn weird "word count" or "reading time" thing in here. Maybe only add this once useful things start being posted.  -->
   </div>

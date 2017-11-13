@@ -2,6 +2,7 @@ if (window.location.hash) {
   document.getElementById('search-input').value = window.location.hash.replace('#', '');
 }
 
+// I wanted to have a dropdown to select the amount of results, but that never happened
 if (document.getElementById('search-js').getAttribute('data-limit')) {
   rlimit = document.getElementById('search-js').getAttribute('data-limit');
 } else {

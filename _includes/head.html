@@ -1,7 +1,9 @@
 <head>
   <meta charset="UTF-8">
+  <!-- Sets the theme colour for mobile browsers (and vivaldi) -->
   <meta name="theme-color" content="#000d19">
   <meta name="viewport" content="initial-scale=1.0">
+  <!-- Not required, but useful to check when GH compiled the site. -->
   <meta name="generator" content="Jekyll {{ jekyll.version }}">
   <meta name="generated-at" content="{{ site.time | date: '%R %m/%d/%Y' }}">
   <meta name="robots" content="{% if page.hidden %}noindex, follow{% else %}index, follow{% endif %}">
@@ -26,31 +28,31 @@
 
 
   <!-- CSS -->
+  <!-- Only loads the monospaced fonts if the pages needs them -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CNunito
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}%7CUbuntu+Mono{% endif %}
   " rel="preload" as ="style">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CNunito
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}%7CUbuntu+Mono{% endif %}
   " rel="stylesheet">
-
+  <!-- The main CSS file that SCSS compiles -->
   <link href="/css/combined.css" rel="preload" as="style">
   <link href="/css/combined.css" rel="stylesheet">
-
+  <!-- Again, this bit only loads if the page has some code in it -->
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}
     <link href="/css/syntax.css" rel="preload" as="style">
     <link href="/css/syntax.css" rel="stylesheet">
   {% endif %}
-
+  <!--  Old way that's still here in case I forgot to update a page -->
   {% if page.extrahead %}
     {{ page.extrahead }}
   {% endif %}
-
+  <!-- For extra (per-page) stylesheets and things -->
   {% if page.head %}
     {% for item in page.head %}
       {{ item }}
     {% endfor %}
   {% endif %}
-
 
   <!-- Icons -->
   <link rel="shortcut icon" href="/favicon.ico">
@@ -61,11 +63,13 @@
 </head>
 
 <body>
+  <!-- Background image if it's the 404 page -->
   {% if page.title == 'Error 404'%}
     <img src="/img/bean.gif" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%) scale(8); z-index: -1; opacity: 0.3;" draggable="false">
   {% endif %}
 
   <header>
+    <!-- dnomaid logo is an image here, not some text -->
     <p id="dnomaid"><a href="/" title="Home"><span style="display: none;">dnomaid</span></a></p>
     <p>
       <a href="{{ site.youtube }}" class="youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a><br>
@@ -80,6 +84,7 @@
       <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fa fa-person fa-fw"></i> About</a>
     </p>
 
+    <!-- Shows up on all pages -->
     {% if page.layout == 'default' %}
     <p>
       <a href="/feed.xml" rel="alternate" type="application/rss+xml"><i class="fa fa-rss fa-fw"></i> RSS</a><br>
@@ -87,6 +92,7 @@
     </p>
     {% endif %}
 
+    <!-- Only appears when viewing a post, obviously. -->
     {% if page.layout == 'post' %}
     <p>
       {% if page.next.url %}

@@ -4,6 +4,7 @@ title: Badges
 permalink: /badges/
 description: Norton Certified!
 smalltitle: usedesc
+# I don't know why I made this page, but it's here.
 ---
 
 <style>

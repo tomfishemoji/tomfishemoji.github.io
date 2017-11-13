@@ -4,6 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en-GB">
 
+<!-- Head stuff -->
 {% include head.html %}
 
 <main>
@@ -27,7 +28,7 @@ layout: compress
     {% endif %}
   </aside>
 
-
+  <!-- Not sure why this is here, but it's probably because I broke some CSS somewhere -->
   {% unless page.permalink == '/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}<article>{% endunless %}
     {{ content }}
   {% unless page.permalink == '/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}</article>{% endunless %}

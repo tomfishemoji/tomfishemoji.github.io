@@ -1,4 +1,6 @@
+<!-- Redirect if the page is in a frame (can't set security headers with CloudFlare/GH sadly) -->
 <script>if(window.top!==window.self)window.top.location.replace(window.self.location.href);</script>
+
 {% if page.scripts %}
   {% for script in page.scripts %}
     <script src="{{ script }}"></script>
