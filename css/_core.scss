@@ -162,12 +162,14 @@ header {
         background-size: contain;
         width: 80%;
         height: 3em;
+        transition: all 0.3s;
     }
 
     p#dnomaid a:focus,
     p#dnomaid a:hover {
         background-image: url('/img/wm-a.png');
         background-color: $ln;
+        transform: scale(1.1);
     }
 }
 
@@ -342,14 +344,6 @@ a.button {
 
 .col p {
     line-height: 1.2em !important;
-}
-
-header p#dnomaid a {
-    transition: all 0.3s;
-}
-
-header p#dnomaid a:hover {
-    transform: scale(1.1);
 }
 
 @media screen and (max-width: $width-total) {
