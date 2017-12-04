@@ -11,6 +11,11 @@ layout: compress
   </aside>
 
   <article>
+    {% if page.external %}
+      <h2>This post is on a different website!</h2>
+      <p><a href="{{ page.external }}">Visit <span class="host-only">{{ page.external | remove: 'http://' | remove: 'https://' | remove: 'www.' }}</span></a></p>
+    {% endif %}
+
     {{ content }}
   </article>
 

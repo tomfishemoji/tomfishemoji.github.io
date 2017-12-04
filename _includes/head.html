@@ -8,6 +8,9 @@
   <meta name="generated-at" content="{{ site.time | date: '%R %m/%d/%Y' }}">
   <meta name="robots" content="{% if page.hidden %}noindex, follow{% else %}index, follow{% endif %}">
 
+  <!-- Redirects -->
+  {% if page.external %}<meta http-equiv="refresh" content="0; url={{ page.external }}">{% endif %}
+
   <!-- Generic Meta -->
   <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}dnomaid{% endif %}"> {% if page.description %}
   <meta name="description" content="{{ page.description | escape }}"> {% endif %}
