@@ -8,17 +8,17 @@ function addZero(what) {
 }
 
 // GitHub API URL to get information from
-apiurl = 'https://api.github.com/users/mrdnomaid/repos?type=all&per_page=100';
+const apiurl = 'https://api.github.com/users/mrdnomaid/repos?type=all&per_page=100';
 
 // Exclude some repos (get their ID from the API)
-exclude = [
+const exclude = [
   93560944,
   64045777,
   88171176,
   64804610,
   64443395
 ];
-var e;
+let e;
 
 // I know, JQuery, but I'm lazy
 $(document).ready(function() {
@@ -33,6 +33,7 @@ $(document).ready(function() {
         document.getElementById('github-results').innerHTML = '';
         for (i in response) {
           // Make sure it's not in the exclude list
+          let description = '';
           if (!exclude.includes(response[i].id)) {
             if (!response[i].description) {
               description = 'No Description'
@@ -42,12 +43,13 @@ $(document).ready(function() {
             }
 
             // If the repo has/is a website, use that instead of the repo URL
+            let lnka = '';
+            let lnkb = '</a>';
             if (response[i].homepage) {
               lnka = '<a href="' + response[i].homepage + '">';
             } else {
               lnka = '<a href="' + response[i].html_url + '">';
             }
-            lnkb = '</a>';
 
             // The page used to show language buttons, but I got rid of them.
             // if (response[i].language) {
@@ -64,8 +66,8 @@ $(document).ready(function() {
             // }
 
             // Show the date in YYYY-MM-DD
-            dateo = new Date(response[i].pushed_at);
-            date = dateo.getFullYear() + '-' + addZero(dateo.getMonth()) + '-' + addZero(dateo.getDate());
+            let dateo = new Date(response[i].pushed_at);
+            let date = dateo.getFullYear() + '-' + addZero(dateo.getMonth()) + '-' + addZero(dateo.getDate());
 
             // If the repo is under my account
             if (response[i].full_name.includes('mrdnomaid/')) {
