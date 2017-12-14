@@ -72,12 +72,14 @@ article {
     a {
         // color: $tx;
         // font-weight: bold;
+        border-radius: 0px;
     }
 
     a:hover {
         color: $ln;
         border-bottom: 2px solid $ln;
         background-color: $bg;
+        border-radius: 0px;
     }
 
     a:visited {
