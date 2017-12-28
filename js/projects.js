@@ -70,7 +70,7 @@ $(document).ready(function() {
             let date = dateo.getFullYear() + '-' + addZero(dateo.getMonth()) + '-' + addZero(dateo.getDate());
 
             // If the repo is under my account
-            if (response[i].full_name.includes('mrdnomaid/')) {
+            if (response[i].full_name.includes('mrdnomaid/') && response[i].fork !== true) {
               // Bit for the languages:
               // <span class="button lang ' + lang + '" title = "Most used language, according to GitHub">' + langd + '</span>'
 

@@ -72,14 +72,13 @@ article {
     a {
         // color: $tx;
         // font-weight: bold;
-        border-radius: 0px;
+        border-radius: 2px;
     }
 
     a:hover {
-        color: $ln;
-        border-bottom: 2px solid $ln;
-        background-color: $bg;
-        border-radius: 0px;
+        color: $bg;
+        background-color: $ln;
+        border-radius: 2px;
     }
 
     a:visited {
@@ -100,6 +99,24 @@ a {
 a:focus {
     outline: none;
     border: 1px dotted $ln;
+}
+
+.fa {
+    display: inline-block;
+    // font-size: 1.5em;
+}
+
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+a:hover .fa {
+    transform: scale(1.15);
+}
+
+a:active .fa {
+    transform: scale(0.95);
 }
 
 sub,
@@ -149,6 +166,10 @@ header {
 
     a.c {
         color: $ln;
+    }
+
+    a.c:hover {
+        color: $bg;
     }
 
     h1 {
@@ -347,7 +368,6 @@ a.button {
 .col p {
     line-height: 1.2em !important;
 }
-
 @media screen and (max-width: $width-total) {
     header {
         font-size: 1.2em;
@@ -364,7 +384,7 @@ a.button {
     }
 
     aside#meta {
-      font-size: 0.9em;
+        font-size: 0.9em;
     }
 
     div#featured-img {
@@ -373,7 +393,6 @@ a.button {
         }
     }
 }
-
 @media screen and (min-width: $width-total) {
     main {
         float: right;

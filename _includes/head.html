@@ -34,16 +34,13 @@
   <!-- Only loads the monospaced fonts if the pages needs them -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CNunito
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}%7CUbuntu+Mono{% endif %}
-  " rel="preload" as ="style">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CNunito
-  {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}%7CUbuntu+Mono{% endif %}
   " rel="stylesheet">
+  <!-- It's far too convenient to just load all of FA instead of selecting icons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- The main CSS file that SCSS compiles -->
-  <link href="/css/combined.css" rel="preload" as="style">
   <link href="/css/combined.css" rel="stylesheet">
   <!-- Again, this bit only loads if the page has some code in it -->
   {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}
-    <link href="/css/syntax.css" rel="preload" as="style">
     <link href="/css/syntax.css" rel="stylesheet">
   {% endif %}
   <!--  Old way that's still here in case I forgot to update a page -->
@@ -61,7 +58,7 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
-  <!-- Page Title -->
+  <!-- Page Title -<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">->
   <title>{% if page.showas %}{{ page.showas }}{% else %}{{ page.title }}{% endif %} - {{ site.title | escape }}</title>
 </head>
 
@@ -75,23 +72,24 @@
     <!-- dnomaid logo is an image here, not some text -->
     <p id="dnomaid"><a href="/" title="Home"><span style="display: none;">dnomaid</span></a></p>
     <p>
-      <a href="{{ site.youtube }}" class="youtube" title="YouTube"><i class="fa fa-youtube fa-fw"></i> YouTube</a><br>
+      <a href="{{ site.youtube }}" class="youtube" title="YouTube"><i class="fa fa-youtube-play fa-fw"></i> YouTube</a><br>
       <a href="{{ site.twitter }}" class="twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a><br>
-      <a href="{{ site.github }}" class="github" title="GitHub"><i class="fa fa-github fa-fw"></i> GitHub</a><br>
+      <a href="{{ site.github }}" class="github" title="GitHub"><i class="fa fa-github-alt fa-fw"></i> GitHub</a><br>
       <a href="{{ site.keybase }}" class="keybase" title="Keybase"><i class="fa fa-key fa-fw"></i> Keybase</a>
     </p>
 
     <p>
       <a href="/projects/" {% if page.url == '/projects/' %}class="c"{% endif %} title="Things I've made"><i class="fa fa-code fa-fw"></i> Projects</a><br>
-      <a href="/faq/" {% if page.url == '/faq/' or page.url == '/faq/tech/' %}class="c"{% endif %} title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
-      <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fa fa-person fa-fw"></i> About</a>
+      <a href="/faq/" {% if page.url == '/faq/' %}class="c"{% endif %} title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
+      <a href="/faq/tech/" {% if page.url == '/faq/tech/' %}class="c"{% endif %} title="My collection of various technology"><i class="fa fa-microchip fa-fw"></i> Tech</a><br>
+      <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fa fa-male fa-fw"></i> About</a>
     </p>
 
     <!-- Shows up on all pages -->
     {% if page.layout == 'default' %}
     <p>
       <a href="/feed.xml" rel="alternate" type="application/rss+xml"><i class="fa fa-rss fa-fw"></i> RSS</a><br>
-      <a href="/archive/"><i class="fa fa-folder fa-fw"></i> Archive</a>
+      <a href="/archive/" {% if page.url contains '/archive/' %}class="c"{% endif %}><i class="fa fa-folder fa-fw"></i> Archive</a>
     </p>
     {% endif %}
 
