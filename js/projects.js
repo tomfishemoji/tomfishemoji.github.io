@@ -18,7 +18,7 @@ const exclude = [
   64804610,
   64443395
 ];
-let e;
+let e = '';
 
 // I know, JQuery, but I'm lazy
 $(document).ready(function() {
@@ -67,18 +67,19 @@ $(document).ready(function() {
 
             // Show the date in YYYY-MM-DD
             let dateo = new Date(response[i].pushed_at);
-            let date = dateo.getFullYear() + '-' + addZero(dateo.getMonth()) + '-' + addZero(dateo.getDate());
+            console.log(dateo);
+            let date = dateo.getFullYear() + '-' + dateo.getMonth() + '-' + dateo.getDate();
 
             // If the repo is under my account
             if (response[i].full_name.includes('mrdnomaid/') && response[i].fork !== true) {
               // Bit for the languages:
               // <span class="button lang ' + lang + '" title = "Most used language, according to GitHub">' + langd + '</span>'
 
-              document.getElementById('github-results').innerHTML += '<b>' + lnka + response[i].name + lnkb + '</b> &mdash; <i class="desc">' + description + '&nbsp;<span title="Last Updated">(' + date + ')</span></i><p>';
+              document.getElementById('github-results').innerHTML += '<b>' + lnka + response[i].name + lnkb + '</b> <span title="Last Updated" style="font-size: 0.8em;">(' + date + ')</span><br><i class="desc">' + description + '</i><p>';
 
             } else {
               // Add things not under my account to "e".
-              e += '<b>' + lnka + response[i].name + lnkb + '</b> &mdash; <i class="desc">' + description + '&nbsp;<span title="Last Updated">(' + date + ')</span></i><p>';
+              e += '<b>' + lnka + response[i].name + lnkb + '</b> <span title="Last Updated">(' + date + ')</span><br><i class="desc">' + description + '</i><p>';
             }
           }
         }
