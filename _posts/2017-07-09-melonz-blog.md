@@ -15,7 +15,7 @@ authortwitter: RandomMelonYT
 TheRandomMelon — Hi! I'm Michael, but I go by TheRandomMelon. I make [terrible YouTube videos](https://www.youtube.com/TheRandomMelon) and I'm friends with dnomaid.
 
 
-Melonz — "Our goal's to be a recognizable brand of games and computer software, with games like The Matrix Glitch and software like MelonzClient." - [The Twitter page](https://twitter.com/melonzinc)
+Melonz — "Our goal's to be a recognizable brand of games and computer software, with games like The Matrix Glitch and software like MelonzClient." - [The Twitter page](https://twitter.com/melonzdev)
 
 ---
 
@@ -23,12 +23,12 @@ Melonz — "Our goal's to be a recognizable brand of games and computer software
 Oh, that. I've spent pretty much the entire day creating a [Jekyll](https://jekyllrb.com) blog. Yeah, sad, isn't it?
 
 
-But, thanks to some help from dnomaid himself, [Bootstrap 4](https://v4-alpha.getbootstrap.com), and [Bootswatch's Darkly theme](https://bootswatch.com/4-alpha/darkly/), I finally got my team a nice blog.
+But, thanks to some help from dnomaid himself, [Bootstrap 4](https://v4-alpha.getbootstrap.com), and [Bootswatch's Darkly theme](https://bootswatch.com/darkly/), I finally got my team a nice blog.
 
 {% include image.html path="/img/posts/Introducing the new Melonz blog/blog.png" caption="The blog's homepage." credit="Melonz Team" %}
 
 # Cool! How'd you do it?
-The source code is available to the public on [GitHub](https://github.com/Melonz/melonz.github.io). The site is licensed under the CC-BY-SA license.
+The source code is available to the public on [GitHub](https://github.com/Melonz/blog). The site is licensed under the CC-BY-SA license.
 
 {% include image.html path="/img/posts/Introducing the new Melonz blog/license.png" caption="GitHub's human-readable summary of the license." %}
 
@@ -47,4 +47,4 @@ We sure do! Click [here](https://blog.melonz.nl/feed.xml) to subscribe now (if a
 Thanks for reading my blog post. I truly appreciate it, even if I'm not dnomaid. Special thanks to dnomaid, of course, for letting me ramble about my crappy blog here.
 
 
-If you'd like to, [follow me on Twitter](https://twitter.com/RandomMelonYT), [subscribe to me on YouTube](https://www.youtube.com/TheRandomMelon), or even [follow me on GitHub](https://github.com/TheRandomMelon), if you're that insane.
+If you'd like to, [follow me on Twitter](https://twitter.com/trmmelon), [subscribe to me on YouTube](https://www.youtube.com/TheRandomMelon), or even [follow me on GitHub](https://github.com/TheRandomMelon), if you're that insane.

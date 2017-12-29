@@ -31,6 +31,6 @@ Even after re-installing the Nvidia graphics driver and fiddling with some setti
 ---
 
 # The Solution
-After uninstalling a few programs I thought might have been causing it ([Classic Shell](http://www.classicshell.net/), [Moo0 Transparent Menu](http://www.moo0.com/software/TransparentMenu/), etc.), the issue continued. I then remembered — I had Glass8 installed. So, after attempting to delete it in Safe Mode, and Windows Explorer saying it was in use, I rebooted into Safe Mode with Command Prompt. From there, I navigated to the folder I installed it in and ran del *.*.
+After uninstalling a few programs I thought might have been causing it ([Classic Shell](http://www.classicshell.net/), Moo0 Transparent Menu, etc., the issue continued. I then remembered — I had Glass8 installed. So, after attempting to delete it in Safe Mode, and Windows Explorer saying it was in use, I rebooted into Safe Mode with Command Prompt. From there, I navigated to the folder I installed it in and ran del *.*.
 
 From that point, knowing that Glass8's files were all gone, I restarted once again, into regular Windows (no Safe Mode this time), and sure enough, the issue was gone!

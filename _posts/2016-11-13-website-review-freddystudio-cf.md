@@ -76,7 +76,7 @@ To top everything off, Freddy is hosting this site using 000webhost, which is ow
 
 I think Freddy’s website is utterly abysmal and urgently needs to be improved and/or optimised. Hopefully, he manages to upgrade it fairly quickly.
 
-Thanks to <a href="https://thehaden.co">Haden</a> for making this post less bad.
+Thanks to Haden for making this post less bad.
 
 ---
 

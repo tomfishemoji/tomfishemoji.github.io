@@ -37,4 +37,4 @@ Here’s what it comes down to: make sure you tell the user why they are seeing 
 
 ---
 
-Additional editing by [Haden](https://thehaden.co)
+Additional editing by Haden
