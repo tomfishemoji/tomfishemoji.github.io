@@ -36,15 +36,6 @@
   <h1>{{ postedat }}</h1>
   <h1>{{ unix | minus: postedat }}</h1> -->
 
-  <!-- 31104000 seconds is 1 year-ish, good enough for the warning -->
-  {% if unix | minus: postedat >= 31104000 %}
-    {% if page.category contains 'tutorial' or page.category contains 'review' %}
-      {% unless page.outdated %}
-        {% include note.html class="warn" content="This post is over a year old;<br>The content may no longer be accurate." %}
-      {% endunless %}
-    {% endif %}
-  {% endif %}
-
   {% if page.image %}
     <div id="featured-img"><img src="
       {% if page.image contains '/' %}
