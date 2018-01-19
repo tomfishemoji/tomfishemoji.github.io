@@ -4,6 +4,7 @@ title: My very boring new-years resolution
 description: Selfhost as much as possible; use more FOSS
 category:
   - tech
+  - linux
 image: header-blur.png
 ---
 
