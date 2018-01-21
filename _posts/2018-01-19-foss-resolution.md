@@ -21,7 +21,7 @@ I'll gloss over the details as to why (just have a watch of Bryan if you care) b
 - [Gmail](https://mail.google.com/) ➔ [OVH Mail](https://www.ovh.co.uk/emails/email-pro/) — Again, I don't really do much emailing, so this was an easy switch. OVH does cost about 2 quid a month, but that's fine for the extra stuff it has (using actual domains and that, *cough* tomcar670fast *cough*).
 
 **Added Jan 21st:**
-- [Google Forms](https://forms.google.com) ➔ [Tellform](https://www.tellform.com/) - I don't tend to make many forms, but when I do, Typeform is my new goto. It's open source and I don't even need to selfhost it myself!
+- [Google Forms](https://forms.google.com) ➔ [Tellform](https://www.tellform.com/) - I don't tend to make many forms, but when I do, Tellform is my new goto. It's open source and I don't even need to selfhost it myself!
 - [Plex](https://plex.tv) ➔ [Emby](https://emby.media) - Plex is cool and all, but Emby offers a nicer UI (imo) and more fine control over your server settings. In my limited experience, it also seems to perform much better too.
 
 ---
