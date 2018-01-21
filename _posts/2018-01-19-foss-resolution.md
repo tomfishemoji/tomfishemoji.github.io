@@ -19,5 +19,8 @@ I'll gloss over the details as to why (just have a watch of Bryan if you care) b
 - [Vegas Pro](http://www.vegascreativesoftware.com/gb/vegas-pro/) ➔ [Kdenlive](https://kdenlive.org/) — While I don't make YouTube videos as often as I used to, I still need to chop and cut videos occasionally. Kdenlive is stellar at that (as long as you ignore the buggy themes and frequent crashes 🙃)
 - [Mailbird](https://www.getmailbird.com/) ➔ [Thunderbird](https://www.mozilla.org/en-GB/thunderbird/) — This is another change I didn't really care about. Mailbird was quite good looking, but was pretty baron when it came to features. Thunderbird does everything I could ever need and more, even if it looks like it came out in 2001.
 - [Gmail](https://mail.google.com/) ➔ [OVH Mail](https://www.ovh.co.uk/emails/email-pro/) — Again, I don't really do much emailing, so this was an easy switch. OVH does cost about 2 quid a month, but that's fine for the extra stuff it has (using actual domains and that, *cough* tomcar670fast *cough*).
+**Added Jan 21st:**
+- [Google Forms](https://forms.google.com) ➔ [Tellform](https://www.tellform.com/) - I don't tend to make many forms, but when I do, Typeform is my new goto. It's open source and I don't even need to selfhost it myself!
+- [Plex](https://plex.tv) ➔ [Emby](https://emby.media) - Plex is cool and all, but Emby offers a nicer UI (imo) and more fine control over your server settings. In my limited experience, it also seems to perform much better too.
 
 Feel free to call me paranoid or give me a tin-foil hat, but I just like having total control over what I run.
