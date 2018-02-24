@@ -85,7 +85,7 @@ Thanks to Haden for making this post less bad.
 I Tweeted this post’s title and Freddy responded with this.
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Dude its not the official site its just a black background with white text just stop talking about mah site I don&#39;t do it to your</p>&mdash; FreddyStudio (@FreddyStudio) <a href="https://twitter.com/FreddyStudio/status/797350712044879872">November 12, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https:////platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---
 
