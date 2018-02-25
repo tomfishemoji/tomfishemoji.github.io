@@ -75,7 +75,7 @@ $(document).ready(function() {
               // Bit for the languages:
               // <span class="button lang ' + lang + '" title = "Most used language, according to GitHub">' + langd + '</span>'
 
-              document.getElementById('github-results').innerHTML += '<b>' + lnka + response[i].name + lnkb + '</b> <span title="Last Updated" style="font-size: 0.8em;">(' + date + ')</span><br><i class="desc">' + description + '</i><p>';
+              document.getElementById('github-results').innerHTML += '<b>' + lnka + response[i].name + lnkb + '</b> <span title="Last Updated" class="small">(' + date + ')</span><br><i class="desc">' + description + '</i><p>';
 
             } else {
               // Add things not under my account to "e".
@@ -83,7 +83,7 @@ $(document).ready(function() {
             }
           }
         }
-        document.getElementById('github-results').innerHTML += '<h1 style="margin-top: 64px;margin-bottom: 16px;border-bottom: 2px solid #002e59;">Elsewhere</h1>';
+        document.getElementById('github-results').innerHTML += '<h1 class="github-heading">Elsewhere</h1>';
         document.getElementById('github-results').innerHTML += e;
       }
     });

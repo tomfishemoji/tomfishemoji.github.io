@@ -1,13 +1,4 @@
-<!-- Redirect if the page is in a frame (can't set security headers with CloudFlare/GH sadly) -->
-<script>if(window.top!==window.self)window.top.location.replace(window.self.location.href);</script>
-<script>
-  const spans = document.getElementsByClassName('host-only');
-
-  for (let i = 0; i < spans.length; i++) {
-    spans[i].innerHTML = spans[i].innerHTML.split('/')[0].toString();
-  }
-</script>
-
+<script src="/js/pages/common.js"></script>
 
 {% if page.scripts %}
   {% for script in page.scripts %}

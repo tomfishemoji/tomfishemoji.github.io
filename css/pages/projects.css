@@ -1,0 +1,17 @@
+#github-results b {
+    font-size: 1.2em;
+}
+
+#github-results i.desc {
+    opacity: 0.8;
+}
+
+#github-results .github-heading {
+    margin-top: 64px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #002e59;
+}
+
+#github-results .small {
+    font-size: 0.8em;
+}

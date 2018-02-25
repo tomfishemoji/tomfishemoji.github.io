@@ -194,6 +194,10 @@ header {
         background-color: $ln;
         transform: scale(1.1);
     }
+
+    p#dnomaid span {
+        display: none;
+    }
 }
 
 aside h3,
@@ -287,6 +291,10 @@ input[type='text']:focus {
 #smalltitle::first-letter,
 #subtitle::first-letter {
     text-transform: capitalize;
+}
+
+#smalltitle {
+    margin-bottom: 12px;
 }
 
 .youtube {

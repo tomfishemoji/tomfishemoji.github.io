@@ -4,6 +4,9 @@ title: Post Archive
 permalink: /archive/
 description: All the posts I've ever posted
 smalltitle: usedesc
+scripts:
+  - /js/pages/archive.js
+stylecsp: "'unsafe-inline'"
 ---
 
 {% include search.html %}
@@ -23,10 +26,3 @@ smalltitle: usedesc
     {% endunless %}
   {% endfor %}
 </ul>
-
-
-<script>
-if(window.location.hash) {
- document.location = '/archive/c/' + window.location.hash;
-}
-</script>

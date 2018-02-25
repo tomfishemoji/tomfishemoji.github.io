@@ -5,6 +5,8 @@ title: Error 404
 description: Nothing was found here
 smalltitle: usedesc
 hidden: true
+scripts:
+  - '/js/pages/404.js'
 ---
 
 <div>
@@ -13,11 +15,3 @@ hidden: true
 		<p>If you were expecting a project to be here check the <a href="/projects/">projects page</a> or try changing the URL to be all lowercase.</p>
 
 </div>
-
-<script>
-const path = window.location.pathname;
-if (path.substring(0, 3) == '/20' && path.endsWith('.html')) {
-	path = path.replace('.html', '/');
-	document.location = path.toLowerCase();
-}
-</script>

@@ -1,0 +1,7 @@
+.col.d h3 {
+    margin-bottom: 4px;
+}
+
+.col.d p:first-of-type {
+    margin-bottom: 16px;
+}
