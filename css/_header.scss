@@ -1,0 +1,65 @@
+@import '_vars';
+
+header {
+  margin-bottom: 32px;
+
+  a {
+    color: #c0cbd2;
+  }
+
+  a.c {
+    color: $ln;
+  }
+
+  a.c:hover {
+    color: $bg;
+  }
+
+  h1 {
+    font-family: 'Comfortaa', $fn-head;
+    font-size: 3em;
+  }
+
+  p#dnomaid a {
+    display: inline-block;
+    background-image: url("/img/wm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 3em;
+    transition: all 0.3s;
+  }
+
+  p#dnomaid a:focus,
+  p#dnomaid a:hover {
+    background-image: url("/img/wm-a.png");
+    background-color: $ln;
+    transform: scale(1.1);
+  }
+
+  p#dnomaid span {
+    display: none;
+  }
+}
+
+
+.youtube {
+  color: #ff0000;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.github {
+  color: #6cc644;
+}
+
+.five-hundred-px {
+  color: #fff;
+}
+
+.keybase {
+  color: #ff6f21;
+}

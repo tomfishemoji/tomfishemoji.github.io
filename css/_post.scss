@@ -89,6 +89,41 @@ aside#share a:hover {
   filter: contrast(1);
 }
 
+
+blockquote {
+  background: $bg-dark;
+  padding: 16px 16px 2px;
+  border-top-left-radius: 4px;
+  width: 90%;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  margin-left: 3%;
+  border-left: 5px solid $bg-light;
+}
+
+blockquote[short] {
+  font-size: 1.5em;
+}
+
+author {
+  display: inline-block;
+  background: $bg-dark;
+  padding: 2px 16px 16px;
+  border-bottom-left-radius: 4px;
+  width: 90%;
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  margin-left: 3%;
+  border-left: 5px solid $bg-light;
+  font-style: italic;
+}
+
+author::before {
+  content: '\2014';
+  padding-right: 8px;
+}
+
+
 .note {
   padding: 8px;
   border-radius: 4px;

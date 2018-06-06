@@ -1,0 +1,51 @@
+@import '_vars';
+
+@media screen and (max-width: $width-total) {
+  header {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  header a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  header p#dnomaid a {
+    width: 50vw;
+  }
+
+  aside#meta {
+    font-size: 0.9em;
+  }
+
+  div#featured-img {
+    img {
+      width: 90% !important;
+    }
+  }
+}
+@media screen and (min-width: $width-total) {
+  main {
+    float: right;
+    width: $width-content;
+  }
+
+  header {
+    float: left;
+    width: $width-header;
+    position: fixed;
+    text-align: right;
+    padding-right: 24px;
+  }
+
+  figure.image img.float {
+    float: left;
+    width: 45%;
+  }
+
+  a.c::after {
+    background-color: $bg;
+    color: $ln;
+  }
+}

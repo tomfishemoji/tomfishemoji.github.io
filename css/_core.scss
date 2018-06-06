@@ -157,117 +157,12 @@ hr {
   background-size: contain;
 }
 
-header {
-  margin-bottom: 32px;
-
-  a {
-    color: #c0cbd2;
-  }
-
-  a.c {
-    color: $ln;
-  }
-
-  a.c:hover {
-    color: $bg;
-  }
-
-  h1 {
-    font-family: 'Comfortaa', $fn-head;
-    font-size: 3em;
-  }
-
-  p#dnomaid a {
-    display: inline-block;
-    background-image: url("/img/wm.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 80%;
-    height: 3em;
-    transition: all 0.3s;
-  }
-
-  p#dnomaid a:focus,
-  p#dnomaid a:hover {
-    background-image: url("/img/wm-a.png");
-    background-color: $ln;
-    transform: scale(1.1);
-  }
-
-  p#dnomaid span {
-    display: none;
-  }
-}
 
 aside h3,
 h4 {
   font-style: italic;
 }
 
-blockquote {
-  background: $bg-dark;
-  padding: 16px 16px 2px;
-  border-top-left-radius: 4px;
-  width: 90%;
-  font-size: 1.1em;
-  margin-bottom: 0;
-  margin-left: 3%;
-  border-left: 5px solid $bg-light;
-}
-
-blockquote[short] {
-  font-size: 1.5em;
-}
-
-author {
-  display: inline-block;
-  background: $bg-dark;
-  padding: 2px 16px 16px;
-  border-bottom-left-radius: 4px;
-  width: 90%;
-  font-size: 1.1em;
-  margin-bottom: 16px;
-  margin-left: 3%;
-  border-left: 5px solid $bg-light;
-  font-style: italic;
-}
-
-author::before {
-  content: '\2014';
-  padding-right: 8px;
-}
-
-figure.image {
-  margin: 16px;
-  background-color: $bg-dark;
-}
-
-figure.image img {
-  border-radius: 4px;
-  z-index: 5;
-}
-
-figure.image img.has-caption {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-figure.image figcaption {
-  position: relative;
-  top: -8px;
-  margin-bottom: 16px;
-  font-style: italic;
-  text-align: center;
-  padding: 8px 8px 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-figure.image figcaption p,
-figure.note p {
-  margin-bottom: 0;
-}
 
 code {
   font-family: $fn-mono;
@@ -295,37 +190,6 @@ input[type='text']:focus {
 
 #smalltitle {
   margin-bottom: 12px;
-}
-
-.youtube {
-  color: #ff0000;
-}
-
-.twitter {
-  color: #1da1f2;
-}
-
-.github {
-  color: #6cc644;
-}
-
-.five-hundred-px {
-  color: #fff;
-}
-
-.keybase {
-  color: #ff6f21;
-}
-
-img.icon {
-  margin-top: 0 !important;
-  margin-right: 8px;
-  margin-left: 2px !important;
-  height: 0.9em !important;
-  width: 0.9em !important;
-  vertical-align: middle;
-  -webkit-mask-image: none !important;
-  user-drag: none;
 }
 
 .question {
@@ -358,81 +222,4 @@ span.invert {
   background-color: $tx-light;
   border-radius: 2px;
   padding: 1px;
-}
-
-.col {
-  transition: all 0.2s;
-  cursor: default;
-  padding: 8px;
-}
-
-.col:hover {
-  transform: scale(1.01);
-  background-color: $bg-dark;
-}
-
-.col img {
-  width: 90%;
-  border-radius: 3px;
-  margin-top: 16px;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-}
-
-.col img.half {
-  margin-top: 0;
-  width: 49%;
-  display: inline-block;
-}
-
-.col p {
-  line-height: 1.2em !important;
-}
-@media screen and (max-width: $width-total) {
-  header {
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  header a {
-    display: inline-block;
-    width: 100%;
-  }
-
-  header p#dnomaid a {
-    width: 50vw;
-  }
-
-  aside#meta {
-    font-size: 0.9em;
-  }
-
-  div#featured-img {
-    img {
-      width: 90% !important;
-    }
-  }
-}
-@media screen and (min-width: $width-total) {
-  main {
-    float: right;
-    width: $width-content;
-  }
-
-  header {
-    float: left;
-    width: $width-header;
-    position: fixed;
-    text-align: right;
-    padding-right: 24px;
-  }
-
-  figure.image img.float {
-    float: left;
-    width: 45%;
-  }
-
-  a.c::after {
-    background-color: $bg;
-    color: $ln;
-  }
 }
