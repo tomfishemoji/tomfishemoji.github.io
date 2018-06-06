@@ -4,15 +4,13 @@
   header {
     font-size: 1.2em;
     text-align: center;
-  }
-
-  header a {
-    display: inline-block;
-    width: 100%;
-  }
-
-  header p#dnomaid a {
-    width: 50vw;
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+    p#dnomaid a {
+     width: 50vw;
+   }
   }
 
   aside#meta {
