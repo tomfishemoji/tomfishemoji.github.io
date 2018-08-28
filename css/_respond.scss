@@ -42,6 +42,11 @@
     width: 45%;
   }
 
+  a.c {
+    border-right: 1px solid $ln;
+    padding-right: 8px;
+  }
+
   a.c::after {
     background-color: $bg;
     color: $ln;

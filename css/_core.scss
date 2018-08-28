@@ -65,7 +65,23 @@ a {
   color: $ln;
   text-decoration: none;
   transition: all 0.2s;
-  border-radius: 6px;
+  border-radius: 4px;
+}
+
+
+
+a:hover {
+  background-color: $ln;
+  color: $bg;
+}
+
+a {
+  border: 1px solid rgba(0,0,0,0);
+}
+
+a:focus {
+  outline: none;
+  border: 1px dotted $ln;
 }
 
 article {
@@ -84,21 +100,6 @@ article {
   a:visited {
     border-bottom: 2px dotted $ln;
   }
-}
-
-a:hover {
-  background-color: $ln;
-  color: $bg;
-  border-radius: 8px;
-}
-
-a {
-  border: 1px solid rgba(0,0,0,0);
-}
-
-a:focus {
-  outline: none;
-  border: 1px dotted $ln;
 }
 
 .fa {
