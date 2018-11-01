@@ -1,0 +1,54 @@
+---
+layout: default
+title: Blog
+keywords: blog, words
+permalink: /blog/
+description: Infrequently updated ramblings (mostly about tech)
+smalltitle: Infrequently updated ramblings <sup>(mostly about tech)</sup>
+---
+
+    <ul>
+      {% for page in site.posts limit:5 %}
+        <li>
+          <h4>
+            {{ page.date | date: '%B %d, %Y' }}
+            {% if page.category %} in {% for c in page.category %}<a href="/archive/c/#{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+            {% if page.author %} by {% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% endif %}
+            {% if page.external %} on <span class="host-only">{{ page.external | remove: 'http://' | remove: 'https://' | remove: 'www.' }}</span>{% endif %}
+          </h4>
+          <h2{% if page.title.size > 50 %} style="font-size: 1.7em;"{% endif %}><a href="{% if page.external %}{{ page.external }}{% else %}{{ page.url }}{% endif %}">{{ page.title }}</a></h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- background image on hover for blog posts
+    <li style="background-image: url('/img/posts/{{ page.title }}/{{ page.image }}');">
+    <style media="screen">
+    li h4 {
+      padding: 2px 2px 0px 2px;
+    }
+    li h2 {
+      padding: 0px 2px 2px 2px;
+    }
+    li h4, li h2 {
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    li {
+      background-position: -999px 0;background-size: cover; background-repeat: no-repeat;
+      transition: all 0.2s;
+    }
+
+    li:hover {
+      background-position: center;
+    }
+
+    li:hover > h2 {
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    li:hover > h4 {
+      background-color: rgba(0,0,0,1);
+    }
+    </style> -->

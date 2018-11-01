@@ -8,6 +8,7 @@ layout: compress
 {% include head.html %}
 
 <main>
+  {% if page.permalink != '/' %}
   <aside>
     <h1 id="title" {% unless page.subtitle or page.smalltitle %}{% endunless %}>{% if page.showas %}{{ page.showas }}{% else %}{{ page.title }}{% endif %}</h1>
 
@@ -27,11 +28,12 @@ layout: compress
       {% endif %}
     {% endif %}
   </aside>
+  {% endif %}
 
   <!-- Not sure why this is here, but it's probably because I broke some CSS somewhere -->
-  {% unless page.permalink == '/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}<article>{% endunless %}
+  {% unless page.permalink == '/blog/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}<article>{% endunless %}
     {{ content }}
-  {% unless page.permalink == '/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}</article>{% endunless %}
+  {% unless page.permalink == '/blog/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}</article>{% endunless %}
 </main>
 
 {% include scripts.html %}

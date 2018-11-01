@@ -60,7 +60,11 @@
   <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
   <!-- Page Title -->
+  {% if page.permalink == '/' %}
+  <title>{{ site.title | escape }}</title>
+  {% else %}
   <title>{% if page.showas %}{{ page.showas }}{% else %}{{ page.title }}{% endif %} - {{ site.title | escape }}</title>
+  {% endif %}
 </head>
 
 <body>
@@ -81,7 +85,7 @@
     </p>
 
     <p>
-      <a href="/projects/" {% if page.url == '/projects/' %}class="c"{% endif %} title="Things I've made"><i class="fa fa-code fa-fw"></i> Projects</a><br>
+      <a href="/blog/" {% if page.url == '/blog/' %}class="c"{% endif %} title="Words"><i class="fa fa-pencil fa-fw"></i> Blog</a><br>
       <a href="/faq/" {% if page.url == '/faq/' %}class="c"{% endif %} title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
       <a href="/faq/tech/" {% if page.url == '/faq/tech/' %}class="c"{% endif %} title="My collection of various technology"><i class="fa fa-microchip fa-fw"></i> Tech</a><br>
       <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fa fa-male fa-fw"></i> About</a>
