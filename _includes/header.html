@@ -6,25 +6,25 @@
   <!-- dnomaid logo is an image here, not some text -->
   <p id="dnomaid"><a href="/" title="Home"><span>dnomaid</span></a></p>
   <p>
-    <a href="{{ site.youtube }}" class="youtube" title="YouTube"><i class="fa fa-youtube-play fa-fw"></i> YouTube</a><br>
-    <a href="{{ site.twitter }}" class="twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a><br>
-    <a href="{{ site.github }}" class="github" title="GitHub"><i class="fa fa-github-alt fa-fw"></i> GitHub</a><br>
-    <a href="{{ site.500px }}" class="five-hundred-px" title="500px"><i class="fa fa-500px fa-fw"></i> 500px</a><br>
-    <a href="{{ site.keybase }}" class="keybase" title="Keybase"><i class="fa fa-key fa-fw"></i> Keybase</a>
+    <a href="{{ site.youtube }}" class="youtube" title="YouTube"><i class="fab fa-youtube fa-fw"></i> YouTube</a><br>
+    <a href="{{ site.twitter }}" class="twitter" title="Twitter"><i class="fab fa-twitter fa-fw"></i> Twitter</a><br>
+    <a href="{{ site.github }}" class="github" title="GitHub"><i class="fab fa-github-alt fa-fw"></i> GitHub</a><br>
+    <a href="{{ site.500px }}" class="five-hundred-px" title="500px"><i class="fab fa-500px fa-fw"></i> 500px</a><br>
+    <a href="{{ site.keybase }}" class="keybase" title="Keybase"><i class="fab fa-keybase fa-fw"></i> Keybase</a>
   </p>
 
   <p>
-    <a href="/blog/" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %} title="Words"><i class="fa fa-pencil fa-fw"></i> Blog</a><br>
-    <a href="/faq/" {% if page.url == '/faq/' %}class="c"{% endif %} title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
-    <a href="/faq/tech/" {% if page.url == '/faq/tech/' %}class="c"{% endif %} title="My collection of various technology"><i class="fa fa-microchip fa-fw"></i> Tech</a><br>
-    <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fa fa-male fa-fw"></i> About</a><br>
+    <a href="/blog/" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %} title="Words"><i class="fas fa-pencil-alt fa-fw"></i> Blog</a><br>
+    <a href="/faq/" {% if page.url == '/faq/' %}class="c"{% endif %} title="Frequently Asked Questions"><i class="fas fa-info fa-fw"></i> FaQ</a><br>
+    <a href="/faq/tech/" {% if page.url == '/faq/tech/' %}class="c"{% endif %} title="My collection of various technology"><i class="fas fa-microchip fa-fw"></i> Tech</a><br>
+    <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fas fa-male fa-fw"></i> About</a><br>
   </p>
 
   <!-- Shows up on all blog-related pages -->
   {% if page.url == '/blog/' or page.url == '/archive/' or page.url == '/archive/c/'%}
   <p>
-    <a href="/feed.xml" rel="alternate" type="application/rss+xml"><i class="fa fa-rss fa-fw"></i> RSS</a><br>
-    <a href="/archive/" {% if page.url contains '/archive/' %}class="c"{% endif %}><i class="fa fa-folder fa-fw"></i> Archive</a>
+    <a href="/feed.xml" rel="alternate" type="application/rss+xml"><i class="fas fa-rss fa-fw"></i> RSS</a><br>
+    <a href="/archive/" {% if page.url contains '/archive/' %}class="c"{% endif %}><i class="fas fa-folder fa-fw"></i> Archive</a>
   </p>
   {% endif %}
 

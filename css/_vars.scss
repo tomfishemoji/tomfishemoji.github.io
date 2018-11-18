@@ -32,6 +32,6 @@ $ln-v: #00bfff; //deepskyblue
 
 
 // fonts
-$fn-cont: 'IBM Plex Sans', 'Open Sans', 'Lucida Grande', 'Tahoma', 'Helvetica Neue', 'Helvetica', sans-serif;
-$fn-head: 'Nunito', $fn-cont;
-$fn-mono: 'IBM Plex Mono', 'Ubuntu Mono', 'Lucida Sans Typewriter', 'Courier', 'Courier New', monospace;
+$fn-cont: 'Ubuntu', 'IBM Plex Sans', 'Open Sans', 'Lucida Grande', 'Tahoma', 'Helvetica Neue', 'Helvetica', sans-serif;
+$fn-head: $fn-cont;
+$fn-mono: 'Ubuntu Mono', 'IBM Plex Mono', 'Lucida Sans Typewriter', 'Courier', 'Courier New', monospace;

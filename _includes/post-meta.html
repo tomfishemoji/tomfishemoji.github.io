@@ -4,8 +4,10 @@
     to make this thing appear
   -->
   {% if page.medium %}
-    {% assign mlink = {{ page.medium }} %}
-    {% include note.html class="medium" content="This post was originally published on Medium.<br>View the original post, along with its claps and comments, " link=mlink linktext="here." %}
+    <!-- Due to a problem with the way includes and variables work with the link stuff I wanted to do, the Medium message doesn't use the normal note.html include element -->
+    <figure class="note medium">
+      <p>This post was originally published on Medium.<br>View the original post, along with its claps and comments, <a href="{{ page.medium }}">here</a></p>
+    </figure>
   {% endif %}
 
   <!--

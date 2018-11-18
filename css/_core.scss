@@ -30,6 +30,7 @@ h2,
 h3,
 h4 {
   font-family: $fn-head;
+  font-weight: 300;
 }
 
 h1 {
@@ -51,7 +52,7 @@ h3 {
 }
 
 h4 {
-  font-weight: normal;
+  // font-weight: normal;
   font-size: 1.5em;
   opacity: 0.7;
 }
@@ -102,7 +103,7 @@ article {
   }
 }
 
-.fa {
+.fab, .fas, .fa-fw {
   display: inline-block;
   // font-size: 1.5em;
 }
@@ -112,11 +113,11 @@ article {
   text-align: center;
 }
 
-a:hover .fa {
+a:hover .fas, a:hover .fab, a:hover .fa-fw  {
   transform: scale(1.15);
 }
 
-a:active .fa {
+a:active .fa, a:active .fas, a:active .fab, a:active .fa-fw {
   transform: scale(0.95);
 }
 
