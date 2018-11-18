@@ -3,39 +3,47 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en-GB">
-{% include head.html %}
-<main>
 
-  <aside id="meta">
-    {% include post-meta.html %}
-  </aside>
+<head>
+  {% include head.html %}
+</head>
 
-  <article>
-    {% if page.external %}
-      <h2>This post is on a different website!</h2>
-      <p><a href="{{ page.external }}">Visit <span class="host-only">{{ page.external | remove: 'http://' | remove: 'https://' | remove: 'www.' }}</span></a></p>
+<body>
+  <header>
+    {% include header.html %}
+  </header>
+
+  <main>
+    <aside id="meta">
+      {% include post-meta.html %}
+    </aside>
+
+    <article>
+      {% if page.external %}
+        <h2>This post is on a different website!</h2>
+        <p><a href="{{ page.external }}">Visit <span class="host-only">{{ page.external | remove: 'http://' | remove: 'https://' | remove: 'www.' }}</span></a></p>
+      {% endif %}
+
+      {{ content }}
+    </article>
+
+    {% if page.notes %}
+      <aside id="notes">
+        {% for note in page.notes %}
+          {% assign notetxt = note %}
+          {% include note.html class="info" align="left" content=notetxt %}
+        {% endfor %}
+      </aside>
     {% endif %}
 
-    {{ content }}
-  </article>
-
-  {% if page.notes %}
-    <aside id="notes">
-      {% for note in page.notes %}
-        {% assign notetxt = note %}
-        {% include note.html class="info" align="left" content=notetxt %}
-      {% endfor %}
+    <aside id="share">
+      <h4>Share this post:&nbsp;</h4>
+      <a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank"><i class="fa fa-reddit"></i></a>
+      <a href="mailto:?subject={{ site.url }}{{ page.url }}"><i class="fa fa-mail"></i></a>
     </aside>
-  {% endif %}
 
-  <aside id="share">
-    <h4>Share this post:&nbsp;</h4>
-    <a style="color: #55acee" href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}%20via%20%40mrdnomaid" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a style="color: #ff4500" href="//www.reddit.com/submit?url={{ site.url }}{{ page.url }}" target="_blank"><i class="fa fa-reddit"></i></a>
-    <a href="mailto:?subject={{ site.url }}{{ page.url }}"><i class="fa fa-mail"></i></a>
-  </aside>
-
-</main>
-{% include scripts.html %}
+  </main>
+  {% include scripts.html %}
 </body>
 </html>

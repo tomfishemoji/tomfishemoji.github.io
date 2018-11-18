@@ -1,0 +1,42 @@
+<!-- Background image if it's the 404 page
+{% if page.title == 'Error 404'%}
+  <img src="/img/bean.gif" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%) scale(8); z-index: -1; opacity: 0.3;" draggable="false">
+{% endif %} -->
+
+  <!-- dnomaid logo is an image here, not some text -->
+  <p id="dnomaid"><a href="/" title="Home"><span>dnomaid</span></a></p>
+  <p>
+    <a href="{{ site.youtube }}" class="youtube" title="YouTube"><i class="fa fa-youtube-play fa-fw"></i> YouTube</a><br>
+    <a href="{{ site.twitter }}" class="twitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a><br>
+    <a href="{{ site.github }}" class="github" title="GitHub"><i class="fa fa-github-alt fa-fw"></i> GitHub</a><br>
+    <a href="{{ site.500px }}" class="five-hundred-px" title="500px"><i class="fa fa-500px fa-fw"></i> 500px</a><br>
+    <a href="{{ site.keybase }}" class="keybase" title="Keybase"><i class="fa fa-key fa-fw"></i> Keybase</a>
+  </p>
+
+  <p>
+    <a href="/blog/" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %} title="Words"><i class="fa fa-pencil fa-fw"></i> Blog</a><br>
+    <a href="/faq/" {% if page.url == '/faq/' %}class="c"{% endif %} title="Frequently Asked Questions"><i class="fa fa-info fa-fw"></i> FaQ</a><br>
+    <a href="/faq/tech/" {% if page.url == '/faq/tech/' %}class="c"{% endif %} title="My collection of various technology"><i class="fa fa-microchip fa-fw"></i> Tech</a><br>
+    <a href="/about/" {% if page.url == '/about/' %}class="c"{% endif %} title="About"><i class="fa fa-male fa-fw"></i> About</a><br>
+  </p>
+
+  <!-- Shows up on all blog-related pages -->
+  {% if page.url == '/blog/' or page.url == '/archive/' or page.url == '/archive/c/'%}
+  <p>
+    <a href="/feed.xml" rel="alternate" type="application/rss+xml"><i class="fa fa-rss fa-fw"></i> RSS</a><br>
+    <a href="/archive/" {% if page.url contains '/archive/' %}class="c"{% endif %}><i class="fa fa-folder fa-fw"></i> Archive</a>
+  </p>
+  {% endif %}
+
+  <!-- Only appears when viewing a post, obviously. -->
+  {% if page.layout == 'post' %}
+  <p>
+    {% if page.next.url %}
+      <a href="{{page.next.url}}" title="{{page.next.title}}">Next Post &raquo;</a><br>
+    {% endif %}
+    {% if page.next.url and page.previous.url %}<br>{% endif %}
+    {% if page.previous.url %}
+      <a href="{{page.previous.url}}" title="{{page.previous.title}}">&laquo; Previous Post</a>
+    {% endif %}
+  </p>
+  {% endif %}

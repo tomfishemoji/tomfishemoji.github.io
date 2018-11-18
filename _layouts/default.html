@@ -4,39 +4,44 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en-GB">
 
-<!-- Head stuff -->
-{% include head.html %}
+<head>
+  {% include head.html %}
+</head>
 
-<main>
+<body>
+  <header>
+    {% include header.html %}
+  </header>
+
+  <main>
   {% if page.permalink != '/' %}
-  <aside>
-    <h1 id="title" {% unless page.subtitle or page.smalltitle %}{% endunless %}>{% if page.showas %}{{ page.showas }}{% else %}{{ page.title }}{% endif %}</h1>
+    <aside>
+      <h1 id="title" {% unless page.subtitle or page.smalltitle %}{% endunless %}>{% if page.showas %}{{ page.showas }}{% else %}{{ page.title }}{% endif %}</h1>
 
-    {% if page.subtitle %}
-      {% if page.subtitle == 'usedesc' %}
-        <h2 id="subtitle" {% unless page.smalltitle %}{% endunless %}>{{ page.description }}</h2>
-      {% else %}
-        <h2 id="subtitle" {% unless page.smalltitle %}{% endunless %}>{{ page.subtitle }}</h2>
+      {% if page.subtitle %}
+        {% if page.subtitle == 'usedesc' %}
+          <h2 id="subtitle" {% unless page.smalltitle %}{% endunless %}>{{ page.description }}</h2>
+        {% else %}
+          <h2 id="subtitle" {% unless page.smalltitle %}{% endunless %}>{{ page.subtitle }}</h2>
+        {% endif %}
       {% endif %}
-    {% endif %}
 
       {% if page.smalltitle %}
-      {% if page.smalltitle == 'usedesc' %}
-        <h4 id="smalltitle">{{ page.description }}</h4>
-      {% else %}
-        <h4 id="smalltitle">{{ page.smalltitle }}</h4>
+        {% if page.smalltitle == 'usedesc' %}
+          <h4 id="smalltitle">{{ page.description }}</h4>
+        {% else %}
+          <h4 id="smalltitle">{{ page.smalltitle }}</h4>
+        {% endif %}
       {% endif %}
-    {% endif %}
-  </aside>
+    </aside>
   {% endif %}
 
   <!-- Not sure why this is here, but it's probably because I broke some CSS somewhere -->
   {% unless page.permalink == '/blog/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}<article>{% endunless %}
     {{ content }}
   {% unless page.permalink == '/blog/' or page.permalink == '/archive/' or page.permalink == '/archive/c/' %}</article>{% endunless %}
-</main>
+  </main>
 
-{% include scripts.html %}
-
+  {% include scripts.html %}
 </body>
 </html>
