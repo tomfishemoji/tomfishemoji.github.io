@@ -10,6 +10,14 @@
     </figure>
   {% endif %}
 
+
+<!--
+  This shows up if you set "outdated" to anything in the front matter. Doesn't need to be "true"
+-->
+{% if page.outdated %}
+  {% include note.html class="warn" content="This post has been manually flagged as outdated.<br>The content is no longer accurate." %}
+{% endif %}
+
   <!--
   I think you can do this in the FM:
   info:
@@ -18,16 +26,11 @@
   but I haven't tested that.
   -->
   {% if page.info %}
-    {% assign pinfo = {{ page.info }} %}
-    {% include note.html class="info" content=info %}
+    <figure class="note info">
+      <p>{{ page.info }}</p>
+    </figure>
   {% endif %}
 
-  <!--
-    This shows up if you set "outdated" to anything in the front matter. Doesn't need to be "true"
-  -->
-  {% if page.outdated %}
-    {% include note.html class="warn" content="This post has been manually flagged as outdated;<br>The content is no longer accurate." %}
-  {% endif %}
 
 
   {% capture unix %}{{ 'now' | date: '%s' }}{% endcapture %}
