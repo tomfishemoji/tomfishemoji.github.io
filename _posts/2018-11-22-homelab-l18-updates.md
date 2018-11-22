@@ -6,6 +6,8 @@ image: pve-blur.png
 category:
   - tech
   - homelab
+  info:
+    - "Check out the 'Homelab' category (linked below) for any updates!
 ---
 
 Morning all! Haven't posted here in a while, so I thought I'd give some updates regarding an older post - [the one about my server/homelab](/2018/proliant/). A lot (ish) has changed since January, so let's dive straight in.
