@@ -1,7 +1,9 @@
-default-src 'self' {{ page.defaultcsp }};
-script-src 'self' https://apis.google.com https://platform.twitter.com https://gist.github.com https://ajax.googleapis.com https://cdn.syndication.twimg.com {{ page.scriptcsp }};
-style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com https://platform.twitter.com {{ page.stylecsp }};
-font-src 'self' https://use.fontawesome.com https://fonts.gstatic.com {{ page.fontcsp }};
-connect-src 'self' https://api.github.com {{ page.connectcsp }};
-img-src 'self' data: https://syndication.twimg.com https://pbs.twimg.com https://platform.twitter.com https://abs.twimg.com {{ page.imgcsp }};
-frame-src 'self' https://www.youtube-nocookie.com https://platform.twitter.com https://syndication.twitter.com {{ page.framecsp }};
+{% if page.csp %}
+  default-src 'self' {{ page.defaultcsp }};
+  script-src 'self' https://apis.google.com https://platform.twitter.com https://gist.github.com https://ajax.googleapis.com https://cdn.syndication.twimg.com {{ page.scriptcsp }};
+  style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com https://platform.twitter.com {{ page.stylecsp }};
+  font-src 'self' https://use.fontawesome.com https://fonts.gstatic.com {{ page.fontcsp }};
+  connect-src 'self' https://api.github.com {{ page.connectcsp }};
+  img-src 'self' data: https://syndication.twimg.com https://pbs.twimg.com https://platform.twitter.com https://abs.twimg.com {{ page.imgcsp }};
+  frame-src 'self' https://www.youtube-nocookie.com https://platform.twitter.com https://syndication.twitter.com {{ page.framecsp }};
+{% endif %}
