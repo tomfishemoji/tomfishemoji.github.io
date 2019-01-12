@@ -1,27 +1,5 @@
 ---
-layout: compress
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    {% if page.dest %}<meta http-equiv="refresh" content="0; url={{ page.dest }}">{% endif %}
-    <link href="/css/combined.css" rel="stylesheet">
-    <title>{% if page.title %}{{ page.title }}{% else %}Redirecting{% endif %}</title>
-  </head>
-  <body>
 
-    {% if page.dest %}
-      <h1>Redirecting...</h1>
-      <p>If nothing happens after a few seconds, you should click <a href="{{ page.dest }}">here</a>.</p>
-    {% else %}
-      <h1>Oops!</h1>
-      <p>This page was set up as a redirect, however no destination was set.</p>
-      <p>You should <a href="#" onclick="window.history.back();">go back</a> or <a href="/">go home</a>.</p>
-    {% endif %}
-
-    {{ content }}
-
-    {% include scripts.html %}
-  </body>
-</html>
+The page you requested at <b>{{ page.permalink }}</b> has moved

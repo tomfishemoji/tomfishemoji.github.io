@@ -1,0 +1,21 @@
+<img src="/img/babby.png" alt="babby.png" id="babby" onclick="window.location = '/';" style="cursor: pointer;">
+
+{% if page.permalink == '/' %}
+  <h1>Hello! <img src="/img/twemoji-wave.png" alt="👋" draggable="false"></h1>
+  <h2>I'm Tom.</h2>
+{% else %}
+  <h1>Thomas</h1>
+  <h2>Robinson</h2>
+{% endif %}
+
+<p>
+  <a href="https://twitter.com/mrdnomaid" id="twitter"><i class="fab fa-fw fa-twitter"></i> Twitter</a><br>
+  <a href="https://github.com/mrdnomaid" id="github"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
+  <a href="https://photos.trobinson.me" id="flickr"><i class="fab fa-fw fa-flickr"></i> Flickr</a><br>
+  <a href="https://youtube.com/dnomaid" id="youtube"><i class="fab fa-fw fa-youtube"></i> YouTube</a><br>
+  <a href="https://keybase.io/dnomaid" id="keybase"><i class="fab fa-fw fa-keybase"></i> Keybase</a><br><br>
+
+  <a href="/about/" id="about" {% if page.url == '/about/' or page.url == '/faq/' or page.url == '/tech/' %}class="c"{% endif %}><i class="fas fa-fw fa-male"></i> About</a><br>
+  <a href="/blog/" id="blog" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %}><i class="fas fa-fw fa-pencil-alt"></i> Blog</a><br>
+  <a href="javascript:contactAlert();" id="contact"><i class="fas fa-fw fa-envelope"></i> Contact</a>
+</p>

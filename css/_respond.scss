@@ -1,54 +1,33 @@
-@import '_vars';
-
-@media screen and (max-width: $width-total) {
-  header {
-    font-size: 1.2em;
+@media screen and (max-width: 70em) { // This was originally calc(50em + 512px), but Chrome didn't like it
+  aside#sidebar {
+    position: inherit;
+    width: 100%;
     text-align: center;
+
+    img#babby {
+      width: 156px;
+      margin-bottom: 4px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
     a {
-      display: inline-block;
-      width: 100%;
+      display: block;
+      width: calc(100% - 4px);
+      padding: 4px 0;
+      margin: -0.6em 0;
+      border-right-width: 2px !important;
     }
-    p#dnomaid a {
-     width: 50vw;
-   }
-  }
 
-  aside#meta {
-    font-size: 0.9em;
-  }
-
-  div#featured-img {
-    img {
-      width: 90% !important;
+    a:hover, a.c {
+      width: calc(100% - 16px);
+      border-right-width: 8px !important;
     }
-  }
-}
-@media screen and (min-width: $width-total) {
-  main {
-    float: right;
-    width: $width-content;
-  }
-
-  header {
-    float: left;
-    width: $width-header;
-    position: fixed;
-    text-align: right;
-    padding-right: 24px;
-  }
-
-  figure.image img.float {
-    float: left;
-    width: 45%;
-  }
-
-  a.c {
-    border-right: 1px solid $ln;
-    padding-right: 8px;
-  }
-
-  a.c::after {
-    background-color: $bg;
-    color: $ln;
   }
 }

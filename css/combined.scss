@@ -1,11 +1,7 @@
 ---
-hidden: true
 ---
 
-@import '_vars';
-@import 'core';
-@import 'header';
-@import 'images';
-@import 'post';
-@import 'col';
-@import 'respond';
+@import '_core.scss';
+@import '_sidebar.scss';
+@import '_main.scss';
+@import '_respond.scss';

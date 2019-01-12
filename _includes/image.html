@@ -1,17 +1,6 @@
-<!-- This file is just confusing, don't touch anything or it'll break. -->
-<figure class="image">
-  <img src="
+<!-- I'm afraid touching this file will break things, so please don't -->
 
-  {% if page.layout == 'post' %}
-    {% if include.path contains '/' %}
-      {{ include.path | uri_escape }}
-    {% else %}
-      /img/posts/{{ page.title | replace: ' ', '%20' }}/{{ include.path | uri_escape }}
-    {% endif %}
-  {% else %}
-    {{ include.path | uri_escape }}
-  {% endif %}
-
-" alt="{% if include.caption %}{{ include.caption | escape }}{% else %}{{ include.path }}{% endif %}" {% if include.width or include.height %}style="{% if include.width %}width: {{ include.width }};{% endif %}{% if include.height %}height: {{ include.height }};{% endif %}"{% endif %} class="{% if include.float %}float{% endif %} {% if include.caption %}has-caption{% endif %}">
-  {% if include.caption or include.credit %}<figcaption>{% if include.caption %}{{ include.caption }}{% endif %}{% if include.credit %}<br>Source: {{ include.credit }}{% endif %}</figcaption>{% endif %}
-</figure>
+<img src=
+"{% if page.layout == 'post' %}{% if include.path contains '/' %}{{ include.path | uri_escape }}{% else %}/img/posts/{{ page.title | replace: ' ', '%20' }}/{{ include.path | uri_escape }}{% endif %}{% else %}{{ include.path | uri_escape }}{% endif %}"
+ alt="{% if include.caption %}{{ include.caption | escape }}{% else %}{{ include.path }}{% endif %}" {% if include.width or include.height %}style="{% if include.width %}width: {{ include.width }};{% endif %}{% if include.height %}height: {{ include.height }};{% endif %}"{% endif %} class="{% if include.float %}float{% endif %} {% if include.caption %}has-caption{% endif %}">
+{% if include.caption or include.credit %}<p class="caption">{% if include.caption %}{{ include.caption }}{% endif %}{% if include.credit %}<br>Source: {{ include.credit }}{% endif %}</p>{% endif %}

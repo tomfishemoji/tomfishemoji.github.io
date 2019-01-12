@@ -3,26 +3,23 @@ layout: default
 title: Post Archive
 permalink: /archive/
 description: All the posts I've ever posted
-smalltitle: usedesc
 scripts:
   - /js/pages/archive.js
 stylecsp: "'unsafe-inline'"
+head:
+  - <link href="/css/pages/archive.css" rel="stylesheet">
 ---
 
 {% include search.html %}
 
-<ul>
-  {% for page in site.posts %}
-    {% unless page.hidden %}
-    <li>
-      <h4>
-        {{ page.date | date: '%B %d, %Y' }}
-        {% if page.category %} in {% for c in page.category %}<a href="/archive/c/#{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
-        {% if page.author %} by {% if page.authorlnk %}<a href="{{ page.authorlnk }}" target="_blank" rel="noopener noreferrer">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% endif %}
-        {% if page.external %} on <span class="host-only">{{ page.external | remove: 'http://' | remove: 'https://' | remove: 'www.' }}</span>{% endif %}
-      </h4>
-      <h2{% if page.title.size > 50 %} style="font-size: 1.7em;"{% endif %}><a href="{% if page.external %}{{ page.external }}{% else %}{{ page.url }}{% endif %}">{{ page.title }}</a></h2>
-    </li>
-    {% endunless %}
-  {% endfor %}
-</ul>
+{% for page in site.posts %}
+  {% unless page.hidden %}
+  <div class="post">
+          <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+          <h4>
+            {{ page.date | date: '%B %d, %Y' }}
+            {% if page.category %} &bull; {% for c in page.category %}<a href="/archive/c/#{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+          </h4>
+  </div>
+  {% endunless %}
+{% endfor %}
