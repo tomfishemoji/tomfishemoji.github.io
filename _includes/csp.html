@@ -1,4 +1,4 @@
-{% if page.csp %}
+{% if page.csp != false %}
   default-src 'self' {{ page.defaultcsp }};
   script-src 'self' https://apis.google.com https://platform.twitter.com https://gist.github.com https://ajax.googleapis.com https://cdn.syndication.twimg.com {{ page.scriptcsp }};
   style-src 'self' https://fonts.googleapis.com https://use.fontawesome.com https://platform.twitter.com {{ page.stylecsp }};
