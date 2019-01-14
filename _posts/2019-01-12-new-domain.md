@@ -22,3 +22,6 @@ It's not going away, far from it. All the subdomains and that (dwn, pi, whatever
 
 ### Does this mean you're retiring [the fish](/img/fish_large.png)?
 No. I'm just using that baby photo in more places since I think it fits more.
+
+### Did you copy Leo?
+[No.](https://twitter.com/theLMGN/status/1084434583133790208)
