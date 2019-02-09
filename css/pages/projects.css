@@ -89,3 +89,11 @@ ul#js-list li a.w:hover:after, ul#js-list li a.g:hover:after, ul#js-list li a.ge
   font-size: 1em;
   opacity: 1;
 }
+
+
+
+@media screen and (max-width: 900px) {
+  ul#js-list li span span.inner {
+    display: inline;
+  }
+}
