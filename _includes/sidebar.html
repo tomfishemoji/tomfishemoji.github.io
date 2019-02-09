@@ -17,6 +17,7 @@
 
   <a href="/about/" id="about" {% if page.url == '/about/' or page.url == '/faq/' or page.url == '/tech/' %}class="c"{% endif %}><i class="fas fa-fw fa-male"></i> About</a><br>
   <a href="/blog/" id="blog" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %}><i class="fas fa-fw fa-pencil-alt"></i> Blog</a><br>
+  <a href="/projects/" id="projects" {% if page.url == '/projects/' %}class="c"{% endif %}><i class="fas fa-fw fa-code"></i> Projects</a><br>
   <a href="javascript:contactAlert();" id="contact"><i class="fas fa-fw fa-envelope"></i> Contact</a>
 
   {% if page.previous or page.next and page.layout == 'post' %}

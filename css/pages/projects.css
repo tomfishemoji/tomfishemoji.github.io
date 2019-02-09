@@ -1,0 +1,66 @@
+ul#js-list {
+  margin: 0 0 16px 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul#js-list li {
+  margin: 8px 0;
+  padding: 4px 0 4px 8px;
+  border-left: 1px solid #99a6aa;
+}
+
+ul#js-list li b {
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+ul#js-list li a {
+  margin-right: 8px;
+}
+
+ul#js-list li a:hover {
+  opacity: 0.8;
+}
+
+ul#js-list li a:hover .fa-fw {
+  transform: scale(1.2);
+}
+
+ul#js-list li a .fa-fw {
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+ul#js-list li a.g {
+  color: #6cc644;
+}
+
+ul#js-list li a.ge {
+  color: #f54d27;
+}
+
+ul#js-list li a.g:after, ul#js-list li a.ge:after, ul#js-list li a.w:after {
+  font-size: 0;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+ul#js-list li a.g:after {
+  content: ' GitHub';
+}
+
+ul#js-list li a.ge:after {
+  content: ' Git Repo';
+}
+
+ul#js-list li a.w:after {
+  content: ' Website';
+}
+
+ul#js-list li a.w:hover:after, ul#js-list li a.g:hover:after, ul#js-list li a.ge:hover:after {
+  font-size: 1em;
+  opacity: 1;
+}
