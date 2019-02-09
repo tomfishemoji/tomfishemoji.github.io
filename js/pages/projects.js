@@ -16,6 +16,8 @@ function load(shuffled) {
     let thisURL = project['url'];
     let thisGitHub = project['gh'];
     let thisGit = project['git'];
+    let thisDate = project['date'];
+    let thisOld = project['old'];
 
     let link = '';
     if (thisURL) {
@@ -29,9 +31,19 @@ function load(shuffled) {
       git = `<a href="${thisGit}" target="_blank" rel="noopener" class="ge"><i class="fab fa-fw fa-git"></i></a>`;
     }
 
+    let date = '';
+    if(thisDate) {
+      date = ` <span>${thisDate}</span>`;
+    }
+
+    let old = '';
+    if(thisOld) {
+      old = ` <span class="archive"><i class="fas fa-fw fa-archive"></i> <span class="inner">This project is old, the code might be awful or it is no longer being maintained</span></span>`;
+    }
+
     thisOut = `
           <li>
-            <b>${thisName}</b>
+            <b>${thisName} ${old} ${date}</b>
             ${thisDesc}<br>
             ${link} ${git}
           </li>

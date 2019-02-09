@@ -30,7 +30,8 @@ const projects = [{
     "name": "Pinghost Redesign",
     "desc": "A redesigned website for a now-defunct hosting company",
     "url": "https://ping.dnomaid.co.uk",
-    "gh": "mrdnomaid/userstyles"
+    "gh": "mrdnomaid/userstyles",
+    "old": true
   },
 
   {
@@ -65,14 +66,16 @@ const projects = [{
     "name": "Hash",
     "desc": "An attempt at making a Discord bot. It didn't work too well.",
     "url": null,
-    "gh": "mrdnomaid/hash2"
+    "gh": "mrdnomaid/hash2",
+    "old": true
   },
 
   {
     "name": "WANCheck",
     "desc": "Is meant to tell you when your internet goes down, but doesn't work that well either",
     "url": "/wancheck",
-    "gh": "mrdnomaid/wancheck"
+    "gh": "mrdnomaid/wancheck",
+    "old": true
   },
 
   {
@@ -170,28 +173,32 @@ const projects = [{
     "name": "NerdCubed Soundboard",
     "desc": "Featuring reddit's favourite clips",
     "url": "/n3soundboard",
-    "gh": "mrdnomaid/n3soundboard"
+    "gh": "mrdnomaid/n3soundboard",
+    "old": true
   },
 
   {
     "name": "JavaScript Test",
     "desc": "See if you have JavaScript enabled in your browser",
     "url": "/jstest",
-    "gh": "mrdnomaid/jstest"
+    "gh": "mrdnomaid/jstest",
+    "old": true
   },
 
   {
     "name": "Windows",
     "desc": "A website that looks like Windows 10",
     "url": "/windows",
-    "gh": "mrdnomaid/windows"
+    "gh": "mrdnomaid/windows",
+    "old": true
   },
 
   {
     "name": "OS X",
     "desc": "A website that looks like OS X",
     "url": "/mac",
-    "gh": "mrdnomaid/macos"
+    "gh": "mrdnomaid/mac",
+    "old": true
   },
 
   // Not on GH/mrdnomaid
