@@ -215,5 +215,12 @@ const projects = [{
     "desc": "The website for Melonz",
     "url": "https://melonz.app/",
     "git": "https://gitlab.com/Melonz/melonz.gitlab.io"
+  },
+
+  {
+    "name": "MagicCap Website",
+    "desc": "The website for MagicCap",
+    "url": "https://magiccap.me/",
+    "gh": "magiccap/magiccap.me"
   }
 ]
