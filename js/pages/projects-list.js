@@ -125,10 +125,10 @@ const projects = [{
   },
 
   {
-    "name": "FontRandom",
+    "name": "Font Randomizer",
     "desc": "Make some text look stupid.",
-    "url": "/fontrandom",
-    "gh": "mrdnomaid/fontrandom"
+    "url": "/fontrandomizer",
+    "gh": "mrdnomaid/fontrandomizer"
   },
 
   {
