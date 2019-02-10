@@ -11,10 +11,21 @@ ul#js-list li {
   border-left: 1px solid #99a6aa;
 }
 
+ul#js-list li img {
+  float: right;
+  height: 4em;
+  width: auto;
+  border-radius: 4px;
+}
+
+ul#js-list li img:hover {
+  transform: scale(5);
+  border-radius: 2px;
+}
+
 /* Project names */
 ul#js-list li b {
-  display: inline-block;
-  width: 100%;
+  display: block;
   font-weight: 700;
   font-size: 1.1em;
 }
@@ -90,6 +101,19 @@ ul#js-list li a.w:hover:after, ul#js-list li a.g:hover:after, ul#js-list li a.ge
   opacity: 1;
 }
 
+
+@media screen and (max-width: 1200px) {
+    ul#js-list li img:hover {
+      position: fixed;
+      top: 10vh;
+      left: 0;
+      width: 100%;
+      height: auto;
+      transform: scale(1);
+      border-radius: 2px;
+      z-index: 999;
+    }
+}
 
 
 @media screen and (max-width: 900px) {
