@@ -11,7 +11,7 @@ for (let i = 0; i < spans.length; i++) {
 const dnomaidCOdotUKb64 = 'ZG5vbWFpZC5jby51aw==';
 function contactAlert() {
   alert(
-    `I don't bite!\n\nYou can email me using the address tom@${atob(dnomaidCOdotUKb64)}\nFor added security, make sure to grab my PGP key from my Keybase profile!`
+    `I don't bite!\n\nYou can email me using tom@${atob(dnomaidCOdotUKb64)}\nFor added security, make sure to grab my PGP key from my Keybase profile!`
   );
 }
 if(window.location.hash == '#contact') { contactAlert(); }
