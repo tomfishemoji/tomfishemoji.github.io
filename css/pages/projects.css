@@ -175,16 +175,27 @@ ul#js-list li span.lang-bash {
 
 
 @media screen and (max-width: 1200px) {
-    /* ul#js-list li img:hover {
-      position: fixed;
-      top: 10vh;
-      left: 0;
+    ul#js-list li {
+      margin: 64px 0;
+      border-left: none;
+    }
+
+    ul#js-list li img {
+      border-top: 2px solid #99a6aa;
+      float: none;
       width: 100%;
       height: auto;
-      transform: scale(1);
-      border-radius: 2px;
-      z-index: 999;
-    } */
+      margin-bottom: -64px;
+      mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    }
+
+    ul#js-list li a:after {
+      /* yeah this isn't great */
+      margin-top: 16px !important;
+      font-size: 1em !important;
+      opacity: 1 !important;
+      font-size: 0.9em !important;
+    }
 }
 
 
