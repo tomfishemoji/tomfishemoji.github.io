@@ -3,7 +3,9 @@ const projects = [{
     "desc": "Jekyll site that you are looking at right now",
     "url": "https://tomr.me",
     "gh": "mrdnomaid/mrdnomaid.github.io",
-    "img": "trobinson.me"
+    "img": "trobinson.me",
+    "type": "wsite",
+    "lang": ["html", "scss", "javascript", "jekyll"]
   },
 
   {
@@ -11,7 +13,8 @@ const projects = [{
     "desc": "The obviously-not-fictitious website for HM Government's Department for Brexit and Trade Negotiations",
     "url": "/brexit",
     "gh": "mrdnomaid/brexit",
-    "img": "brexit"
+    "img": "brexit",
+    "type": "fun"
   },
 
   {
@@ -19,7 +22,9 @@ const projects = [{
     "desc": "Bodged together scripts for websites to add/fix functionality",
     "url": false,
     "gh": "mrdnomaid/userscripts",
-    "img": "js"
+    "img": "js",
+    "type": "misc",
+    "lang": ["javascript"]
   },
 
   {
@@ -27,7 +32,9 @@ const projects = [{
     "desc": "Hastilly made CSS to tweak elements on websites",
     "url": false,
     "gh": "mrdnomaid/userstyles",
-    "img": "css"
+    "img": "css",
+    "type": "misc",
+    "lang": ["css"]
   },
 
   {
@@ -36,14 +43,18 @@ const projects = [{
     "url": "https://ping.dnomaid.co.uk",
     "gh": "mrdnomaid/userstyles",
     "old": true,
-    "img": "ping"
+    "img": "ping",
+    "type": "wsite",
+    "lang": ["html", "css", "javascript", "jekyll"]
   },
 
   {
     "name": "Tools",
     "desc": "Small, helpful utilities",
     "url": "/tools",
-    "gh": "mrdnomaid/tools"
+    "gh": "mrdnomaid/tools",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -51,7 +62,9 @@ const projects = [{
     "desc": "Unsubscribe from inactive subreddits",
     "url": "/redditunsubinactive",
     "gh": "mrdnomaid/redditunsubinactive",
-    "img": "unsub"
+    "img": "unsub",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -59,7 +72,9 @@ const projects = [{
     "desc": "Useful scripts for automating things I do often enough that they require a script to automate them ",
     "url": false,
     "gh": "mrdnomaid/scripts",
-    "img": "scripts"
+    "img": "scripts",
+    "type": "software",
+    "lang": ["python", "bash"]
   },
 
   {
@@ -67,7 +82,9 @@ const projects = [{
     "desc": "Google Assistant application that will tell you the next trains departing from any UK railway station",
     "url": "https://assistant.google.com/services/a/uid/0000002b9e81557d",
     "gh": null,
-    "img": "nexttrains"
+    "img": "nexttrains",
+    "type": "software",
+    "lang": ["php"]
   },
 
   {
@@ -76,7 +93,9 @@ const projects = [{
     "url": null,
     "gh": "mrdnomaid/hash2",
     "old": true,
-    "img": "hash"
+    "img": "hash",
+    "type": "software",
+    "lang": ["nodejs"]
   },
 
   {
@@ -85,7 +104,9 @@ const projects = [{
     "url": "/wancheck",
     "gh": "mrdnomaid/wancheck",
     "old": true,
-    "img": "wancheck"
+    "img": "wancheck",
+    "type": "wapp",
+    "lang": ["python", "html", "css", "javascript"]
   },
 
   {
@@ -93,7 +114,9 @@ const projects = [{
     "desc": "Choose an artist, see which letters most commonly start their song titles",
     "url": "/abeceda",
     "gh": null,
-    "img": "abeceda"
+    "img": "abeceda",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -101,7 +124,9 @@ const projects = [{
     "desc": "Saw that FontAwesome had some chess icons, so I made a little board from them.",
     "url": "/fa-chess",
     "gh": "mrdnomaid/fa-chess",
-    "img": "fa-chess"
+    "img": "fa-chess",
+    "type": "fun",
+    "lang": ["html", "css"]
   },
 
   {
@@ -109,7 +134,9 @@ const projects = [{
     "desc": "Quickly made webpage to execute shell commands using PHP.",
     "url": null,
     "gh": "mrdnomaid/PHPcmd",
-    "img": "phpcmd"
+    "img": "phpcmd",
+    "type": "wapp",
+    "lang": ["html", "css", "php"]
   },
 
   {
@@ -117,7 +144,9 @@ const projects = [{
     "desc": "Generate Plausible Ubuntu-like Codenames",
     "url": "/ubuntucodenamegen",
     "gh": "mrdnomaid/ubuntucodenamegen",
-    "img": "ubuntucodenames"
+    "img": "ubuntucodenames",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -125,7 +154,9 @@ const projects = [{
     "desc": "See how many trees you've felled in the web UI of your HP printer",
     "url": null,
     "gh": "mrdnomaid/trees",
-    "img": "trees"
+    "img": "trees",
+    "type": "wapp",
+    "lang": ["javascript"]
   },
 
   {
@@ -133,14 +164,18 @@ const projects = [{
     "desc": "A simple gallery to show images posted to a subreddit",
     "url": "/redditgallery",
     "gh": "mrdnomaid/redditgallery",
-    "img": "redditgallery"
+    "img": "redditgallery",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
     "name": "Download Upvoted Images",
     "desc": "Download images you've upvoted on reddit",
     "url": null,
-    "gh": "mrdnomaid/downloadupvotedimages"
+    "gh": "mrdnomaid/downloadupvotedimages",
+    "type": "software",
+    "lang": ["nodejs"]
   },
 
   {
@@ -148,7 +183,9 @@ const projects = [{
     "desc": "Make some text look stupid.",
     "url": "/fontrandomizer",
     "gh": "mrdnomaid/fontrandomizer",
-    "img": "fontr"
+    "img": "fontr",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -156,7 +193,9 @@ const projects = [{
     "desc": "Remake of a PHP thing that just cycles through random hex codes",
     "url": "/randomcolours",
     "gh": "mrdnomaid/randomcolours",
-    "img": "randomcolours"
+    "img": "randomcolours",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -164,14 +203,18 @@ const projects = [{
     "desc": "Some recreated Windows BSODs",
     "url": "/bsods",
     "gh": "mrdnomaid/bsods",
-    "img": "bsod"
+    "img": "bsod",
+    "type": "fun",
+    "lang": ["html", "css"]
   },
 
   {
     "name": "Steam Wishlist Total",
     "desc": "Top up the cost of everything on your Steam wishlist",
     "url": null,
-    "gh": "mrdnomaid/steamwishlisttotal"
+    "gh": "mrdnomaid/steamwishlisttotal",
+    "type": "software",
+    "lang": ["javascript"]
   },
 
   {
@@ -179,7 +222,9 @@ const projects = [{
     "desc": "Quick-links to Discord downloads",
     "url": "/discorddownloads",
     "gh": "mrdnomaid/discorddownloads",
-    "img": "discordd"
+    "img": "discordd",
+    "type": "wapp",
+    "lang": ["html", "css"]
   },
 
   {
@@ -187,7 +232,9 @@ const projects = [{
     "desc": "Some falling words",
     "url": "/wordfall",
     "gh": "mrdnomaid/wordfall",
-    "img": "wordfall"
+    "img": "wordfall",
+    "type": "fun",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -196,7 +243,9 @@ const projects = [{
     "url": "/n3soundboard",
     "gh": "mrdnomaid/n3soundboard",
     "old": true,
-    "img": "n3sb"
+    "img": "n3sb",
+    "type": "fun",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -205,7 +254,9 @@ const projects = [{
     "url": "/jstest",
     "gh": "mrdnomaid/jstest",
     "old": true,
-    "img": "jstest"
+    "img": "jstest",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -214,7 +265,9 @@ const projects = [{
     "url": "/windows",
     "gh": "mrdnomaid/windows",
     "old": true,
-    "img": "windows"
+    "img": "windows",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   {
@@ -223,7 +276,9 @@ const projects = [{
     "url": "/mac",
     "gh": "mrdnomaid/mac",
     "old": true,
-    "img": "mac"
+    "img": "mac",
+    "type": "wapp",
+    "lang": ["html", "css", "javascript"]
   },
 
   // Not on GH/mrdnomaid
@@ -233,7 +288,9 @@ const projects = [{
     "desc": "Aurora Community memorial website",
     "url": "http://auroracommunity.io",
     "gh": "AuroraCommunity/AuroraWebsite",
-    "img": "auroracommunity.io"
+    "img": "auroracommunity.io",
+    "type": "wsite",
+    "lang": ["html", "scss", "javascript", "jekyll"]
   },
 
   {
@@ -241,7 +298,9 @@ const projects = [{
     "desc": "The website for Melonz",
     "url": "https://melonz.app/",
     "git": "https://gitlab.com/Melonz/melonz.gitlab.io",
-    "img": "melonz.app"
+    "img": "melonz.app",
+    "type": "wsite",
+    "lang": ["html", "scss", "javascript", "jekyll"]
   },
 
   {
@@ -249,6 +308,8 @@ const projects = [{
     "desc": "The website for MagicCap",
     "url": "https://magiccap.me/",
     "gh": "magiccap/magiccap.me",
-    "img": "magiccap.me"
+    "img": "magiccap.me",
+    "type": "wsite",
+    "lang": ["html", "scss", "javascript", "jekyll"]
   }
 ]

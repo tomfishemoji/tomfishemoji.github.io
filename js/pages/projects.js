@@ -1,7 +1,8 @@
 const shuffledProjects = shuffle(projects);
 const div = document.getElementById('js-list');
 
-function load(shuffled) {
+function loadProj(shuffled, type, clear) {
+  div.innerHTML = '';
   let output = '';
   let toUse = projects;
   if(shuffled) {
@@ -47,25 +48,31 @@ function load(shuffled) {
       img = `<img src="/img/proj/${thisImg}.png" alt="A screenshot of ${thisImg}" title="${thisName}">`;
     }
 
+    let langs = '';
+    if(project['lang']) {
+      for (lang of project['lang']) {
+        langs += `<span class="lang lang-${lang.replace(/[^a-z]/g,'-')}">${lang.toLowerCase()}</span>`;
+      }
+    }
+
     thisOut = `
           <li>
             ${img}
-            <b>${thisName} ${old} ${date}</b>
+            <b>${thisName} ${langs} ${old} ${date}</b>
             ${thisDesc}<br>
             ${link} ${git}
           </li>
       `;
 
-    output += thisOut;
+    if(project['type'] == type || !type || type == "all") {
+      output += thisOut;
+    }
   }
 
   div.innerHTML = output;
 }
 
-load(true);
-
-
-
+loadProj(true, false, true);
 
 
 // Fisher-Yates Shuffle, nicked from StackOverflow

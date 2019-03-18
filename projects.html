@@ -12,6 +12,19 @@ head:
 
 <p>This a shuffled list of stuff that I've made over the years. I can't guarantee the quality of things that are amazingly old.</p>
 
+
+<div id="selector">
+  <i class="fas fa-fw fa-filter"></i> Pick a category! &nbsp;
+  <select onchange="loadProj(true, this.value, true)">
+    <option value="all" selected>📚 Everything &bull;</option>
+    <option value="software">💻 Software</option>
+    <option value="wapp">🌐 Web Apps</option>
+    <option value="wsite">📄 Websites</option>
+    <option value="fun">🕹️ Fun</option>
+    <option value="misc">❓ Misc</option>
+  </select>
+</div>
+
 <ul id="js-list">
   <h4>Loading...</h4>
   <p>Please make sure you have JavaScript enabled!</p>

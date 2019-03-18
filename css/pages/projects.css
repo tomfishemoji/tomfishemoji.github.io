@@ -1,3 +1,20 @@
+/* Styling the select thing */
+div#selector {
+  margin-bottom: 16px;
+}
+
+select {
+  background-color: #222;
+  box-shadow: 0 0 0px 2px #393e3f;
+  color: #eee;
+  /* width: 50%; */
+  border: none;
+  padding: 8px 0;
+  border-radius: 2px;
+  text-indent: 2px;
+}
+
+
 /* Styling of the main list */
 ul#js-list {
   margin: 0 0 16px 0;
@@ -16,12 +33,13 @@ ul#js-list li img {
   height: 4em;
   width: auto;
   border-radius: 4px;
+  mask-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
 }
 
-ul#js-list li img:hover {
+/* ul#js-list li img:hover {
   transform: scale(5);
   border-radius: 2px;
-}
+} */
 
 /* Project names */
 ul#js-list li b {
@@ -102,8 +120,62 @@ ul#js-list li a.w:hover:after, ul#js-list li a.g:hover:after, ul#js-list li a.ge
 }
 
 
+/* Languages */
+ul#js-list li span.lang {
+  font-size: 0.8em;
+  margin: 0 4px;
+  opacity: 0.6;
+  cursor: default;
+  transition: opacity 0.2s;
+}
+
+ul#js-list li span.lang:hover {
+  opacity: 1;
+}
+
+ul#js-list li span.lang-html {
+  color: #e34c26;
+}
+
+ul#js-list li span.lang-css{
+  color: #e34c26;
+}
+
+ul#js-list li span.lang-css {
+  color: #0170ba;
+}
+
+ul#js-list li span.lang-css-scss, ul#js-list li span.lang-scss {
+  color: #c69;
+}
+
+ul#js-list li span.lang-javascript {
+  color: #f0db4f;
+}
+
+ul#js-list li span.lang-php {
+  color: #666699;
+}
+
+ul#js-list li span.lang-nodejs {
+  color: #689f63;
+}
+
+ul#js-list li span.lang-jekyll {
+  color: #bd4d4d;
+}
+
+ul#js-list li span.lang-python {
+  color: #3776ab;
+}
+
+ul#js-list li span.lang-bash {
+  color: #4eaa25;
+}
+
+
 @media screen and (max-width: 1200px) {
-    ul#js-list li img:hover {
+    /* ul#js-list li img:hover {
       position: fixed;
       top: 10vh;
       left: 0;
@@ -112,7 +184,7 @@ ul#js-list li a.w:hover:after, ul#js-list li a.g:hover:after, ul#js-list li a.ge
       transform: scale(1);
       border-radius: 2px;
       z-index: 999;
-    }
+    } */
 }
 
 
