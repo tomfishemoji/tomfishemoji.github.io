@@ -36,6 +36,10 @@ ul#js-list li img {
   mask-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
 }
 
+ul#js-list li img:hover {
+  mask-image: -webkit-gradient(linear, right top, left top, from(black), to(black));
+}
+
 /* ul#js-list li img:hover {
   transform: scale(5);
   border-radius: 2px;
