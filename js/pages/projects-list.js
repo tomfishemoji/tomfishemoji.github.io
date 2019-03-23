@@ -315,7 +315,7 @@ const projects = [{
 
   {
     "name": "FishyGo Manager",
-    "desc": "Basic web UI for my URL shortener-ish"
+    "desc": "Basic web UI for my URL shortener-ish",
     "git": "https://git.fishys.space/tom/fishygo",
     "img": "fishygo",
     "type": "wapp",
