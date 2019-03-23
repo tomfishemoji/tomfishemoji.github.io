@@ -311,5 +311,14 @@ const projects = [{
     "img": "magiccap.me",
     "type": "wsite",
     "lang": ["html", "scss", "javascript", "jekyll"]
+  },
+
+  {
+    "name": "FishyGo Manager",
+    "desc": "Basic web UI for my URL shortener-ish"
+    "git": "https://git.fishys.space/tom/fishygo",
+    "img": "fishygo",
+    "type": "wapp",
+    "lang": ["html", "css", "php"]
   }
 ]
