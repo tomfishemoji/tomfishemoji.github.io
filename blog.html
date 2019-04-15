@@ -5,7 +5,7 @@ permalink: /blog/
 description: Infrequently updated ramblings
 ---
 
-{% for page in site.posts limit:5 %}
+{% for page in site.posts limit:10 %}
   <div class="post">
           <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
           <h4>
@@ -16,6 +16,6 @@ description: Infrequently updated ramblings
 {% endfor %}
 
 <p style="margin-top: 8px; text-align: right;">
-  View more in the <a href="/archive/"><i class="fas fa-fw fa-folder-open"></i> archives &raquo;</a><br>
+  View even more in the <a href="/archive/"><i class="fas fa-fw fa-folder-open"></i> archives &raquo;</a><br>
   <span style="font-size: 0.8em;">Or subscribe to the <a href="/feed.xml"><i class="fas fa-fw fa-rss"></i> RSS feed &raquo;</a></span>
 </p>
