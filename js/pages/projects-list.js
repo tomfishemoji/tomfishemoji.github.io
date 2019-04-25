@@ -19,7 +19,7 @@ const projects = [{
 
   {
     "name": "User Scripts",
-    "desc": "Bodged together scripts for websites to add/fix functionality",
+    "desc": "Bodged together scripts for websites to add, fix or tweak their functionality",
     "url": false,
     "gh": "mrdnomaid/userscripts",
     "img": "js",
@@ -29,7 +29,7 @@ const projects = [{
 
   {
     "name": "User Styles",
-    "desc": "Hastilly made CSS to tweak elements on websites",
+    "desc": "Hastilly made CSS to add, fix or tweak elements on many websites",
     "url": false,
     "gh": "mrdnomaid/userstyles",
     "img": "css",
@@ -39,7 +39,7 @@ const projects = [{
 
   {
     "name": "Pinghost Redesign",
-    "desc": "A redesigned website for a now-defunct hosting company",
+    "desc": "I redesigned the website for a now-defunct hosting company",
     "url": "https://ping.dnomaid.co.uk",
     "gh": "mrdnomaid/userstyles",
     "old": true,
@@ -50,7 +50,7 @@ const projects = [{
 
   {
     "name": "Tools",
-    "desc": "Small, helpful utilities",
+    "desc": "Small, helpful, web-based utilities such as a factor finder",
     "url": "/tools",
     "gh": "mrdnomaid/tools",
     "type": "wapp",
@@ -59,7 +59,7 @@ const projects = [{
 
   {
     "name": "redditunsubinactive",
-    "desc": "Unsubscribe from inactive subreddits",
+    "desc": "Unsubscribe from subreddits that are no longer active on Reddit",
     "url": "/redditunsubinactive",
     "gh": "mrdnomaid/redditunsubinactive",
     "img": "unsub",
@@ -69,7 +69,7 @@ const projects = [{
 
   {
     "name": "Scripts",
-    "desc": "Useful scripts for automating things I do often enough that they require a script to automate them ",
+    "desc": "Useful scripts for automating things I do often enough that they require a script to automate them",
     "url": false,
     "gh": "mrdnomaid/scripts",
     "img": "scripts",
@@ -78,7 +78,7 @@ const projects = [{
   },
 
   {
-    "name": "Next Train",
+    "name": "Next Trains",
     "desc": "Google Assistant application that will tell you the next trains departing from any UK railway station",
     "url": "https://assistant.google.com/services/a/uid/0000002b9e81557d",
     "gh": null,
@@ -89,7 +89,7 @@ const projects = [{
 
   {
     "name": "Hash",
-    "desc": "An attempt at making a Discord bot. It didn't work too well.",
+    "desc": "An attempt at making a Discord bot, now somewhat dormant.",
     "url": null,
     "gh": "mrdnomaid/hash2",
     "old": true,
@@ -100,7 +100,7 @@ const projects = [{
 
   {
     "name": "WANCheck",
-    "desc": "Is meant to tell you when your internet goes down, but doesn't work that well either",
+    "desc": "A tool to monitor internet outages, but I never got it work very well",
     "url": "/wancheck",
     "gh": "mrdnomaid/wancheck",
     "old": true,
@@ -120,26 +120,6 @@ const projects = [{
   },
 
   {
-    "name": "fa-chess",
-    "desc": "Saw that FontAwesome had some chess icons, so I made a little board from them.",
-    "url": "/fa-chess",
-    "gh": "mrdnomaid/fa-chess",
-    "img": "fa-chess",
-    "type": "fun",
-    "lang": ["html", "css"]
-  },
-
-  {
-    "name": "PHPcmd",
-    "desc": "Quickly made webpage to execute shell commands using PHP.",
-    "url": null,
-    "gh": "mrdnomaid/PHPcmd",
-    "img": "phpcmd",
-    "type": "wapp",
-    "lang": ["html", "css", "php"]
-  },
-
-  {
     "name": "Ubuntu Codename Generator",
     "desc": "Generate Plausible Ubuntu-like Codenames",
     "url": "/ubuntucodenamegen",
@@ -151,7 +131,7 @@ const projects = [{
 
   {
     "name": "HP Printer Trees",
-    "desc": "See how many trees you've felled in the web UI of your HP printer",
+    "desc": "See how many trees you've used up printing pages in the web UI of your HP printer",
     "url": null,
     "gh": "mrdnomaid/trees",
     "img": "trees",
@@ -161,7 +141,7 @@ const projects = [{
 
   {
     "name": "Reddit Image Gallery",
-    "desc": "A simple gallery to show images posted to a subreddit",
+    "desc": "A simple gallery to show images posted to any subreddit",
     "url": "/redditgallery",
     "gh": "mrdnomaid/redditgallery",
     "img": "redditgallery",
@@ -180,7 +160,7 @@ const projects = [{
 
   {
     "name": "Font Randomizer",
-    "desc": "Make some text look stupid.",
+    "desc": "Make some text look a little bit stupid. Some have said it looks more like a ransom note though.",
     "url": "/fontrandomizer",
     "gh": "mrdnomaid/fontrandomizer",
     "img": "fontr",
@@ -190,7 +170,7 @@ const projects = [{
 
   {
     "name": "Random Colours",
-    "desc": "Remake of a PHP thing that just cycles through random hex codes",
+    "desc": "Remake of an old PHP thing I made that just cycles through random hex colour codes",
     "url": "/randomcolours",
     "gh": "mrdnomaid/randomcolours",
     "img": "randomcolours",
@@ -200,7 +180,7 @@ const projects = [{
 
   {
     "name": "BSODs",
-    "desc": "Some recreated Windows BSODs",
+    "desc": "I recreated some Windows blue screens in HTML and CSS",
     "url": "/bsods",
     "gh": "mrdnomaid/bsods",
     "img": "bsod",
@@ -239,7 +219,7 @@ const projects = [{
 
   {
     "name": "NerdCubed Soundboard",
-    "desc": "Featuring reddit's favourite clips",
+    "desc": "Featuring reddit's favourite clips of a gaming YouTuber",
     "url": "/n3soundboard",
     "gh": "mrdnomaid/n3soundboard",
     "old": true,
@@ -249,19 +229,8 @@ const projects = [{
   },
 
   {
-    "name": "JavaScript Test",
-    "desc": "See if you have JavaScript enabled in your browser",
-    "url": "/jstest",
-    "gh": "mrdnomaid/jstest",
-    "old": true,
-    "img": "jstest",
-    "type": "wapp",
-    "lang": ["html", "css", "javascript"]
-  },
-
-  {
     "name": "Windows",
-    "desc": "A website that looks like Windows 10",
+    "desc": "A website that looks somewhat like the Windows 10 operating system",
     "url": "/windows",
     "gh": "mrdnomaid/windows",
     "old": true,
@@ -272,7 +241,7 @@ const projects = [{
 
   {
     "name": "OS X",
-    "desc": "A website that looks like OS X",
+    "desc": "A website that looks somewhat like the OS X operating system",
     "url": "/mac",
     "gh": "mrdnomaid/mac",
     "old": true,
@@ -285,7 +254,7 @@ const projects = [{
 
   {
     "name": "Aurora Community",
-    "desc": "Aurora Community memorial website",
+    "desc": "A Discord community memorial website with sentiments",
     "url": "http://auroracommunity.io",
     "gh": "AuroraCommunity/AuroraWebsite",
     "img": "auroracommunity.io",
@@ -295,7 +264,7 @@ const projects = [{
 
   {
     "name": "Melonz Website",
-    "desc": "The website for Melonz",
+    "desc": "The website for Melonz, a development team",
     "url": "https://melonz.app/",
     "git": "https://gitlab.com/Melonz/melonz.gitlab.io",
     "img": "melonz.app",
@@ -305,7 +274,7 @@ const projects = [{
 
   {
     "name": "MagicCap Website",
-    "desc": "The website for MagicCap",
+    "desc": "The website for MagicCap, a FOSS screenshot suite for macOS and Linux",
     "url": "https://magiccap.me/",
     "gh": "magiccap/magiccap.me",
     "img": "magiccap.me",
@@ -320,5 +289,15 @@ const projects = [{
     "img": "fishygo",
     "type": "wapp",
     "lang": ["html", "css", "php"]
+  },
+
+  {
+    "name": "LunarNet.space",
+    "desc": "Website for a friend, design loosly based upon his old Jekyll theme and the Arch Linux wiki.",
+    "url": "https://lunarnet.space/",
+    "gh": "Lunarki/Lunarki.github.io",
+    "img": "lunarnet.space",
+    "type": "wsite",
+    "lang": ["html", "scss", "javascript", "jekyll"]
   }
 ]
