@@ -8,6 +8,7 @@ permalink: /:year/:title/
 
 sass:
   sass_dir: css
+  style: compressed
 
 highlighter: rouge
 
