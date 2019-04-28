@@ -15,7 +15,7 @@ I’ve used Windows for as long as I’ve used computers, but a couple weeks ago
 ### Choosing a distro
 This was one of the hardest parts. I wanted something that looked nice, was slick to use and had good compatibility. I used a secondary laptop to test out a few distros, and decided that I liked the look of Solus OS. There was one issue however: Solus is built from scratch, and is therefore not compatible with popular Linux software. I hated the way Ubuntu looked, but I loved the amount of programs it supported. See where this is going yet?
 
-{% include image.html path="/img/posts/My first real experience with Linux/budgie.png" caption="The default Ubuntu Budgie desktop." credit="ubuntubudgie.org" %}
+{% include image.html path="budgie.png" caption="The default Ubuntu Budgie desktop." credit="ubuntubudgie.org" %}
 
 After a few minutes of searching, I uncovered [Ubuntu Budgie](https://ubuntubudgie.org/), a community spin of Ubuntu with the same desktop environment from Solus that I liked so much. Hastily, I began downloading the ISO and flashing it to a spare USB thumb drive.
 
@@ -30,7 +30,7 @@ The installer took a few seconds to spin up (presumably because I was using a US
 Despite being the first boot, the new OS only took about 10 seconds to start and present me with a welcome dialog. The first thing I did was remove Plank (a dock, similar to the one in macOS) and display open windows in the panel instead.
 
 
-{% include image.html path="/img/posts/My first real experience with Linux/plank.png" caption="The Plank dock, as it comes by default in Ubuntu Budgie" %}
+{% include image.html path="plank.png" caption="The Plank dock, as it comes by default in Ubuntu Budgie" %}
 
 ### Drivers & Hardware Compatibility
 To my amazement, the majority of my laptop’s hardware worked out of the box, including the camera, microphone, WiFi card and the trackpad. Even the keyboard hotkeys worked! After my initial smugness wore off, I realized one huge thing was missing: My GPU.
@@ -38,12 +38,12 @@ To my amazement, the majority of my laptop’s hardware worked out of the box, i
 
 I located my laptop’s GPU on Nvidia’s website and downloaded the suggested version. It told me I needed to boot into terminal-only mode to install, so I did. The installer failed whilst trying to install some kind of kernel module. I tried a few times again, no luck. I searched the issue and found that secure boot was the issue. Disabled that and the module installed. Everything’s fine and dandy now, right? Nope.
 
-{% include image.html path="/img/posts/My first real experience with Linux/clean.jpeg" caption="This doesn't look right." %}
+{% include image.html path="clean.jpeg" caption="This doesn't look right." %}
 
 After rebooting, my laptop’s screen presented me with an FDISK message telling me that my drive was clean. I waited a bit for it to do something, and nothing happened. Force shutting down the system did nothing; it still booted into the same message. Assuming this was the fault of the Nvidia driver, I booted into recovery mode and removed all Nvidia packages. As I expected, this fixed my issue. Not wanting to go through even more hassle, I decided to just live with integrated graphics.
 
 ### Games & Software Compatibility
-{% include image.html path="/img/posts/My first real experience with Linux/software.png" caption="The software center." %}
+{% include image.html path="software.png" caption="The software center." %}
 
 I was pleasantly surprised with the amount of applications available in the software center, and I was able to install most of my required programs using it. Sadly, a few programs I use aren't available on Linux, but I was able to find decent alternatives for most of them. For things like Sony Vegas and the Adobe suite I just reboot into Windows and use them there; no fancy virtual machines for me just yet.
 

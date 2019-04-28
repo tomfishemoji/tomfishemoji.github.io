@@ -12,7 +12,7 @@ Actually, I haven’t.
 
 After Googling something and clicking one of the top links (not the ads), I was redirected to a data URL. The page made my phone vibrate, then a popup appeared, telling me I had the chance to win a free iPhone, MacBook or iPad! Because it was the only button, I tapped OK.
 
-{% include image.html path="/img/posts/I've won various Apple products!/popup.png" caption="Wow, I’m so lucky!" %}
+{% include image.html path="popup.png" caption="Wow, I’m so lucky!" %}
 
 ---
 
@@ -24,7 +24,7 @@ Rather than download some sketchy APK file, the page redirected 2 or 3 times, fi
 
 No MacBook for me, I guess.
 
-{% include image.html path="/img/posts/I've won various Apple products!/fb.png" caption="The fake FaceBook I was redirected to" %}
+{% include image.html path="fb.png" caption="The fake FaceBook I was redirected to" %}
 
 ---
 
@@ -32,14 +32,14 @@ Knowing this was obviously a scam, I emailed myself the data URL, and visited it
 
 The comments are clearly fake, with the exact same pictures being used on multiple sites.
 
-{% include image.html path="/img/posts/I've won various Apple products!/results.png" %}
+{% include image.html path="results.png" %}
 
 ---
 
 
 After getting the error on my phone, I decided I should try on my PC. And it worked!
 
-{% include image.html path="/img/posts/I've won various Apple products!/YOUWIN.png" caption="They only need to know my phone number number!" %}
+{% include image.html path="YOUWIN.png" caption="They only need to know my phone number number!" %}
 
 I decided against receiving their premium messages, so I’ve not got further than this page.
 
@@ -48,9 +48,9 @@ I decided against receiving their premium messages, so I’ve not got further th
 
 I also tried with mobile data and Tor, to see if it wasn't only Virgin Media customers who can win.
 
-{% include image.html path="/img/posts/I've won various Apple products!/three.png" caption="So it’s not just Virgin Media customers." %}
+{% include image.html path="three.png" caption="So it’s not just Virgin Media customers." %}
 
-{% include image.html path="/img/posts/I've won various Apple products!/tor.png" caption="That’s a weird French flag." %}
+{% include image.html path="tor.png" caption="That’s a weird French flag." %}
 
 If you haven't noticed, it just uses your ISP. It’s not as exclusive and special as it makes it out to be.
 

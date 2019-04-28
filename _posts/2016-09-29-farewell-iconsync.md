@@ -5,7 +5,7 @@ category: updates
 medium: https://blog.dnomaid.co.uk/farewell-iconsync-c3e3ac762e21
 ---
 
-{% include image.html path="/img/posts/Farewell, IconSync/logo.png" caption="The IconSync logo: A recoloured picture icon we found somewhere on the internet." %}
+{% include image.html path="logo.png" caption="The IconSync logo: A recoloured picture icon we found somewhere on the internet." %}
 
 In case you didn't know, IconSync was a service me and iiTehEpicGuy made a few months ago, that you could upload icons to. It had a file limit of 1MB so it was “ideal for icons”! The actual service itself didn't reach public eyes, only the welcome page.
 
@@ -24,9 +24,9 @@ The heading says it all for this one. We just forgot about it. We only remembere
 
 ---
 
-{% include image.html path="/img/posts/Farewell, IconSync/shot1.png" caption="The IconSync development page. As you can see, it looks like ass." %}
+{% include image.html path="shot1.png" caption="The IconSync development page. As you can see, it looks like ass." %}
 
-{% include image.html path="/img/posts/Farewell, IconSync/shot2.jpeg" caption="The only user-facing page. It also looks rather bad." %}
+{% include image.html path="shot2.jpeg" caption="The only user-facing page. It also looks rather bad." %}
 
 ---
 

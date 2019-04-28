@@ -1,0 +1,10 @@
+{% assign url = page.url | split: '/' %}
+{% for part in url %}
+  {% if forloop.index == 2 %}
+    {% assign date = part %}
+  {% endif %}
+  {% if forloop.index == 3 %}
+    {% assign id = part %}
+  {% endif %}
+{% endfor %}
+{% assign post_img_folder = date | append: '-' | append: id %}
