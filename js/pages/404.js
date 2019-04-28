@@ -3,7 +3,15 @@ let files = '';
 let folders = '';
 let out = `<h3><i class="fas fa-fw fa-stream"></i> File Listing of ${window.location.pathname}</h3><p>Due to the way GitHub Pages handles folders, what should be a directory listing is actually turned into a 404 page. Below is a list of what is inside of ${window.location.pathname}.</p>`;
 
+let pathsplit = window.location.pathname.split('/');
+let folderparent = '/';
+for(let i = 0; i < pathsplit.length - 2; i++) {
+  folderparent += pathsplit[i];
+}
+
 $.getJSON(`https://api.github.com/repos/mrdnomaid/mrdnomaid.github.io/contents${window.location.pathname}`, function(j) {
+  folders += `<a href="${folderparent}#open"><i class="fas fa-fw fa-level-up-alt"></i> Up a level</a><br>`;
+
   for (file of j) {
     if (file.type == 'file') {
       files += `<a href="/${file.path}"><i class="fas fa-fw fa-file"></i> ${file.name}</a><br>`;
