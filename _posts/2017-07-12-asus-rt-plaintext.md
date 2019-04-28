@@ -10,7 +10,7 @@ image: decent.png
 outdated: true
 ---
 
-{% include note.html content="This post fails to realise that the password is stored in NVRAM that would require the SSH password or physical access. Calm yourselves." %}
+{% include note.html content="<b>2019 Update:</b> This post fails to realise that the password is stored in NVRAM that would require the SSH password or physical access. This is pretty standard for basic routers and is nothing to be especially worried about." align="left" %}
 
 A few minutes ago, I thought it would be a good idea to change my ASUS router's password to something more secure than a few words. Something long, something with lots of symbols and something totally random.
 
