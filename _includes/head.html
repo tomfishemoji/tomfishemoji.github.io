@@ -36,10 +36,10 @@
 
 <!-- Only loads the monospaced fonts if the pages needs them -->
 {% if page.content contains 'highlight' or page.content contains '```' or page.content contains '<code>' or page.content contains 'post-notice' %}
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700%7CUbuntu+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?display=swap&family=Ubuntu:400,500,700%7CUbuntu+Mono" rel="stylesheet">
   <link href="/css/syntax.css" rel="stylesheet">
 {% else %}
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?display=swap&family=Ubuntu:400,500,700" rel="stylesheet">
 {% endif %}
 
 
