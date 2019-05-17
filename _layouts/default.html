@@ -54,7 +54,8 @@ layout: compress
           {% endif %}
 
           {% if page.image and page.layout == 'post' %}
-          <img id="image" src="/img/posts/{{ page.title | replace: ' ', '%20' }}/{{page.image}}">
+          {% include post_img_folder.html %}
+          <img id="image" src="/img/posts/{{ post_img_folder }}/{{page.image}}">
           </img>
           {% endif %}
 

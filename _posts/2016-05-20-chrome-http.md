@@ -10,7 +10,7 @@ outdated: true
 
 Soon, Google’s Chrome browser is going to be marking all non-secure (HTTP) pages as “unsecure” with a crossed out lock symbol
 
-{% include image.html path="/img/posts/How to get a neat crossed out lock for all unsecure (HTTP) pages in Google Chrome/lock.png" %}
+{% include image.html path="lock.png" %}
 
 
 in the address bar, but what if you want that now?
@@ -21,7 +21,7 @@ Go to `chrome://flags/#mark-non-secure-as`
 # Step 2:
 Toggle it to be “Mark non-secure origins as non-secure”
 
-{% include image.html path="/img/posts/How to get a neat crossed out lock for all unsecure (HTTP) pages in Google Chrome/toggle.gif" %}
+{% include image.html path="toggle.gif" %}
 
 
 # Step 3:

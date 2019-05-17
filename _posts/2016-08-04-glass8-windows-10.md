@@ -8,8 +8,6 @@ medium: https://blog.dnomaid.co.uk/glass8-isnt-the-biggest-fan-of-the-windows-10
 image: window.jpeg
 ---
 
-{% include image.html path="/img/posts/Glass8 is not the biggest fan of the Windows 10 Anniversary update/microsoft-watch.jpeg" %}
-
 The Windows 10 Anniversary Update released a couple of days ago and it’s pretty neat (stay tuned for a full-ish review) but if you used Glass8, a popular application that’s used to put an Aero glass effect on Windows 8+ title bars, you might be in for a surprise after you update to version 1607.
 
 ---

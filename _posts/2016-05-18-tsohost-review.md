@@ -30,7 +30,7 @@ For me, setting up what I needed was really straightforward and only required me
 # Speed
 The site has been pretty fast, at least since I installed the WP Super Cache plugin and put my site on CloudFlare. Pingdom lists the load time as 1.36 seconds (from Sweden), which is fine for me, but I could probably improve it somehow.
 
-{% include image.html path="/img/posts/Tsohost Review/pingdom.png" %}
+{% include image.html path="pingdom.png" %}
 
 ---
 
@@ -40,7 +40,7 @@ The site has only gone down a couple of times and all downtime has been under 15
 
 Below is a screenshot from UptimeRobot that shows the downtimes.
 
-{% include image.html path="/img/posts/Tsohost Review/robot.png" %}
+{% include image.html path="robot.png" %}
 
 
 ---
@@ -49,7 +49,7 @@ Below is a screenshot from UptimeRobot that shows the downtimes.
 
 Pretty good value, they offer somewhat flexible plans and 4 regular ones that are really great value, at least in my eyes.
 
-{% include image.html path="/img/posts/Tsohost Review/plans.png" %}
+{% include image.html path="plans.png" %}
 
 
 ---
@@ -57,7 +57,7 @@ Pretty good value, they offer somewhat flexible plans and 4 regular ones that ar
 # Managing
 I was a bit sceptical when I learned Tsohost use their own proprietary panel for managing your site, but once I got used to it, I found that it works really well and I haven’t found anything wrong with it so far.
 
-{% include image.html path="/img/posts/Tsohost Review/panel.png" %}
+{% include image.html path="panel.png" %}
 They also have a second “panel” to manage customer info, payment, etc.
 
 ---

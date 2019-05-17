@@ -22,4 +22,4 @@ Copy and paste the URL below to open the notepad:
 # Step 3
 The notepad will reset when you refresh the page! I’d recommend bookmarking it!
 
-{% include image.html path="/img/posts/How to make a temporary notepad using Google Chrome/np.gif" %}
+{% include image.html path="np.gif" %}

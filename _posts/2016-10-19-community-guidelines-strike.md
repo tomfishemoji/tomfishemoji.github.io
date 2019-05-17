@@ -8,7 +8,7 @@ medium: https://blog.dnomaid.co.uk/guidelines-strike-d73fadc4f6e6
 
 This story starts when I found Haden’s old, now private, Vine profile. At the time he was “FletchTech90” and was rather cringy, so I took advantage of this and found a song on EpidemicSound and replaced some of its lyrics with one of his Vines.
 
-{% include image.html path="/img/posts/I got a Community Guidelines strike/timeline.png" caption="Sony Vegas timeline for the video." %}
+{% include image.html path="timeline.png" caption="Sony Vegas timeline for the video." %}
 
 I uploaded the video to YouTube, and about 10 people viewed it within the short time it was up, which is more than usual for one of my terrible videos. However when I came back to the website a few minutes after uploading, I was greeted with the message you see at the top of this post. I had gotten a Community Guidelines strike for an amusing satirical song.
 
@@ -17,7 +17,7 @@ So now you may be wondering, “what guideline did you break?”, and my answer 
 
 ---
 
-{% include image.html path="/img/posts/I got a Community Guidelines strike/guidelines.png" caption="The YouTube community guidelines." %}
+{% include image.html path="guidelines.png" caption="The YouTube community guidelines." %}
 
 Let’s take a look at each guideline and see if my video broke it, shall we?
 
@@ -51,7 +51,7 @@ Understandably, I took to Twitter again, spewing my followers with caps lock and
 
 ---
 
-{% include image.html path="/img/posts/I got a Community Guidelines strike/email.png" caption="The email YouTube send me after I got the strike" %}
+{% include image.html path="email.png" caption="The email YouTube send me after I got the strike" %}
 
 I’d also like to talk about the email I received.
 
@@ -71,7 +71,7 @@ IV gta III multiplayer easy way to make money
 ```
 
 And sometimes even as many as this:
-{% include image.html path="/img/posts/I got a Community Guidelines strike/tagspam.png" caption="An image from Fullscreen's blog showcasing just how bad description tag spam can get." %}
+{% include image.html path="tagspam.png" caption="An image from Fullscreen's blog showcasing just how bad description tag spam can get." %}
 
 
 ---
@@ -94,4 +94,4 @@ It would be awesome if they told me what rule I apparently broke in the first pl
 
 If you’d like to watch it on YouTube rather than vidme, you can click [here](https://youtu.be/TAeJIJkPvQM).
 
-{% include image.html path="/img/posts/I got a Community Guidelines strike/email2.png" caption="The second email I got from YouTube, telling me that my video does not actually violate any guideline." %}
+{% include image.html path="email2.png" caption="The second email I got from YouTube, telling me that my video does not actually violate any guideline." %}
