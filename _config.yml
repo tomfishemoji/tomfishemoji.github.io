@@ -3,6 +3,7 @@ title: trobinson.me
 future: true
 baseurl: ""
 url: https://trobinson.me
+twitter: mrdnomaid
 
 permalink: /:year/:title/
 
