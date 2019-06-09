@@ -250,6 +250,15 @@ const projects = [{
     "lang": ["html", "css", "javascript"]
   },
 
+  {
+    "name": "Flickr Photo Map",
+    "desc": "A custom map of all my geotagged photos from Flickr. Made with their simple API + Leaflet.",
+    "url": "/flickr/map",
+    "img": "flickrmap",
+    "type": "wapp",
+    "lang": ["scss", "javascript"]
+  },
+
   // Not on GH/mrdnomaid
 
   {
