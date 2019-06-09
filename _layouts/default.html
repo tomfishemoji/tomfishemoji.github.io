@@ -9,7 +9,7 @@ layout: compress
   {% include head.html %}
 </head>
 
-<body>
+<body class="{% if page.wide %}wide{% endif %} {% if page.url == '/' %}is-home{% endif %}">
   <aside id="topbar"></aside>
 
   <aside id="sidebar">

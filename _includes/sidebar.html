@@ -8,7 +8,11 @@
   <h2>Robinson</h2>
 {% endif %}
 
-<p>
+
+<a href="#" class="menu-toggle" id="menu-toggle-open" onclick="openMenu();"><i class="fas fa-fw fa-chevron-down"></i> Open Menu</a>
+<a href="#" class="menu-toggle" id="menu-toggle-close" onclick="closeMenu();" style="display: none;"><i class="fas fa-fw fa-chevron-up"></i> Close Menu</a>
+
+<nav>
   <a href="https://twitter.com/mrdnomaid" id="twitter"><i class="fab fa-fw fa-twitter"></i> Twitter</a><br>
   <a href="https://github.com/mrdnomaid" id="github"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
   <a href="https://photos.trobinson.me" id="flickr"><i class="fab fa-fw fa-flickr"></i> Flickr</a><br>
@@ -31,4 +35,4 @@
   {% if page.next and page.layout == 'post' %}
     <a href="{{ page.next.url }}"><i class="fas fa-fw fa-angle-double-right"></i> Next Post</a><br>
   {% endif %}
-</p>
+</nav>

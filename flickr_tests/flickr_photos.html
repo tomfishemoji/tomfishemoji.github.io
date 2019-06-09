@@ -1,0 +1,29 @@
+---
+layout: page
+title: Flickr Photo Gallery Test
+permalink: /flickr/photos/
+imgcsp: https://*.staticflickr.com
+scriptcsp: https://api.flickr.com
+scripts:
+  - /js/pages/flickr-photos.js
+  - https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&amp;api_key=32b91baaeb9de2bb4ae90cfa281f3c8c&amp;user_id=153560065@N06&amp;page=1&amp;per_page=500&amp;format=json&amp;jsoncallback=doFlickr
+hidden: true
+---
+
+<script>
+  function changeCol(amount) {
+    outDiv.style.columns = amount;
+    document.getElementById('colcount').innerHTML = amount;
+  }
+</script>
+
+<div id="coltweak" style="display: none; width: 100%; background-color: #000; color: #fff; text-align: center;">
+  Columns (<span id="colcount">5</span>)<br>
+  1 <input type="range" value="5" min="1" max="8" style="width: 95%; height: 1em; margin-top: 2px;" onchange="changeCol(this.value)" onmouseup="changeCol(this.value)"> 8
+</div>
+
+
+<div id="js-photos">
+    <h1><i class="fas fa-fw fa-cog fa-spin" style="color: skyblue;"></i> LOADING</h1>
+    <p>Nothing happening? Check the <a href="https://status.flickr.net/">Flickr service status</a> or your JavaScript console for any errors.</p>
+</div>

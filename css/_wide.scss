@@ -1,0 +1,14 @@
+body.wide {
+  main {
+    max-width: calc(100% - 384px);
+  }
+}
+
+
+@media screen and (max-width: 80em) {
+  body.wide {
+    main {
+      max-width: 50em;
+    }
+  }
+}

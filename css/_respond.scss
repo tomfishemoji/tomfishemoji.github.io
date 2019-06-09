@@ -4,9 +4,16 @@
     width: 100%;
     text-align: center;
 
+    a.menu-toggle {
+      margin: 8px 0 32px 0;
+    }
+
     img#babby {
-      width: 156px;
-      margin-bottom: 4px;
+      height: 4em;
+      width: auto;
+      margin-right: 8px;
+      margin-left: 16px;
+      float: left;
     }
 
     h1 {
@@ -30,4 +37,32 @@
       border-right-width: 8px !important;
     }
   }
+
+
+  // If we're not on the homepage, hide the navigation, ready to be opened by the JS
+  body:not(.is-home) {
+    nav {
+      display: none;
+    }
+  }
+
+  // If we are on the homepage, show the nav and hide the buttons
+  body.is-home {
+    aside#sidebar {
+      a.menu-toggle {
+        display: none !important; // !important here due to specificity above
+      }
+
+      nav {
+        display: block;
+      }
+    }
+  }
+}
+
+// On big screens always show the nav
+@media screen and (min-width: 70em) {
+    a.menu-toggle {
+      display: none !important; // !important here due to specificity above
+    }
 }

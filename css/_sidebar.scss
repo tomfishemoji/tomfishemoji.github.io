@@ -27,5 +27,9 @@ aside#sidebar {
       padding: 0;
     }
 
+    nav {
+      margin-top: 8px;
+    }
+
     @import '_sidebar_links.scss';
 }

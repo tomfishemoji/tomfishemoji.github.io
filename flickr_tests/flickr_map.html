@@ -1,0 +1,36 @@
+---
+layout: page
+wide: true
+title: Flickr Photo Map Test
+description: My last Flickr 500 photos on a map
+permalink: /flickr/map/
+imgcsp: "*"
+scriptcsp: "*"
+stylecsp: "*"
+scripts:
+  - https://unpkg.com/leaflet@1.5.1/dist/leaflet.js
+  - /js/pages/flickr-map.js
+  - https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&amp;api_key=32b91baaeb9de2bb4ae90cfa281f3c8c&amp;user_id=153560065@N06&amp;page=1&amp;per_page=500&amp;format=json&amp;jsoncallback=doFlickr&amp;extras=geo
+head:
+  - <link href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" rel="stylesheet">
+hidden: true
+---
+
+<style media="screen">
+  div#yeahyeahyeahs {
+    opacity: 0.1;
+    pointer-events: none;
+    transition: opacity 1s;
+  }
+</style>
+
+
+<div style="position: relative; width: 0; height: 0; width: 100%;">
+  <h2 id="load" style="position: absolute; top: 20vh; width: 100%; text-align: center;"><i class="fas fa-fw fa-cog fa-spin" style="color: skyblue; font-size: 5em;"></i><br>Loading<br><span style="font-size: 0.6em">Please Wait</span></h2>
+</div>
+
+<div id="yeahyeahyeahs" style="height: 80vh;">
+
+</div>
+
+<p style="font-size: 0.8em; opacity: 0.8; font-style: italic; margin-top: 8px;">This is essentially a recreation of the actual Flickr map (using Leaflet too, coincidentally) but just showing my photos</p>
