@@ -11,8 +11,17 @@ function doFlickr(flickrData) {
     console.log(albumDate);
     let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+    let desc = '';
+
+    if(album.description._content) {
+      desc = `
+        <br><span style="font-size: 0.8em; opacity: 0.6; font-style: italic;">${album.description._content}</span>
+      `;
+    }
+
+
     outData += `
-      \n<li>
+      \n<li style="margin-bottom: 16px;">
           <a href="https://www.flickr.com/photos/mrdnomaid/albums/${album.id}">
           ${album.title._content}</a>
           <br>
@@ -21,6 +30,7 @@ function doFlickr(flickrData) {
             ${album.photos + album.videos} items &bull;
             ${album.count_views} views
           </span>
+          ${desc}
         </li>
     `;
   }
