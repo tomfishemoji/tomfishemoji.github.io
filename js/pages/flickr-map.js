@@ -7,7 +7,8 @@ let extraAtts = `
 `;
 
 let extraBig = `
-  <span id="embiggen"><a onclick="embiggen()" style="cursor: pointer;" title="Embiggen the Map"><i class="fas fa-fw fa-expand"></i></a></span>
+  <span id="embiggen" class="map-fullscreen-button"><a onclick="embiggen()" style="cursor: pointer;" title="Embiggen the Map"><i class="fas fa-fw fa-expand"></i></a></span>
+  <span id="embiggen-smaller" style="display: none" class="map-fullscreen-button"><a onclick="window.location.reload()" style="cursor: pointer;" title="Smallerify the Map"><i class="fas fa-fw fa-compress"></i></a></span>
 `;
 
 //
@@ -24,7 +25,7 @@ let extraBig = `
 //
 // Carto tiles
 //
-L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', {
     attribution: `
     ${extraBig}
     Map Tiles by <a href="https://carto.com/">Carto</a> | Data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>
@@ -85,6 +86,7 @@ function genIcon(flickrImg) {
 
 function embiggen() {
   document.getElementById('embiggen').style.display = 'none';
+  document.getElementById('embiggen-smaller').style.display = 'block';
   mapDiv.style.position = 'fixed';
   mapDiv.style.top = '0';
   mapDiv.style.left = '0';
@@ -92,4 +94,5 @@ function embiggen() {
   mapDiv.style.height = '100vh';
   mapDiv.style.margin = '0';
   mapDiv.style.padding = '0';
+  mapDiv.style.border = 'none';
 }
