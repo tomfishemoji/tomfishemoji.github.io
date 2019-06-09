@@ -22,9 +22,9 @@ let extraBig = `
 // }).addTo(map);
 
 //
-// Carto Dark tiles
+// Carto tiles
 //
-L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
+L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
     attribution: `
     ${extraBig}
     Map Tiles by <a href="https://carto.com/">Carto</a> | Data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a>
