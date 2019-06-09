@@ -50,7 +50,7 @@ function doFlickr(flickrData) {
 
       markers.push(L.marker([p.latitude, p.longitude],{icon:genIcon(p)}).addTo(map).bindPopup(`
         <a href="https://flickr.com/photos/${p.owner}/${p.id}" target="blank" rel="noopener noreferrer" class="marker-photo-link">
-          <img src="https://farm${p.farm}.staticflickr.com/${p.server}/${p.id}_${p.secret}_z.jpg" style="border-radius: 0; padding: 0; margin: 0 auto; width: 100%;">
+          <img src="https://farm${p.farm}.staticflickr.com/${p.server}/${p.id}_${p.secret}_z.jpg">
           <span class="marker-photo-title">${p.title}</span>
           <span class="marker-photo-date">${p.datetaken}</span>
         </a>

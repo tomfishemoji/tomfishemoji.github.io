@@ -40,6 +40,13 @@ a.marker-photo-link {
     text-decoration: underline;
   }
 
+  img {
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   span.marker-photo-date,
   span.marker-photo-title {
     display: inline-block;
@@ -68,4 +75,10 @@ a.marker-photo-link {
 .leaflet-marker-icon {
   border-radius: 25%;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 80em) {
+  a.marker-photo-link {
+    width: 50vw;
+  }
 }
