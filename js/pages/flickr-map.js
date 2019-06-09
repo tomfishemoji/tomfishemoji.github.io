@@ -69,6 +69,11 @@ function doFlickr(flickrData) {
 
 
   document.getElementById('load').style.display = 'none';
+
+  if(window.location.hash = '#big') {
+    embiggen();
+  }
+
   mapDiv.style.opacity = '1';
   mapDiv.style['pointer-events'] = 'auto';
 }
@@ -85,6 +90,7 @@ function genIcon(flickrImg) {
 }
 
 function embiggen() {
+  window.location.hash = 'big';
   document.getElementById('embiggen').style.display = 'none';
   document.getElementById('embiggen-smaller').style.display = 'block';
   mapDiv.style.position = 'fixed';
