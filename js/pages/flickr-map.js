@@ -70,7 +70,7 @@ function doFlickr(flickrData) {
 
   document.getElementById('load').style.display = 'none';
 
-  if(window.location.hash = '#big') {
+  if(window.location.hash == '#big') {
     embiggen();
   }
 
