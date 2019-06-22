@@ -45,7 +45,7 @@ function loadProj(shuffled, type, clear) {
 
     let img = '';
     if(thisImg) {
-      img = `<img src="/img/proj/${thisImg}.png" alt="A screenshot of ${thisImg}" title="${thisName}">`;
+      img = `<img src="/img/old/proj/${thisImg}.png" alt="A screenshot of ${thisImg}" title="${thisName}">`;
     }
 
     let langs = '';

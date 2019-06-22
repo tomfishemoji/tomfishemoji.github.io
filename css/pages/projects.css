@@ -1,210 +1,103 @@
-/* Styling the select thing */
-div#selector {
+.col.project {
+  max-width: 35vw;
   margin-bottom: 16px;
 }
 
-select {
-  background-color: #222;
-  box-shadow: 0 0 0px 2px #393e3f;
-  color: #eee;
-  /* width: 50%; */
-  border: none;
-  padding: 8px 0;
-  border-radius: 2px;
-  text-indent: 2px;
-}
-
-
-/* Styling of the main list */
-ul#js-list {
-  margin: 0 0 16px 0;
-  padding: 0;
-  list-style: none;
-}
-
-ul#js-list li {
-  margin: 8px 0;
-  padding: 4px 0 4px 8px;
-  border-left: 1px solid #99a6aa;
-}
-
-ul#js-list li img {
-  float: right;
-  height: 4em;
+.col.project img {
+  margin: 0 auto;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px 2px #111;
+  transition: all 0.3s;
+  height: 35vh;
   width: auto;
-  border-radius: 4px;
-  mask-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
 }
 
-ul#js-list li img:hover {
-  mask-image: -webkit-gradient(linear, right top, left top, from(black), to(black));
+.col.project img:hover {
+  box-shadow: 0 2px 4px 4px #222;
+  transform: translateY(-8px);
 }
 
-/* ul#js-list li img:hover {
-  transform: scale(5);
-  border-radius: 2px;
-} */
-
-/* Project names */
-ul#js-list li b {
-  display: block;
-  font-weight: 700;
-  font-size: 1.1em;
+.col.project p.buttons {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+  text-transform: lowercase;
 }
 
-/* Links */
-ul#js-list li a {
-  margin-right: 8px;
-}
-
-ul#js-list li a:hover {
-  opacity: 0.8;
-}
-
-/* Icons */
-ul#js-list li a:hover .fa-fw {
-  transform: scale(1.2);
-}
-
-ul#js-list li a .fa-fw {
-  opacity: 0.8;
-  transition: all 0.2s;
-}
-
-ul#js-list li span {
+.col.project p.buttons i {
   display: inline-block;
-  top: -2px;
-  font-size: 0.8em;
-  font-weight: 400;
+  transform: scale(1.2);
+  margin-right: 2px;
 }
 
-ul#js-list li span.archive {
-  color: #eaa285aa;
+.col.project h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 4px;
+  padding-bottom: 2px;
 }
 
-ul#js-list li span span.inner {
-  display: none;
-}
-
-ul#js-list li span:hover span.inner {
-  display: inline;
-}
-
-/* GitHub */
-ul#js-list li a.g {
-  color: #6cc644;
-}
-
-/* Git External */
-ul#js-list li a.ge {
-  color: #f54d27;
-}
-
-ul#js-list li a.g:after, ul#js-list li a.ge:after, ul#js-list li a.w:after {
-  font-size: 0;
-  opacity: 0.5;
-  transition: all 0.2s;
-}
-
-ul#js-list li a.g:after {
-  content: ' GitHub';
-}
-
-ul#js-list li a.ge:after {
-  content: ' Git Repo';
-}
-
-ul#js-list li a.w:after {
-  content: ' Website';
-}
-
-ul#js-list li a.w:hover:after, ul#js-list li a.g:hover:after, ul#js-list li a.ge:hover:after {
-  font-size: 1em;
-  opacity: 1;
-}
-
-
-/* Languages */
-ul#js-list li span.lang {
-  font-size: 0.8em;
-  margin: 0 4px;
+span.lang {
+  font-size: 0.5em;
   opacity: 0.6;
+  transition: all 0.3s;
+  text-transform: lowercase;
   cursor: default;
-  transition: opacity 0.2s;
 }
 
-ul#js-list li span.lang:hover {
+span.lang:hover {
   opacity: 1;
 }
 
-ul#js-list li span.lang-html {
+@media screen and (max-width: 768px) {
+  .col.project {
+    max-width: 100vw;
+  }
+
+  span.lang {
+    display: block;
+  }
+
+  .col.project img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+span.lang-html {
   color: #e34c26;
 }
 
-ul#js-list li span.lang-css{
-  color: #e34c26;
-}
-
-ul#js-list li span.lang-css {
+span.lang-css {
   color: #0170ba;
 }
 
-ul#js-list li span.lang-css-scss, ul#js-list li span.lang-scss {
+span.lang-css-scss, span.lang-scss {
   color: #c69;
 }
 
-ul#js-list li span.lang-javascript {
+span.lang-javascript {
   color: #f0db4f;
 }
 
-ul#js-list li span.lang-php {
+span.lang-php {
   color: #666699;
 }
 
-ul#js-list li span.lang-nodejs {
+span.lang-nodejs {
   color: #689f63;
 }
 
-ul#js-list li span.lang-jekyll {
+span.lang-jekyll {
   color: #bd4d4d;
 }
 
-ul#js-list li span.lang-python {
+span.lang-python {
   color: #3776ab;
 }
 
-ul#js-list li span.lang-bash {
+span.lang-bash {
   color: #4eaa25;
-}
-
-
-@media screen and (max-width: 1200px) {
-    ul#js-list li {
-      margin: 64px 0;
-      border-left: none;
-    }
-
-    ul#js-list li img {
-      border-top: 2px solid #99a6aa;
-      float: none;
-      width: 100%;
-      height: auto;
-      margin-bottom: -64px;
-      mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    }
-
-    ul#js-list li a:after {
-      /* yeah this isn't great */
-      margin-top: 16px !important;
-      font-size: 1em !important;
-      opacity: 1 !important;
-      font-size: 0.9em !important;
-    }
-}
-
-
-@media screen and (max-width: 900px) {
-  ul#js-list li span span.inner {
-    display: inline;
-  }
 }

@@ -1,33 +1,185 @@
 ---
 layout: default
 title: Projects & Stuff
-description: Things I've made
+description: A selection of my favourite things I've made
 permalink: /projects/
-scripts:
-  - '/js/pages/projects_list.js'
-  - '/js/pages/projects.js'
+wide: true
 head:
   - <link href="/css/pages/projects.css" rel="stylesheet">
+  - <link href="/css/frameworks/wing-col.css" rel="stylesheet">
 ---
 
-<p>This a shuffled list of stuff that I've made over the years. I can't guarantee the quality of things that are amazingly old.</p>
+<div class="row">
+  <div class="col project">
+    <img src="/img/proj/lunarnet.space.png" alt="A screenshot of lunarnet.space">
+    <h2>
+      LunarNet.space
+      <span>
+        <span class="lang lang-html">HTML</span><span class="lang lang-scss">SCSS</span><span class="lang lang-jekyll">Jekyll</span>
+      </span>
+    </h2>
+    <p>A website for a friend, using the Jekyll static site generator.</p>
+    <p class="buttons">
+      <a href="https://lunarnet.space"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+      <a href="https://github.com/Lunarki/Lunarki.github.io"><i class="fab fa-fw fa-github"></i> Source Code</a>
+    </p>
+  </div>
+  <!-- /lunarnet -->
 
-
-<div id="selector">
-  <i class="fas fa-fw fa-filter"></i> Pick a category! &nbsp;
-  <select onchange="loadProj(true, this.value, true)">
-    <option value="all" selected>📚 Everything &bull;</option>
-    <option value="software">💻 Software</option>
-    <option value="wapp">🌐 Web Apps</option>
-    <option value="wsite">📄 Websites</option>
-    <option value="fun">🕹️ Fun</option>
-    <option value="misc">❓ Misc</option>
-  </select>
+  <div class="col project">
+    <img src="/img/proj/magiccap.me.png" alt="A screenshot of magiccap.me">
+    <h2>
+      MagicCap.me
+      <span>
+        <span class="lang lang-html">HTML</span><span class="lang lang-scss">SCSS</span><span class="lang lang-jekyll">Jekyll</span><span class="lang lang-javascript">Javascript</span>
+      </span>
+    </h2>
+    <p>The website for MagicCap, a FOSS screenshot suite for macOS and Linux. </p>
+    <p class="buttons">
+      <a href="https://magiccap.me/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+      <a href="https://github.com/MagicCap/magiccap.me"><i class="fab fa-fw fa-github"></i> Source Code</a>
+    </p>
+  </div>
+  <!-- /magiccap -->
 </div>
+<!-- /.row -->
 
-<ul id="js-list">
-  <h4>Loading...</h4>
-  <p>Please make sure you have JavaScript enabled!</p>
-</ul>
+<div class="row">
+  <div class="col project">
+    <img src="/img/proj/ubuntucodenamegen.png" alt="A screenshot of ubuntucodenamegen">
+    <h2>
+      Ubuntu Codename Generator
+      <span>
+        <span class="lang lang-html">HTML</span><span class="lang lang-css">CSS</span><span class="lang lang-javascript">Javascript</span>
+      </span>
+    </h2>
+    <p>Uses a large list of adjectives and animals to generate plausable-sounding Ubuntu codenames.</p>
+    <p class="buttons">
+      <a href="/ubuntucodenamegen"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+      <a href="https://github.com/mrdnomaid/ubuntucodenamegen"><i class="fab fa-fw fa-github"></i> Source Code</a>
+    </p>
+  </div>
 
-<p>This isn't an exhaustive list; there's probably some things left out. You might be interested in my <a href="https://github.com/mrdnomaid">GitHub profile</a> or my <a href="https://pi.fishys.space">Pi Site</a>. They might have more stuff.</p>
+  <!-- /ubuntu -->
+  <div class="col project">
+    <img src="/img/proj/redditunsub.png" alt="A screenshot of redditunsub">
+    <h2>
+      Unsubscribe from inactive subreddits
+      <span>
+        <span class="lang lang-html">HTML</span><span class="lang lang-css">CSS</span><span class="lang lang-javascript">Javascript</span>
+      </span>
+    </h2>
+    <p>A tool to easilly unsubscribe from subreddits that aren't active at all, or aren't very active.</p>
+    <p class="buttons">
+      <a href="/redditunsubinactive"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+      <a href="https://github.com/mrdnomaid/redditunsubinactive"><i class="fab fa-fw fa-github"></i> Source Code</a>
+    </p>
+  </div>
+  <!-- /reddit -->
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col project">
+      <img src="/img/proj/flickrmap.png" alt="A screenshot of flickrmap">
+      <h2>
+        Flickr Photo Map
+        <span>
+          <span class="lang lang-scss">SCSS</span><span class="lang lang-javascript">Javascript</span>
+        </span>
+      </h2>
+      <p>Dissatisfied with the first-party Flickr map, I created my own version. Uses the LeafletJS library.</p>
+      <p class="buttons">
+        <a href="/flickr/map/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+        <a href="https://github.com/mrdnomaid/mrdnomaid.github.io/blob/master/flickr_stuff/flickr_map.html"><i class="fab fa-fw fa-github"></i> Source Code</a>
+      </p>
+    </div>
+    <!-- /flickrmap -->
+
+    <div class="col project">
+      <img src="/img/proj/fontrandomizer.png" alt="A screenshot of fontrandomizer">
+      <h2>
+        Font Randomizer
+        <span>
+          <span class="lang lang-html">HTML</span><span class="lang lang-css">CSS</span><span class="lang lang-javascript">Javascript</span>
+        </span>
+      </h2>
+      <p>Make words look weird<br>&nbsp;</p>
+      <p class="buttons">
+        <a href="/fontrandomizer/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+        <a href="https://github.com/mrdnomaid/fontrandomizer"><i class="fab fa-fw fa-github"></i> Source Code</a>
+      </p>
+    </div>
+    <!-- /fontrandom -->
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <div class="col project">
+      <img src="/img/proj/skyepg.png" alt="A screenshot of skyepg">
+      <h2>
+        SkyEPG Recreation
+        <span>
+          <span class="lang lang-html">HTML</span><span class="lang lang-scss">SCSS</span><span class="lang lang-javascript">Javascript</span>
+        </span>
+      </h2>
+      <p>A functioning(ish) web recreation of the classic Sky TV electronic programme guide and general Digibox interface.</p>
+      <p class="buttons">
+        <a href="/skyepg/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+      </p>
+    </div>
+    <!-- /sky -->
+
+    <div class="col project">
+      <img src="/img/proj/brexit.png" alt="A screenshot of brexit">
+      <h2>
+        Brexit Website
+        <span>
+          <span class="lang">Gov.UK Technical Documentation Generator</span>
+        </span>
+      </h2>
+      <p>The obviously-not-fictitious website for HM Government's Department for Brexit and Trade Negotiations.</p>
+      <p class="buttons">
+        <a href="/brexit/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
+      </p>
+    </div>
+    <!-- /brexit -->
+</div>
+<!-- /.row -->
+
+<div class="row">
+    <div class="col project">
+      <h2>
+        User Styles
+        <span>
+          <span class="lang lang-css">CSS</span>
+        </span>
+      </h2>
+      <p>Sloppy CSS tweaks and fixes for websites</p>
+      <p class="buttons">
+        <a href="https://github.com/mrdnomaid/userstyles"><i class="fab fa-fw fa-github"></i> Source Code</a>
+      </p>
+    </div>
+    <!-- /styles -->
+
+    <div class="col project">
+      <h2>
+        User Scripts
+        <span>
+          <span class="lang lang-javascript">Javascript</span>
+        </span>
+      </h2>
+      <p>Crappy scripts for websites to add functionality or whatever</p>
+      <p class="buttons">
+        <a href="https://github.com/mrdnomaid/userscripts"><i class="fab fa-fw fa-github"></i> Source Code</a>
+      </p>
+    </div>
+    <!-- /styles -->
+</div>
+<!-- /.row -->
+
+<hr>
+
+<p>Want to see more? Check out my GitHub repositories (there's a link in the menu!). Or, for old and random things, see <a href="https://pi.fishys.space/">my Pi site</a>.</p>
+<p>Searching for the older projects page? <a href="/oldandbad/projectslist/">It's still here!</a></p>
