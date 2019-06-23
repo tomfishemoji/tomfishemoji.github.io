@@ -27,8 +27,8 @@ I know that programs and services are technically software in and of themselves,
 
 Here's basically everything I have running at the moment, although I often install things briefly just to play around with:
 
-- **Emby**: A Plex alternative which I prefer the flexability and customization of
-- **Ombi**: Ties in with Emby and allows friends to request media for me to aquire and host on the Emby.
+- **Emby**: A Plex alternative which I prefer the flexibility and customization of
+- **Ombi**: Ties in with Emby and allows friends to request media for me to acquire and host on the Emby.
 - **SMB**: Due to its multiplatform support, SMB is my primary method of network file transfer. I make use of **Webmin** to manage shares and configuration here.
 - **Deluge**: I run Deluge as a headless daemon with a web interface for any Linux ISOs I might need to download overnight.
 - **Apache**: Apache is my HTTP server of choice and I have a few apps running under it, such as Dokuwiki.
