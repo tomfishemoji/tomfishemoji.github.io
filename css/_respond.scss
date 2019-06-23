@@ -58,6 +58,14 @@
       }
     }
   }
+
+  main {
+    figure.image.float-left, figure.image.float-right {
+      float: none;
+      margin: 4px auto -8px auto;
+      width: 100%;
+    }
+  }
 }
 
 // On big screens always show the nav
