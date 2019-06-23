@@ -1,3 +1,7 @@
+{% if page.layou == 'post' %}
+  {% include post_img_folder.html %}
+{% endif %}
+
 <!-- Meta Tags -->
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="{% include csp.html %}">
@@ -16,14 +20,14 @@
 <!-- Open Graph Cards  -->
 <meta property="og:title" content="{{ page.title }}"> {% if page.description %}
 <meta property="og:description" content="{{ page.description | escape }}"> {% endif %}
-<meta property="og:image" content="{% if page.image and page.layout == 'post' %}https://trobinson.me/img/posts/{{ page.title }}/{{ page.image }}{% else %}https://trobinson.me/img/babby.png{% endif %}">
+<meta property="og:image" content="{% if page.image and page.layout == 'post' %}https://trobinson.me/img/posts/{{ post_img_folder }}/{{ page.image }}{% else %}https://trobinson.me/img/babby.png{% endif %}">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:site" content="{% if page.authortwitter %}@{{ page.authortwitter }}{% else %}@{{ site.twitter }}{% endif %}">
 <meta name="twitter:title" content="{{ page.title }}"> {% if page.description %}
 <meta name="twitter:description" content="{{ page.description | escape }}"> {% endif %}
-<meta name="twitter:image" content="{% if page.image and page.layout == 'post' %}https://trobinson.me/img/posts/{{ page.title }}/{{ page.image }}{% else %}https://trobinson.me/img/babby.png{% endif %}">
+<meta name="twitter:image" content="{% if page.image and page.layout == 'post' %}https://trobinson.me/img/posts/{{ post_img_folder }}/{{ page.image }}{% else %}https://trobinson.me/img/babby.png{% endif %}">
 <meta name="twitter:dnt" content="on">
 
 <!-- Page title -->
