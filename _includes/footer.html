@@ -6,7 +6,7 @@
   {% endfor %}
 {% endif %}
 
-{% if page.layout == 'post' %}
+{% if page.layout == 'post' and jekyll.env == 'production' %}
   <script src="/js/pages/posts.js"></script>
   <script src="https://viewcount.trobinson.me/get.php?post={{ page.date | date: '%Y'  }}-{{ page.slug }}&callback=true"></script>
 
