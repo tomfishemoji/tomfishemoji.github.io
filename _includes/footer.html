@@ -6,6 +6,16 @@
   {% endfor %}
 {% endif %}
 
+{% if page.layout == 'post' %}
+  <script src="/js/pages/posts.js"></script>
+  <script src="https://viewcount.trobinson.me/get.php?post=2019-new-domain&callback=true"></script>
+
+  <form id="viewcounter_form" action="https://viewcount.trobinson.me/add.php" method="get" style="display: none;" target="viewcounter_frame">
+    <input type="text" name="post" value="{{ page.date | date: '%Y'  }}-{{ page.slug }}" hidden="hidden" readonly="readonly">
+  </form>
+  <iframe style="display: none;" name="viewcounter_frame" id="viewcounter_frame"></iframe>
+{% endif %}
+
 <noscript>
   <style media="screen">
     nav {
