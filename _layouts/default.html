@@ -66,6 +66,11 @@ layout: compress
       {% endif %}
 
       {{ content }}
+
+      {% if page.layout == 'post' %}
+        <hr>
+        <p style="font-style: italic;">Got a comment, a query or some other feedback? I don't have a comments section, but feel free to <a href="https://twitter.com/mrdnomaid">Tweet me</a>!</p>
+      {% endif %}
   </main>
 
   {% include footer.html %}

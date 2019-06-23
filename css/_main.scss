@@ -67,7 +67,23 @@ main {
     display: block;
     width: 100%;
     border-radius: 4px;
-    margin: 4px auto -8px auto;
+  }
+
+  figure.image {
+    display: block;
+    width: 100%;
+    margin: 4px auto;
+    clear: both;
+  }
+
+  figure.image.float-left {
+    float: left;
+    margin-right: 8px;
+  }
+
+  figure.image.float-right {
+    float: right;
+    margin-left: 8px;
   }
 
   p {
@@ -75,12 +91,12 @@ main {
     margin: 0 0 1.5em;
   }
 
-  p.caption, author {
+  figcaption.image-caption, author {
     width: calc(100% - 8px);
     font-style: italic;
     text-align: right;
     color: #aaa;
-    margin: -8px auto 16px auto;
+    margin: 4px auto 16px auto;
   }
 
   ul {
@@ -126,6 +142,10 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+
+  hr.tile {
+    background-repeat: repeat-x;
   }
 
   // In a list of blog posts, this is each individual post
