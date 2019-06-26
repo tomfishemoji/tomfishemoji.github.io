@@ -1,6 +1,7 @@
 const templateHTML = `
   <div class="post">
           <h3><a href="{url}">{title}</a></h3>
+          <h3>{desc}</h3>
           <h4>
             {date}
             {category}

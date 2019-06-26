@@ -8,10 +8,11 @@ hidden: true
   {% unless post.hidden %}
     {
       "title"    : "{{ post.title }}",
+      "desc"     : "{% if page.description %}<h3>{{ page.description }}</h3>{% endif %}",
       "category" : "{% for c in post.category %}<a href=\"/archive/c/#{{ c | replace: ' ','-'}}\">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}",
       "url"      : "{{ post.url }}",
       "author"   : "{% if page.author %} by {% if page.authorlnk %}<a href=\"{{ page.authorlnk }}\" target=\"_blank\" rel=\"noopener noreferrer\">{% endif %}{{ page.author }}{% if page.authorlnk %}</a>{% endif %}{% else %} {% endif %}",
-      "date"     : "{{ post.date | date: '%B %d, %Y' }}"
+      "date"     : "{{ post.date | date_to_long_string: 'ordinal' }}"
     }{% unless forloop.last %},{% endunless %}
   {% endunless %}
   {% endfor %}

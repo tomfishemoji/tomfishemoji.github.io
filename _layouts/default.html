@@ -22,7 +22,7 @@ layout: compress
         <aside id="meta" {% if page.image and page.layout == 'post' %}class="has-image"{% endif %}>
           {% if page.layout == 'post' %}
             <h2 id="date">
-              Posted on {{ page.date | date: '%B %d, %Y' }}
+              Posted on {{ page.date | date_to_long_string: 'ordinal' }}
               {% if page.category %} in {% for c in page.category %}<a href="/archive/c/#{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
               <span id="js-viewcount">with # views</span>
             </h2>
