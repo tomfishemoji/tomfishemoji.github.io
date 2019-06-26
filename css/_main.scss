@@ -164,9 +164,17 @@ main {
       margin-bottom: 2px;
     }
 
+    h3:not(:first-of-type) {
+      color: #ccc;
+      font-size: 1.2em;
+      font-weight: normal;
+      margin-top: -2px;
+      margin-bottom: 2px;
+    }
+
     h4 {
       color: #aaa;
-      font-size: 1em;
+      font-size: 0.8em;
       font-weight: normal;
 
       a {
