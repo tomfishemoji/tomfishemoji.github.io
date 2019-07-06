@@ -1,184 +1,55 @@
 ---
-layout: default
-title: Projects & Stuff
-description: A selection of my favourite things I've made
+layout: page
+wide: ish
+title: Projects & Things
+description: Stuff I've made, done and created
 permalink: /projects/
-wide: true
 head:
   - <link href="/css/pages/projects.css" rel="stylesheet">
-  - <link href="/css/frameworks/wing-col.css" rel="stylesheet">
+imgcsp: 'https://wiki.fishys.space'
 ---
 
-<div class="row">
-  <div class="col project">
-    <img src="/img/proj/lunarnet.space.png" alt="A screenshot of lunarnet.space">
-    <h2>
-      LunarNet.space
-      <span>
-        <span class="lang lang-html">HTML</span><span class="lang lang-scss">SCSS</span><span class="lang lang-jekyll">Jekyll</span>
-      </span>
-    </h2>
-    <p>A website for a friend, using the Jekyll static site generator.</p>
-    <p class="buttons">
-      <a href="https://lunarnet.space"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
-      <a href="https://github.com/Lunarki/Lunarki.github.io"><i class="fab fa-fw fa-github"></i> Source Code</a>
-    </p>
-  </div>
-  <!-- /lunarnet -->
+<ul id="projects">
 
-  <div class="col project">
-    <img src="/img/proj/magiccap.me.png" alt="A screenshot of magiccap.me">
-    <h2>
-      MagicCap.me
-      <span>
-        <span class="lang lang-html">HTML</span><span class="lang lang-scss">SCSS</span><span class="lang lang-jekyll">Jekyll</span><span class="lang lang-javascript">Javascript</span>
-      </span>
-    </h2>
-    <p>The website for MagicCap, a FOSS screenshot suite for macOS and Linux. </p>
-    <p class="buttons">
-      <a href="https://magiccap.me/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
-      <a href="https://github.com/MagicCap/magiccap.me"><i class="fab fa-fw fa-github"></i> Source Code</a>
-    </p>
-  </div>
-  <!-- /magiccap -->
-</div>
-<!-- /.row -->
+  <li class="project">
+    <img src="/img/projects/lunarnet.space.png" alt="A screenshot of lunarnet.space">
+    <h2><a href="https://lunarnet.space">lunarnet.space</a></h2>
+    <h3><a href="https://github.com/Lunarki/Lunarki.github.io">View Code</a> <span class="lang lang-html">html</span><span class="lang lang-scss">scss</span><span class="lang lang-jekyll">jekyll</span></h3>
 
-<div class="row">
-  <div class="col project">
-    <img src="/img/proj/ubuntucodenamegen.png" alt="A screenshot of ubuntucodenamegen">
-    <h2>
-      Ubuntu Codename Generator
-      <span>
-        <span class="lang lang-html">HTML</span><span class="lang lang-css">CSS</span><span class="lang lang-javascript">Javascript</span>
-      </span>
-    </h2>
-    <p>Uses a large list of adjectives and animals to generate plausable-sounding Ubuntu codenames.</p>
-    <p class="buttons">
-      <a href="/ubuntucodenamegen"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
-      <a href="https://github.com/mrdnomaid/ubuntucodenamegen"><i class="fab fa-fw fa-github"></i> Source Code</a>
-    </p>
-  </div>
+    <p>A fairly standard website for a friend, created rapidly using the Jekyll static site generator and SCSS (SASS). The design based loosely on his previous website and the Arch Linux Wikki, the site features a blog, pages and an organised file structure.</p>
+  </li>
 
-  <!-- /ubuntu -->
-  <div class="col project">
-    <img src="/img/proj/redditunsub.png" alt="A screenshot of redditunsub">
-    <h2>
-      Unsubscribe from inactive subreddits
-      <span>
-        <span class="lang lang-html">HTML</span><span class="lang lang-css">CSS</span><span class="lang lang-javascript">Javascript</span>
-      </span>
-    </h2>
-    <p>A tool to easilly unsubscribe from subreddits that aren't active at all, or aren't very active.</p>
-    <p class="buttons">
-      <a href="/redditunsubinactive"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
-      <a href="https://github.com/mrdnomaid/redditunsubinactive"><i class="fab fa-fw fa-github"></i> Source Code</a>
-    </p>
-  </div>
-  <!-- /reddit -->
-</div>
-<!-- /.row -->
+  <li class="project">
+    <img src="/img/projects/magiccap.me.png" alt="A screenshot of magiccap.me">
+    <h2><a href="https://magiccap.me">magiccap.me</a></h2>
+    <h3><a href="https://github.com/MagicCap/MagicCap.me">View Code</a> <span class="lang lang-html">html</span><span class="lang lang-scss">scss</span><span class="lang lang-javascript">javascript</span><span class="lang lang-jekyll">jekyll</span></h3>
 
-<div class="row">
-    <div class="col project">
-      <img src="/img/proj/flickrmap.png" alt="A screenshot of flickrmap">
-      <h2>
-        Flickr Photo Map
-        <span>
-          <span class="lang lang-scss">SCSS</span><span class="lang lang-javascript">Javascript</span>
-        </span>
-      </h2>
-      <p>Dissatisfied with the first-party Flickr map, I created my own version. Uses the LeafletJS library.</p>
-      <p class="buttons">
-        <a href="/flickr/map/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
-        <a href="https://github.com/mrdnomaid/mrdnomaid.github.io/blob/master/flickr_stuff/flickr_map.html"><i class="fab fa-fw fa-github"></i> Source Code</a>
-      </p>
-    </div>
-    <!-- /flickrmap -->
+    <p>Since improved by various other contributers, I created the website for MagicCap - a free and open source screenshot capture utility for macOS and Linux.</p>
+  </li>
 
-    <div class="col project">
-      <img src="/img/proj/nexttrains.png" alt="A screenshot of nexttrains">
-      <h2>
-        Next Trains
-        <span>
-          <span class="lang lang-php">PHP</span>
-        </span>
-      </h2>
-      <p>Get the next trains from any UK national rail station on your Google Assistant-enabled device.</p>
-      <p class="buttons">
-        <a href="https://assistant.google.com/services/a/uid/0000002b9e81557d"><i class="fas fa-fw fa-comment-dots"></i> Use</a>
-      </p>
-    </div>
-    <!-- /fontrandom -->
-</div>
-<!-- /.row -->
+  <li class="project">
+    <img src="/img/projects/nexttrains.png" alt="A screenshot of nexttrains">
+    <h2><a href="https://assistant.google.com/services/a/uid/0000002b9e81557d">NextTrains</a></h2>
+    <h3><span class="lang lang-php">php</span></h3>
 
+    <p>Utilising the amazing RealTimeTrains API, this Google Assistant Action fetches live UK railway station departure information. <br><i>"Hey Google, ask Next Trains about Birmingham Moor Street"</i></p>
+  </li>
 
-<div class="row">
-    <div class="col project">
-      <img src="/img/proj/skyepg.png" alt="A screenshot of skyepg">
-      <h2>
-        SkyEPG Recreation
-        <span>
-          <span class="lang lang-html">HTML</span><span class="lang lang-scss">SCSS</span><span class="lang lang-javascript">Javascript</span>
-        </span>
-      </h2>
-      <p>A functioning(ish) web recreation of the classic Sky TV electronic programme guide and general Digibox interface.</p>
-      <p class="buttons">
-        <a href="/skyepg/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
-      </p>
-    </div>
-    <!-- /sky -->
+  <li class="project">
+    <img src="/img/projects/skyepg.png" alt="A screenshot of skyepg">
+    <h2><a href="https://trobinson.me/skyepg/">SkyEPG</a></h2>
+    <h3><span class="lang lang-php">html</span><span class="lang lang-scss">scss</span><span class="lang lang-javascript">javascript</span></h3>
 
-    <div class="col project">
-      <img src="/img/proj/brexit.png" alt="A screenshot of brexit">
-      <h2>
-        Brexit Website
-        <span>
-          <span class="lang">Gov.UK Technical Documentation Generator</span>
-        </span>
-      </h2>
-      <p>The obviously-not-fictitious website for HM Government's Department for Brexit and Trade Negotiations.</p>
-      <p class="buttons">
-        <a href="/brexit/"><i class="fas fa-fw fa-hand-pointer"></i> Visit</a>
-      </p>
-    </div>
-    <!-- /brexit -->
-</div>
-<!-- /.row -->
+    <p>Despite sloppy code, I think this is still pretty interesting; A mostly-working web recreation of the old Sky Digital Digibox user interface.</p>
+  </li>
 
-<div class="row">
-    <div class="col project">
-      <h2>
-        User Styles
-        <span>
-          <span class="lang lang-css">CSS</span>
-        </span>
-      </h2>
-      <p>Sloppy CSS tweaks and fixes for websites</p>
-      <p class="buttons">
-        <a href="https://github.com/mrdnomaid/userstyles"><i class="fab fa-fw fa-github"></i> Source Code</a>
-      </p>
-    </div>
-    <!-- /styles -->
+  <li class="project">
+    <img src="https://wiki.fishys.space/lib/exe/fetch.php?cache=&media=admin:lab.jpg" alt="A screenshot of my homelab">
+    <h2><a href="https://fishys.space">Homelab</a></h2>
 
-    <div class="col project">
-      <h2>
-        User Scripts
-        <span>
-          <span class="lang lang-javascript">Javascript</span>
-        </span>
-      </h2>
-      <p>Crappy scripts for websites to add functionality or whatever</p>
-      <p class="buttons">
-        <a href="https://github.com/mrdnomaid/userscripts"><i class="fab fa-fw fa-github"></i> Source Code</a>
-      </p>
-    </div>
-    <!-- /styles -->
-</div>
-<!-- /.row -->
+    <p>A collection of networking gear, servers and gizmos I have under my desk. Used to experiment and practice with software and hardware such as the Proxmox hypervisor and Raspberry Pis. Learn more at the link above.</p>
+  </li>
 
-<hr>
+</ul>
 
-<p>Want to see more? Check out my GitHub repositories (there's a link in the menu!). Or, for old and random things, see <a href="https://pi.fishys.space/">my Pi site</a>.</p>
-<p>Searching for the older projects page? <a href="/oldandbad/projectslist/">It's still here!</a></p>
+<p>Find even more on my GitHub profile (linked in the sidebar)</p>

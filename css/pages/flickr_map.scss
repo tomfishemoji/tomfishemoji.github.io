@@ -6,7 +6,7 @@ div#yeahyeahyeahs {
   pointer-events: none;
   transition: opacity 1s;
   z-index: 9999;
-  border: 2px solid skyblue;
+  border: 2px solid #87ceeb;
   border-radius: 8px;
 }
 
@@ -18,7 +18,7 @@ div#yeahyeahyeahs {
   padding: 2px 4px;
 
   a {
-    color: deepskyblue;
+    color: #00BFFF;
   }
 
   span.map-fullscreen-button {
@@ -27,7 +27,7 @@ div#yeahyeahyeahs {
     margin-left: 4px;
 
     a {
-      color: skyblue;
+      color: #87ceeb;
     }
   }
 }

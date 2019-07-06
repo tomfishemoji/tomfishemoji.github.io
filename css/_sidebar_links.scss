@@ -26,8 +26,8 @@ a#keybase {
 a {
   color: #eee;
   border-bottom: none;
-  border-left: 2px solid skyblue;
-  border-right: 2px solid skyblue;
+  border-left: 2px solid #87ceeb;
+  border-right: 2px solid #87ceeb;
   border-right-width: 0 !important;
   background: none;
   text-decoration: none;
@@ -37,6 +37,7 @@ a {
 
 a:hover, a.c {
   border-left-width: 8px !important;
+  border-left-color: #00bfff;
 }
 
 a i {

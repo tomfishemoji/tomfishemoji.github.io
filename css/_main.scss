@@ -56,11 +56,11 @@ main {
   // Links
   a {
     text-decoration: none;
-    color: skyblue;
+    color: #87ceeb;
   }
 
   a:hover {
-    color: deepskyblue;
+    color: #00BFFF;
   }
 
   img {
@@ -113,7 +113,7 @@ main {
 
   blockquote {
     color: #ccc;
-    border-left: 2px solid skyblue;
+    border-left: 2px solid #87ceeb;
     margin: 0 0 2px 0;
     padding: 16px;
     font-style: italic;
