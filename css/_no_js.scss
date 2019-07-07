@@ -1,0 +1,9 @@
+body:not(.js-enabled) {
+  nav {
+    display: block !important;
+  }
+
+  a.menu-toggle {
+    display: none !important;
+  }
+}

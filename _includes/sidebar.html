@@ -1,12 +1,14 @@
-<img src="/img/babby.png" alt="babby.png" id="babby" onclick="window.location = '/';" style="cursor: pointer;">
+<div id="sidebar-top">
+  <img src="/img/babby.png" alt="babby.png" id="babby" onclick="window.location = '/';" style="cursor: pointer;">
 
-{% if page.permalink == '/' %}
-  <h1>Hello! <img src="/img/twemoji-wave.png" alt="👋" draggable="false"></h1>
-  <h2>I'm Tom.</h2>
-{% else %}
-  <h1>Thomas</h1>
-  <h2>Robinson</h2>
-{% endif %}
+  {% if page.permalink == '/' %}
+    <h1>Hello! <img src="/img/twemoji-wave.png" alt="👋" draggable="false"></h1>
+    <h2>I'm Tom.</h2>
+  {% else %}
+    <h1>Thomas</h1>
+    <h2>Robinson</h2>
+  {% endif %}
+</div>
 
 
 <a href="#" class="menu-toggle" id="menu-toggle-open" onclick="openMenu();"><i class="fas fa-fw fa-chevron-down"></i> Open Menu</a>

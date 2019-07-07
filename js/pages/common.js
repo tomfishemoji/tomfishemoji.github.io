@@ -1,3 +1,5 @@
+document.body.classList.add('js-enabled');
+
 const hash = window.location.hash;
 
 // force self out of iframes, ish
