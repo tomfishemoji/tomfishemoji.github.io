@@ -1,6 +1,6 @@
 ---
 title: Post View Counter Info
-description: "What's this weird request my browser makes when I read stuff?"
+description: "what's this for then?"
 permalink: /blog/postviewcounter
 hidden: true
 ---
