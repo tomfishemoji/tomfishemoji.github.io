@@ -7,7 +7,7 @@ div.project {
     padding: 16px;
     background-color: #222;
     border-radius: 8px;
-    box-shadow: 0 8px 16px 8px #000;
+    box-shadow: 0 8px 16px 4px #050505;
     border-top: 4px solid #bbddea;
 }
   
@@ -47,6 +47,10 @@ div.project-links a.github i {
 
 div.project-links a.gitlab i {
     color: #fca326;
+}
+
+div.project-links a.flickr i {
+    color: #fff;
 }
 
 div.project-links a:hover {
