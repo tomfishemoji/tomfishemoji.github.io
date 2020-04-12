@@ -17,7 +17,7 @@
 <nav>
   <a href="https://twitter.com/mrdnomaid" id="twitter"><i class="fab fa-fw fa-twitter"></i> Twitter</a><br>
   <a href="https://github.com/mrdnomaid" id="github"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
-  <a href="https://photos.trobinson.me" id="flickr"><i class="fab fa-fw fa-flickr"></i> Flickr</a><br>
+  <a href="/flickr/" id="flickr" class="f{% if page.url == '/flickr/' %} c{% endif %}"><i class="fab fa-fw fa-flickr"></i> Flickr</a><br>
   <!-- <a href="https://youtube.com/dnomaid" id="youtube"><i class="fab fa-fw fa-youtube"></i> YouTube</a><br> -->
   <a href="https://keybase.io/dnomaid" id="keybase"><i class="fab fa-fw fa-keybase"></i> Keybase</a><br><br>
 
@@ -36,5 +36,15 @@
 
   {% if page.next and page.layout == 'post' %}
     <a href="{{ page.next.url }}"><i class="fas fa-fw fa-angle-double-right"></i> Next Post</a><br>
+  {% endif %}
+
+
+  {% if page.url contains '/flickr' %}
+    <br><br>
+    <i class="fab fa-fw fa-flickr"></i> Flickr Toys:<br>
+    <a href="/flickr/photosets/" class="f{% if page.url == '/flickr/photosets/' %} c{% endif %}"><i class="fas fa-fw fa-list"></i> Albums</a><br>
+    <a href="/flickr/photos/" class="f{% if page.url == '/flickr/photos/' %} c{% endif %}"><i class="fas fa-fw fa-images"></i> Photos</a><br>
+    <a href="/flickr/map/" class="f{% if page.url == '/flickr/map/' %} c{% endif %}"><i class="fas fa-fw fa-map-marked"></i> Map</a><br>
+    <a href="/flickr/map/stations/" class="f{% if page.url == '/flickr/map/stations/' %} c{% endif %}"><i class="fas fa-fw fa-train"></i> Stn Map</a>
   {% endif %}
 </nav>

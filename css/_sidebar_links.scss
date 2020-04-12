@@ -2,7 +2,7 @@ a#twitter {
   border-left: 2px solid #1da1f2;
 }
 
-a#flickr {
+a#flickr, a.f {
   border-left: 2px solid #ff0084;
 }
 
@@ -32,6 +32,10 @@ a {
 a:hover, a.c {
   border-left-width: 8px !important;
   border-left-color: #00bfff;
+}
+
+a.f:hover, a.f.c {
+  border-left-color: #ff0084;
 }
 
 a i {
