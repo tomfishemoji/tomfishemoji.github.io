@@ -1,119 +1,42 @@
-div.project {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: calc(100% - 32px);
-    margin-bottom: 64px;
-    padding: 16px;
-    background-color: #222;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px 4px #050505;
-    border-top: 4px solid #bbddea;
-}
-  
-div.project:nth-child(even) {
-    border-top: 4px solid #fff;
+ul#projects {
+  list-style: none;
+  padding: 0;
 }
 
-div.project-left {
-    position: relative;
-    width: 100%;
+li.project {
+  display: block;
+  width: 100%;
 }
 
-div.project-links {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+li.project:not(:first-of-type) {
+  margin-top: 24px;
 }
 
-div.project-links a {
-    color: #eee;
-    border-bottom: 2px solid #eee0;
-    transition: all 0.2s;
+li.project a.project-title, li.project span {
+  display: block;
 }
 
-div.project-links a i {
-    color: skyblue;
-    margin-right: 4px;
-    transition: all 0.2s;
+li.project a.project-title {
+  font-size: 1.3em;
 }
 
-div.project-links a.github i {
-    color: #6cc644;
+li.project span {
+  font-size: 0.8em;
+  opacity: 0.8;
 }
 
-div.project-links a.gitlab i {
-    color: #fca326;
+li.project img {
+  float: left;
+  height: 5em;
+  width: auto;
+  margin: 0 16px 16px 0;
 }
 
-div.project-links a.flickr i {
-    color: #fff;
+@media screen and (max-width: 70em) {
+  li.project img {
+    float: none;
+    display: block;
+    height: 6em;
+    margin: 0 0 8px 0;
+  }
 }
-
-div.project-links a:hover {
-    border-bottom-color: #555;
-}
-
-div.project-links a:hover i {
-    transform: scale(1.2);
-}
-
-img.project-image {
-    height: 128px;
-    width: 128px;
-    margin-left: 16px;
-    border-radius: 4px;
-    mask-image: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0)));
-}
-
-span.lang {
-    font-size: 0.8em;
-    opacity: 0.6;
-    transition: all 0.3s;
-    text-transform: lowercase;
-    cursor: default;
-  }
-  
-  span.lang:hover {
-    opacity: 1;
-  }
-  
-  span.lang-html {
-    color: #e34c26;
-  }
-  
-  span.lang-css {
-    color: #0170ba;
-  }
-  
-  span.lang-css-scss, span.lang-scss {
-    color: #c69;
-  }
-  
-  span.lang-javascript {
-    color: #f0db4f;
-  }
-  
-  span.lang-php {
-    color: #666699;
-  }
-  
-  span.lang-nodejs {
-    color: #689f63;
-  }
-  
-  span.lang-jekyll {
-    color: #bd4d4d;
-  }
-  
-  span.lang-python {
-    color: #3776ab;
-  }
-  
-  span.lang-bash {
-    color: #4eaa25;
-  }
-  
