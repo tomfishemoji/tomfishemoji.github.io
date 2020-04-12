@@ -4,12 +4,12 @@ ul#projects {
 }
 
 li.project {
-  display: block;
+  display: inline-block;
   width: 100%;
 }
 
 li.project:not(:first-of-type) {
-  margin-top: 24px;
+  margin-top: 8px;
 }
 
 li.project a.project-title, li.project span {
