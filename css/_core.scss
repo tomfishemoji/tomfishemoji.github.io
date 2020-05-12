@@ -15,9 +15,17 @@ body {
 
 aside#topbar {
   position: fixed;
-  width: 100%;
+  width: 0%;
   height: 2px;
   left: 0;
   top: 0;
   background-color: #87ceeb;
+  transition: width 1s ease-in;
+}
+
+body:not(.js-enabled) {
+  aside#topbar {
+    width: 100%;
+    transition: none;
+  }
 }

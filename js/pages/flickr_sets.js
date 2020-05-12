@@ -1,8 +1,11 @@
+loaderBar(0);
+
 const outDiv = document.getElementById('js-gals');
 let outData = '';
 
 function doFlickr(flickrData) {
   console.log(flickrData);
+  loaderBar(75);
 
   for(album of flickrData.photosets.photoset) {
     console.log(album);
@@ -36,5 +39,6 @@ function doFlickr(flickrData) {
   }
 
   outDiv.innerHTML = `<ul> ${outData} </ul>`;
+  loaderBar(100);
 
 }

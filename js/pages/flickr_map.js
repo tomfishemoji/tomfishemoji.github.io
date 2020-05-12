@@ -1,3 +1,5 @@
+loaderBar(0);
+
 let mapDiv = document.getElementById('yeahyeahyeahs');
 let map = L.map('yeahyeahyeahs').fitWorld();
 
@@ -41,6 +43,8 @@ function doFlickr(flickrData) {
   let photoCountTagged = 0;
   let photoCountTotal = 0;
 
+  loaderBar(50);
+
   for(p of flickrData.photos.photo) {
     // console.log(p);
 
@@ -69,6 +73,7 @@ function doFlickr(flickrData) {
 
 
   document.getElementById('load').style.display = 'none';
+  loaderBar(100);
 
   if(window.location.hash == '#big') {
     embiggen();
