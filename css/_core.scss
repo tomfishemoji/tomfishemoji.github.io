@@ -21,6 +21,7 @@ aside#topbar {
   top: 0;
   background-color: #87ceeb;
   transition: width 1s ease-in;
+  z-index: 999;
 }
 
 body:not(.js-enabled) {
