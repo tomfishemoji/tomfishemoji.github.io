@@ -33,8 +33,9 @@ function contactAlert() {
 if(hash == '#contact') { contactAlert(); }
 
 function loaderBar(percent) {
-  console.log(percent);
-  document.getElementById('topbar').style.width = `${percent}%`;
+  // this was a bad idea lol
+  // console.log(percent);
+  // document.getElementById('topbar').style.width = `${percent}%`;
 }
 
 loaderBar(100);
