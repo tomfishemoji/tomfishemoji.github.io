@@ -3,5 +3,6 @@ input#search-input {
   padding: 8px;
   border: 1px solid #00BFFF;
   border-radius: 4px;
-  background-color: #444;
+  background-color: #eee;
+  color: #111;
 }
