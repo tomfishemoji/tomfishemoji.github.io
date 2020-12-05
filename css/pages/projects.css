@@ -70,5 +70,9 @@ li.project span.project-langs span.lang {
       flex: 100%;
       margin: 24px 0;
     }
+
+    li.project img {
+        margin-bottom: 8px;
+    }
   }
   
