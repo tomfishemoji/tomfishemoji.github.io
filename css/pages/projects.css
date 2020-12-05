@@ -1,42 +1,69 @@
 ul#projects {
-  list-style: none;
-  padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 li.project {
-  display: inline-block;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 46%;
+    margin: 2%;
+    padding: 0;
+    border-radius: 4px;
+    pointer-events: none;
+    /* transition: background-color 0.2s; */
 }
 
-li.project:not(:first-of-type) {
-  margin-top: 8px;
+li.project a {
+    pointer-events: auto;
 }
 
-li.project a.project-title, li.project span {
-  display: block;
-}
+/* li.project:hover {
+    background-color: #222;
+} */
 
-li.project a.project-title {
-  font-size: 1.3em;
-}
-
-li.project span {
-  font-size: 0.8em;
-  opacity: 0.8;
+li.project:hover img {
+    transform: translateY(-16px) scale(1.05);
 }
 
 li.project img {
-  float: left;
-  height: 5em;
-  width: auto;
-  margin: 0 16px 16px 0;
+    width: 100%;
+    margin-bottom: -64px;
+    border-radius: 8px;
+    mask-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(transparent));
+    transform: translateY(0) scale(1.05);
+    transition: all 0.2s ease-out;
+}
+
+li a.project-title {
+    font-size: 2em;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+li a.project-title:hover {
+    color: skyblue;
+}
+
+li.project span.project-langs {
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+li.project span.project-langs span.lang {
+    display: inline-block;
+    margin: 0 2px;
 }
 
 @media screen and (max-width: 70em) {
-  li.project img {
-    float: none;
-    display: block;
-    height: 6em;
-    margin: 0 0 8px 0;
+    li.project {
+      flex: 100%;
+      margin: 24px 0;
+    }
   }
-}
+  
