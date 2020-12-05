@@ -33,11 +33,16 @@ li.project:hover img {
 
 li.project img {
     width: 100%;
-    margin-bottom: -64px;
+    margin-bottom: -32px;
     border-radius: 8px;
     mask-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(transparent));
     transform: translateY(0) scale(1.05);
     transition: all 0.2s ease-out;
+    z-index: 0;
+}
+
+li a.project-title, li.project span.project-langs, li.project p {
+    z-index: 2;;
 }
 
 li a.project-title {
