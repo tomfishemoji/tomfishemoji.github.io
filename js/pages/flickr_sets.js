@@ -25,7 +25,7 @@ function doFlickr(flickrData) {
 
     outData += `
       \n<li style="margin-bottom: 16px;">
-          <a href="https://www.flickr.com/photos/mrdnomaid/albums/${album.id}">
+          <a href="https://www.flickr.com/photos/{{site.flickr}}/albums/${album.id}">
           ${album.title._content}</a>
           <br>
           <span style="font-size: 0.8em; opacity: 0.8;">

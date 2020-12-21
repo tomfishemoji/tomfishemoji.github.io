@@ -17,7 +17,7 @@ I posted a Twitter video a few days back, after I installed the update, which wi
 
 <div>
 <div style="max-width: 40em !important; margin: 0 auto;">
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yay video drivers <a href="https://t.co/bgeVNxWYeV">pic.twitter.com/bgeVNxWYeV</a></p>&mdash; Tom (@mrdnomaid) <a href="https://twitter.com/mrdnomaid/status/760767912126844928">August 3, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yay video drivers <a href="https://t.co/bgeVNxWYeV">pic.twitter.com/bgeVNxWYeV</a></p>&mdash; Tom (@mrdnomaid) <a href="https://twitter.com/{{site.twitter}}/status/760767912126844928">August 3, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 </div>

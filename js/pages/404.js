@@ -1,3 +1,5 @@
+---
+---
 loaderBar(0);
 const div = document.getElementById('js-folder');
 let files = '';
@@ -10,7 +12,7 @@ for(let i = 0; i < pathsplit.length - 2; i++) {
   folderparent += pathsplit[i];
 }
 
-$.getJSON(`https://api.github.com/repos/mrdnomaid/mrdnomaid.github.io/contents${window.location.pathname}`, function(j) {
+$.getJSON(`https://api.github.com/repos/{{site.github}}/{{site.github}}.github.io/contents${window.location.pathname}`, function(j) {
   loaderBar(50);
   folders += `<a href="${folderparent}#open"><i class="fas fa-fw fa-level-up-alt"></i> Up a level</a><br>`;
 

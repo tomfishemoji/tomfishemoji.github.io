@@ -5,7 +5,7 @@ let map = L.map('yeahyeahyeahs').fitWorld();
 
 let extraAtts = `
   <br>
-  <span id="taggedcount">0</span>/<span id="totalcount">0</span> of <a href="https://www.flickr.com/photos/mrdnomaid/">my photos</a> displayed
+  <span id="taggedcount">0</span>/<span id="totalcount">0</span> of <a href="https://www.flickr.com/photos/{{site.github}}/">my photos</a> displayed
 `;
 
 let extraBig = `
