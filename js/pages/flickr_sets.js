@@ -1,3 +1,5 @@
+---
+---
 loaderBar(0);
 
 const outDiv = document.getElementById('js-gals');

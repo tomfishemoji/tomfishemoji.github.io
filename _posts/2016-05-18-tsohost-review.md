@@ -67,13 +67,13 @@ Every support ticket and email I’ve sent has been replied to within 12 hours. 
 
 <div>
 <div style="max-width: 40em !important; margin: 0 auto;">
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">*breathes huge sigh of relief* <a href="https://t.co/XZeV2nlHg9">pic.twitter.com/XZeV2nlHg9</a></p>&mdash; Tom (@mrdnomaid) <a href="https://twitter.com/{{site.twitter}}/status/731848617531744256">May 15, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">*breathes huge sigh of relief* <a href="https://t.co/XZeV2nlHg9">pic.twitter.com/XZeV2nlHg9</a></p>&mdash; Tom (@{{site.twitter}}) <a href="https://twitter.com/{{site.twitter}}/status/731848617531744256">May 15, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 </div>
 <div>
 <div style="max-width: 40em !important; margin: 0 auto;">
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">MY SITE WORKS!<br>HUGE THANKS TO <a href="https://twitter.com/tsohost">@tsohost</a> AND <a href="https://twitter.com/FreddyStudio">@FreddyStudio</a> (even if he did break it in the first place)</p>&mdash; Tom (@mrdnomaid) <a href="https://twitter.com/{{site.twitter}}/status/731861986338803713">May 15, 2016</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">MY SITE WORKS!<br>HUGE THANKS TO <a href="https://twitter.com/tsohost">@tsohost</a> AND <a href="https://twitter.com/FreddyStudio">@FreddyStudio</a> (even if he did break it in the first place)</p>&mdash; Tom (@{{site.twitter}}) <a href="https://twitter.com/{{site.twitter}}/status/731861986338803713">May 15, 2016</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 </div>
