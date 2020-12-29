@@ -24,13 +24,13 @@ if(hash == '#menu') { openMenu(); }
 if(hash == '#no-menu') { closeMenu(); }
 
 // Contact alert box
-function contactAlert() {
-  alert(
-    `I don't bite!\n\nYou can email me using tom@${atob('ZG5vbWFpZC5jby51aw==')}\nFor added security, make sure to grab my PGP key from my Keybase profile!`
-  );
+const emailAddr = `tom@${atob('ZG5vbWFpZC5jby51aw==')}`;
+if(document.getElementById('js-email')) {
+  document.getElementById('js-email').innerHTML = emailAddr;
+  document.getElementById('js-email').href = `mailto:${emailAddr}?subject=Hello!`;
 }
 
-if(hash == '#contact') { contactAlert(); }
+if(hash == '#contact') { window.location = '/about'; }
 
 function loaderBar(percent) {
   // this was a bad idea lol

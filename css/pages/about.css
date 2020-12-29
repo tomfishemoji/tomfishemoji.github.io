@@ -1,0 +1,21 @@
+ul#about-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+ul#about-list li b {
+    display: inline-block;
+    min-width: 7em;
+}
+
+ul#about-list li i {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+    ul#about-list li b {
+        width: 100%;
+        margin-top: 4px;
+    }
+}
