@@ -38,4 +38,4 @@ function loaderBar(percent) {
   // document.getElementById('topbar').style.width = `${percent}%`;
 }
 
-loaderBar(100);
+// loaderBar(100);

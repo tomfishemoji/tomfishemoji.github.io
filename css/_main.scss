@@ -14,6 +14,10 @@ main {
       margin-bottom: -5vh;
     }
 
+    h1#title:not(.keepcase), h2#desc:not(.keepcase) {
+      text-transform: lowercase;
+    }
+
     h1#title,
     h2#date,
     h2#desc {
@@ -43,7 +47,7 @@ main {
       margin-bottom: 8px;
       font-size: 0.8em;
       text-align: right;
-      color: #555;
+      color: #888;
       font-style: italic;
     }
   }

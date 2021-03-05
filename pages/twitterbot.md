@@ -1,6 +1,7 @@
 ---
+layout: default
 title: Twitter Bot
-description: "what's is a @itsmeimabot?"
+description: "what is a @itsmeimabot?"
 permalink: /twitterbot
 hidden: true
 ---

@@ -61,8 +61,8 @@ layout: compress
           </img>
           {% endif %}
 
-          <h1 id="title">{{ page.title }}</h1>
-          <h2 id="desc">{% if page.desc %}{{ page.desc }}{% elsif page.description %}{{ page.description }}{% endif %}</h2>
+          <h1 id="title" {% if page.keepcase %} class="keep-case" {% endif %}>{{ page.title }}</h1>
+          <h2 id="desc" {% if page.keepcase %} class="keep-case" {% endif %}>{% if page.desc %}{{ page.desc }}{% elsif page.description %}{{ page.description }}{% endif %}</h2>
         </aside>
       {% endif %}
 
@@ -70,8 +70,23 @@ layout: compress
 
       {% if page.layout == 'post' %}
         <hr>
-        <p style="font-style: italic;">Got a comment, a query or some other feedback? I don't have a comments section, but feel free to <a href="https://twitter.com/{{site.github}}">Tweet me</a>!</p>
+        <div style="font-style: italic;">
+          <p>Got a comment or a query? I don't have a comments section, but feel free to <a href="https://twitter.com/{{site.github}}">send a tweet my way</a> :)</p>
+
+          {% if page.previous %}
+             <p>Previous Post: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>
+            {% else %}
+             <p>This is the first post!</p>
+          {% endif %}
+        
+          {% if page.next %}
+             <p>Next Post: <a href="{{ page.next.url }}"> {{ page.next.title }}</a></p>
+            {% else %}
+             <p>This is the newest post!</p>
+          {% endif %}
+        </div>
       {% endif %}
+      
   </main>
 
   {% include footer.html %}
