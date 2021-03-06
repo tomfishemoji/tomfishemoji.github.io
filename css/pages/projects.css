@@ -35,7 +35,8 @@ li.project img {
     width: 100%;
     margin-bottom: -32px;
     border-radius: 8px;
-    mask-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(transparent));
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
     transform: translateY(0) scale(1.05);
     transition: all 0.2s ease-out;
     z-index: 0;
