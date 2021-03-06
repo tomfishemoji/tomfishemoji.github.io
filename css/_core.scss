@@ -19,7 +19,8 @@ aside#topbar {
   height: 2px;
   left: 0;
   top: 0;
-  background-color: #87ceeb;
+  background-color: #D60270;
+  background: linear-gradient(90deg, rgba(214,2,112,1) 0%, rgba(155,79,150,1) 50%, rgba(0,56,168,1) 100%);
   // transition: width 1s ease-in;
   z-index: 999;
 }
