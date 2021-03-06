@@ -5,17 +5,12 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en-GB">
 
-<head>
-  {% include head.html %}
-</head>
-
+{% include head.html %}
 
 <body class="{% if page.wide == 'ish' %}wide-ish{% elsif page.wide %}wide{% endif %} {% if page.url == '/' %}is-home{% endif %}">
   <aside id="topbar"></aside>
 
-  <aside id="sidebar">
-    {% include sidebar.html %}
-  </aside>
+  {% include sidebar.html %}
 
   <main>
       {% comment %} Don't show the page title on the homepage {% endcomment %}
@@ -67,26 +62,6 @@ layout: compress
       {% endif %}
 
       {{ content }}
-
-      {% if page.layout == 'post' %}
-        <hr>
-        <div style="font-style: italic;">
-          <p>Got a comment or a query? I don't have a comments section, but feel free to <a href="https://twitter.com/{{site.github}}">send a tweet my way</a> :)</p>
-
-          {% if page.previous %}
-             <p>Previous Post: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>
-            {% else %}
-             <p>This is the first post!</p>
-          {% endif %}
-        
-          {% if page.next %}
-             <p>Next Post: <a href="{{ page.next.url }}"> {{ page.next.title }}</a></p>
-            {% else %}
-             <p>This is the newest post!</p>
-          {% endif %}
-        </div>
-      {% endif %}
-      
   </main>
 
   {% include footer.html %}

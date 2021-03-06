@@ -3,3 +3,20 @@ layout: default
 ---
 
 {{ content }}
+
+<hr>
+<aside style="font-style: italic;">
+  <p>Got a comment or a query? I don't have a comments section, but feel free to <a href="https://twitter.com/{{site.github}}">send a tweet my way</a> :)</p>
+
+  {% if page.previous %}
+     <p>Previous Post: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>
+    {% else %}
+     <p>This is the first post!</p>
+  {% endif %}
+
+  {% if page.next %}
+     <p>Next Post: <a href="{{ page.next.url }}"> {{ page.next.title }}</a></p>
+    {% else %}
+     <p>This is the newest post!</p>
+  {% endif %}
+</aside>
