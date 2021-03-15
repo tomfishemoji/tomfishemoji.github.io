@@ -15,13 +15,14 @@ aside#sidebar {
       margin: 0;
       padding: 0;
 
-      img {
+      img#hello-emoji {
         height: 1em;
+        transform: translateY(0.15em);
       }
     }
 
     h2 {
-      font-size: 1.2em;
+      font-size: 1.3em;
       font-weight: 500;
       margin: 0;
       padding: 0;
