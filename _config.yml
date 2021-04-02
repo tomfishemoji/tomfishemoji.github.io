@@ -4,6 +4,10 @@ future: true
 baseurl: ""
 url: https://trobinson.me
 
+collections:
+  projects:
+    output: false
+
 twitter: itsmeimtom
 github: itsmeimtom
 flickr: mrdnomaid # it's mad that flickr still don't let you change this after two decades of people willing to pay for it
