@@ -1,36 +1,36 @@
 aside#sidebar {
-    position: fixed;
-    top: 16px;
-    left: 16px;
-    width: 128px;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  width: 128px;
 
-    img#babby {
-      width: 100%;
-      border-radius: 8px;
+  img#babby {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+    img#hello-emoji {
+      height: 1em;
+      transform: translateY(0.15em);
     }
+  }
 
-    h1 {
-      font-size: 1.5em;
-      font-weight: 700;
-      margin: 0;
-      padding: 0;
+  h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
 
-      img#hello-emoji {
-        height: 1em;
-        transform: translateY(0.15em);
-      }
-    }
+  nav {
+    margin-top: 8px;
+  }
 
-    h2 {
-      font-size: 1.3em;
-      font-weight: 500;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      margin-top: 8px;
-    }
-
-    @import '_sidebar_links.scss';
+  @import "_sidebar_links.scss";
 }

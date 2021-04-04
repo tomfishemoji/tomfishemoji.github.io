@@ -2,7 +2,8 @@ a#twitter {
   border-left: 2px solid #1da1f2;
 }
 
-a#flickr, a.f {
+a#flickr,
+a.f {
   border-left: 2px solid #ff0084;
 }
 
@@ -27,24 +28,29 @@ a {
   text-decoration: none;
   display: inline-block;
   padding: 0 2px;
-}
 
-a:hover, a.c {
-  border-left-width: 8px !important;
-  border-left-color: #00bfff;
-}
+  &:hover,
+  &.focus,
+  &.c {
+    border-left-width: 8px !important;
+    border-left-color: #00bfff;
+  }
 
-a.f:hover, a.f.c {
-  border-left-color: #ff0084;
-}
+  &.f:hover,
+  &.f.c {
+    border-left-color: #ff0084;
+  }
 
-a i {
-  transform: scale(0.9);
-  filter: brightness(0.8);
-  transition: all 0.3s cubic-bezier(.08,.82,.17,1);
-}
+  i {
+    transform: scale(0.9);
+    filter: brightness(0.8);
+    transition: all 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
+  }
 
-a:hover i, a.c i {
-  transform: scale(1);
-  filter: brightness(1);
+  &:hover i,
+  &:focus i,
+  &.c i {
+    transform: scale(1);
+    filter: brightness(1);
+  }
 }

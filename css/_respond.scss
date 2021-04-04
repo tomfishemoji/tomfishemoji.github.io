@@ -1,4 +1,5 @@
-@media screen and (max-width: 70em) { // This was originally calc(50em + 512px), but Chrome didn't like it
+@media screen and (max-width: 70em) {
+  // This was originally calc(50em + 512px), but Chrome didn't like it
   aside#sidebar {
     position: inherit;
     width: 100%;
@@ -35,7 +36,6 @@
     }
   }
 
-
   // If we're not on the homepage, hide the navigation, ready to be opened by the JS
   body:not(.is-home) {
     nav {
@@ -67,7 +67,7 @@
 
 // On big screens always show the nav
 @media screen and (min-width: 70em) {
-    a.menu-toggle {
-      display: none !important; // !important here due to specificity above
-    }
+  a.menu-toggle {
+    display: none !important; // !important here due to specificity above
+  }
 }

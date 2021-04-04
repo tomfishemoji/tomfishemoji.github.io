@@ -10,9 +10,9 @@ body.wide-ish {
   }
 }
 
-
 @media screen and (max-width: 80em) {
-  body.wide, body.wide-ish {
+  body.wide,
+  body.wide-ish {
     main {
       max-width: 50em;
     }
