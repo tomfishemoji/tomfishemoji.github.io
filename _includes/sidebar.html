@@ -11,24 +11,51 @@
 <a href="#" class="menu-toggle" id="menu-toggle-close" onclick="closeMenu();" style="display: none;"><i class="fas fa-fw fa-chevron-up"></i> Close Menu</a>
 
 <nav>
-  <a href="https://twitter.com/{{ site.twitter }}" id="twitter"><i class="fab fa-fw fa-twitter"></i> Twitter</a><br>
-  <a href="https://github.com/{{ site.github }}" id="github"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
-  <a href="/flickr/" id="flickr" class="f{% if page.url == '/flickr/' %} c{% endif %}"><i class="fab fa-fw fa-flickr"></i> Flickr</a><br>
-  <!-- <a href="https://youtube.com/{{ site.youtube }}" id="youtube"><i class="fab fa-fw fa-youtube"></i> YouTube</a><br> -->
-  <!-- <a href="https://keybase.io/{{ site.keybase }}" id="keybase"><i class="fab fa-fw fa-keybase"></i> Keybase</a><br> -->
-  <br>
-  <a href="/about/" id="about" {% if page.url == '/about/' or page.url == '/faq/' or page.url == '/tech/' %}class="c"{% endif %}><i class="far fa-fw fa-address-book"></i> About</a><br>
-  <a href="/projects/" id="projects" {% if page.url == '/projects/' %}class="c"{% endif %}><i class="fas fa-fw fa-wrench"></i> Projects</a><br>
-  <!-- <a href="/blog/" id="blog" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %}><i class="fas fa-fw fa-pencil-alt"></i> Blog</a> -->
-
+  <ul>
+    <li>
+      <a href="https://twitter.com/{{ site.twitter }}" id="twitter"><i class="fab fa-fw fa-twitter"></i> Twitter</a><br>
+    </li>
+    <li>
+      <a href="https://github.com/{{ site.github }}" id="github"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
+    </li>
+    <li>
+      <a href="/flickr/" id="flickr" class="f{% if page.url == '/flickr/' %} c{% endif %}"><i class="fab fa-fw fa-flickr"></i> Flickr</a><br>
+    </li>
+    <!-- <li>
+      <a href="https://youtube.com/{{ site.youtube }}" id="youtube"><i class="fab fa-fw fa-youtube"></i> YouTube</a><br>
+    </li> -->
+    <!-- <li>
+      <a href="https://keybase.io/{{ site.keybase }}" id="keybase"><i class="fab fa-fw fa-keybase"></i> Keybase</a><br>
+    </li> -->
+  </ul>
+  <ul>
+    <li>
+      <a href="/about/" id="about" {% if page.url == '/about/' or page.url == '/faq/' or page.url == '/tech/' %}class="c"{% endif %}><i class="far fa-fw fa-address-book"></i> About</a><br>
+    </li>
+    <li>
+      <a href="/projects/" id="projects" {% if page.url == '/projects/' %}class="c"{% endif %}><i class="fas fa-fw fa-wrench"></i> Projects</a><br>
+    </li>
+    <!-- <li>
+      <a href="/blog/" id="blog" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %}><i class="fas fa-fw fa-pencil-alt"></i> Blog</a>
+    </li> -->
+  </ul>
 
   {% if page.url contains '/flickr' %}
-    <br><br>
-    <i class="fab fa-fw fa-flickr"></i> Flickr Toys:<br>
-    <a href="/flickr/photosets/" class="f{% if page.url == '/flickr/photosets/' %} c{% endif %}"><i class="fas fa-fw fa-list"></i> Albums</a><br>
-    <a href="/flickr/photos/" class="f{% if page.url == '/flickr/photos/' %} c{% endif %}"><i class="fas fa-fw fa-images"></i> Photos</a><br>
-    <a href="/flickr/map/" class="f{% if page.url == '/flickr/map/' %} c{% endif %}"><i class="fas fa-fw fa-map-marked"></i> Map</a><br>
-    <a href="/flickr/map/stations/" class="f{% if page.url == '/flickr/map/stations/' %} c{% endif %}"><i class="fas fa-fw fa-train"></i> Stn Map</a>
+    <ul>
+      <li class="menu-title"><i class="fab fa-fw fa-flickr"></i> Flickr Toys:</li>
+      <li>
+        <a href="/flickr/photosets/" class="f{% if page.url == '/flickr/photosets/' %} c{% endif %}"><i class="fas fa-fw fa-list"></i> Albums</a><br>
+      </li>
+      <li>
+        <a href="/flickr/photos/" class="f{% if page.url == '/flickr/photos/' %} c{% endif %}"><i class="fas fa-fw fa-images"></i> Photos</a><br>
+      </li>
+      <li>
+        <a href="/flickr/map/" class="f{% if page.url == '/flickr/map/' %} c{% endif %}"><i class="fas fa-fw fa-map-marked"></i> Map</a><br>
+      </li>
+      <li>
+        <a href="/flickr/map/stations/" class="f{% if page.url == '/flickr/map/stations/' %} c{% endif %}"><i class="fas fa-fw fa-train"></i> Stn Map</a>
+      </li>
+    </ul>
   {% endif %}
 </nav>
 </aside>

@@ -29,7 +29,11 @@ aside#sidebar {
   }
 
   nav {
-    margin-top: 8px;
+    ul {
+      margin-top: 8px;
+      padding: 0;
+      list-style: none;
+    }
   }
 
   @import "_sidebar_links.scss";
