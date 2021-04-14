@@ -20,7 +20,7 @@ layout: compress
           {% if page.layout == 'post' %}
             <h2 id="date">
               Posted on {{ page.date | date_to_long_string: 'ordinal' }}
-              {% if page.category %} in {% for c in page.category %}<a href="/archive/c/#{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+              {% if page.category %} in {% for c in page.category %}<a href="/blog/archive/{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
               <span id="js-viewcount">with # views</span>
             </h2>
 

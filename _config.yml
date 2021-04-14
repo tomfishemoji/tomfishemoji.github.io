@@ -30,7 +30,20 @@ compress_html:
 
 plugins:
   - jekyll-feed
-
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jekyll-archives
+  
 feed:
   path: /blog/feed.xml
 
+jekyll-mentions:
+  base_url: https://twitter.com
+
+jekyll-archives:
+  enabled:
+    - categories
+    - year
+  permalinks:
+    year: '/:year/'
+    category: "/blog/archive/:name/"
