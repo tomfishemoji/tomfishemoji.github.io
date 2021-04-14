@@ -24,7 +24,7 @@ if(hash == '#menu') { openMenu(); }
 if(hash == '#no-menu') { closeMenu(); }
 
 // Contact alert box
-const emailAddr = `tom@${atob('ZG5vbWFpZC5jby51aw==')}`;
+const emailAddr = `${atob('aGlA')}${atob('dG9tci5tZQ==')}`;
 if(document.getElementById('js-email')) {
   document.getElementById('js-email').innerHTML = emailAddr;
   document.getElementById('js-email').href = `mailto:${emailAddr}?subject=Hello!`;

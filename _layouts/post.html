@@ -20,3 +20,13 @@ layout: default
      <p>This is the newest post!</p>
   {% endif %}
 </aside>
+
+{% if page.layout == 'post' %}
+  <script src="/js/pages/posts.js"></script>
+  <script src="https://app.trobinson.me/blog-viewcounter/get.php?post={{ page.date | date: '%Y'  }}-{{ page.slug }}&callback=true"></script>
+
+  <form id="viewcounter_form" action="https://app.trobinson.me/blog-viewcounter/add.php" method="get" style="display: none;" target="viewcounter_frame">
+    <input type="text" name="post" value="{{ page.date | date: '%Y'  }}-{{ page.slug }}" hidden="hidden" readonly="readonly">
+  </form>
+  <iframe style="display: none;" name="viewcounter_frame" id="viewcounter_frame"></iframe>
+{% endif %}
