@@ -3,6 +3,7 @@ title: trobinson.me
 future: true
 baseurl: ""
 url: https://trobinson.me
+locale: en_GB
 
 collections:
   projects:
@@ -26,3 +27,10 @@ compress_html:
   clippings: all
   comments: all
   blanklines: false
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: /blog/feed.xml
+
