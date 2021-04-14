@@ -1,0 +1,12 @@
+name: Link Check
+
+on:
+  push:
+      branches:
+        - gh-pages
+
+jobs:
+  linkcheck:
+      uses: filiph/linkcheck@v2.0.15+1
+        with:
+          arguments: "-e https://trobinson.me"
