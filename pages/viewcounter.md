@@ -2,7 +2,7 @@
 layout: default
 title: Post View Counter Info
 description: "what's this for then?"
-permalink: /blog/postviewcounter
+permalink: /blog/postviewcounter/
 hidden: true
 ---
 

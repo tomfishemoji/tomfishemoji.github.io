@@ -2,7 +2,7 @@
 layout: default
 title: Uses Page
 description: "what ~tech~ do I use"
-permalink: /uses
+permalink: /uses/
 ---
 
 Apparently a `/uses` page is a [sort-of-standard](https://uses.tech/), so here's a handy dandy page of things I use - if that tickles your fancy for whatever reason.

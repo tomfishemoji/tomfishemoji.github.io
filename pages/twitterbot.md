@@ -2,7 +2,7 @@
 layout: default
 title: Twitter Bot
 description: "what is a @itsmeimabot?"
-permalink: /twitterbot
+permalink: /twitterbot/
 hidden: true
 ---
 
