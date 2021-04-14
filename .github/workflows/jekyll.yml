@@ -27,3 +27,8 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'
         jekyll_build_options: '--verbose --trace --strict_front_matter'
+
+  linkcheck:
+    uses: filiph/linkcheck@v2.0.15+1
+      with:
+        arguments: "-e https://trobinson.me"
