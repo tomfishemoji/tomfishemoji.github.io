@@ -9,6 +9,5 @@ jobs:
   linkcheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: filiph/linkcheck@v2.0.15+1
-          with:
-            arguments: "-e https://trobinson.me"
+      - uses: filiph/linkcheck
+        arguments: "-e https://trobinson.me"
