@@ -3,7 +3,6 @@ layout: default
 title: Post View Counter Info
 description: "what's this for then?"
 permalink: /blog/postviewcounter/
-hidden: true
 ---
 
 `app.trobinson.me/blog-viewcounter` is used to count the views of each blog post. When you scroll a certain amount into the post, the view counter is incremented for whichever post you were reading. When the post loads, it also makes a request to this subdomain in order to show the current view count.

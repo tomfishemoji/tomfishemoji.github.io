@@ -33,6 +33,8 @@ plugins:
   - jekyll-redirect-from
   - jekyll-mentions
   - jekyll-archives
+  - jekyll-last-modified-at
+  - jekyll-sitemap
   
 feed:
   path: /blog/feed.xml

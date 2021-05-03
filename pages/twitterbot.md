@@ -2,8 +2,9 @@
 layout: default
 title: Twitter Bot
 description: "what is a @itsmeimabot?"
-permalink: /twitterbot/
-hidden: true
+permalink: /projects/twitterbot/
+redirect_from:
+    - /twitterbot/
 ---
 
 the [@itsmeimabot](https://twitter.com/itsmeimabot) Twitter account posts a (usually gibberish) tweet every few minutes which it has generated from snippets of my past tweets/rts.

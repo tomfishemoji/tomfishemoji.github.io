@@ -3,11 +3,9 @@ layout: default
 title: Actions on Google Privacy Information
 description: "Privacy Policy for Google Assistant Actions & Similar"
 permalink: /projects/aog-privacy/
-hidden: true
 ---
 
 ## All Actions
-
 Any conversational data given to any of my Actions is saved within [DialogFlow](https://dialogflow.com/)'s services as well as [Google](https://policies.google.com/privacy)'s. There isn't much I can do about that, sadly. For more information, visit their respective privacy policies.
 
 ## Next Trains
