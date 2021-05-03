@@ -14,8 +14,8 @@ The Signalex one pound mouse is surprisingly impressive, at least for a single p
 
 {% include image.html path="powered.jpeg" caption="The mouse when it’s powered" %}
 
-Getting it working is easy, just plug it into your computer and it does it’s thing.
+Getting it working is easy, just plug it into your computer and it does its thing.
 
-It’s really rather impressive, and works really well! If you have a Poundland nearby, I recommend buying it, even if you already have a mouse; just keep it as a spare.
+It’s really rather impressive that you can buy something like this for a quid! If you have a Poundland nearby, you may as well pick one up to have as a spare.
 
 Sadly, they do not have it for sale on their website, but you can check back [here](http://www.poundland.co.uk/catalogsearch/result/?q=signalex) every so often to see if they do sell it there.
