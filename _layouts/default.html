@@ -16,50 +16,7 @@ layout: compress
   <main>
       {% comment %} Don't show the page title on the homepage {% endcomment %}
       {% if page.permalink != '/' %}
-        <aside id="meta" {% if page.image and page.layout == 'post' %}class="has-image"{% endif %}>
-          {% if page.layout == 'post' %}
-            <h2 id="date">
-              Posted on {{ page.date | date_to_long_string: 'ordinal' }}
-              {% if page.category %} in {% for c in page.category %}<a href="/blog/archive/{{ c | replace: ' ','-'}}">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
-              <span id="js-viewcount">with # views</span>
-            </h2>
-
-            {% if page.medium %}
-              <div class="note medium">
-                 <p>This post was originally published on Medium.<br>View the original post, along with its "claps" and comments, <a href="{{ page.medium }}">here</a></p>
-              </div>
-            {% endif %}
-
-            <!--
-              This shows up if you set "outdated" to anything in the front matter. Doesn't need to be "true"
-            -->
-            {% if page.outdated %}
-              {% include note.html class="warn" content="This post has been manually flagged as outdated.<br>The content is no longer accurate." %}
-            {% endif %}
-
-            <!--
-            I think you can do this in the FM:
-            info:
-              - abc
-              - def
-            but I haven't tested that.
-            -->
-            {% if page.info %}
-              <div class="note info">
-                <p>{{ page.info }}</p>
-              </div>
-            {% endif %}
-          {% endif %}
-
-          {% if page.image and page.layout == 'post' %}
-          {% include post_img_folder.html %}
-          <img id="image" src="/img/posts/{{ post_img_folder }}/{{page.image}}">
-          </img>
-          {% endif %}
-
-          <h1 id="title" {% if page.keepcase %} class="keep-case" {% endif %}>{{ page.title }}</h1>
-          <h2 id="desc" {% if page.keepcase %} class="keep-case" {% endif %}>{% if page.desc %}{{ page.desc }}{% elsif page.description %}{{ page.description }}{% endif %}</h2>
-        </aside>
+          {% include meta.html %}
       {% endif %}
 
       {{ content }}
