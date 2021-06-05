@@ -25,6 +25,6 @@ An iPhone 7 lives in my pocket, along with the obligatory Airpods. On my wrist i
 
 ---
 
-For full specs/pictures and for other random tech junk I've accumulated, I've got it all catalogued [here](https://wiki.tomr.me/doku.php?id=d)
+For full specs/pictures and for other random tech junk I've accumulated, I've got it all catalogued [here](https://wiki.tomr.me/doku.php?id=d:home)
 
-{% include note.html class="info" content="Last updated: 5 Mar 2021" %}
+{% include note.html class="info" content="Last updated: 5 Jun 2021" %}
