@@ -1,11 +1,7 @@
 document.body.classList.add('js-enabled');
-
 const hash = window.location.hash;
 
-// force self out of iframes, ish
-if (window.top !== window.self) { window.top.location.replace(window.self.location.href) };
-
-// open/closing the navigation
+//-----------open/closing the navigation-------------------------------
 const menu = document.querySelector('nav');
 
 function openMenu() {
@@ -20,22 +16,17 @@ function closeMenu() {
   document.getElementById('menu-toggle-close').style.display = 'none';
 }
 
-if(hash == '#menu') { openMenu(); }
-if(hash == '#no-menu') { closeMenu(); }
+if(hash === '#menu') openMenu();
+if(hash === '#no-menu') closeMenu();
+//----------------------------------------------------------------------
 
-// Contact alert box
+
+//-----------contact alert box------------------------------------------
 const emailAddr = `${atob('aGlA')}${atob('dG9tci5tZQ==')}`;
 if(document.getElementById('js-email')) {
   document.getElementById('js-email').innerHTML = emailAddr;
   document.getElementById('js-email').href = `mailto:${emailAddr}?subject=Hello!`;
 }
 
-if(hash == '#contact') { window.location = '/about'; }
-
-function loaderBar(percent) {
-  // this was a bad idea lol
-  // console.log(percent);
-  // document.getElementById('topbar').style.width = `${percent}%`;
-}
-
-// loaderBar(100);
+if(hash === '#contact') window.location = '/about';
+//----------------------------------------------------------------------

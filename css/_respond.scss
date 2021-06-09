@@ -1,4 +1,5 @@
 @media screen and (max-width: 70em) {
+
   // This was originally calc(50em + 512px), but Chrome didn't like it
   aside#sidebar {
     position: inherit;
@@ -36,22 +37,25 @@
     }
   }
 
-  // If we're not on the homepage, hide the navigation, ready to be opened by the JS
-  body:not(.is-home) {
-    nav {
-      display: none;
-    }
-  }
+  body {
 
-  // If we are on the homepage, show the nav and hide the buttons
-  body.is-home {
-    aside#sidebar {
-      a.menu-toggle {
-        display: none !important; // !important here due to specificity above
-      }
-
+    // If we're not on the homepage, hide the navigation, ready to be opened by the JS
+    &:not(.is-home) {
       nav {
-        display: block;
+        display: none;
+      }
+    }
+
+    // If we are on the homepage, show the nav and hide the buttons
+    &.is-home {
+      aside#sidebar {
+        a.menu-toggle {
+          display: none !important; // !important here due to specificity above
+        }
+
+        nav {
+          display: block;
+        }
       }
     }
   }

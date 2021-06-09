@@ -129,10 +129,10 @@ main {
     margin: 0 0 2px 0;
     padding: 16px;
     font-style: italic;
-  }
 
-  blockquote[short] {
-    font-size: 2em;
+    &[short] {
+      font-size: 2em;
+    }
   }
 
   author {
@@ -154,10 +154,10 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-  }
 
-  hr.tile {
-    background-repeat: repeat-x;
+    &.tile {
+      background-repeat: repeat-x;
+    }
   }
 
   // In a list of blog posts, this is each individual post
@@ -204,23 +204,23 @@ main {
     text-align: center;
     z-index: 99;
 
+    &.info {
+      background-color: #0e1619;
+      border-top: 4px solid #85ceeaaa;
+    }
+
+    &.warn {
+      background-color: #19110e;
+      border-top: 4px solid #eaa285aa;
+    }
+
+    &.medium {
+      background-color: #16190e;
+      border-top: 4px solid #ceea85aa;
+    }
+
     p {
       margin: 0;
     }
-  }
-
-  div.note.info {
-    background-color: #0e1619;
-    border-top: 4px solid #85ceeaaa;
-  }
-
-  div.note.warn {
-    background-color: #19110e;
-    border-top: 4px solid #eaa285aa;
-  }
-
-  div.note.medium {
-    background-color: #16190e;
-    border-top: 4px solid #ceea85aa;
   }
 }

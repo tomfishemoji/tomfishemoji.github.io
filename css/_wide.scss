@@ -1,12 +1,14 @@
-body.wide {
-  main {
-    max-width: calc(100% - 384px);
+body {
+  &.wide {
+    main {
+      max-width: calc(100% - 384px);
+    }
   }
-}
 
-body.wide-ish {
-  main {
-    max-width: calc(80% - 384px);
+  &.wide-ish {
+    main {
+      max-width: calc(80% - 384px);
+    }
   }
 }
 
