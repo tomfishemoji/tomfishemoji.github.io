@@ -30,3 +30,6 @@ if(document.getElementById('js-email')) {
 
 if(hash === '#contact') window.location = '/about';
 //----------------------------------------------------------------------
+
+
+function loaderBar(pc) { console.info(`call to loaderBar, ${pc}% but the loader bar has been removed`); }
