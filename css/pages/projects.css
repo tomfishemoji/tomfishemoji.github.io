@@ -5,54 +5,44 @@ ul#projects {
     margin: 0;
     padding: 0;
     width: 100%;
+    list-style: none;
 }
 
 li.project {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    flex: 46%;
-    margin: 2%;
-    padding: 0;
-    border-radius: 4px;
-    pointer-events: none;
-    /* transition: background-color 0.2s; */
-}
-
-li.project a {
-    pointer-events: auto;
-}
-
-/* li.project:hover {
-    background-color: #222;
-} */
-
-li.project:hover img {
-    transform: translateY(-16px) scale(1.05);
+    flex: calc(40% - 2px);
+    position: relative;
+    overflow: hidden;
+    padding: 16px 4%;
+    margin: 8px 1%;
+    border: 1px solid #fff;
+    border-radius: 8px;
 }
 
 li.project img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: -1;
     width: 100%;
-    margin-bottom: -32px;
-    border-radius: 8px;
-    mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
-    transform: translateY(0) scale(1.05);
-    transition: all 0.2s ease-out;
-    z-index: 0;
+    filter: blur(2px);
 }
 
 li a.project-title, li.project span.project-langs, li.project p {
-    z-index: 2;;
+    z-index: 2;
 }
 
 li a.project-title {
+    display: block;
     font-size: 2em;
     color: inherit;
     transition: color 0.2s;
 }
 
-li a.project-title:hover {
+li a.project-title[href]:hover {
     color: skyblue;
 }
 
