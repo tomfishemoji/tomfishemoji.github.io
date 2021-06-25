@@ -1,7 +1,7 @@
 ---
-title: 33rpm.me
+title: 33rpm Site
 image: 33rpm.png
-title_link: https://33rpm.trobinson.me
+title_link: https://archive.trobinson.me/33rpm/
 languages:
     - '<span class="lang lang-jekyll"><i class="fas fa-fw fa-vial"></i> jekyll</span>'
 ---
