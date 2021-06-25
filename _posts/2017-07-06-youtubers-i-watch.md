@@ -3,6 +3,7 @@ layout: post
 title: Obscure-ish YouTubers I Watch
 category: youtube
 image: home.png
+outdated: true
 ---
 
 I've been meaning to write a post similar to this for a while, but I never got around to it. Might as well do it now, on the new blog.
