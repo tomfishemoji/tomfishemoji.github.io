@@ -8,7 +8,7 @@
   
       {% if page.medium %}
         <div class="note medium">
-           <p>This post was originally published on Medium.<br>View the original post, along with its "claps" and comments, <a href="{{ page.medium }}">here</a></p>
+           <p>This post was originally published on Medium. View the original post, along with its "claps" and comments, <a href="{{ page.medium }}">here</a></p>
         </div>
       {% endif %}
   
@@ -16,7 +16,7 @@
         This shows up if you set "outdated" to anything in the front matter. Doesn't need to be "true"
       -->
       {% if page.outdated %}
-        {% include note.html class="warn" content="This post has been manually flagged as outdated.<br>The content is no longer accurate." %}
+        {% include note.html class="warn" content="This post has been manually flagged as outdated. The content is no longer accurate." %}
       {% endif %}
   
       {% if page.info %}
@@ -31,8 +31,8 @@
       <img id="image" src="/img/posts/{{ post_img_folder }}/{{page.image}}"></img>
     {% endif %}
   
-    <h1 id="title" {% if page.keepcase %} class="keep-case" {% endif %}>{{ page.title }}</h1>
+    <h1 id="title" {% if page.keepcase %} class="keepcase" {% endif %}>{{ page.title }}</h1>
     {% if page.desc or page.description %}
-      <h2 id="desc" {% if page.keepcase %} class="keep-case" {% endif %}>{% if page.desc %}{{ page.desc }}{% elsif page.description %}{{ page.description }}{% endif %}</h2>
+      <h2 id="desc" {% if page.keepcase %} class="keepcase" {% endif %}>{% if page.desc %}{{ page.desc }}{% elsif page.description %}{{ page.description }}{% endif %}</h2>
     {% endif %}
   </aside>
