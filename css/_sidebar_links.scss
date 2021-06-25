@@ -1,20 +1,28 @@
 // TODO:
 // put the borders on the list items not the links
-a {
-  color: #eee;
+
+a#sidebar-top-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not(#sidebar-top-link):not(.menu-toggle) {
+  color: $fg;
   border-bottom: none;
-  border-left: 2px solid #87ceeb;
-  border-right-width: 0 !important;
+  border-left: 2px solid $accent;
   background: none;
   text-decoration: none;
   display: inline-block;
   padding: 0 2px;
 
+  @media screen and (max-width: 70em) {
+    padding: 16px 5vw;
+  }
+
   &:hover,
   &.focus,
   &.c {
-    border-left-width: 8px !important;
-    border-left-color: #00bfff;
+    border-left-width: 8px;
   }
 
   &.f:hover,
@@ -24,36 +32,35 @@ a {
 
   i {
     transform: scale(0.9);
-    filter: brightness(0.8);
-    transition: all 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
+    color: dark-tint($fg, 30%);
+    // transition: all 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
   }
 
   &:hover i,
   &:focus i,
   &.c i {
     transform: scale(1);
-    filter: brightness(1);
+    color: dark-tint($fg, 5%);
   }
 
 
-  &#twitter {
-    border-left: 2px solid #1da1f2;
+  &#menu-twitter {
+    border-left-color: #1da1f2;
   }
 
-  &#flickr,
-  &.f {
-    border-left: 2px solid #ff0084;
+  &#menu-flickr {
+    border-left-color: #ff0084;
   }
 
-  &#github {
-    border-left: 2px solid #6cc644;
+  &#menu-github {
+    border-left-color: #6cc644;
   }
 
-  &#youtube {
-    border-left: 2px solid #ff0000;
+  &#menu-youtube {
+    border-left-color: #ff0000;
   }
 
-  &#keybase {
-    border-left: 2px solid #ff6f21;
+  &#menu-keybase {
+    border-left-color: #ff6f21;
   }
 }

@@ -1,10 +1,17 @@
 ---
 ---
 
+@function light-tint($col, $pc) { @return mix(#fff, $col, $pc); }
+@function dark-tint($col, $pc) { @return mix(#000, $col, $pc); }
+
+$accent: #ea85ce;
+$fg: scale-color($accent, darkness, 80%);
+$bg: dark-tint($accent, 95%);
+
 @import '_core.scss';
 @import '_sidebar.scss';
 @import '_main.scss';
 @import '_wide.scss';
-@import '_respond.scss';
 @import '_pages.scss';
 @import '_no_js.scss';
+

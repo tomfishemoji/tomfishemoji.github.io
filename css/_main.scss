@@ -31,6 +31,7 @@ main {
     }
 
     h1#title {
+      color: scale-color($accent, lightness, 50%);
       font-size: 2.5em;
       font-weight: 700;
     }
@@ -41,14 +42,14 @@ main {
     }
 
     h2#desc {
-      color: #99a6aa;
+      color: scale-color($accent, lightness, 60%);
     }
 
     h2#date {
       margin-bottom: 8px;
       font-size: 0.8em;
       text-align: right;
-      color: #888;
+      color: dark-tint($fg, 40%);
       font-style: italic;
     }
   }
@@ -65,11 +66,11 @@ main {
   // Links
   a {
     text-decoration: none;
-    color: #87ceeb;
+    color: $accent;
 
     &:hover,
     &:focus {
-      color: #00bfff;
+      color: dark-tint($accent, 20%);
     }
   }
 
@@ -106,7 +107,7 @@ main {
     width: calc(100% - 8px);
     font-style: italic;
     text-align: right;
-    color: #aaa;
+    color: dark-tint($fg, 30%);
     margin: 4px auto 16px auto;
   }
 
@@ -124,8 +125,8 @@ main {
   }
 
   blockquote {
-    color: #ccc;
-    border-left: 2px solid #87ceeb;
+    color: dark-tint($fg, 30%);
+    border-left: 2px solid $accent;
     margin: 0 0 2px 0;
     padding: 16px;
     font-style: italic;
@@ -144,20 +145,12 @@ main {
   }
 
   hr {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    display: block;
+    margin: 32px 40%;
+    padding: 2px 0;
     border: 0;
-    height: 22px;
-    width: 100%;
-    opacity: 0.8;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAABBCAYAAAB8S5zgAAACl0lEQVRoge3Wz0tUURQH8AdCEgQuJBcSES1SCCIiJpOwyE1rwb+gIMqkH2QiOPceW0SKELRqGRRCE2GrWfRLCFHnnjuTJkPRhJCpM/ec5xi5SEKaFi5yXjPjPCncnA/c5fvy/b734D3PE0IIIYQQQgghhBA7DGZyDZDi4zCZPQPIFY4f6Utl93bGYjWlcrrjmVqY5kNg6VTFHENtYJear0983V2xk+VjkKK2SlnRhDsJM7mGzlisxgO7tH8AuQcsvQVDnwDpc9lj3IRC7oHJlQPBQd3xTC0k/bNg6aFGmq2Uo5E+APIIGDoHY7TnryEpbgTjbgLyKzD0cYssVJajYP1mTxnq05YXNVKhysOAfK0vsVBfVMDQUWUorpF+hMgaA/QjwRsTRbqikb9UmwOW1jTyoAdIbwBpPUSBgkZ+CVPuSNEYyzeUoYUwOWBpTSF19dp83eYsbeiJQvoZrhO98wDpfciLCtq6NCRzLYExw2A5HzoL6R5MLe8rykKKh89xme2NQZcB41oDBe4D8jcZI2NkjIzZoTGWprdx4WzU5k4UF3BDGnk5bBYgD0GKG//Vk3kByGE/UM/A+s1FBSxfAKS5UDmWVhVS193gRxPdIx3uT6IASBMeGP+ytpyuZpAytA5Icwpz54MF+nGxSaEb0ZZXFNKvaoZodKNRkz3sBUDS71BI49UMUobWFdJ8FN0tr9fm6wasf0kjPdWWJjVSsvRxCY1uVCFfhJnVhmCBjRLLLWB5WFt+rZBsuayNXyh+AOhHIJ3eVTrL7wDLjyt3oiQgP1eGrsL4/J9Xtdfm6wCzEWX89lIHjGsNPo1y+nGx6bbh02Wz0B0sN2KzrTop47ffSXyv3ypHCCGEEEIIIYQQQgghxH/1G09YIrXksdQcAAAAAElFTkSuQmCC");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    &.tile {
-      background-repeat: repeat-x;
-    }
+    border-radius: 8px;
+    background-color: $accent;
   }
 
   // In a list of blog posts, this is each individual post
@@ -176,7 +169,7 @@ main {
       margin-bottom: 2px;
 
       &:not(:first-of-type) {
-        color: #ccc;
+        color: dark-tint($fg, 30%);
         font-size: 1.2em;
         font-weight: normal;
         margin-top: -2px;
@@ -184,7 +177,7 @@ main {
       }
 
       h4 {
-        color: #aaa;
+        color: dark-tint($fg, 30%);
         font-size: 0.8em;
         font-weight: normal;
 
@@ -206,17 +199,17 @@ main {
 
     &.info {
       background-color: #0e1619;
-      border-top: 4px solid #85ceeaaa;
+      border-top: 4px solid #85ceea;
     }
 
     &.warn {
       background-color: #19110e;
-      border-top: 4px solid #eaa285aa;
+      border-top: 4px solid #eaa285;
     }
 
     &.medium {
       background-color: #16190e;
-      border-top: 4px solid #ceea85aa;
+      border-top: 4px solid #ceea85;
     }
 
     p {

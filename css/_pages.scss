@@ -7,10 +7,10 @@
         li.project {
             margin: 16px 0;
             padding-left: 16px;
-            border-left: 8px solid #87ceeb;
+            border-left: 8px solid light-tint($accent, 25%);
 
             &:nth-child(even) {
-                border-left-color: #00bfff;
+                border-left-color: dark-tint($accent, 25%);
             }
 
             a.project-title {
@@ -20,7 +20,7 @@
                 transition: color 0.2s;
 
                 &[href]:hover {
-                    color: #87ceeb;
+                    color: $accent;
                 }
             }
 
@@ -77,7 +77,7 @@
         pointer-events: none;
         transition: opacity 1s;
         z-index: 9999;
-        border: 2px solid #87ceeb;
+        border: 2px solid dark-tint($accent, 50%);
         border-radius: 8px;
     }
 

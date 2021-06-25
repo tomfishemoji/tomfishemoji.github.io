@@ -28,6 +28,19 @@ aside#sidebar {
     padding: 0;
   }
 
+  a.menu-toggle {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  
+  @media screen and (min-width: 70em) {
+    // hide the toggle on big screens
+    a.menu-toggle {
+      display: none;
+    }
+  }
+
   nav {
     ul {
       margin-top: 8px;
@@ -37,4 +50,54 @@ aside#sidebar {
   }
 
   @import "_sidebar_links.scss";
+
+  @media screen and (max-width: 70em) {
+    position: inherit;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    div#sidebar-top {
+      padding: 3vh 3vw;
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      img#babby {
+        margin-right: 8px;
+        height: 4em;
+        width: auto;
+        float: left;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 70em) {
+  body {
+    // If we're not on the homepage, hide the navigation, ready to be opened by the JS
+    &:not(.is-home) {
+      nav {
+        display: none;
+      }
+    }
+
+    // If we are on the homepage, show the nav and hide the buttons
+    &.is-home {
+      aside#sidebar {
+        a.menu-toggle {
+          display: none !important; // !important here due to specificity above
+        }
+
+        nav {
+          display: block;
+        }
+      }
+    }
+  }
 }
