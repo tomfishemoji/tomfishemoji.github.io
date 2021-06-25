@@ -13,7 +13,7 @@ layout: compress
 
   {% include sidebar.html %}
 
-  <main>
+  <main {% if page.id %}id="{{ page.id }}"{% endif %}>
       {% comment %} Don't show the page title on the homepage {% endcomment %}
       {% if page.permalink != '/' %}
           {% include meta.html %}

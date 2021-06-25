@@ -1,17 +1,15 @@
 ---
 layout: default
-wide: ish
 title: Projects & Things
 description: Neat stuff I've made, done and created
 permalink: /projects/
-head:
-  - <link href="/css/pages/projects.css" rel="stylesheet">
+id: projects
 ---
 
 <ul id="projects">
     {% for p in site.projects %}
         <li class="project">
-            <img class="project-image" src="/img/projects/{{p.image}}" alt="Screenshot of {{p.title}}">
+            <!-- <img class="project-image" src="/img/projects/{{p.image}}" alt="Screenshot of {{p.title}}"> -->
             <a {% if p.title_link %}href="{{ p.title_link | replace: "#GITHUB#", site.github }}" target="_blank" rel="noopener noreferrer"{% endif %} class="project-title">
             {{ p.title }}</a>
             <span class="project-langs">
