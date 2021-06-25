@@ -32,6 +32,21 @@ aside#sidebar {
   a.menu-toggle {
     display: block;
     margin-bottom: 16px;
+    padding: 1em;
+    color: $fg;
+    text-decoration: none;
+  
+    i {
+      color: $accent;
+    }
+  
+    &:hover, &:focus {
+      color: light-tint($fg, 50%);
+  
+      i {
+        color: light-tint($accent, 50%);
+      }
+    }
   }
 
   
@@ -59,7 +74,7 @@ aside#sidebar {
     padding: 0;
 
     div#sidebar-top {
-      padding: 3vh 3vw;
+      padding: 3vh 3vw 0 3vw;
 
       h1 {
         font-size: 2em;
