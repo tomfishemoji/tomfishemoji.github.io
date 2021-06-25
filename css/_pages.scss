@@ -59,13 +59,30 @@
         padding: 0;
 
         li {
+            margin: 12px 0;
+
             b {
                 display: inline-block;
                 min-width: 7em;
+                text-align: left;
+                cursor: default;
+            
+                i {
+                    color: dark-tint($fg, 50%);
+                    float: right;
+                }
             }
 
-            i {
-                opacity: 0.8;
+            a {
+                color: inherit;
+
+                &:hover {
+                    color: $accent;
+                }
+            }
+
+            &:hover b i {
+                color: light-tint($fg, 25%);
             }
         }
     }
@@ -169,6 +186,10 @@
         ul li b {
             width: 100%;
             margin-top: 4px;
+
+            i {
+                float: none;
+            }
         }
     }
 }

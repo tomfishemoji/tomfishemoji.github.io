@@ -43,24 +43,48 @@ a:not(#sidebar-top-link):not(.menu-toggle) {
     color: dark-tint($fg, 5%);
   }
 
+  // &#menu-twitter {
+  //   &:hover,
+  //   &:focus {
+  //     i {
+  //       color: #1da1f2;
+  //     }
+  //   }
+  // }
 
-  &#menu-twitter {
-    border-left-color: #1da1f2;
-  }
+  // &#menu-flickr {
+  //   &:hover,
+  //   &:focus {
+  //     i {
+  //       color: #fff;
+  //     }
+  //   }
+  // }
 
-  &#menu-flickr {
-    border-left-color: #ff0084;
-  }
+  // &#menu-github {
+  //   &:hover,
+  //   &:focus {
+  //     i {
+  //       color: #6cc644;
+  //     }
+  //   }
+  // }
 
-  &#menu-github {
-    border-left-color: #6cc644;
-  }
+  // &#menu-youtube {
+  //   &:hover,
+  //   &:focus {
+  //     i {
+  //       color: #ff0000;
+  //     }
+  //   }
+  // }
 
-  &#menu-youtube {
-    border-left-color: #ff0000;
-  }
-
-  &#menu-keybase {
-    border-left-color: #ff6f21;
-  }
+  // &#menu-keybase {
+  //   &:hover,
+  //   &:focus {
+  //     i {
+  //       color: #ff6f21;
+  //     }
+  //   }
+  // }
 }

@@ -15,30 +15,31 @@
 <nav>
   <ul>
     <li>
-      <a href="https://twitter.com/{{ site.twitter }}" id="menu-twitter"><i class="fab fa-fw fa-twitter"></i> Twitter</a><br>
+      <a href="/about/" id="menu-about" {% if page.url == '/about/' %}class="c"{% endif %}><i class="fas fa-fw fa-user"></i> About Me</a><br>
     </li>
     <li>
-      <a href="https://github.com/{{ site.github }}" id="menu-github"><i class="fab fa-fw fa-github"></i> GitHub</a><br>
+      <a href="/projects/" id="menu-projects" {% if page.url == '/projects/' %}class="c"{% endif %}><i class="fas fa-fw fa-magic"></i> Projects</a><br>
+    </li>
+    <!-- <li>
+      <a href="/blog/" id="blog" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %}><i class="fas fa-fw fa-pencil-alt"></i> Blog</a>
+    </li> -->
+  </ul>
+
+  <ul>
+    <li>
+      <a href="https://twitter.com/{{ site.twitter }}" id="menu-twitter"><i class="fas fa-fw fa-dove"></i> Twitter</a><br>
     </li>
     <li>
-      <a href="/flickr/" id="menu-flickr" {% if page.url contains '/flickr' %}class="c"{% endif %}><i class="fab fa-fw fa-flickr"></i> Flickr</a><br>
+      <a href="https://github.com/{{ site.github }}" id="menu-github"><i class="fas fa-fw fa-file-code"></i> GitHub</a><br>
+    </li>
+    <li>
+      <a href="/flickr/" id="menu-flickr" {% if page.url contains '/flickr' %}class="c"{% endif %}><i class="fas fa-fw fa-camera-retro"></i> Flickr</a><br>
     </li>
     <!-- <li>
       <a href="https://youtube.com/{{ site.youtube }}" id="menu-youtube"><i class="fab fa-fw fa-youtube"></i> YouTube</a><br>
     </li> -->
     <!-- <li>
       <a href="https://keybase.io/{{ site.keybase }}" id="menu-keybase"><i class="fab fa-fw fa-keybase"></i> Keybase</a><br>
-    </li> -->
-  </ul>
-  <ul>
-    <li>
-      <a href="/about/" id="menu-about" {% if page.url == '/about/' %}class="c"{% endif %}><i class="far fa-fw fa-address-book"></i> About Me</a><br>
-    </li>
-    <li>
-      <a href="/projects/" id="menu-projects" {% if page.url == '/projects/' %}class="c"{% endif %}><i class="fas fa-fw fa-wrench"></i> Projects</a><br>
-    </li>
-    <!-- <li>
-      <a href="/blog/" id="blog" {% if page.url == '/blog/' or page.layout == 'post' %}class="c"{% endif %}><i class="fas fa-fw fa-pencil-alt"></i> Blog</a>
     </li> -->
   </ul>
 </nav>
