@@ -32,4 +32,22 @@ if(hash === '#contact') window.location = '/about';
 //----------------------------------------------------------------------
 
 
+//-----------konami code------------------------------------------------
+// https://twitter.com/dangeredwolf/status/1412113081371660290
+let pressedKeys = '';
+
+document.addEventListener('keydown', e => {
+  pressedKeys += e.code;
+  console.log(pressedKeys);
+  if (pressedKeys.match(/ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyA$/g)) konami();
+});
+
+function konami() {
+  document.querySelector('aside#topbar').classList.add('bent');
+  document.querySelector('link[rel="shortcut icon"]').href = '/img/twemoji-rainbow.png';
+  document.title = 'lg(b)tq+ moment <3';  
+}
+//----------------------------------------------------------------------
+
+
 function loaderBar(pc) { console.info(`call to loaderBar, ${pc}% but the loader bar has been removed`); }

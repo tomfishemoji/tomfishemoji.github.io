@@ -26,7 +26,20 @@ aside#topbar {
       rgba(0, 56, 168, 1) 100%);
   // transition: width 1s ease-in;
   z-index: 999;
+
+  &.bent {
+    height: 8px;
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    // background-size: 400% 400%;
+    // animation: bentbar 5s ease infinite;
+  }
 }
+
+// @keyframes bentbar {
+//   0%{background-position:0% 50%}
+//   50%{background-position:100% 50%}
+//   100%{background-position:0% 50%}
+// }
 
 // body:not(.js-enabled) {
 //   aside#topbar {
