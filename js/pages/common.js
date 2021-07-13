@@ -33,12 +33,11 @@ if(hash === '#contact') window.location = '/about';
 
 
 //-----------konami code------------------------------------------------
-
 // https://twitter.com/dangeredwolf/status/1412113081371660290
 let pressedKeys = '';
 document.addEventListener('keydown', e => {
   pressedKeys += e.code;
-  if (pressedKeys.match(/ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyA$/g)) konami();
+  if (pressedKeys == "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyA") konami();
 });
 
 function konami() {
