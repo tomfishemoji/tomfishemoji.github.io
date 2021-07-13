@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://trobinson.me/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://trobinson.me/" rel="alternate" type="text/html" /><updated>2021-07-13T15:26:24+00:00</updated><id>https://trobinson.me/blog/feed.xml</id><title type="html">trobinson.me</title><entry><title type="html">Homelab Updates (Late 2020 Edition)</title><link href="https://trobinson.me/2020/homelab/" rel="alternate" type="text/html" title="Homelab Updates (Late 2020 Edition)" /><published>2020-10-22T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2020/homelab</id><content type="html" xml:base="https://trobinson.me/2020/homelab/">&lt;p&gt;Since the last update (all the way back in 2018), a lot of things have changed about my home server setup.&lt;/p&gt;
+
+&lt;h1 id=&quot;replacing-the-proliant&quot;&gt;Replacing the Proliant&lt;/h1&gt;
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-left&quot; style=&quot;width: 25%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2020-homelab/power.jpg&quot; alt=&quot;The entire new setup under load uses less power than the Proliant tower did when idling&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;The entire new setup under load uses less power than the Proliant tower did when idling&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;While very flexible in terms of upgrades and modifications, the 4U HPE Proliant tower server I have been using since the start of 2018 proved itself to be quite inefficient. It drew an enormous amount of power, made quite a racket and in return did not offer a whole lot of performance.&lt;/p&gt;
+
+&lt;p&gt;For the longest time (even before getting the Proliant), I had dreamed of a simplistic SFF PC sitting alongside a Synology NAS, and this is exactly what I’ve ended up with.&lt;/p&gt;
+
+&lt;p&gt;The ThinkCentre M93p is certainly not the newest system I could’ve chosen, however its popularity in corporate environments means it can be picked up from e-waste and e-recycling centres on the used market for relatively cheap prices, especially given the performance available.
+My machine features a 4th generation i7 (full specs &lt;a href=&quot;https://wiki.fishys.space/doku.php?id=lab&quot;&gt;here&lt;/a&gt;) which &lt;a href=&quot;https://browser.geekbench.com/v4/cpu/compare/15561061?baseline=10417486&quot;&gt;benchmarks many times faster&lt;/a&gt; than the 2011-era Xeon in the HPE.&lt;/p&gt;
+
+&lt;p&gt;My Proxmox configuration remains largely unchanged from last post, with the migration being very straightforward.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 30%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2020-homelab/firefox_Zoe3Sv510z.png&quot; alt=&quot;The Synology DSM Interface&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;The Synology DSM Interface&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;synology&quot;&gt;Synology&lt;/h1&gt;
+&lt;p&gt;To house my data, I needed something to replace the drive bays and RAID card in the HPE. My wallet was not a fan, but I eventually decided on a Synology DS218. It’s quite overpriced for the specs you get, however I don’t regret picking it up. The ARM CPU and puny amount of RAM are not a massive problem when this is not the primary application server.&lt;/p&gt;
+
+&lt;p&gt;Synology’s DSM operating system is really rather swish, and is definitely the selling point of a Synology unit. Setting everything up was a breeze and performance is much more stable than the setup I was using before.&lt;/p&gt;
+
+&lt;h1 id=&quot;misc&quot;&gt;Misc&lt;/h1&gt;
+&lt;p&gt;For better wireless performance, I replaced my access point with a Vodafone THG3000. This is connected to a Ubiquiti Edgeswitch 24 Lite and routing is handled by an EdgeRouter X.&lt;/p&gt;
+
+&lt;p&gt;My Pi 0W is still going strong running Pi-Hole, but the web server on my Pi 3B’s has been changed from Apache to NGINX.&lt;/p&gt;
+
+&lt;h1 id=&quot;wiki&quot;&gt;Wiki&lt;/h1&gt;
+&lt;p&gt;For more information and specs, I have a small Wiki where I note things down. It can be found at &lt;a href=&quot;https://fishys.space&quot;&gt;wiki.fishys.space&lt;/a&gt;. Of course, it’s hosted on the Thinkcentre in a Proxmox container.&lt;/p&gt;
+
+&lt;h1 id=&quot;to-dos&quot;&gt;To-Dos&lt;/h1&gt;
+&lt;p&gt;It’s always nice to have some vague aspirations, so here’s a few I have for my setup:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Eventually replace my Edge equipment with UniFi. Potentially a Dream Machine?&lt;/li&gt;
+  &lt;li&gt;Set up some cheap CCTV cameras to record to UniFi Protect or Synology Surveillance Station&lt;/li&gt;
+  &lt;li&gt;Properly VLAN things out&lt;/li&gt;
+  &lt;li&gt;Set up a Windows AD Domain&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;in-closing&quot;&gt;In Closing&lt;/h1&gt;
+&lt;p&gt;As mentioned below, if you’ve any questions or comments you’re welcome to chuck us a message or a Tweet.&lt;/p&gt;
+
+&lt;p&gt;Shoutout to &lt;a href=&quot;https://reddit.com/r/homelab&quot;&gt;r/Homelab&lt;/a&gt; for being nerdy and epic!&lt;/p&gt;</content><author><name></name></author><category term="[&quot;tech&quot;, &quot;homelab&quot;]" /><summary type="html">Since the last update (all the way back in 2018), a lot of things have changed about my home server setup.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/thinkcentre.jpg" /><media:content medium="image" url="https://trobinson.me/thinkcentre.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Joining the Thinkpad Club</title><link href="https://trobinson.me/2020/thinkpad/" rel="alternate" type="text/html" title="Joining the Thinkpad Club" /><published>2020-10-21T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2020/thinkpad</id><content type="html" xml:base="https://trobinson.me/2020/thinkpad/">&lt;p&gt;Now I don’t game as much, I thought it might be worth replacing my laptop with something a bit newer and a bit more portable - ready for travel (that went well this year) and study. When I purchased my previous &lt;a href=&quot;https://wiki.fishys.space/doku.php?id=d:ltop:x556ub&quot;&gt;ASUS X556 laptop&lt;/a&gt;, it was chosen due to its dedicated graphics chip over anything else; I prioritised the raw power over things like the build quality (all plastic), screen (a mere TN 768p) and battery life (no longer lasts very long).&lt;/p&gt;
+
+&lt;p&gt;My requirements for any new laptop were quite boring:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Not overly expensive&lt;/li&gt;
+  &lt;li&gt;Decently portable (under 14”)&lt;/li&gt;
+  &lt;li&gt;Durable (can be chucked in my bag without an excessive sleeve)&lt;/li&gt;
+  &lt;li&gt;Not terribly outdated&lt;/li&gt;
+  &lt;li&gt;Able to run Linux Distros (Ubuntu/Arch) well&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;initial-thoughts&quot;&gt;Initial Thoughts&lt;/h1&gt;
+&lt;p&gt;My first thought was a Dell XPS, however a quick eBay search showed that even a relatively old XPS 13 would set me back a pretty penny. I spend a while browsing offerings from HP and ASUS before remembering the ever-popular business-favourite &lt;em&gt;ThinkPad&lt;/em&gt; series from Lenovo. I did some research and very quickly came to the conclusion that a ThinkPad was for me - superior keyboards, excellent durability and an understated boxy black look.&lt;/p&gt;
+
+&lt;h1 id=&quot;choosing-the-right-thinkpad&quot;&gt;Choosing the Right Thinkpad&lt;/h1&gt;
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-left&quot; style=&quot;width: 25%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2020-thinkpad/firefox_pqkrqRNMxp.png&quot; alt=&quot;r/ThinkPad is epic&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;r/ThinkPad is epic&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I did some digging on &lt;a href=&quot;https://reddit.com/r/thinkpad&quot;&gt;/r/thinkpad&lt;/a&gt;, the &lt;a href=&quot;https://thinkwiki.com&quot;&gt;ThinkWiki&lt;/a&gt; and the Lenovo website and found out that I’d be looking out for an X-series or a T-s series model. The vast majority of ThinkPads are very Linux-friendly, so I was able to check that off my list. The T-series machines are traditionally 14” and the X-series are 12-13”, so portability is more than fine.&lt;/p&gt;
+
+&lt;p&gt;The issues arise when we get to “not overly expensive” and “not terribly outdated.” I was drawn to the 8th generation Intel chips and the newer AMD Ryzen models, meaning I would need to get an X280 or a T480s, since an X1 Carbon Gen6 would be far, far out of my price range.&lt;/p&gt;
+
+&lt;p&gt;Both the X280 and the T480s have their pros and cons:&lt;br /&gt;
+The X280 is really portable with its 12.5” display, but it’s also got a large bezel, soldered RAM and not as many ports.&lt;br /&gt;
+The T480s isn’t as portable but it has a much better port selection.&lt;br /&gt;
+Both of the models have mediocre display options as standard (as seems to be the norm with Thinkpads), so I would be looking for an FHD/WQHD model.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-i-got&quot;&gt;What I Got&lt;/h1&gt;
+&lt;p&gt;After &lt;a href=&quot;https://git.fishys.space/tom/cex-scout&quot;&gt;scouting&lt;/a&gt; pre-loved Thinkpads on &lt;a href=&quot;https://webuy.com&quot;&gt;CeX&lt;/a&gt; for some time, I was able to acquire an X280 for just under £500. It’s pretty well equipped for the price—check &lt;a href=&quot;https://wiki.fishys.space/doku.php?id=d:ltop:x280&quot;&gt;here&lt;/a&gt; for all the details—and came with all the bells and whistles I’d ever want, including a backlit keyboard, fingerprint scanner and a WWAN card for 4G connectivity on the go.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 30%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2020-thinkpad/thinkpad_held.jpg&quot; alt=&quot;thinkpad_held.jpg&quot; class=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;the-brief-review&quot;&gt;The Brief Review&lt;/h1&gt;
+&lt;p&gt;There isn’t a whole lot to complain about, in my eyes at least.&lt;br /&gt;
+The instant I took the device out of the packaging, I knew I had made the right decision. My touch-screen model sports a “Glass Fibre” top case, which feels durable (despite picking up fingerprints very easilly), and a magneisum palm rest that rarely gets warm-to-the-touch. I was initially worried that a 12.5” display would be too small, especially at 1080p, however this turns out to be perfect for me; no need for any scaling in any operating system I tried. The keyboard is obviously not as good as earlier Thinkpads or my desktop’s DAS with MX Browns, but it certainly lives up to the hype and I’m very happy to be typing this blog post with it right now. In the middle of the keyboard is the Trackpoint pointer, to which I’ve also taken a liking. The addition of a sliding shutter on the webcam is a nice touch and the function key to quickly enable/disable the microphone is very handy. With Windows Hello the fingerprint scanner is plenty fast and the overall performance of the machine is beyond adequete.&lt;/p&gt;
+
+&lt;p&gt;I don’t have a solid number for battery life, however I very rarley find myself plugging the device in. I would estimate about 4-9 hours depending on usage. The laptop can charge over 45W USB C, so I decided to purchase an inexpensive powerbank capable of delivering this. While not as elegant as the previous Thinkpads with their swappable batteries, this certainly does the job.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 200px;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2020-thinkpad/Discord_aAyaCoi9xh.png&quot; alt=&quot;To say I was a bit impressed would be an understatement&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;To say I was a bit impressed would be an understatement&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;My only complaint would really be how warm the device gets during use. At idle in the middle of a classroom, the 8th-gen i5 sits at a toasty 40-50 celsius. The magnesium bottom cover dissipates quite a bit of heat straight into your lap and the fan cuts in and out abruptly as the BIOS tries to juggle thermals and noise. Speaking of the fan, it certainly gets audible more often than I would like, however the sound is more of a ‘whoosh’ than a whine and is far from annoying.
+Additionally, the lack of upgradability (no RAM sockets) - while expected in a modern device of this size - is unfortunate.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 35%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2020-thinkpad/modem_manager.png&quot; alt=&quot;The WWAN card working flawlessly under Linux&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;The WWAN card working flawlessly under Linux&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;linux-experience&quot;&gt;Linux Experience&lt;/h1&gt;
+&lt;p&gt;My experience with Linux (Ubuntu Budgie and Manjaro Budgie specifically) has been a pleasant one. The 1080p resolution is perfect for the 12.5” display - no need for janky fractional scaling. All the important function keys on the keyboard work with no problems and even the WWAN card works just fine, integrating with Modem Manager and Gnome Settings.&lt;/p&gt;</content><author><name></name></author><category term="[&quot;tech&quot;]" /><summary type="html">Now I don’t game as much, I thought it might be worth replacing my laptop with something a bit newer and a bit more portable - ready for travel (that went well this year) and study. When I purchased my previous ASUS X556 laptop, it was chosen due to its dedicated graphics chip over anything else; I prioritised the raw power over things like the build quality (all plastic), screen (a mere TN 768p) and battery life (no longer lasts very long).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/thinkpad_led.jpg" /><media:content medium="image" url="https://trobinson.me/thinkpad_led.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Moaning about the Network West Midlands rebrand</title><link href="https://trobinson.me/2019/tfwm/" rel="alternate" type="text/html" title="Moaning about the Network West Midlands rebrand" /><published>2019-06-23T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2019/tfwm</id><content type="html" xml:base="https://trobinson.me/2019/tfwm/">&lt;p&gt;With the 2022 Commonwealth Games (basically the Olympics, but just for countries Britain once ruled) on the horizon and set to be held in England’s “second city” - Birmingham - it made sense to refresh and simplify the ever-confusing public transport network. While I agree with the sentiment, and think the council (and the companies involved) certainly deserves praise for making the ever-important first steps, I have some minor niggles with the way things are being completed.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;how-things-are&quot;&gt;How Things Are&lt;/h2&gt;
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 30%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2019-tfwm/bus-liveries.png&quot; alt=&quot;A small rainbow of liveries that can be seen throughout the West Midlands&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;A small rainbow of liveries that can be seen throughout the West Midlands&lt;br /&gt;&lt;span style=&quot;font-size: 0.8em;&quot;&gt;Source: Flickr/&lt;a href=&quot;https://www.flickr.com/photos/martin65/6041389948/&quot;&gt;martin65&lt;/a&gt;, Flickr/&lt;a href=&quot;https://www.flickr.com/photos/kk70088/31544083954/&quot;&gt;kk70088&lt;/a&gt;. Flickr/&lt;a href=&quot;https://www.flickr.com/photos/aswans1234567/32799816057/&quot;&gt;aswans1234567&lt;/a&gt;, Flickr/&lt;a href=&quot;https://www.flickr.com/photos/fwc439h/17172401746/&quot;&gt;fwc439h&lt;/a&gt;&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Busses&lt;/strong&gt;&lt;br /&gt;
+  Busses are operated by hundreds of different companies, each with their own liveries and tickets. The majority are a member of the previous unification attempt - “Network West Midlands.” This means that while you can’t interchangeably use the tickets bought on different busses, you can use several day/week/month/etc passes and tickets offered by Network WM without trouble.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Trains&lt;/strong&gt;&lt;br /&gt;
+ The railway functions no different than the rest of the UK, with operators being granted “franchises” where they can run their trains. Currently serving the West Midlands is the appropriately-named West Midlands Railway. While still a private company, owned mostly by Abellio, they operate under supervision of the council. WMR also accepts “Network” branded tickets.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 30%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2019-tfwm/swift-card-barrier.jpg&quot; alt=&quot;Using a Swift smart card at a railway station ticket barrier&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;Using a Swift smart card at a railway station ticket barrier&lt;br /&gt;&lt;span style=&quot;font-size: 0.8em;&quot;&gt;Source: &lt;a href=&quot;https://alwyn.design/swift&quot;&gt;Alwyn Leedham&lt;/a&gt;&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Smart ticketing&lt;/strong&gt;&lt;br /&gt;
+ Most bus operators, WMR,  and the West Midlands Metro also support the county’s Oyster-inspired travel card - Swift. Unlike the Oyster, Swift is not only a Pay-As-You-Go card; you can load any number of season tickets that range from a week of bus travel, to a whole year travelling anywhere in the West Midlands on anything.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;the-changes&quot;&gt;The Changes&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-transport-for-west-midlands&quot;&gt;1. Transport for West Midlands&lt;/h3&gt;
+&lt;p&gt;Taking a leaf out of London, Manchester and Wales’ book, we now have Transport for West Midlands instead of a confusing “passenger executive.” Hurrah! The problem here, is that unlike London, Manchester or Wales, TfWM is not the public brand name. We are still desperately clinging onto the “Network”  brand, except it’s being renamed to “West Midlands Network” instead of “Network West Midlands.” In my opinion. this seems redundant and adds another layer of abstraction to the mix. It would make much more sense to patch up Network’s poor reputation, and instead focus on building Transport for West Midlands.
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;img src=&quot;/img/posts/2019-tfwm/brand-compare.png&quot; alt=&quot;The odd one out, why?&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;The odd one out, why?&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;These two Reddit comments on a post I submitted to the Birmingham subreddit last year really sums up most of my problems with the new brand:&lt;/p&gt;
+&lt;div class=&quot;reddit-embed&quot; data-embed-media=&quot;www.redditmedia.com&quot; data-embed-parent=&quot;false&quot; data-embed-live=&quot;false&quot; data-embed-uuid=&quot;62bce3a3-19a3-40e1-8d27-69b3f03c7153&quot; data-embed-created=&quot;2019-07-19T09:31:33.114Z&quot;&gt;&lt;a href=&quot;https://www.reddit.com/r/brum/comments/90ph0p/tfwm_reveals_new_public_transport_identity_what/e2s7cex/&quot;&gt;Comment&lt;/a&gt; from discussion &lt;a href=&quot;https://www.reddit.com/r/brum/comments/90ph0p/tfwm_reveals_new_public_transport_identity_what/&quot;&gt;TfWM reveals new public transport identity - what do you guys think?&lt;/a&gt;.&lt;/div&gt;
+&lt;div class=&quot;reddit-embed&quot; data-embed-media=&quot;www.redditmedia.com&quot; data-embed-parent=&quot;false&quot; data-embed-live=&quot;false&quot; data-embed-uuid=&quot;75d73265-e96f-4623-bbb4-303feec40c9d&quot; data-embed-created=&quot;2019-07-19T09:35:41.582Z&quot;&gt;&lt;a href=&quot;https://www.reddit.com/r/brum/comments/90ph0p/tfwm_reveals_new_public_transport_identity_what/e2xmvgq/&quot;&gt;Comment&lt;/a&gt; from discussion &lt;a href=&quot;https://www.reddit.com/r/brum/comments/90ph0p/tfwm_reveals_new_public_transport_identity_what/&quot;&gt;TfWM reveals new public transport identity - what do you guys think?&lt;/a&gt;.&lt;/div&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 30%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2019-tfwm/wm-bus-front.png&quot; alt=&quot;A re-liveried WM Bus&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;A re-liveried WM Bus&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;2-west-midlands-bus&quot;&gt;2. West Midlands Bus&lt;/h3&gt;
+&lt;p&gt;Instead of many different liveries, tickets and brands, the bus services are being unified to be under one umbrella - West Midlands Bus. The routes will still be operated under contract by many different companies, however their busses will all be red and will all carry the same West Midlands Bus brand.&lt;/p&gt;
+
+&lt;p&gt;I don’t have a problem with this unification, but…&lt;/p&gt;
+
+&lt;h3 id=&quot;3-the-new-logos&quot;&gt;3. The New Logos&lt;/h3&gt;
+&lt;p&gt;Along with the many new brands comes many new logos. This is where I think things fall apart. Taking a leaf out of London’s book again (noticing a trend here?), we are getting a symbol like the iconic TfL roundel. However, instead of a clean, simple circle with a line through it, we’ve got a hexagon made up of diamonds. Yeah, I don’t get it either.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image &quot; style=&quot;width: 40%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2019-tfwm/wm-bus-align.png&quot; alt=&quot;NOT ALIGNED! (Look at the black, vertical line)&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;NOT ALIGNED! (Look at the black, vertical line)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The poor logo choice is the least of my concerns however, it’s the logo design as a whole along with the colours. Now, I’m no graphic designer, but THE TEXT IN THE LOGOS ISN’T HORIZONTALLY ALIGNED. Sorry for screaming there, but I seriously do not understand how anyone look at this and said “yes, that’s fine!” To me, it screams rushed and amateurish.&lt;/p&gt;
+
+&lt;p&gt;If this wasn’t enough, when placed on the side of a vehicle, the shade of red (in the case of West Midlands Bus) or blue (in the case of the West Midlands Metro) in the middle of the hexagon totally fades away into the paint of the vehicle it’s on depending on the lighting. Again, this just doesn’t look professional at all to me, and it frankly makes me even more embarrassed about the public transportation here.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image float-right&quot; style=&quot;width: 33%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2019-tfwm/sprint-mockup.jpg&quot; alt=&quot;A mockup of a Sprint vehicle&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;A mockup of a Sprint vehicle&lt;br /&gt;&lt;span style=&quot;font-size: 0.8em;&quot;&gt;Source: TfWM&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;4-sprint&quot;&gt;4. Sprint&lt;/h3&gt;
+&lt;p&gt;Since it’s massively expensive to embed rails in the road everywhere, TfWM is investing in a new “&lt;a href=&quot;https://www.tfwm.org.uk/development/sprint/&quot;&gt;Sprint&lt;/a&gt;” service. It’s essentially a hybrid between busses and trams - no rails like busses, but dedicated routes and lanes like trams. Maybe it’s just me and I’m missing something, but why not just build more bus lanes? Why do we need a brand new fleet of glorified bendy-busses when we can just focus on improving the current bus services?
+&lt;!-- Sprint mock-up pressrelease photo --&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;tick-tock&quot;&gt;Tick Tock&lt;/h2&gt;
+&lt;p&gt;One of the prime reasons for the rebrand was to simplify the region’s public transport and make it easier and friendlier to navigate. As mentioned previously, the vast array of bus companies and other operators overwhelmed many people and discouraged them from using public transport altogether. I understand that liveries, websites and all of that can’t be changed at the snap of a finger, but surely it’s more confusing that the Twitter page for Network has the brand spanking new purple hexagon, while their website still carries all of the old branding. Surly it’s more confusing to only rebrand two bus routes but leave the hundreds of others as they are?
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;image &quot; style=&quot;width: 50%;&quot;&gt;
+  &lt;img src=&quot;/img/posts/2019-tfwm/networkwm-twitweb.png&quot; alt=&quot;At odds with eachother&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;At odds with eachother&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;closing-thoughts&quot;&gt;Closing Thoughts&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;We need to stop cherrypicking things we like about London (red busses, unification), we just need to steal their whole system&lt;/li&gt;
+  &lt;li&gt;The city is already looking like it’s going to be one giant construction site in 2022, what does it matter if the public transport is also a shambles? Take your time rolling this out to ensure there’s no mistakes or amateur graphic design mistakes.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="[&quot;complaint&quot;]" /><summary type="html">With the 2022 Commonwealth Games (basically the Olympics, but just for countries Britain once ruled) on the horizon and set to be held in England’s “second city” - Birmingham - it made sense to refresh and simplify the ever-confusing public transport network. While I agree with the sentiment, and think the council (and the companies involved) certainly deserves praise for making the ever-important first steps, I have some minor niggles with the way things are being completed.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/transportforwm_wide-notext.png" /><media:content medium="image" url="https://trobinson.me/transportforwm_wide-notext.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">New website!</title><link href="https://trobinson.me/2019/new-domain/" rel="alternate" type="text/html" title="New website!" /><published>2019-01-12T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2019/new-domain</id><content type="html" xml:base="https://trobinson.me/2019/new-domain/">&lt;p&gt;You may or may not have noticed, but my primary home on the internet is now &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;trobinson.me&lt;/code&gt; rather than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dnomaid.co.uk&lt;/code&gt;.
+While this new website looks pretty similar, it’s been re-written from the ground up to make it less of a PITA for me to maintain (it’s still not great though).&lt;/p&gt;
+
+&lt;p&gt;To save myself writing paragraphs upon paragraphs, here’s some Qs and As I assume you’ll have:&lt;/p&gt;
+
+&lt;h3 id=&quot;why&quot;&gt;Why?&lt;/h3&gt;
+&lt;p&gt;Quite simply, having two websites was confusing and annoying to maintain. As much as I like the idea of keeping “dnomaid” distance from myself, it’s just way easier this way.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-not-keep-dnomaidcouk&quot;&gt;Why not keep dnomaid.co.uk?&lt;/h3&gt;
+&lt;p&gt;Saying “deen-o-maid” as most people do doesn’t really communicate the spelling. If someone asks me what my website is, I’d quite like to be able to just tell them without writing down the spelling.&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-happening-to-dnomaidcouk&quot;&gt;What’s happening to dnomaid.co.uk?&lt;/h3&gt;
+&lt;p&gt;It’s not going away, far from it. All the subdomains and that (dwn, pi, whatever) are staying the same. Only GitHub projects, the blog and any other pages after the slash have most (mostly because it was logistically easier.)&lt;/p&gt;
+
+&lt;h3 id=&quot;does-this-mean-youre-retiring-the-fish&quot;&gt;Does this mean you’re retiring &lt;a href=&quot;/img/fish_large.png&quot;&gt;the fish&lt;/a&gt;?&lt;/h3&gt;
+&lt;p&gt;No. I’m just using that baby photo in more places since I think it fits more.&lt;/p&gt;
+
+&lt;h3 id=&quot;did-you-copy-leo&quot;&gt;Did you copy Leo?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/theLMGN/status/1084434583133790208&quot;&gt;No.&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="updates" /><summary type="html">You may or may not have noticed, but my primary home on the internet is now trobinson.me rather than dnomaid.co.uk. While this new website looks pretty similar, it’s been re-written from the ground up to make it less of a PITA for me to maintain (it’s still not great though).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/gradient.png" /><media:content medium="image" url="https://trobinson.me/gradient.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Homelab Updates (late 2018)</title><link href="https://trobinson.me/2018/homelab-l18-updates/" rel="alternate" type="text/html" title="Homelab Updates (late 2018)" /><published>2018-11-22T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2018/homelab-l18-updates</id><content type="html" xml:base="https://trobinson.me/2018/homelab-l18-updates/">&lt;p&gt;Morning all! Haven’t posted here in a while, so I thought I’d give some updates regarding an older post - &lt;a href=&quot;/2018/proliant/&quot;&gt;the one about my server/homelab&lt;/a&gt;. A lot (ish) has changed since January, so let’s dive straight in.&lt;/p&gt;
+
+&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
+&lt;p&gt;While the &lt;a href=&quot;/faq/tech#proliant&quot;&gt;Proliant&lt;/a&gt; featured in the initial &lt;em&gt;“review”&lt;/em&gt; is still my primary server, I have given it a couple of upgrades. For a start, my network-storage needs are no longer handled by a shoddy WD Mybook drive hooked up over USB 2. The server is now fitted with (2) 2TB WD Blacks in RAID 0 (living on the edge!) for a combined total of 4TB (3.6TB formatted). Again in regards to storage, the measly 32GB SSD has been replaced with a 120GB one, which despite being from Kingston and not being particularly suited for this envrironment, performs more than adequately for running a few VMs and containers.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;img src=&quot;/img/posts/2018-homelab-l18-updates/black-install.jpg&quot; alt=&quot;One of the WD Black drives before it was inserted into the server&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;One of the WD Black drives before it was inserted into the server&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+&lt;p&gt;The mention of VMs and containers previously brings me onto software; no longer am I using OpenMediaVault for everything. Instead, I use a hypervisor called Proxmox, within which I run a selection of containers, each dedicated to hosting a single app or two. This allows much finer control over resource allocation compared to the previous Docker-only solution. Additionally, having proper support for full KVM Virtual Machines means I don’t have to rely upon the janky PHPVirtualBox web interface to run applications that would otherwise not work in a container. On top of all this, I am able to create a “cluster” if I were to ever get more fancy servers.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;img src=&quot;/img/posts/2018-homelab-l18-updates/proxmox-backup.png&quot; alt=&quot;Another example of Proxmox&amp;#39;s usefulness: easy set up of automated backups of everything&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;Another example of Proxmox's usefulness: easy set up of automated backups of everything&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;programsservices&quot;&gt;Programs/Services&lt;/h2&gt;
+&lt;p&gt;I know that programs and services are technically software in and of themselves, but there’s a bit to talk about here so I deem the seperate heading worthy.&lt;/p&gt;
+
+&lt;p&gt;Here’s basically everything I have running at the moment, although I often install things briefly just to play around with:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Emby&lt;/strong&gt;: A Plex alternative which I prefer the flexibility and customization of&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ombi&lt;/strong&gt;: Ties in with Emby and allows friends to request media for me to acquire and host on the Emby.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SMB&lt;/strong&gt;: Due to its multiplatform support, SMB is my primary method of network file transfer. I make use of &lt;strong&gt;Webmin&lt;/strong&gt; to manage shares and configuration here.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Deluge&lt;/strong&gt;: I run Deluge as a headless daemon with a web interface for any Linux ISOs I might need to download overnight.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Apache&lt;/strong&gt;: Apache is my HTTP server of choice and I have a few apps running under it, such as Dokuwiki.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;GitLab&lt;/strong&gt;: While heavy on resources and over-the-top for what I need, GitLab is an excellent option for self-hosting Git repositories.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Grafana&lt;/strong&gt;: Grafana goes hand in hand with &lt;strong&gt;InfluxDB&lt;/strong&gt; to display system metrics and statistics for the plethora of VMs and containers as well as my other smaller devices. I primarily use &lt;strong&gt;Telegraf&lt;/strong&gt; to send statistics to the database.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;UNMS&lt;/strong&gt;: While not strictly required, I much prefer the look of UNMS over my stock EdgeRouter interface and it could come in handy in the future if I get more Ubnt kit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;img src=&quot;/img/posts/2018-homelab-l18-updates/grafana.png&quot; alt=&quot;For those interested in my Grafana set-up, I will eventually get around to making a seprate blog post.&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;For those interested in my Grafana set-up, I will eventually get around to making a seprate blog post.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;other-devices&quot;&gt;Other Devices&lt;/h2&gt;
+&lt;p&gt;As well as the Proliant, I have two Raspberry Pis chugging away, performing tasks.
+My Pi Zero runs &lt;strong&gt;Pi-Hole&lt;/strong&gt;, a DNS server that will filter out domain lists of your choosing (ads, malware, etc). I paticularly enjoy just looking at the graphs and statistics really, but the block lists are useful also.&lt;br /&gt;
+The beefier Raspberry Pi 3B essentially just acts as web host/reverse proxy. Since I’m lazy, I use Apache to forward requests to certain domains to where they have to go within the network &lt;em&gt;(service.example.com ➔ 192.0.0.5:1234, for example)&lt;/em&gt;. The Pi also hosts a couple of mediocre Discord bots used within my friend-circle.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-updates&quot;&gt;Other Updates&lt;/h2&gt;
+&lt;p&gt;While not strictly homelab related, I should touch upon a common question others have brought up:&lt;/p&gt;
+
+&lt;blockquote&gt;Why do you still use [Google Photos/Twitter/Insert Service Here] when you're all about FOSS and that?&lt;/blockquote&gt;
+&lt;author&gt;people&lt;/author&gt;
+
+&lt;p&gt;What it all boils down to is &lt;strong&gt;convenience&lt;/strong&gt;.&lt;br /&gt;
+Google Photos is simply best-in-class when it comes to web interfaces to manage photos. While I disagree with the data collection and the cost I have to pay to keep original-quality photos, those are small sacrifies for the convenience and the rich featureset that Google Photos offers.&lt;br /&gt;
+It is a similar story with Twitter. I attempted to use Mastodon for a good while; I wanted to like it. The problem was simply lack of adoption. Everyone I would want to follow (bar perhaps Bryan Lunduke) are on Twitter. Not to mention the polish that has gone into making Twitter be as soom as possible to use - something you can’t really match as a one-man-band.&lt;/p&gt;</content><author><name></name></author><category term="[&quot;tech&quot;, &quot;homelab&quot;]" /><summary type="html">Morning all! Haven’t posted here in a while, so I thought I’d give some updates regarding an older post - the one about my server/homelab. A lot (ish) has changed since January, so let’s dive straight in.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/pve-blur.png" /><media:content medium="image" url="https://trobinson.me/pve-blur.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Sony a6000 (+ 16-50 kit lens) review</title><link href="https://trobinson.me/2018/a6000/" rel="alternate" type="text/html" title="Sony a6000 (+ 16-50 kit lens) review" /><published>2018-06-16T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2018/a6000</id><content type="html" xml:base="https://trobinson.me/2018/a6000/">&lt;p&gt;I’d just like to mention, before getting into the meat of this post, that I’m not a professional photographer, and this “review” is going to be from the perspective of a total hobbist. I wrote this post ages ago and totally forgot to post it (sorry).&lt;/p&gt;
+
+&lt;p&gt;I’ve always enjoyed taking photos of random things, ever since I first laid my hands on a camera. When I got my first phone with a camera, I brushed away all of my dedicated cameras and jumpted onto the cameraphone-only train, until now.&lt;/p&gt;
+
+&lt;h2 id=&quot;build-quality&quot;&gt;Build Quality&lt;/h2&gt;
+
+&lt;p&gt;To start off, the build quality is amazing - the majority of the body is metal and the small amounts of plastic still feel premium. The switches and buttons are clicky and feel durable. The camera is a lot smaller than a DLSR, but not as small as Sony’s fixed-lens compact cameras (like the RX100). It wouldn’t fit in an average pocket, but I have had no problems with its size.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-use&quot;&gt;In-Use&lt;/h2&gt;
+
+&lt;p&gt;Turning the camera on reveals an extensive but easy-to-learn UI. There are 24 pages of options spread across 6 tabs in the main menu, containing every setting you could ever want. 3 of the pysical buttons can be remapped and there’s a customizable “function” menu allowing you to change frequently-used settings without delving into the main settings.&lt;/p&gt;
+
+&lt;h2 id=&quot;specs--quality&quot;&gt;Specs &amp;amp; Quality&lt;/h2&gt;
+
+&lt;p&gt;The camera can take 24MP (either 3:2 or 16:9) stills and 1080p60 (you can switch between PAL and NTSC) video. For photos you can choose “fine” or “standard” JPEG and RAW, videos can be recorded to the XAVC S (requires a 64GB SD Card), AVCHD or MP4 codecs, all of which look stellar.&lt;/p&gt;
+
+&lt;p&gt;Primiarlly shooting in RAW, the quality I’ve been able to get from this camera (as an amateur, mind you) is impressive. Even though I’m only really comparing the quality with my phone, the improvement is more than noticable. I personally don’t shoot much video, but the few clips I have taken have looked just as good as the photos, despire the 1080p maximum resolution.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;sample-photos&quot;&gt;Sample Photos&lt;/h2&gt;
+
+&lt;p&gt;Here’s a selection of (admittedly “meh”) photos I’ve taken&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot; data-footer=&quot;true&quot; href=&quot;https://www.flickr.com/photos/mrdnomaid/albums/72157675227211767&quot; title=&quot;Favourites 🌟&quot;&gt;&lt;img src=&quot;https://farm5.staticflickr.com/4810/39645210033_17e891ef55_o.jpg&quot; width=&quot;1280&quot; height=&quot;720&quot; alt=&quot;Favourites 🌟&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out more in &lt;a href=&quot;https://photos.dnomaid.co.uk&quot;&gt;my Flickr albums&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;kit-lens&quot;&gt;Kit Lens&lt;/h2&gt;
+
+&lt;p&gt;While not the best, the provided kit lens (SELP1650) isn’t as bad as the reviews make it out to be. I’ve found it to be suprisingly versitile in a range of different shooting-styles and the quality is certainly acceptable, at least for me (I’m hardly a pixel-peeper), and I think it makes more sense to get the camera including it, just to get you started. I do recommend you pick up a decent telephoto lens later down the line though, if you feel constrained by 50mm.&lt;/p&gt;
+
+&lt;h2 id=&quot;battery-life&quot;&gt;Battery Life&lt;/h2&gt;
+
+&lt;p&gt;Battery life is, again, a lot better than the reviews have made it out to be. I’m the type of person that always switches the camera off if I’m not activly planning to take a photo, so bear that in mind - no “standby” tests here. I’ve frequently taken the camera on day-long trecks and the battery only loses about 70% charge, even when taking hundreds of shots.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Overall, I think the a6000, despite being a few years old, is certainly still a good mirrorless option if you’re shopping for cameras. The feature list is substantial while being easy-to-operate, allowing the camera to appeal to a broad audience - from total beginners to semi-pro hobbyists; the kit lens is a good starting point, offering acceptable quality and a useful range and the quality is certainly there.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;https://lunarnet.space&quot;&gt;Matt&lt;/a&gt; for assistance with this post&lt;/p&gt;</content><author><name></name></author><category term="[&quot;tech&quot;, &quot;photography&quot;]" /><summary type="html">I’d just like to mention, before getting into the meat of this post, that I’m not a professional photographer, and this “review” is going to be from the perspective of a total hobbist. I wrote this post ages ago and totally forgot to post it (sorry).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/cam.png" /><media:content medium="image" url="https://trobinson.me/cam.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My favourite Linux distros</title><link href="https://trobinson.me/2018/distros/" rel="alternate" type="text/html" title="My favourite Linux distros" /><published>2018-02-24T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2018/distros</id><content type="html" xml:base="https://trobinson.me/2018/distros/">&lt;style&gt;
+  .markdown-body h2:first-of-type {
+    margin-top: 16px;
+  }
+&lt;/style&gt;
+
+&lt;script src=&quot;https://gist.github.com/itsmeimtom/9fa78d25ac3ee6be661de5c6cf78260b.js&quot;&gt;&lt;/script&gt;
+
+&lt;noscript&gt;
+  &lt;p&gt;This post's content is a GitHub gist embed, which cannot be displayed because you have JavaScript disabled.&lt;/p&gt;
+  &lt;p&gt;Please &lt;a href=&quot;https://gist.github.com/itsmeimtom/9fa78d25ac3ee6be661de5c6cf78260b&quot;&gt;click here&lt;/a&gt; to read if you're not redirected automatically.&lt;/p&gt;
+  &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; url=https://gist.github.com/itsmeimtom/9fa78d25ac3ee6be661de5c6cf78260b&quot;&gt;
+&lt;/noscript&gt;</content><author><name></name></author><category term="[&quot;tech&quot;, &quot;linux&quot;]" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/distros.png" /><media:content medium="image" url="https://trobinson.me/distros.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My very boring new-years resolution</title><link href="https://trobinson.me/2018/foss-resolution/" rel="alternate" type="text/html" title="My very boring new-years resolution" /><published>2018-01-19T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2018/foss-resolution</id><content type="html" xml:base="https://trobinson.me/2018/foss-resolution/">&lt;p&gt;After &lt;a href=&quot;https://dnomaid.co.uk/2017/youtubers-i-watch/&quot;&gt;discovering&lt;/a&gt; &lt;a href=&quot;http://lunduke.com/&quot;&gt;Bryan Lunduke&lt;/a&gt; last year and watching all of his videos, I realised that I should be less trusting of large companies like Google and Microsoft, so I decided I should have a crack at using more Free Open Source Software (FOSS).&lt;/p&gt;
+
+&lt;p&gt;I’ll gloss over the details as to why (just have a watch of Bryan if you care) but here’s some things I’ve changed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/chrome/&quot;&gt;Google Chrome&lt;/a&gt; ➔ &lt;a href=&quot;https://www.mozilla.org/en-GB/firefox/&quot;&gt;Mozilla Firefox&lt;/a&gt; — While &lt;a href=&quot;https://youtu.be/qMALm1VthGY&quot;&gt;Mozilla isn’t the most trustworthy company&lt;/a&gt;, their browser is a lot nicer than Chrome and it’s &lt;em&gt;all&lt;/em&gt; open source, not just the non-Google bits!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://microsoft.com/windows&quot;&gt;Windows 10&lt;/a&gt; ➔ &lt;a href=&quot;https://www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; — Probably my biggest change. Linux is a lot more open and a lot easier to mess around and develop with. While it doesn’t run some software, I still prefer it greatly.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://keep.google.com/&quot;&gt;Google Keep&lt;/a&gt; ➔ &lt;a href=&quot;https://hackmd.io&quot;&gt;HackMD&lt;/a&gt; — Google Keep was one of the hardest Google web-apps to give up, because it’s just so lovely. While not designed for exactly the same purpose, HackMD works as a nice replacement for writing out my random thoughts (and this blog post!).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://calendar.google.com&quot;&gt;Google Calendar&lt;/a&gt; ➔ &lt;a href=&quot;http://radicale.org/&quot;&gt;Radicale&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://agendav.org/&quot;&gt;AgenDAV&lt;/a&gt; — I’m not one to use a Calendar too often, so I didn’t really mind the switch here. AgenDAV is a tidy web client and Radicale is a really simple CalDav server.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.vegascreativesoftware.com/gb/vegas-pro/&quot;&gt;Vegas Pro&lt;/a&gt; ➔ &lt;a href=&quot;http://www.pitivi.org/&quot;&gt;Pitivi&lt;/a&gt; — While I don’t make YouTube videos as often as I used to, I still need to chop and cut videos occasionally. Pitivi is stellar at that (as long as you ignore the lack of some features 🙃)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.getmailbird.com/&quot;&gt;Mailbird&lt;/a&gt; ➔ &lt;a href=&quot;https://www.mozilla.org/en-GB/thunderbird/&quot;&gt;Thunderbird&lt;/a&gt; — This is another change I didn’t really care about. Mailbird was quite good looking, but was pretty baron when it came to features. Thunderbird does everything I could ever need and more, even if it looks like it came out in 2001.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mail.google.com/&quot;&gt;Gmail&lt;/a&gt; ➔ &lt;a href=&quot;https://www.ovh.co.uk/emails/email-pro/&quot;&gt;OVH Mail&lt;/a&gt; — Again, I don’t really do much emailing, so this was an easy switch. OVH does cost about 2 quid a month, but that’s fine for the extra stuff it has (using actual domains and that, &lt;em&gt;cough&lt;/em&gt; tomcar670fast &lt;em&gt;cough&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Added Jan 21st:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://forms.google.com&quot;&gt;Google Forms&lt;/a&gt; ➔ &lt;a href=&quot;https://www.tellform.com/&quot;&gt;Tellform&lt;/a&gt; - I don’t tend to make many forms, but when I do, Tellform is my new goto. It’s open source and I don’t even need to selfhost it myself!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://plex.tv&quot;&gt;Plex&lt;/a&gt; ➔ &lt;a href=&quot;https://emby.media&quot;&gt;Emby&lt;/a&gt; - Plex is cool and all, but Emby offers a nicer UI (imo) and more fine control over your server settings. In my limited experience, it also seems to perform much better too.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Feel free to call me paranoid or give me a tin-foil hat, but I just like having total control over what I run.&lt;/p&gt;</content><author><name></name></author><category term="[&quot;tech&quot;, &quot;linux&quot;]" /><summary type="html">After discovering Bryan Lunduke last year and watching all of his videos, I realised that I should be less trusting of large companies like Google and Microsoft, so I decided I should have a crack at using more Free Open Source Software (FOSS).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/header-blur.png" /><media:content medium="image" url="https://trobinson.me/header-blur.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Quick look at the HP ML330 G6 tower server</title><link href="https://trobinson.me/2018/proliant/" rel="alternate" type="text/html" title="Quick look at the HP ML330 G6 tower server" /><published>2018-01-18T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2018/proliant</id><content type="html" xml:base="https://trobinson.me/2018/proliant/">&lt;p&gt;Ey up! Been a long while since I’ve posted anything here, apologies for that, but not much of interest has really happened for me to have a write about.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Right, so starting at the front, my unit features a HP StorageWorks RDX cartridge bay, a Lightscribe DVD drive as well as some free bays that are covered by the panel.&lt;/p&gt;
+
+&lt;p&gt;Taking off the front bezel (mine didn’t come with a key, thankfully it was unlocked) reveals (4) 3.5” drive bays. They’re not hotswappable, but they are fairly easy to remove and replace and the caddies are cheap to purchase.&lt;/p&gt;
+
+&lt;p&gt;Removing the side panel exposes the massive blue plastic air duct that keeps the the passively-cooled Xeon E5606’s temperatures down. My used upgraded model also features 12GB of ECC RAM and a 32GB SSD.&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;img src=&quot;/img/posts/2018-proliant/blue.jpg&quot; alt=&quot;Shoddy photo of the large ducting used to direct the air over the passive CPU cooler&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;Shoddy photo of the large ducting used to direct the air over the passive CPU cooler&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There’s a variety of ports on the rear, including 2 gigabit LAN ports, VGA, a few USB 2 ports and some other older legacy connectors such as PS/2 and Serial.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;When the server powers on after a power loss, it ramps the fans up to max speed, presumably to check they work alright. They do sound like jet engines, but once the server POSTs they calm down quite a bit. While not whisper quiet, the server is considerabl
+y quieter than other servers I’ve been around.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Being a server, the installation of OpenMediaVault (a Debian-based “NAS” OS featuring a nice web UI) was really easy, although removing the installation flash drive caused GRUB to freak out a bit (easy to fix, just changed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sdc&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sda&lt;/code&gt; in the menu).&lt;/p&gt;
+
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;img src=&quot;/img/posts/2018-proliant/omv.png&quot; alt=&quot;The OMV web interface&quot; class=&quot;has-caption&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;The OMV web interface&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Performance is more than adequate for my needs (selfhosting things in Docker containers), but I can imagine that the single socket CPU and relatively small number of cores would be very limiting to some people.
+Currently the server idles at about 5% CPU and 50% RAM, but that quickly jumps up when Plex is transcoding or other programs get stressed.
+&lt;!-- I'm afraid touching this file will break things, so please don't --&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;image &quot;&gt;
+  &lt;img src=&quot;/img/posts/2018-proliant/nd.png&quot; alt=&quot;nd.png&quot; class=&quot;&quot; /&gt;
+  
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;To close out this post, here’s a non-exhaustive list of some things I have running (most in &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt;)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://radicale.org/&quot;&gt;Radicale&lt;/a&gt; (CalDav/CardDav server)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://agendav.org/&quot;&gt;AgenDav&lt;/a&gt; (CalDav web client)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.deluge-torrent.org/&quot;&gt;Deluge&lt;/a&gt; (Torrent client)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hackmd.io/&quot;&gt;HackMD&lt;/a&gt; (Real-time collaborative Markdown editing - I’m writing this using it!)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://minecraft.net/&quot;&gt;Minecraft&lt;/a&gt; (Self explanatory - it’s fun to blow stuff up with mates)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://emby.media&quot;&gt;Emby&lt;/a&gt; (Media and that)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Server_Message_Block&quot;&gt;SMB&lt;/a&gt; Server (Yunno, files)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Have a gander at &lt;a href=&quot;https://fishys.space&quot;&gt;fishys.space&lt;/a&gt; for some more specs and details!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;If you’ve any questions, feel free to give me a bell via email or Twitter.
+Cheers for reading!&lt;/p&gt;
+
+&lt;p&gt;Also: thanks to the people I &lt;del&gt;forced&lt;/del&gt; asked to check this post actually made sense. If it doesn’t you can blame them.&lt;/p&gt;</content><author><name></name></author><category term="[&quot;tech&quot;, &quot;review&quot;, &quot;linux&quot;, &quot;homelab&quot;]" /><summary type="html">Ey up! Been a long while since I’ve posted anything here, apologies for that, but not much of interest has really happened for me to have a write about.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/model.jpg" /><media:content medium="image" url="https://trobinson.me/model.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Have a look at some of my previous sites</title><link href="https://trobinson.me/2017/previous-sites/" rel="alternate" type="text/html" title="Have a look at some of my previous sites" /><published>2017-07-26T00:00:00+00:00</published><updated>2021-07-13T15:21:46+00:00</updated><id>https://trobinson.me/2017/previous-sites</id><content type="html" xml:base="https://trobinson.me/2017/previous-sites/">&lt;p&gt;I’ve enjoyed creating web things for a good few years now, however most of my first experiments were dreadful.&lt;/p&gt;
+
+&lt;p&gt;Rather than keeping the previous sites under lock and key, I figured I should let you all have a look, which is why I quickly whipped up &lt;strong&gt;&lt;a href=&quot;https://archive.dnomaid.co.uk&quot;&gt;archive.dnomaid.co.uk&lt;/a&gt;&lt;/strong&gt; to “showcase” them.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;spacer&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy.&lt;/p&gt;</content><author><name></name></author><category term="history" /><summary type="html">I’ve enjoyed creating web things for a good few years now, however most of my first experiments were dreadful.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://trobinson.me/archive.png" /><media:content medium="image" url="https://trobinson.me/archive.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
